@@ -1,0 +1,11 @@
+# Secrets - the API key must never reach GitHub
+.env
+# Virtual environment and Python cache
+.venv/
+__pycache__/
+*.pyc
+# Local API response cache (regenerated on demand; fixtures/ holds the committed recordings)
+cache/
+# Editor / OS noise
+.vscode/
+.DS_Store

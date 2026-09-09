@@ -1,0 +1,2 @@
+2026-09-09 08:59:45,856 | INFO | research_agent | research_agent skeleton running | question='test question'
+2026-09-09 08:59:45,856 | INFO | research_agent | Stage 0 complete: package imports, configuration and logging verified.
