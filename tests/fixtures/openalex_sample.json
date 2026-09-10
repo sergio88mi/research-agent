@@ -1,0 +1,20 @@
+{
+  "results": [
+    {
+      "id": "https://openalex.org/W1",
+      "doi": "https://doi.org/10.1007/s11704-024-40231-1",
+      "title": "A survey on large language model based autonomous agents",
+      "authorships": [{"author": {"display_name": "Lei Wang"}}, {"author": {"display_name": "Chen Ma"}}],
+      "publication_year": 2024,
+      "abstract_inverted_index": {"Autonomous": [0], "agents": [1], "use": [2], "LLMs": [3]}
+    },
+    {
+      "id": "https://openalex.org/W2",
+      "doi": null,
+      "title": "A record with no DOI and no abstract",
+      "authorships": [],
+      "publication_year": 2023,
+      "abstract_inverted_index": null
+    }
+  ]
+}

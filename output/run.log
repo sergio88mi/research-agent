@@ -1,2 +1,5 @@
 2026-09-09 08:59:45,856 | INFO | research_agent | research_agent skeleton running | question='test question'
 2026-09-09 08:59:45,856 | INFO | research_agent | Stage 0 complete: package imports, configuration and logging verified.
+2026-09-10 08:21:59,353 | INFO | research_agent | Stage 1 run | query='hallucination reduction in large language model agents'
+2026-09-10 08:21:59,353 | INFO | research_agent.retrieval | retrieving | subquestion=1 | query='hallucination reduction in large language model agents'
+2026-09-10 08:22:01,333 | INFO | research_agent.retrieval | retrieved | subquestion=1 | records=20 | with_abstract=20
