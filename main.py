@@ -1,34 +1,47 @@
 """
 Entry point.
 
-Stage 1: a hard-coded query goes to OpenAlex through the Retrieval Agent and
-the results are printed. Nothing is planned or judged yet - the point of
-building this first is to prove the pipeline's plumbing before any LLM is
-involved (build order follows risk, proposal section 6).
+Stage 2: retrieval -> de-duplication -> Crossref verification -> saved brief.
+Still no LLM: this proves the deterministic spine (search, validate, store)
+works end to end before any judgement is layered on top (build order follows
+risk - proposal section 6).
 
-Usage:  python main.py            (uses the built-in Stage 1 query)
-        python main.py "query"    (search for your own words)
+Usage:  python main.py            (built-in query)
+        python main.py "query"
 """
 import sys
 
+from agents import validation
 from agents.logging_setup import setup
-from agents.models import SubQuestion
+from agents.models import Brief, SubQuestion
 from agents.retrieval_agent import RetrievalAgent
+from agents.storage import save_brief
 
-STAGE1_QUERY = "hallucination reduction in large language model agents"
+STAGE_QUERY = "hallucination reduction in large language model agents"
 
 if __name__ == "__main__":
     log = setup()
-    query = " ".join(sys.argv[1:]).strip() or STAGE1_QUERY
-    log.info("Stage 1 run | query=%r", query)
+    query = " ".join(sys.argv[1:]).strip() or STAGE_QUERY
+    log.info("Stage 2 run | query=%r", query)
 
-    sq = SubQuestion(id=1, text=query, search_query=query)
+    sq = SubQuestion(id=1, text=query, search_query=query, approved=True)
     papers = RetrievalAgent().retrieve_evidence(sq)
+    papers = validation.deduplicate_by_doi(papers)
+    papers = validation.validate_dois_and_metadata(papers)
 
-    print(f"\n{len(papers)} results for: {query}\n")
-    for i, p in enumerate(papers, 1):
-        first_author = p.authors[0] if p.authors else "unknown"
-        has_abstract = "abstract" if p.abstract else "NO abstract"
-        print(f"{i:2d}. [{p.year}] {p.title[:80]}")
-        print(f"     {first_author} | DOI: {p.doi or 'none'} | {has_abstract}")
-    print("\nStage 1 complete.")
+    brief = Brief(
+        research_question=query,
+        subquestions=[sq],
+        selected_papers=papers,
+        limitations=[
+            "Stage 2 output: no relevance scoring yet - every retrieved record is listed.",
+            "Single source (OpenAlex); abstracts only, no full text.",
+        ],
+    )
+    md_path, json_path = save_brief(brief)
+
+    verified = sum(1 for p in papers if p.doi_verified)
+    flagged = sum(1 for p in papers if p.doi_verified is False)
+    print(f"\n{len(papers)} unique papers | {verified} DOIs verified | {flagged} flagged unverified")
+    print(f"Saved: {md_path}\n       {json_path}")
+    print("\nStage 2 complete.")

@@ -3,3 +3,53 @@
 2026-09-10 08:21:59,353 | INFO | research_agent | Stage 1 run | query='hallucination reduction in large language model agents'
 2026-09-10 08:21:59,353 | INFO | research_agent.retrieval | retrieving | subquestion=1 | query='hallucination reduction in large language model agents'
 2026-09-10 08:22:01,333 | INFO | research_agent.retrieval | retrieved | subquestion=1 | records=20 | with_abstract=20
+2026-09-11 09:32:06,085 | INFO | research_agent | Stage 2 run | query='hallucination reduction in large language model agents'
+2026-09-11 09:32:06,085 | INFO | research_agent.retrieval | retrieving | subquestion=1 | query='hallucination reduction in large language model agents'
+2026-09-11 09:32:06,088 | INFO | research_agent.retrieval | retrieved | subquestion=1 | records=20 | with_abstract=20
+2026-09-11 09:32:06,088 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-11 09:32:06,511 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2203.02155
+2026-09-11 09:32:07,032 | INFO | research_agent.validation | verify | match | 10.1007/s11704-026-60308-3
+2026-09-11 09:32:07,438 | INFO | research_agent.validation | verify | match | 10.1017/s0140525x12000477
+2026-09-11 09:32:07,837 | INFO | research_agent.validation | verify | match | 10.2196/45312
+2026-09-11 09:32:08,237 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2204.14198
+2026-09-11 09:32:08,615 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.findings-acl.212
+2026-09-11 09:32:08,998 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.01219
+2026-09-11 09:32:09,494 | INFO | research_agent.validation | verify | match | 10.1162/coli.a.16
+2026-09-11 09:32:09,881 | INFO | research_agent.validation | verify | match | 10.18653/v1/2021.findings-emnlp.320
+2026-09-11 09:32:10,283 | INFO | research_agent.validation | verify | match | 10.1038/s41586-023-06924-6
+2026-09-11 09:32:10,715 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v38i16.29771
+2026-09-11 09:32:11,341 | INFO | research_agent.validation | verify | match | 10.1039/d4sc03921a
+2026-09-11 09:32:11,739 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.06435
+2026-09-11 09:32:12,133 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2402.06196
+2026-09-11 09:32:12,526 | INFO | research_agent.validation | verify | match | 10.36227/techrxiv.23589741.v1
+2026-09-11 09:32:12,924 | INFO | research_agent.validation | verify | match | 10.3389/frai.2025.1622292
+2026-09-11 09:32:13,313 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.03109
+2026-09-11 09:32:13,833 | INFO | research_agent.validation | verify | match | 10.1007/s10462-024-10888-y
+2026-09-11 09:32:14,227 | INFO | research_agent.validation | verify | match | 10.1038/s41562-024-01882-z
+2026-09-11 09:32:14,613 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.10169
+2026-09-11 09:32:14,614 | INFO | research_agent.validation | verify summary | {'verified': 13, 'flagged': 7, 'unchecked': 0}
+2026-09-14 17:06:15,904 | INFO | research_agent | Stage 2 run | query='hallucination reduction in large language model agents'
+2026-09-14 17:06:15,905 | INFO | research_agent.retrieval | retrieving | subquestion=1 | query='hallucination reduction in large language model agents'
+2026-09-14 17:06:15,907 | INFO | research_agent.retrieval | retrieved | subquestion=1 | records=20 | with_abstract=20
+2026-09-14 17:06:15,907 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-14 17:06:15,908 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2203.02155
+2026-09-14 17:06:15,908 | INFO | research_agent.validation | verify | match | 10.1007/s11704-026-60308-3
+2026-09-14 17:06:15,909 | INFO | research_agent.validation | verify | match | 10.1017/s0140525x12000477
+2026-09-14 17:06:15,909 | INFO | research_agent.validation | verify | match | 10.2196/45312
+2026-09-14 17:06:15,909 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2204.14198
+2026-09-14 17:06:15,910 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.findings-acl.212
+2026-09-14 17:06:15,910 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.01219
+2026-09-14 17:06:15,911 | INFO | research_agent.validation | verify | match | 10.1162/coli.a.16
+2026-09-14 17:06:15,911 | INFO | research_agent.validation | verify | match | 10.18653/v1/2021.findings-emnlp.320
+2026-09-14 17:06:15,911 | INFO | research_agent.validation | verify | match | 10.1038/s41586-023-06924-6
+2026-09-14 17:06:15,911 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v38i16.29771
+2026-09-14 17:06:15,913 | INFO | research_agent.validation | verify | match | 10.1039/d4sc03921a
+2026-09-14 17:06:15,913 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.06435
+2026-09-14 17:06:15,913 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2402.06196
+2026-09-14 17:06:15,914 | INFO | research_agent.validation | verify | match | 10.36227/techrxiv.23589741.v1
+2026-09-14 17:06:15,914 | INFO | research_agent.validation | verify | match | 10.3389/frai.2025.1622292
+2026-09-14 17:06:15,914 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.03109
+2026-09-14 17:06:15,915 | INFO | research_agent.validation | verify | match | 10.1007/s10462-024-10888-y
+2026-09-14 17:06:15,915 | INFO | research_agent.validation | verify | match | 10.1038/s41562-024-01882-z
+2026-09-14 17:06:15,916 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.10169
+2026-09-14 17:06:15,916 | INFO | research_agent.validation | verify summary | {'verified': 13, 'flagged': 7, 'unchecked': 0}
