@@ -13,7 +13,7 @@ load_dotenv()  # reads .env if present; environment variables still win
 
 # --- LLM ---------------------------------------------------------------------
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
 # Provider endpoint is kept here (not in the client) so a different hosted model
 # could be substituted by changing configuration, as the proposal requires.
 GEMINI_ENDPOINT = (

@@ -53,3 +53,89 @@
 2026-09-14 17:06:15,915 | INFO | research_agent.validation | verify | match | 10.1038/s41562-024-01882-z
 2026-09-14 17:06:15,916 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.10169
 2026-09-14 17:06:15,916 | INFO | research_agent.validation | verify summary | {'verified': 13, 'flagged': 7, 'unchecked': 0}
+2026-09-14 17:36:52,198 | INFO | research_agent.orchestrator | run | question='What approaches reduce hallucination in LLM-based autonomous agents?'
+2026-09-14 17:36:52,198 | INFO | research_agent.planning | planning | question='What approaches reduce hallucination in LLM-based autonomous agents?' | feedback=''
+2026-09-15 08:26:00,691 | INFO | research_agent.orchestrator | run | question='What approaches reduce hallucination in LLM-based autonomous agents?'
+2026-09-15 08:26:00,692 | INFO | research_agent.planning | planning | question='What approaches reduce hallucination in LLM-based autonomous agents?' | feedback=''
+2026-09-15 08:26:08,194 | INFO | research_agent.llm | llm | prompt_chars=611 | response_chars=1280
+2026-09-15 08:26:08,197 | INFO | research_agent.planning | planned | 1 | What retrieval-augmented generation and external tool-integration frameworks reduce hallucination in autonomous LLM agents? | query='retrieval augmented generation tool integration reduce hallucination llm agents'
+2026-09-15 08:26:08,198 | INFO | research_agent.planning | planned | 2 | How do self-reflection, planning feedback loops, and multi-agent consensus mechanisms mitigate unfaithful reasoning? | query='self reflection multi agent collaboration reduce hallucination autonomous reasoning'
+2026-09-15 08:26:08,198 | INFO | research_agent.planning | planned | 3 | Which fine-tuning, alignment, and constrained decoding methods specifically target hallucination reduction in agentic workflows? | query='reinforcement learning alignment fine tuning decoding hallucination reduction agents'
+2026-09-15 08:26:08,198 | INFO | research_agent.planning | planned | 4 | How are hallucinations in autonomous agents benchmarked, detected, and evaluated during long-horizon tasks? | query='benchmarking detecting hallucination evaluation metrics autonomous language model agents'
+2026-09-15 10:55:40,903 | INFO | research_agent.orchestrator | review1 | decision=approve | feedback=''
+2026-09-15 10:55:40,905 | INFO | research_agent.retrieval | retrieving | subquestion=1 | query='retrieval augmented generation tool integration reduce hallucination llm agents'
+2026-09-15 10:55:42,641 | INFO | research_agent.retrieval | retrieved | subquestion=1 | records=20 | with_abstract=19
+2026-09-15 10:55:42,641 | INFO | research_agent.retrieval | retrieving | subquestion=2 | query='self reflection multi agent collaboration reduce hallucination autonomous reasoning'
+2026-09-15 10:55:43,949 | INFO | research_agent.retrieval | retrieved | subquestion=2 | records=20 | with_abstract=20
+2026-09-15 10:55:43,949 | INFO | research_agent.retrieval | retrieving | subquestion=3 | query='reinforcement learning alignment fine tuning decoding hallucination reduction agents'
+2026-09-15 10:55:44,817 | INFO | research_agent.retrieval | retrieved | subquestion=3 | records=20 | with_abstract=20
+2026-09-15 10:55:44,817 | INFO | research_agent.retrieval | retrieving | subquestion=4 | query='benchmarking detecting hallucination evaluation metrics autonomous language model agents'
+2026-09-15 10:55:45,905 | INFO | research_agent.retrieval | retrieved | subquestion=4 | records=20 | with_abstract=20
+2026-09-15 10:55:45,905 | INFO | research_agent.validation | deduplicate | in=80 | out=65
+2026-09-15 10:55:46,457 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2312.10997
+2026-09-15 10:55:47,001 | INFO | research_agent.validation | verify | match | 10.18653/v1/2023.emnlp-main.322
+2026-09-15 10:55:47,425 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.naacl-long.219
+2026-09-15 10:55:47,955 | INFO | research_agent.validation | verify | match | 10.1038/s41591-024-03425-5
+2026-09-15 10:55:48,426 | INFO | research_agent.validation | verify | match | 10.1016/j.aei.2025.103212
+2026-09-15 10:55:48,939 | INFO | research_agent.validation | verify | match | 10.1038/s41746-025-01519-z
+2026-09-15 10:55:49,441 | INFO | research_agent.validation | verify | match | 10.1093/jamia/ocaf008
+2026-09-15 10:55:49,899 | INFO | research_agent.validation | verify | match | 10.1145/3728894
+2026-09-15 10:55:50,397 | INFO | research_agent.validation | verify | match | 10.18653/v1/2023.emnlp-main.187
+2026-09-15 10:55:50,904 | INFO | research_agent.validation | verify | match | 10.1145/3605764.3623985
+2026-09-15 10:55:50,905 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.01219
+2026-09-15 10:55:50,906 | INFO | research_agent.validation | verify | match | 10.1007/s11704-026-60308-3
+2026-09-15 10:55:51,367 | INFO | research_agent.validation | verify | match | 10.1111/jels.12413
+2026-09-15 10:55:51,369 | INFO | research_agent.validation | verify | match | 10.1007/s10462-024-10888-y
+2026-09-15 10:55:51,884 | INFO | research_agent.validation | verify | match | 10.1007/s12599-025-00945-3
+2026-09-15 10:55:52,470 | INFO | research_agent.validation | verify | match | 10.1145/3637528.3671458
+2026-09-15 10:55:52,472 | INFO | research_agent.validation | verify | match | 10.1162/coli.a.16
+2026-09-15 10:55:52,942 | INFO | research_agent.validation | verify | match | 10.3390/make6040116
+2026-09-15 10:55:53,443 | INFO | research_agent.validation | verify | match | 10.3390/ai6090226
+2026-09-15 10:55:53,911 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v38i17.29936
+2026-09-15 10:55:54,451 | INFO | research_agent.validation | verify | match | 10.1145/3586183.3606763
+2026-09-15 10:55:54,958 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2308.11432
+2026-09-15 10:55:55,399 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.naacl-long.15
+2026-09-15 10:55:55,882 | INFO | research_agent.validation | verify | match | 10.1109/mwc.016.2300600
+2026-09-15 10:55:56,324 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.07864
+2026-09-15 10:55:56,862 | INFO | research_agent.validation | verify | match | 10.3390/fi17090404
+2026-09-15 10:55:57,356 | INFO | research_agent.validation | verify | not in Crossref | 10.4230/lipics.cosit.2024.11
+2026-09-15 10:55:57,871 | INFO | research_agent.validation | verify | match | 10.1080/00207543.2025.2604311
+2026-09-15 10:55:58,356 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2402.01680
+2026-09-15 10:55:58,848 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v40i35.40229
+2026-09-15 10:55:59,301 | INFO | research_agent.validation | verify | match | 10.1038/s41586-025-10097-9
+2026-09-15 10:55:59,770 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.06794
+2026-09-15 10:56:00,285 | INFO | research_agent.validation | verify | match | 10.1109/access.2021.3140175
+2026-09-15 10:56:00,822 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2404.11584
+2026-09-15 10:56:01,371 | INFO | research_agent.validation | verify | match | 10.1007/s10462-025-11422-4
+2026-09-15 10:56:01,977 | INFO | research_agent.validation | verify | match | 10.1007/s44212-024-00060-w
+2026-09-15 10:56:02,447 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.05300
+2026-09-15 10:56:02,949 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.findings-emnlp.329
+2026-09-15 10:56:03,432 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.02427
+2026-09-15 10:56:03,948 | INFO | research_agent.validation | verify | match | 10.1186/s40537-021-00492-0
+2026-09-15 10:56:03,948 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v38i16.29771
+2026-09-15 10:56:04,385 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2202.03629
+2026-09-15 10:56:04,871 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.1803.01164
+2026-09-15 10:56:05,349 | INFO | research_agent.validation | verify | match | 10.1145/3617592
+2026-09-15 10:56:05,351 | INFO | research_agent.validation | verify | match | 10.1039/d4sc03921a
+2026-09-15 10:56:05,352 | INFO | research_agent.validation | verify | match | 10.3389/frai.2025.1622292
+2026-09-15 10:56:05,934 | INFO | research_agent.validation | verify | match | 10.1145/3743127
+2026-09-15 10:56:06,377 | INFO | research_agent.validation | verify | match | 10.3390/healthcare11202776
+2026-09-15 10:56:06,923 | INFO | research_agent.validation | verify | match | 10.3390/s21144758
+2026-09-15 10:56:06,923 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.06435
+2026-09-15 10:56:07,371 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v38i8.28777
+2026-09-15 10:56:07,830 | INFO | research_agent.validation | verify | match | 10.1007/s13347-025-00928-y
+2026-09-15 10:56:08,320 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2404.18930
+2026-09-15 10:56:08,877 | INFO | research_agent.validation | verify | match | 10.1007/s11704-024-40231-1
+2026-09-15 10:56:08,877 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2204.14198
+2026-09-15 10:56:08,877 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.03109
+2026-09-15 10:56:08,878 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2402.06196
+2026-09-15 10:56:09,357 | INFO | research_agent.validation | verify | match | 10.2196/57400
+2026-09-15 10:56:09,834 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2302.04761
+2026-09-15 10:56:10,323 | INFO | research_agent.validation | verify | match | 10.1145/3604237.3626869
+2026-09-15 10:56:10,324 | INFO | research_agent.validation | verify | match | 10.36227/techrxiv.23589741.v1
+2026-09-15 10:56:10,800 | INFO | research_agent.validation | verify | match | 10.1038/s43018-025-00991-6
+2026-09-15 10:56:11,226 | INFO | research_agent.validation | verify | not in Crossref | 10.4230/oasics.icpec.2023.9
+2026-09-15 10:56:11,703 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.findings-acl.738
+2026-09-15 10:56:12,228 | INFO | research_agent.validation | verify | match | 10.1007/s11280-024-01276-1
+2026-09-15 10:56:12,228 | INFO | research_agent.validation | verify summary | {'verified': 46, 'flagged': 19, 'unchecked': 0}
+2026-09-15 10:56:12,231 | INFO | research_agent.orchestrator | saved | output/brief-20260915-105612-what-approaches-reduce-hallucination-in-.md | output/brief-20260915-105612-what-approaches-reduce-hallucination-in-.json

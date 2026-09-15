@@ -1,0 +1,6 @@
+{"interpretation": "The question asks which techniques reduce hallucinated content in LLM-based agents.",
+ "subquestions": [
+   {"text": "What retrieval-augmented methods reduce hallucination?", "search_query": "retrieval augmented generation hallucination reduction language models"},
+   {"text": "How does self-verification or reflection reduce hallucination?", "search_query": "self verification reflection hallucination large language model agents"},
+   {"text": "What evaluation benchmarks measure hallucination?", "search_query": "hallucination benchmark evaluation large language models"}
+ ]}
