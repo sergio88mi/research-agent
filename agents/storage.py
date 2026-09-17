@@ -37,13 +37,29 @@ def save_brief(brief: Brief) -> Tuple[str, str]:
         for sq in brief.subquestions:
             lines.append(f"{sq.id}. {sq.text}  \n   *query:* `{sq.search_query}`")
         lines.append("")
+    # Assessments are joined to papers by DOI (or title when there is none), so the
+    # brief can show *why* each paper was kept - the score alone is not explainable.
+    by_key = {(a.paper_doi or a.paper_title).strip().lower(): a for a in brief.assessments}
+
     lines += ["## Selected papers", ""]
     for p in brief.selected_papers:
         flag = {True: "verified", False: "UNVERIFIED", None: "unchecked"}[p.doi_verified]
         authors = ", ".join(p.authors[:3]) + (" et al." if len(p.authors) > 3 else "")
         doi = f"https://doi.org/{p.doi}" if p.doi else "no DOI"
-        lines.append(f"- **{p.title}** ({p.year}) — {authors}. {doi} — DOI {flag}")
+        line = f"- **{p.title}** ({p.year}) — {authors}. {doi} — DOI {flag}"
+        a = by_key.get((p.doi or p.title).strip().lower())
+        if a:
+            line += f"  \n  *sub-question {a.subquestion_id}, relevance {a.relevance_score}/5:* {a.reason}"
+        lines.append(line)
     lines.append("")
+
+    dropped = [a for a in brief.assessments if not a.selected]
+    if dropped:
+        lines += [f"## Excluded after relevance screening ({len(dropped)})", ""]
+        for a in dropped:
+            lines.append(f"- {a.paper_title} — sub-question {a.subquestion_id}, "
+                         f"score {a.relevance_score}/5: {a.reason}")
+        lines.append("")
     if brief.summaries:
         lines += ["## Summaries", ""] + [f"- {s}" for s in brief.summaries] + [""]
     if brief.themes:

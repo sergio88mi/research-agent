@@ -1,0 +1,5 @@
+{"scores": [
+  {"index": 1, "relevance_score": 5, "reason": "The abstract proposes a retrieval-augmented method and reports reduced hallucination in agent outputs."},
+  {"index": 2, "relevance_score": 2, "reason": "The abstract concerns image captioning quality and only mentions language models in passing."},
+  {"index": 3, "relevance_score": 3, "reason": "Abstract is missing; the title alone suggests a survey of grounding techniques, rated from the title only."}
+]}

@@ -15,6 +15,7 @@ loudly instead of continuing on a broken object.
 """
 import json
 import logging
+import time
 from typing import Type, TypeVar
 
 import requests
@@ -29,6 +30,43 @@ T = TypeVar("T", bound=BaseModel)
 
 class LLMError(RuntimeError):
     pass
+
+
+# Failures that mean "the service is busy", not "the request is wrong".
+# Found the hard way during Stage 4 (see evidence/remediation_log.md #3, #4):
+# one run died on HTTP 503 "high demand", the next on a read timeout while the
+# same overloaded service took >60s to reply. Both are retried with a short
+# back-off. Anything else (400, 403, 404) is a real error and still fails
+# immediately, so a bad key or model name is never silently retried.
+_TRANSIENT_STATUSES = {429, 503}
+_TRANSIENT_EXCEPTIONS = (requests.Timeout, requests.ConnectionError)
+
+
+def _post_with_retry(payload: dict) -> requests.Response:
+    """POST to Gemini, retrying transient failures with exponential back-off."""
+    for attempt in range(config.LLM_TRANSIENT_RETRIES + 1):
+        problem = None
+        try:
+            response = requests.post(
+                config.GEMINI_ENDPOINT,
+                params={"key": config.GEMINI_API_KEY},
+                json=payload,
+                timeout=config.LLM_TIMEOUT_SECONDS,
+            )
+            if response.status_code == 200:
+                return response
+            if response.status_code not in _TRANSIENT_STATUSES:
+                raise LLMError(f"Gemini returned HTTP {response.status_code}: {response.text[:300]}")
+            problem = f"HTTP {response.status_code}"
+        except _TRANSIENT_EXCEPTIONS as exc:
+            problem = type(exc).__name__          # e.g. ReadTimeout, ConnectionError
+
+        if attempt < config.LLM_TRANSIENT_RETRIES:
+            wait = config.LLM_BACKOFF_SECONDS * (2 ** attempt)
+            log.warning("llm | %s (transient) - retry %d/%d in %ds",
+                        problem, attempt + 1, config.LLM_TRANSIENT_RETRIES, wait)
+            time.sleep(wait)
+    raise LLMError(f"Gemini unavailable after {config.LLM_TRANSIENT_RETRIES} retries (last problem: {problem})")
 
 
 def generate(prompt: str, json_mode: bool = True, temperature: float = 0.2) -> str:
@@ -49,14 +87,7 @@ def generate(prompt: str, json_mode: bool = True, temperature: float = 0.2) -> s
         # Ask the model to emit JSON only - reduces (does not eliminate) parse failures.
         payload["generationConfig"]["responseMimeType"] = "application/json"
 
-    response = requests.post(
-        config.GEMINI_ENDPOINT,
-        params={"key": config.GEMINI_API_KEY},
-        json=payload,
-        timeout=60,
-    )
-    if response.status_code != 200:
-        raise LLMError(f"Gemini returned HTTP {response.status_code}: {response.text[:300]}")
+    response = _post_with_retry(payload)
     data = response.json()
     try:
         text = data["candidates"][0]["content"]["parts"][0]["text"]

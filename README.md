@@ -9,17 +9,17 @@ at two review points.
 Individual implementation (Sergei Misjura) of the Group D design proposal,
 Intelligent Agents, University of Essex Online, 2026.
 
-*README is completed as the build progresses; this is the Stage 0 skeleton.*
+*README is completed as the build progresses; current build: Stage 4.*
 
 ## Status
 
 | Stage | Deliverable | Status |
 |---|---|---|
 | 0 | Skeleton, configuration, data models, logging | done |
-| 1 | OpenAlex retrieval | pending |
-| 2 | DOI de-duplication, Crossref validation, storage | pending |
-| 3 | Planning agent + human review 1 | pending |
-| 4 | Relevance scoring and filtering | pending |
+| 1 | OpenAlex retrieval | done |
+| 2 | DOI de-duplication, Crossref validation, storage | done |
+| 3 | Planning agent + human review 1 | done |
+| 4 | Relevance scoring and filtering | done |
 | 5 | Retrieval threshold, one-retry reformulation, evidence review | pending |
 | 6 | Synthesis and final brief | pending |
 

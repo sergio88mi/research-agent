@@ -21,6 +21,9 @@ GEMINI_ENDPOINT = (
     f"{GEMINI_MODEL}:generateContent"
 )
 LLM_REPAIR_RETRIES = 1  # one repair attempt when the model returns invalid JSON
+LLM_TRANSIENT_RETRIES = 3       # retries on HTTP 429/503, timeouts and dropped connections
+LLM_BACKOFF_SECONDS = 2         # wait 2s, 4s, 8s between those retries
+LLM_TIMEOUT_SECONDS = 90        # a 10-paper scoring prompt can take >60s when the service is busy
 
 # --- Literature search --------------------------------------------------------
 OPENALEX_EMAIL = os.getenv("OPENALEX_EMAIL", "")
@@ -35,6 +38,8 @@ RETRIEVAL_THRESHOLD = 5         # minimum usable records (with abstracts) per su
 MAX_REFORMULATIONS = 1          # one automatic query reformulation per sub-question
 MAX_SCOPE_REVISIONS = 1         # one researcher-triggered scope revision per run
 RELEVANCE_CUTOFF = 3            # keep papers scored >= 3 on a 1-5 scale
+EVAL_BATCH_SIZE = 10            # papers scored per LLM call (bounded prompt size, fewer calls)
+EVAL_ABSTRACT_CHARS = 1200      # abstract is truncated to this many chars in the scoring prompt
 
 # --- Files --------------------------------------------------------------------
 OUTPUT_DIR = "output"
