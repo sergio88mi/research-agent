@@ -36,6 +36,8 @@ def save_brief(brief: Brief) -> Tuple[str, str]:
         lines += ["## Sub-questions", ""]
         for sq in brief.subquestions:
             lines.append(f"{sq.id}. {sq.text}  \n   *query:* `{sq.search_query}`")
+            if sq.previous_query:
+                lines.append(f"   *reformulated once from:* `{sq.previous_query}`")
         lines.append("")
     # Assessments are joined to papers by DOI (or title when there is none), so the
     # brief can show *why* each paper was kept - the score alone is not explainable.

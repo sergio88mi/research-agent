@@ -1,10 +1,11 @@
 """
 Entry point.
 
-Stage 4: the Planning Agent (Gemini) decomposes the question, the researcher
-approves or revises the plan, every sub-question is searched and verified, and
-the Evaluation Agent scores each paper's relevance so that only real evidence
-reaches the brief.
+Stage 5: the full bounded-autonomy loop. The Planning Agent decomposes the
+question; the researcher approves the plan (review 1); each sub-question is
+searched, verified and screened for relevance, with one automatic query
+reformulation if a search falls short; the researcher then approves, trims,
+or rejects the evidence set (review 2 - one scope revision per run).
 
 Usage:  python main.py "your research question"
         python main.py                      (you will be prompted)
@@ -20,4 +21,4 @@ if __name__ == "__main__":
     ui = ResearcherInterface()
     question = " ".join(sys.argv[1:]).strip() or ui.submit_question()
     Orchestrator(interface=ui).run(question)
-    print("\nStage 4 complete.")
+    print("\nStage 5 complete.")

@@ -45,7 +45,7 @@ _TRANSIENT_EXCEPTIONS = (requests.Timeout, requests.ConnectionError)
 def _post_with_retry(payload: dict) -> requests.Response:
     """POST to Gemini, retrying transient failures with exponential back-off."""
     for attempt in range(config.LLM_TRANSIENT_RETRIES + 1):
-        problem = None
+        problem, server_wait, detail = None, None, ""
         try:
             response = requests.post(
                 config.GEMINI_ENDPOINT,
@@ -58,15 +58,49 @@ def _post_with_retry(payload: dict) -> requests.Response:
             if response.status_code not in _TRANSIENT_STATUSES:
                 raise LLMError(f"Gemini returned HTTP {response.status_code}: {response.text[:300]}")
             problem = f"HTTP {response.status_code}"
+            detail = _error_message(response)     # e.g. which quota a 429 refers to
+            if "PerDay" in detail:
+                # A daily quota will not recover within any back-off window - stop now, say so plainly.
+                raise LLMError("Gemini daily free-tier quota is exhausted for this model; it resets at "
+                               f"midnight Pacific time. Provider message: {detail}")
+            server_wait = _retry_after(response)  # provider's own advice, if given
         except _TRANSIENT_EXCEPTIONS as exc:
             problem = type(exc).__name__          # e.g. ReadTimeout, ConnectionError
 
         if attempt < config.LLM_TRANSIENT_RETRIES:
-            wait = config.LLM_BACKOFF_SECONDS * (2 ** attempt)
-            log.warning("llm | %s (transient) - retry %d/%d in %ds",
-                        problem, attempt + 1, config.LLM_TRANSIENT_RETRIES, wait)
+            wait = server_wait or config.LLM_BACKOFF_SECONDS * (2 ** attempt)
+            log.warning("llm | %s (transient) - retry %d/%d in %ds%s",
+                        problem, attempt + 1, config.LLM_TRANSIENT_RETRIES, wait,
+                        f" | {detail}" if detail else "")
             time.sleep(wait)
-    raise LLMError(f"Gemini unavailable after {config.LLM_TRANSIENT_RETRIES} retries (last problem: {problem})")
+    raise LLMError(f"Gemini unavailable after {config.LLM_TRANSIENT_RETRIES} retries "
+                   f"(last problem: {problem}{' - ' + detail if detail else ''})")
+
+
+def _error_message(response: requests.Response) -> str:
+    """Google's reason, plus the quota name(s) from error.details when it is a 429.
+
+    The message text is the same for the per-minute and per-day limits; only the
+    `quotaId` inside details (e.g. ...PerDayPerProjectPerModel-FreeTier) tells
+    which one was hit - and that decides whether to wait a minute or a day.
+    """
+    try:
+        err = response.json()["error"]
+        quotas = [v.get("quotaId", "") for d in err.get("details", [])
+                  for v in d.get("violations", []) if isinstance(v, dict)]
+        msg = str(err.get("message", ""))[:160]
+        return msg + (f" [quota: {', '.join(q for q in quotas if q)}]" if any(quotas) else "")
+    except Exception:
+        return response.text[:200].replace("\n", " ")
+
+
+def _retry_after(response: requests.Response) -> int:
+    """Seconds the provider asked us to wait (Retry-After header), capped; 0 if absent."""
+    value = response.headers.get("Retry-After", "")
+    try:
+        return min(int(float(value)), config.LLM_MAX_RETRY_AFTER_SECONDS) if value else 0
+    except ValueError:
+        return 0
 
 
 def generate(prompt: str, json_mode: bool = True, temperature: float = 0.2) -> str:

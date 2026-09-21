@@ -30,7 +30,8 @@ class SubQuestion(BaseModel):
     text: str
     search_query: str
     approved: bool = False
-    retried_once: bool = False   # enforces the one-reformulation cap
+    retried_once: bool = False           # enforces the one-reformulation cap
+    previous_query: Optional[str] = None  # kept when reformulated, so the brief can show both
 
 
 class Paper(BaseModel):

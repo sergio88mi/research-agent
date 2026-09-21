@@ -78,10 +78,24 @@ def test_papers_are_batched_per_subquestion(monkeypatch):
 
 
 class _Resp:
-    def __init__(self, status, text='{"candidates":[{"content":{"parts":[{"text":"ok"}]}}]}'):
-        self.status_code, self.text = status, text
+    def __init__(self, status, text='{"candidates":[{"content":{"parts":[{"text":"ok"}]}}]}', headers=None):
+        self.status_code, self.text, self.headers = status, text, headers or {}
     def json(self):
         return json.loads(self.text)
+
+
+def test_429_uses_retry_after_header_and_logs_quota_message(monkeypatch, caplog):
+    # Why: remediation #6 - a 429 must show Google's quota message and honour its Retry-After advice.
+    monkeypatch.setattr(config, "GEMINI_API_KEY", "test-key")
+    body = '{"error": {"code": 429, "message": "Quota exceeded for requests per minute"}}'
+    waits = []
+    with patch("agents.llm_client.requests.post",
+               side_effect=[_Resp(429, body, {"Retry-After": "7"}), _Resp(200)]), \
+         patch("agents.llm_client.time.sleep", side_effect=waits.append), \
+         patch("agents.cache.get", return_value=None), patch("agents.cache.put"):
+        assert llm_client.generate("p") == "ok"
+    assert waits == [7]
+    assert "Quota exceeded for requests per minute" in caplog.text
 
 
 def test_transient_503_is_retried_then_succeeds(monkeypatch):
@@ -109,12 +123,27 @@ def test_read_timeout_is_retried_then_succeeds(monkeypatch):
 
 def test_gives_up_after_configured_transient_retries(monkeypatch):
     monkeypatch.setattr(config, "GEMINI_API_KEY", "test-key")
+    monkeypatch.setattr(config, "LLM_TRANSIENT_RETRIES", 3)     # independent of the live setting
     with patch("agents.llm_client.requests.post", return_value=_Resp(503)) as post, \
          patch("agents.llm_client.time.sleep"), \
          patch("agents.cache.get", return_value=None), patch("agents.cache.put"):
         with pytest.raises(LLMError, match="after 3 retries"):
             llm_client.generate("p")
     assert post.call_count == 4                              # 1 attempt + 3 retries
+
+
+def test_daily_quota_stops_immediately_with_clear_message(monkeypatch):
+    # Why: remediation #7 - a per-day quota cannot recover in a back-off window; do not burn a minute retrying.
+    monkeypatch.setattr(config, "GEMINI_API_KEY", "test-key")
+    body = json.dumps({"error": {"code": 429, "message": "You exceeded your current quota", "details": [
+        {"@type": "type.googleapis.com/google.rpc.QuotaFailure",
+         "violations": [{"quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier"}]}]}})
+    with patch("agents.llm_client.requests.post", return_value=_Resp(429, body)) as post, \
+         patch("agents.llm_client.time.sleep") as sleep, \
+         patch("agents.cache.get", return_value=None), patch("agents.cache.put"):
+        with pytest.raises(LLMError, match="daily free-tier quota"):
+            llm_client.generate("p")
+    assert post.call_count == 1 and not sleep.called
 
 
 def test_non_transient_error_is_not_retried(monkeypatch):

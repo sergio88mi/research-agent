@@ -42,6 +42,25 @@ class ResearchPlan(BaseModel):
     subquestions: List[SubQuestion]
 
 
+class QueryResponse(BaseModel):
+    """JSON shape for a reformulated query."""
+    search_query: str
+
+
+_REFORMULATE_PROMPT = """You are refining one scholarly search query for a literature review.
+
+Research question: "{question}"
+Sub-question: "{subquestion}"
+Previous search query: "{previous}"
+Why it was not good enough: {reason}
+{constraints}
+Write ONE improved search query (5-10 keywords, no quotation marks, no boolean operators) that targets
+the sub-question more precisely. Use more specific or different terms than the previous query.
+
+Return ONLY JSON in this exact shape:
+{{"search_query": "..."}}"""
+
+
 _PLAN_PROMPT = """You are a research planning assistant helping a student begin a literature search.
 
 Research question: "{question}"
@@ -80,3 +99,22 @@ class PlanningAgent:
         """Review point 1 allows unlimited revision: correcting the decomposition
         before retrieval costs no search quota (proposal, section 4)."""
         return self.plan_research(question, feedback=feedback)
+
+    def reformulate_query(self, subquestion: SubQuestion, reason: str, question: str = "") -> SubQuestion:
+        """One improved query for a sub-question whose search fell short.
+
+        Returns a copy with the new query, the old one kept in `previous_query`,
+        and `retried_once=True` - the flag the orchestrator checks so that no
+        sub-question is reformulated twice (bounded autonomy, proposal section 4).
+        The caller supplies `reason`; the model only sees why the last query failed.
+        """
+        cons = f"User constraints (must be respected): {self.constraints}\n" if self.constraints else ""
+        prompt = _REFORMULATE_PROMPT.format(question=question, subquestion=subquestion.text,
+                                            previous=subquestion.search_query, reason=reason, constraints=cons)
+        new_query = llm_client.generate_json(prompt, QueryResponse).search_query.strip()
+        log.info("reformulated | subquestion=%d | old=%r | new=%r", subquestion.id, subquestion.search_query, new_query)
+        return subquestion.model_copy(update={
+            "search_query": new_query,
+            "previous_query": subquestion.search_query,
+            "retried_once": True,
+        })

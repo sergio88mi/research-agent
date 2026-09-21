@@ -9,7 +9,7 @@ at two review points.
 Individual implementation (Sergei Misjura) of the Group D design proposal,
 Intelligent Agents, University of Essex Online, 2026.
 
-*README is completed as the build progresses; current build: Stage 4.*
+*README is completed as the build progresses; current build: Stage 5.*
 
 ## Status
 
@@ -20,7 +20,7 @@ Intelligent Agents, University of Essex Online, 2026.
 | 2 | DOI de-duplication, Crossref validation, storage | done |
 | 3 | Planning agent + human review 1 | done |
 | 4 | Relevance scoring and filtering | done |
-| 5 | Retrieval threshold, one-retry reformulation, evidence review | pending |
+| 5 | Retrieval threshold, one-retry reformulation, evidence review | done |
 | 6 | Synthesis and final brief | pending |
 
 ## Quick start

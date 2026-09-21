@@ -552,3 +552,724 @@
 2026-09-17 09:45:58,307 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s11280-024-01276-1 | This paper focuses on personalization and user interaction in large language models without discussi
 2026-09-17 09:45:58,307 | INFO | research_agent.evaluation | evaluate summary | scored=65 | selected=24 | dropped=41 | cutoff=3
 2026-09-17 09:45:58,309 | INFO | research_agent.orchestrator | saved | output/brief-20260917-094558-what-approaches-reduce-hallucination-in-.md | output/brief-20260917-094558-what-approaches-reduce-hallucination-in-.json
+2026-09-17 17:05:51,537 | INFO | research_agent.orchestrator | run | question='What approaches reduce hallucination in LLM-based autonomous agents?'
+2026-09-17 17:05:51,538 | INFO | research_agent.planning | planning | question='What approaches reduce hallucination in LLM-based autonomous agents?' | feedback=''
+2026-09-17 17:05:51,538 | INFO | research_agent.planning | planned | 1 | What retrieval-augmented generation and external tool-integration frameworks reduce hallucination in autonomous LLM agents? | query='retrieval augmented generation tool integration reduce hallucination llm agents'
+2026-09-17 17:05:51,538 | INFO | research_agent.planning | planned | 2 | How do self-reflection, planning feedback loops, and multi-agent consensus mechanisms mitigate unfaithful reasoning? | query='self reflection multi agent collaboration reduce hallucination autonomous reasoning'
+2026-09-17 17:05:51,538 | INFO | research_agent.planning | planned | 3 | Which fine-tuning, alignment, and constrained decoding methods specifically target hallucination reduction in agentic workflows? | query='reinforcement learning alignment fine tuning decoding hallucination reduction agents'
+2026-09-17 17:05:51,538 | INFO | research_agent.planning | planned | 4 | How are hallucinations in autonomous agents benchmarked, detected, and evaluated during long-horizon tasks? | query='benchmarking detecting hallucination evaluation metrics autonomous language model agents'
+2026-09-17 17:05:56,480 | INFO | research_agent.orchestrator | review1 | decision=approve | feedback=''
+2026-09-17 17:05:56,481 | INFO | research_agent.retrieval | retrieving | subquestion=1 | query='retrieval augmented generation tool integration reduce hallucination llm agents'
+2026-09-17 17:05:56,485 | INFO | research_agent.retrieval | retrieved | subquestion=1 | records=20 | with_abstract=19
+2026-09-17 17:05:56,485 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 17:05:56,486 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2312.10997
+2026-09-17 17:05:56,486 | INFO | research_agent.validation | verify | match | 10.18653/v1/2023.emnlp-main.322
+2026-09-17 17:05:56,487 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.naacl-long.219
+2026-09-17 17:05:56,487 | INFO | research_agent.validation | verify | match | 10.1038/s41591-024-03425-5
+2026-09-17 17:05:56,488 | INFO | research_agent.validation | verify | match | 10.1016/j.aei.2025.103212
+2026-09-17 17:05:56,488 | INFO | research_agent.validation | verify | match | 10.1038/s41746-025-01519-z
+2026-09-17 17:05:56,489 | INFO | research_agent.validation | verify | match | 10.1093/jamia/ocaf008
+2026-09-17 17:05:56,489 | INFO | research_agent.validation | verify | match | 10.1145/3728894
+2026-09-17 17:05:56,490 | INFO | research_agent.validation | verify | match | 10.18653/v1/2023.emnlp-main.187
+2026-09-17 17:05:56,490 | INFO | research_agent.validation | verify | match | 10.1145/3605764.3623985
+2026-09-17 17:05:56,490 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.01219
+2026-09-17 17:05:56,491 | INFO | research_agent.validation | verify | match | 10.1007/s11704-026-60308-3
+2026-09-17 17:05:56,492 | INFO | research_agent.validation | verify | match | 10.1111/jels.12413
+2026-09-17 17:05:56,493 | INFO | research_agent.validation | verify | match | 10.1007/s10462-024-10888-y
+2026-09-17 17:05:56,493 | INFO | research_agent.validation | verify | match | 10.1007/s12599-025-00945-3
+2026-09-17 17:05:56,494 | INFO | research_agent.validation | verify | match | 10.1145/3637528.3671458
+2026-09-17 17:05:56,494 | INFO | research_agent.validation | verify | match | 10.1162/coli.a.16
+2026-09-17 17:05:56,495 | INFO | research_agent.validation | verify | match | 10.3390/make6040116
+2026-09-17 17:05:56,495 | INFO | research_agent.validation | verify | match | 10.3390/ai6090226
+2026-09-17 17:05:56,495 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v38i17.29936
+2026-09-17 17:05:56,495 | INFO | research_agent.validation | verify summary | {'verified': 18, 'flagged': 2, 'unchecked': 0}
+2026-09-17 17:05:56,495 | INFO | research_agent.evaluation | evaluating | subquestion=1 | batch=1/2 | papers=10
+2026-09-17 17:05:56,496 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2312.10997 | The paper reviews general RAG paradigms and their role in mitigating LLM hallucinations, providing u
+2026-09-17 17:05:56,496 | INFO | research_agent.evaluation | score | 2 | drop | 10.18653/v1/2023.emnlp-main.322 | The paper proposes a query-rewriting framework for retrieval-augmented LLMs in question-answering ta
+2026-09-17 17:05:56,496 | INFO | research_agent.evaluation | score | 3 | keep | 10.18653/v1/2024.naacl-long.219 | Rated from the title alone as the abstract contains no summary text, the paper explores using knowle
+2026-09-17 17:05:56,496 | INFO | research_agent.evaluation | score | 1 | drop | 10.1038/s41591-024-03425-5 | Rated from the title alone as no abstract is available, the paper focuses on reporting guidelines fo
+2026-09-17 17:05:56,496 | INFO | research_agent.evaluation | score | 2 | drop | 10.1016/j.aei.2025.103212 | The paper proposes a hybrid RAG framework for domain-centric question answering in smart manufacturi
+2026-09-17 17:05:56,496 | INFO | research_agent.evaluation | score | 2 | drop | 10.1038/s41746-025-01519-z | The paper studies RAG for medical fitness assessment and observes reduced hallucinations, but it tar
+2026-09-17 17:05:56,496 | INFO | research_agent.evaluation | score | 2 | drop | 10.1093/jamia/ocaf008 | The paper presents a systematic review of RAG applications in biomedicine, which does not address ha
+2026-09-17 17:05:56,496 | INFO | research_agent.evaluation | score | 2 | drop | 10.1145/3728894 | The paper investigates hallucination taxonomy and mitigation in repository-level code generation, wi
+2026-09-17 17:05:56,496 | INFO | research_agent.evaluation | score | 3 | keep | 10.18653/v1/2023.emnlp-main.187 | The paper introduces a benchmark for tool-augmented LLMs, providing relevant background on external 
+2026-09-17 17:05:56,496 | INFO | research_agent.evaluation | score | 1 | drop | 10.1145/3605764.3623985 | The paper focuses on security risks and indirect prompt injection attacks in LLM-integrated applicat
+2026-09-17 17:05:56,496 | INFO | research_agent.evaluation | evaluating | subquestion=1 | batch=2/2 | papers=10
+2026-09-17 17:05:56,497 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2309.01219 | This paper provides a general survey on LLM hallucination mitigation, offering useful background con
+2026-09-17 17:05:56,497 | INFO | research_agent.evaluation | score | 2 | drop | 10.1007/s11704-026-60308-3 | This paper offers a broad overview of LLM development and agentic reasoning tangentially, but it doe
+2026-09-17 17:05:56,497 | INFO | research_agent.evaluation | score | 3 | keep | 10.1111/jels.12413 | This paper empirically evaluates how RAG reduces hallucinations in commercial AI legal tools, provid
+2026-09-17 17:05:56,497 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s10462-024-10888-y | This paper presents a general survey of LLM architectures and downstream applications without addres
+2026-09-17 17:05:56,497 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s12599-025-00945-3 | This paper addresses general user dissatisfaction with enterprise search systems and does not discus
+2026-09-17 17:05:56,497 | INFO | research_agent.evaluation | score | 1 | drop | 10.1145/3637528.3671458 | This paper focuses on bias and fairness issues in information retrieval systems, which is unrelated 
+2026-09-17 17:05:56,497 | INFO | research_agent.evaluation | score | 3 | keep | 10.1162/coli.a.16 | This paper surveys LLM hallucination mitigation strategies generally, serving as useful context but 
+2026-09-17 17:05:56,497 | INFO | research_agent.evaluation | score | 3 | keep | 10.3390/make6040116 | This paper investigates RAG implementation in medical chatbots to improve response generation and fa
+2026-09-17 17:05:56,497 | INFO | research_agent.evaluation | score | 3 | keep | 10.3390/ai6090226 | This paper reviews RAG architectural variants used to reduce hallucinations and ensure factual consi
+2026-09-17 17:05:56,497 | INFO | research_agent.evaluation | score | 3 | keep | 10.1609/aaai.v38i17.29936 | This paper proposes a retrieval-based experiential learning framework for autonomous LLM agents, whi
+2026-09-17 17:05:56,497 | INFO | research_agent.evaluation | evaluate summary | scored=20 | selected=9 | dropped=11 | cutoff=3
+2026-09-17 17:05:56,497 | INFO | research_agent.retrieval | retrieving | subquestion=2 | query='self reflection multi agent collaboration reduce hallucination autonomous reasoning'
+2026-09-17 17:05:56,500 | INFO | research_agent.retrieval | retrieved | subquestion=2 | records=20 | with_abstract=20
+2026-09-17 17:05:56,500 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 17:05:56,500 | INFO | research_agent.validation | verify | match | 10.1145/3586183.3606763
+2026-09-17 17:05:56,501 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2308.11432
+2026-09-17 17:05:56,501 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.naacl-long.15
+2026-09-17 17:05:56,501 | INFO | research_agent.validation | verify | match | 10.1109/mwc.016.2300600
+2026-09-17 17:05:56,501 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.07864
+2026-09-17 17:05:56,502 | INFO | research_agent.validation | verify | match | 10.3390/fi17090404
+2026-09-17 17:05:56,502 | INFO | research_agent.validation | verify | not in Crossref | 10.4230/lipics.cosit.2024.11
+2026-09-17 17:05:56,502 | INFO | research_agent.validation | verify | match | 10.1080/00207543.2025.2604311
+2026-09-17 17:05:56,503 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2402.01680
+2026-09-17 17:05:56,503 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v40i35.40229
+2026-09-17 17:05:56,503 | INFO | research_agent.validation | verify | match | 10.1038/s41586-025-10097-9
+2026-09-17 17:05:56,503 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.06794
+2026-09-17 17:05:56,504 | INFO | research_agent.validation | verify | match | 10.1109/access.2021.3140175
+2026-09-17 17:05:56,504 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2404.11584
+2026-09-17 17:05:56,505 | INFO | research_agent.validation | verify | match | 10.1007/s10462-025-11422-4
+2026-09-17 17:05:56,506 | INFO | research_agent.validation | verify | match | 10.1007/s44212-024-00060-w
+2026-09-17 17:05:56,506 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.05300
+2026-09-17 17:05:56,506 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.findings-emnlp.329
+2026-09-17 17:05:56,506 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.02427
+2026-09-17 17:05:56,506 | INFO | research_agent.validation | verify summary | {'verified': 11, 'flagged': 8, 'unchecked': 0}
+2026-09-17 17:05:56,506 | INFO | research_agent.evaluation | evaluating | subquestion=2 | batch=1/2 | papers=10
+2026-09-17 17:05:56,507 | INFO | research_agent.evaluation | score | 3 | keep | 10.1145/3586183.3606763 | The abstract discusses an agent architecture incorporating reflection and dynamic planning, but it d
+2026-09-17 17:05:56,507 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2308.11432 | This broad survey introduces LLM-based autonomous agent frameworks and applications without specific
+2026-09-17 17:05:56,507 | INFO | research_agent.evaluation | score | 2 | drop | 10.18653/v1/2024.naacl-long.15 | The abstract is missing, and the title indicates a focus on multi-persona self-collaboration without
+2026-09-17 17:05:56,507 | INFO | research_agent.evaluation | score | 2 | drop | 10.1109/mwc.016.2300600 | The abstract applies agent planning and reflection specifically to 6G communication tasks rather tha
+2026-09-17 17:05:56,507 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2309.07864 | This survey provides a general overview of LLM-based agents without addressing hallucination reducti
+2026-09-17 17:05:56,507 | INFO | research_agent.evaluation | score | 2 | drop | 10.3390/fi17090404 | The abstract presents a broad review of agentic AI architectures including planning and reflection, 
+2026-09-17 17:05:56,507 | INFO | research_agent.evaluation | score | 1 | drop | 10.4230/lipics.cosit.2024.11 | The abstract proposes a framework for deterministic software artifacts from LLMs and does not addres
+2026-09-17 17:05:56,507 | INFO | research_agent.evaluation | score | 2 | drop | 10.1080/00207543.2025.2604311 | The abstract investigates multi-agent consensus-seeking specifically for supply chain management wit
+2026-09-17 17:05:56,507 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2402.01680 | This survey covers general LLM-based multi-agent systems and communication mechanisms, but does not 
+2026-09-17 17:05:56,507 | INFO | research_agent.evaluation | score | 5 | keep | 10.1609/aaai.v40i35.40229 | The abstract directly addresses hallucination mitigation by proposing a framework that combines intr
+2026-09-17 17:05:56,507 | INFO | research_agent.evaluation | evaluating | subquestion=2 | batch=2/2 | papers=9
+2026-09-17 17:05:56,508 | INFO | research_agent.evaluation | score | 3 | keep | 10.1038/s41586-025-10097-9 | The paper describes a multi-agent system designed for clinical diagnostic decision support with veri
+2026-09-17 17:05:56,508 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2309.06794 | The abstract presents a broad review of hallucination taxonomies and improvement approaches in gener
+2026-09-17 17:05:56,508 | INFO | research_agent.evaluation | score | 1 | drop | 10.1109/access.2021.3140175 | The paper focuses on the taxonomy and applications of the Metaverse and does not cover large languag
+2026-09-17 17:05:56,508 | INFO | research_agent.evaluation | score | 4 | keep | 10.48550/arxiv.2404.11584 | The paper surveys single- and multi-agent architectures, specifically detailing planning, execution,
+2026-09-17 17:05:56,508 | INFO | research_agent.evaluation | score | 3 | keep | 10.1007/s10462-025-11422-4 | The abstract provides a high-level survey of agentic AI architectures and paradigms without explicit
+2026-09-17 17:05:56,508 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s44212-024-00060-w | The paper focuses on generative AI applications for urban digital twins and smart city planning, whi
+2026-09-17 17:05:56,508 | INFO | research_agent.evaluation | score | 5 | keep | 10.48550/arxiv.2307.05300 | The paper directly demonstrates how a multi-persona self-collaboration and reflection mechanism in l
+2026-09-17 17:05:56,508 | INFO | research_agent.evaluation | score | 4 | keep | 10.18653/v1/2024.findings-emnlp.329 | The paper proposes a multi-agent collaboration framework with multi-round discussions and confidence
+2026-09-17 17:05:56,508 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2309.02427 | The paper outlines a general cognitive architecture framework for language agents covering decision-
+2026-09-17 17:05:56,508 | INFO | research_agent.evaluation | evaluate summary | scored=19 | selected=9 | dropped=10 | cutoff=3
+2026-09-17 17:05:56,508 | INFO | research_agent.retrieval | retrieving | subquestion=3 | query='reinforcement learning alignment fine tuning decoding hallucination reduction agents'
+2026-09-17 17:05:56,510 | INFO | research_agent.retrieval | retrieved | subquestion=3 | records=20 | with_abstract=20
+2026-09-17 17:05:56,510 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 17:05:56,511 | INFO | research_agent.validation | verify | match | 10.1186/s40537-021-00492-0
+2026-09-17 17:05:56,511 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v38i16.29771
+2026-09-17 17:05:56,511 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2202.03629
+2026-09-17 17:05:56,511 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.1803.01164
+2026-09-17 17:05:56,512 | INFO | research_agent.validation | verify | match | 10.1145/3617592
+2026-09-17 17:05:56,513 | INFO | research_agent.validation | verify | match | 10.1039/d4sc03921a
+2026-09-17 17:05:56,514 | INFO | research_agent.validation | verify | match | 10.3389/frai.2025.1622292
+2026-09-17 17:05:56,514 | INFO | research_agent.validation | verify | match | 10.1145/3743127
+2026-09-17 17:05:56,514 | INFO | research_agent.validation | verify | match | 10.3390/healthcare11202776
+2026-09-17 17:05:56,515 | INFO | research_agent.validation | verify | match | 10.3390/s21144758
+2026-09-17 17:05:56,515 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.06435
+2026-09-17 17:05:56,516 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v38i8.28777
+2026-09-17 17:05:56,516 | INFO | research_agent.validation | verify | match | 10.1007/s13347-025-00928-y
+2026-09-17 17:05:56,516 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2404.18930
+2026-09-17 17:05:56,516 | INFO | research_agent.validation | verify summary | {'verified': 10, 'flagged': 4, 'unchecked': 0}
+2026-09-17 17:05:56,516 | INFO | research_agent.evaluation | evaluating | subquestion=3 | batch=1/2 | papers=10
+2026-09-17 17:05:56,517 | INFO | research_agent.evaluation | score | 1 | drop | 10.1186/s40537-021-00492-0 | The abstract discusses text data augmentation techniques for deep learning in NLP without addressing
+2026-09-17 17:05:56,517 | INFO | research_agent.evaluation | score | 3 | keep | 10.1609/aaai.v38i16.29771 | The abstract discusses alignment via Direct Preference Optimization to prevent hallucinations in vis
+2026-09-17 17:05:56,517 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2202.03629 | The abstract provides a general survey of hallucination measurement and mitigation techniques in nat
+2026-09-17 17:05:56,517 | INFO | research_agent.evaluation | score | 1 | drop | 10.48550/arxiv.1803.01164 | The abstract presents a broad historical survey of deep learning approaches across various domains a
+2026-09-17 17:05:56,517 | INFO | research_agent.evaluation | score | 2 | drop | 10.1145/3617592 | The abstract mentions object hallucination as a challenge in image captioning, but it does not addre
+2026-09-17 17:05:56,517 | INFO | research_agent.evaluation | score | 2 | drop | 10.1039/d4sc03921a | The abstract reviews autonomous agent workflows and LLM capabilities in chemistry and other scientif
+2026-09-17 17:05:56,517 | INFO | research_agent.evaluation | score | 3 | keep | 10.3389/frai.2025.1622292 | The abstract investigates LLM hallucination attribution and prompting strategies, providing useful c
+2026-09-17 17:05:56,517 | INFO | research_agent.evaluation | score | 3 | keep | 10.1145/3743127 | The abstract analyzes reinforcement learning from human feedback as an alignment method for LLMs, of
+2026-09-17 17:05:56,517 | INFO | research_agent.evaluation | score | 2 | drop | 10.3390/healthcare11202776 | The abstract discusses LLM integration and training strategies in healthcare generally, but does not
+2026-09-17 17:05:56,517 | INFO | research_agent.evaluation | score | 1 | drop | 10.3390/s21144758 | The abstract focuses on graph neural networks for medical data analysis and does not involve LLMs, h
+2026-09-17 17:05:56,517 | INFO | research_agent.evaluation | evaluating | subquestion=3 | batch=2/2 | papers=4
+2026-09-17 17:05:56,518 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2307.06435 | This paper provides a broad survey of general large language model concepts and fine-tuning, but it 
+2026-09-17 17:05:56,518 | INFO | research_agent.evaluation | score | 2 | drop | 10.1609/aaai.v38i8.28777 | This paper explores fine-tuning and reinforcement learning for explainable recommendation systems, b
+2026-09-17 17:05:56,518 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s13347-025-00928-y | This paper focuses on political and moral bias resulting from reinforcement learning from human feed
+2026-09-17 17:05:56,518 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2404.18930 | This survey provides useful background on hallucination mitigation strategies and fine-tuning in mul
+2026-09-17 17:05:56,518 | INFO | research_agent.evaluation | evaluate summary | scored=14 | selected=5 | dropped=9 | cutoff=3
+2026-09-17 17:05:56,518 | INFO | research_agent.retrieval | retrieving | subquestion=4 | query='benchmarking detecting hallucination evaluation metrics autonomous language model agents'
+2026-09-17 17:05:56,521 | INFO | research_agent.retrieval | retrieved | subquestion=4 | records=20 | with_abstract=20
+2026-09-17 17:05:56,521 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 17:05:56,522 | INFO | research_agent.validation | verify | match | 10.1007/s11704-024-40231-1
+2026-09-17 17:05:56,522 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2204.14198
+2026-09-17 17:05:56,522 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.03109
+2026-09-17 17:05:56,522 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2402.06196
+2026-09-17 17:05:56,523 | INFO | research_agent.validation | verify | match | 10.2196/57400
+2026-09-17 17:05:56,523 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2302.04761
+2026-09-17 17:05:56,523 | INFO | research_agent.validation | verify | match | 10.1145/3604237.3626869
+2026-09-17 17:05:56,523 | INFO | research_agent.validation | verify | match | 10.36227/techrxiv.23589741.v1
+2026-09-17 17:05:56,524 | INFO | research_agent.validation | verify | match | 10.1038/s43018-025-00991-6
+2026-09-17 17:05:56,524 | INFO | research_agent.validation | verify | not in Crossref | 10.4230/oasics.icpec.2023.9
+2026-09-17 17:05:56,524 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.findings-acl.738
+2026-09-17 17:05:56,525 | INFO | research_agent.validation | verify | match | 10.1007/s11280-024-01276-1
+2026-09-17 17:05:56,525 | INFO | research_agent.validation | verify summary | {'verified': 7, 'flagged': 5, 'unchecked': 0}
+2026-09-17 17:05:56,525 | INFO | research_agent.evaluation | evaluating | subquestion=4 | batch=1/2 | papers=10
+2026-09-17 17:05:56,526 | INFO | research_agent.evaluation | score | 3 | keep | 10.1007/s11704-024-40231-1 | The abstract provides a general survey of LLM-based autonomous agents, including evaluation strategi
+2026-09-17 17:05:56,526 | INFO | research_agent.evaluation | score | 1 | drop | 10.48550/arxiv.2204.14198 | The abstract describes the Flamingo multimodal model for few-shot learning tasks, with no relevance 
+2026-09-17 17:05:56,526 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2307.03109 | The abstract broadly surveys LLM evaluation methodologies and briefly mentions agent applications, b
+2026-09-17 17:05:56,526 | INFO | research_agent.evaluation | score | 1 | drop | 10.48550/arxiv.2402.06196 | The abstract presents a general survey of large language models, their training datasets, and standa
+2026-09-17 17:05:56,526 | INFO | research_agent.evaluation | score | 1 | drop | 10.2196/57400 | The abstract covers a systematic review of large language models in mental health clinical applicati
+2026-09-17 17:05:56,526 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2302.04761 | The abstract introduces Toolformer to enable language models to use external APIs, sharing concepts 
+2026-09-17 17:05:56,526 | INFO | research_agent.evaluation | score | 1 | drop | 10.1145/3604237.3626869 | The abstract surveys financial applications of large language models and does not discuss hallucinat
+2026-09-17 17:05:56,526 | INFO | research_agent.evaluation | score | 1 | drop | 10.36227/techrxiv.23589741.v1 | The abstract offers a broad overview of LLM architectures and applications across domains, without a
+2026-09-17 17:05:56,526 | INFO | research_agent.evaluation | score | 2 | drop | 10.1038/s43018-025-00991-6 | The abstract evaluates a tool-augmented clinical AI agent for decision-making accuracy, which touche
+2026-09-17 17:05:56,526 | INFO | research_agent.evaluation | score | 1 | drop | 10.4230/oasics.icpec.2023.9 | The abstract explores knowledge engineering and hybrid neuro-symbolic systems, offering no coverage 
+2026-09-17 17:05:56,526 | INFO | research_agent.evaluation | evaluating | subquestion=4 | batch=2/2 | papers=2
+2026-09-17 17:05:56,526 | INFO | research_agent.evaluation | score | 1 | drop | 10.18653/v1/2024.findings-acl.738 | This paper provides a general survey of multimodal large language models and does not address halluc
+2026-09-17 17:05:56,526 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s11280-024-01276-1 | This paper focuses on personalization and user interaction in large language models without discussi
+2026-09-17 17:05:56,526 | INFO | research_agent.evaluation | evaluate summary | scored=12 | selected=1 | dropped=11 | cutoff=3
+2026-09-17 17:05:56,526 | INFO | research_agent.orchestrator | threshold | subquestion=4 | the query returned 12 records but only 1 were relevant (minimum 5); typical rejections: The abstract describes the Flamingo multimodal model for few-shot learning tasks, with no  | The abstract broadly surveys LLM evaluation methodologies and briefly mentions agent appli | The abstract presents a general survey of large language models, their training datasets,  | reformulating (1 of 1 allowed)
+2026-09-17 17:05:57,159 | WARNING | research_agent.llm | llm | HTTP 503 (transient) - retry 1/3 in 2s
+2026-09-17 17:06:04,059 | WARNING | research_agent.llm | llm | HTTP 503 (transient) - retry 2/3 in 4s
+2026-09-17 17:06:09,211 | WARNING | research_agent.llm | llm | HTTP 503 (transient) - retry 3/3 in 8s
+2026-09-17 17:08:28,194 | INFO | research_agent.orchestrator | run | question='What approaches reduce hallucination in LLM-based autonomous agents?'
+2026-09-17 17:08:28,194 | INFO | research_agent.planning | planning | question='What approaches reduce hallucination in LLM-based autonomous agents?' | feedback=''
+2026-09-17 17:08:28,194 | INFO | research_agent.planning | planned | 1 | What retrieval-augmented generation and external tool-integration frameworks reduce hallucination in autonomous LLM agents? | query='retrieval augmented generation tool integration reduce hallucination llm agents'
+2026-09-17 17:08:28,194 | INFO | research_agent.planning | planned | 2 | How do self-reflection, planning feedback loops, and multi-agent consensus mechanisms mitigate unfaithful reasoning? | query='self reflection multi agent collaboration reduce hallucination autonomous reasoning'
+2026-09-17 17:08:28,194 | INFO | research_agent.planning | planned | 3 | Which fine-tuning, alignment, and constrained decoding methods specifically target hallucination reduction in agentic workflows? | query='reinforcement learning alignment fine tuning decoding hallucination reduction agents'
+2026-09-17 17:08:28,194 | INFO | research_agent.planning | planned | 4 | How are hallucinations in autonomous agents benchmarked, detected, and evaluated during long-horizon tasks? | query='benchmarking detecting hallucination evaluation metrics autonomous language model agents'
+2026-09-17 17:08:32,576 | INFO | research_agent.orchestrator | review1 | decision=approve | feedback=''
+2026-09-17 17:08:32,576 | INFO | research_agent.retrieval | retrieving | subquestion=1 | query='retrieval augmented generation tool integration reduce hallucination llm agents'
+2026-09-17 17:08:32,579 | INFO | research_agent.retrieval | retrieved | subquestion=1 | records=20 | with_abstract=19
+2026-09-17 17:08:32,579 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 17:08:32,580 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2312.10997
+2026-09-17 17:08:32,580 | INFO | research_agent.validation | verify | match | 10.18653/v1/2023.emnlp-main.322
+2026-09-17 17:08:32,580 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.naacl-long.219
+2026-09-17 17:08:32,581 | INFO | research_agent.validation | verify | match | 10.1038/s41591-024-03425-5
+2026-09-17 17:08:32,581 | INFO | research_agent.validation | verify | match | 10.1016/j.aei.2025.103212
+2026-09-17 17:08:32,582 | INFO | research_agent.validation | verify | match | 10.1038/s41746-025-01519-z
+2026-09-17 17:08:32,582 | INFO | research_agent.validation | verify | match | 10.1093/jamia/ocaf008
+2026-09-17 17:08:32,583 | INFO | research_agent.validation | verify | match | 10.1145/3728894
+2026-09-17 17:08:32,583 | INFO | research_agent.validation | verify | match | 10.18653/v1/2023.emnlp-main.187
+2026-09-17 17:08:32,583 | INFO | research_agent.validation | verify | match | 10.1145/3605764.3623985
+2026-09-17 17:08:32,583 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.01219
+2026-09-17 17:08:32,584 | INFO | research_agent.validation | verify | match | 10.1007/s11704-026-60308-3
+2026-09-17 17:08:32,585 | INFO | research_agent.validation | verify | match | 10.1111/jels.12413
+2026-09-17 17:08:32,585 | INFO | research_agent.validation | verify | match | 10.1007/s10462-024-10888-y
+2026-09-17 17:08:32,586 | INFO | research_agent.validation | verify | match | 10.1007/s12599-025-00945-3
+2026-09-17 17:08:32,586 | INFO | research_agent.validation | verify | match | 10.1145/3637528.3671458
+2026-09-17 17:08:32,587 | INFO | research_agent.validation | verify | match | 10.1162/coli.a.16
+2026-09-17 17:08:32,588 | INFO | research_agent.validation | verify | match | 10.3390/make6040116
+2026-09-17 17:08:32,588 | INFO | research_agent.validation | verify | match | 10.3390/ai6090226
+2026-09-17 17:08:32,588 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v38i17.29936
+2026-09-17 17:08:32,588 | INFO | research_agent.validation | verify summary | {'verified': 18, 'flagged': 2, 'unchecked': 0}
+2026-09-17 17:08:32,588 | INFO | research_agent.evaluation | evaluating | subquestion=1 | batch=1/2 | papers=10
+2026-09-17 17:08:32,589 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2312.10997 | The paper reviews general RAG paradigms and their role in mitigating LLM hallucinations, providing u
+2026-09-17 17:08:32,589 | INFO | research_agent.evaluation | score | 2 | drop | 10.18653/v1/2023.emnlp-main.322 | The paper proposes a query-rewriting framework for retrieval-augmented LLMs in question-answering ta
+2026-09-17 17:08:32,589 | INFO | research_agent.evaluation | score | 3 | keep | 10.18653/v1/2024.naacl-long.219 | Rated from the title alone as the abstract contains no summary text, the paper explores using knowle
+2026-09-17 17:08:32,589 | INFO | research_agent.evaluation | score | 1 | drop | 10.1038/s41591-024-03425-5 | Rated from the title alone as no abstract is available, the paper focuses on reporting guidelines fo
+2026-09-17 17:08:32,589 | INFO | research_agent.evaluation | score | 2 | drop | 10.1016/j.aei.2025.103212 | The paper proposes a hybrid RAG framework for domain-centric question answering in smart manufacturi
+2026-09-17 17:08:32,589 | INFO | research_agent.evaluation | score | 2 | drop | 10.1038/s41746-025-01519-z | The paper studies RAG for medical fitness assessment and observes reduced hallucinations, but it tar
+2026-09-17 17:08:32,589 | INFO | research_agent.evaluation | score | 2 | drop | 10.1093/jamia/ocaf008 | The paper presents a systematic review of RAG applications in biomedicine, which does not address ha
+2026-09-17 17:08:32,589 | INFO | research_agent.evaluation | score | 2 | drop | 10.1145/3728894 | The paper investigates hallucination taxonomy and mitigation in repository-level code generation, wi
+2026-09-17 17:08:32,589 | INFO | research_agent.evaluation | score | 3 | keep | 10.18653/v1/2023.emnlp-main.187 | The paper introduces a benchmark for tool-augmented LLMs, providing relevant background on external 
+2026-09-17 17:08:32,589 | INFO | research_agent.evaluation | score | 1 | drop | 10.1145/3605764.3623985 | The paper focuses on security risks and indirect prompt injection attacks in LLM-integrated applicat
+2026-09-17 17:08:32,589 | INFO | research_agent.evaluation | evaluating | subquestion=1 | batch=2/2 | papers=10
+2026-09-17 17:08:32,590 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2309.01219 | This paper provides a general survey on LLM hallucination mitigation, offering useful background con
+2026-09-17 17:08:32,590 | INFO | research_agent.evaluation | score | 2 | drop | 10.1007/s11704-026-60308-3 | This paper offers a broad overview of LLM development and agentic reasoning tangentially, but it doe
+2026-09-17 17:08:32,590 | INFO | research_agent.evaluation | score | 3 | keep | 10.1111/jels.12413 | This paper empirically evaluates how RAG reduces hallucinations in commercial AI legal tools, provid
+2026-09-17 17:08:32,590 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s10462-024-10888-y | This paper presents a general survey of LLM architectures and downstream applications without addres
+2026-09-17 17:08:32,590 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s12599-025-00945-3 | This paper addresses general user dissatisfaction with enterprise search systems and does not discus
+2026-09-17 17:08:32,590 | INFO | research_agent.evaluation | score | 1 | drop | 10.1145/3637528.3671458 | This paper focuses on bias and fairness issues in information retrieval systems, which is unrelated 
+2026-09-17 17:08:32,590 | INFO | research_agent.evaluation | score | 3 | keep | 10.1162/coli.a.16 | This paper surveys LLM hallucination mitigation strategies generally, serving as useful context but 
+2026-09-17 17:08:32,590 | INFO | research_agent.evaluation | score | 3 | keep | 10.3390/make6040116 | This paper investigates RAG implementation in medical chatbots to improve response generation and fa
+2026-09-17 17:08:32,590 | INFO | research_agent.evaluation | score | 3 | keep | 10.3390/ai6090226 | This paper reviews RAG architectural variants used to reduce hallucinations and ensure factual consi
+2026-09-17 17:08:32,590 | INFO | research_agent.evaluation | score | 3 | keep | 10.1609/aaai.v38i17.29936 | This paper proposes a retrieval-based experiential learning framework for autonomous LLM agents, whi
+2026-09-17 17:08:32,590 | INFO | research_agent.evaluation | evaluate summary | scored=20 | selected=9 | dropped=11 | cutoff=3
+2026-09-17 17:08:32,590 | INFO | research_agent.retrieval | retrieving | subquestion=2 | query='self reflection multi agent collaboration reduce hallucination autonomous reasoning'
+2026-09-17 17:08:32,593 | INFO | research_agent.retrieval | retrieved | subquestion=2 | records=20 | with_abstract=20
+2026-09-17 17:08:32,593 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 17:08:32,593 | INFO | research_agent.validation | verify | match | 10.1145/3586183.3606763
+2026-09-17 17:08:32,593 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2308.11432
+2026-09-17 17:08:32,593 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.naacl-long.15
+2026-09-17 17:08:32,594 | INFO | research_agent.validation | verify | match | 10.1109/mwc.016.2300600
+2026-09-17 17:08:32,594 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.07864
+2026-09-17 17:08:32,594 | INFO | research_agent.validation | verify | match | 10.3390/fi17090404
+2026-09-17 17:08:32,594 | INFO | research_agent.validation | verify | not in Crossref | 10.4230/lipics.cosit.2024.11
+2026-09-17 17:08:32,595 | INFO | research_agent.validation | verify | match | 10.1080/00207543.2025.2604311
+2026-09-17 17:08:32,595 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2402.01680
+2026-09-17 17:08:32,595 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v40i35.40229
+2026-09-17 17:08:32,596 | INFO | research_agent.validation | verify | match | 10.1038/s41586-025-10097-9
+2026-09-17 17:08:32,596 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.06794
+2026-09-17 17:08:32,596 | INFO | research_agent.validation | verify | match | 10.1109/access.2021.3140175
+2026-09-17 17:08:32,596 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2404.11584
+2026-09-17 17:08:32,597 | INFO | research_agent.validation | verify | match | 10.1007/s10462-025-11422-4
+2026-09-17 17:08:32,598 | INFO | research_agent.validation | verify | match | 10.1007/s44212-024-00060-w
+2026-09-17 17:08:32,598 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.05300
+2026-09-17 17:08:32,598 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.findings-emnlp.329
+2026-09-17 17:08:32,598 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.02427
+2026-09-17 17:08:32,599 | INFO | research_agent.validation | verify summary | {'verified': 11, 'flagged': 8, 'unchecked': 0}
+2026-09-17 17:08:32,599 | INFO | research_agent.evaluation | evaluating | subquestion=2 | batch=1/2 | papers=10
+2026-09-17 17:08:32,599 | INFO | research_agent.evaluation | score | 3 | keep | 10.1145/3586183.3606763 | The abstract discusses an agent architecture incorporating reflection and dynamic planning, but it d
+2026-09-17 17:08:32,599 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2308.11432 | This broad survey introduces LLM-based autonomous agent frameworks and applications without specific
+2026-09-17 17:08:32,599 | INFO | research_agent.evaluation | score | 2 | drop | 10.18653/v1/2024.naacl-long.15 | The abstract is missing, and the title indicates a focus on multi-persona self-collaboration without
+2026-09-17 17:08:32,599 | INFO | research_agent.evaluation | score | 2 | drop | 10.1109/mwc.016.2300600 | The abstract applies agent planning and reflection specifically to 6G communication tasks rather tha
+2026-09-17 17:08:32,599 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2309.07864 | This survey provides a general overview of LLM-based agents without addressing hallucination reducti
+2026-09-17 17:08:32,599 | INFO | research_agent.evaluation | score | 2 | drop | 10.3390/fi17090404 | The abstract presents a broad review of agentic AI architectures including planning and reflection, 
+2026-09-17 17:08:32,599 | INFO | research_agent.evaluation | score | 1 | drop | 10.4230/lipics.cosit.2024.11 | The abstract proposes a framework for deterministic software artifacts from LLMs and does not addres
+2026-09-17 17:08:32,599 | INFO | research_agent.evaluation | score | 2 | drop | 10.1080/00207543.2025.2604311 | The abstract investigates multi-agent consensus-seeking specifically for supply chain management wit
+2026-09-17 17:08:32,599 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2402.01680 | This survey covers general LLM-based multi-agent systems and communication mechanisms, but does not 
+2026-09-17 17:08:32,599 | INFO | research_agent.evaluation | score | 5 | keep | 10.1609/aaai.v40i35.40229 | The abstract directly addresses hallucination mitigation by proposing a framework that combines intr
+2026-09-17 17:08:32,599 | INFO | research_agent.evaluation | evaluating | subquestion=2 | batch=2/2 | papers=9
+2026-09-17 17:08:32,600 | INFO | research_agent.evaluation | score | 3 | keep | 10.1038/s41586-025-10097-9 | The paper describes a multi-agent system designed for clinical diagnostic decision support with veri
+2026-09-17 17:08:32,600 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2309.06794 | The abstract presents a broad review of hallucination taxonomies and improvement approaches in gener
+2026-09-17 17:08:32,600 | INFO | research_agent.evaluation | score | 1 | drop | 10.1109/access.2021.3140175 | The paper focuses on the taxonomy and applications of the Metaverse and does not cover large languag
+2026-09-17 17:08:32,600 | INFO | research_agent.evaluation | score | 4 | keep | 10.48550/arxiv.2404.11584 | The paper surveys single- and multi-agent architectures, specifically detailing planning, execution,
+2026-09-17 17:08:32,600 | INFO | research_agent.evaluation | score | 3 | keep | 10.1007/s10462-025-11422-4 | The abstract provides a high-level survey of agentic AI architectures and paradigms without explicit
+2026-09-17 17:08:32,600 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s44212-024-00060-w | The paper focuses on generative AI applications for urban digital twins and smart city planning, whi
+2026-09-17 17:08:32,600 | INFO | research_agent.evaluation | score | 5 | keep | 10.48550/arxiv.2307.05300 | The paper directly demonstrates how a multi-persona self-collaboration and reflection mechanism in l
+2026-09-17 17:08:32,600 | INFO | research_agent.evaluation | score | 4 | keep | 10.18653/v1/2024.findings-emnlp.329 | The paper proposes a multi-agent collaboration framework with multi-round discussions and confidence
+2026-09-17 17:08:32,600 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2309.02427 | The paper outlines a general cognitive architecture framework for language agents covering decision-
+2026-09-17 17:08:32,600 | INFO | research_agent.evaluation | evaluate summary | scored=19 | selected=9 | dropped=10 | cutoff=3
+2026-09-17 17:08:32,600 | INFO | research_agent.retrieval | retrieving | subquestion=3 | query='reinforcement learning alignment fine tuning decoding hallucination reduction agents'
+2026-09-17 17:08:32,604 | INFO | research_agent.retrieval | retrieved | subquestion=3 | records=20 | with_abstract=20
+2026-09-17 17:08:32,604 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 17:08:32,605 | INFO | research_agent.validation | verify | match | 10.1186/s40537-021-00492-0
+2026-09-17 17:08:32,605 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v38i16.29771
+2026-09-17 17:08:32,605 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2202.03629
+2026-09-17 17:08:32,605 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.1803.01164
+2026-09-17 17:08:32,606 | INFO | research_agent.validation | verify | match | 10.1145/3617592
+2026-09-17 17:08:32,607 | INFO | research_agent.validation | verify | match | 10.1039/d4sc03921a
+2026-09-17 17:08:32,608 | INFO | research_agent.validation | verify | match | 10.3389/frai.2025.1622292
+2026-09-17 17:08:32,608 | INFO | research_agent.validation | verify | match | 10.1145/3743127
+2026-09-17 17:08:32,609 | INFO | research_agent.validation | verify | match | 10.3390/healthcare11202776
+2026-09-17 17:08:32,609 | INFO | research_agent.validation | verify | match | 10.3390/s21144758
+2026-09-17 17:08:32,610 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.06435
+2026-09-17 17:08:32,610 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v38i8.28777
+2026-09-17 17:08:32,610 | INFO | research_agent.validation | verify | match | 10.1007/s13347-025-00928-y
+2026-09-17 17:08:32,611 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2404.18930
+2026-09-17 17:08:32,611 | INFO | research_agent.validation | verify summary | {'verified': 10, 'flagged': 4, 'unchecked': 0}
+2026-09-17 17:08:32,611 | INFO | research_agent.evaluation | evaluating | subquestion=3 | batch=1/2 | papers=10
+2026-09-17 17:08:32,612 | INFO | research_agent.evaluation | score | 1 | drop | 10.1186/s40537-021-00492-0 | The abstract discusses text data augmentation techniques for deep learning in NLP without addressing
+2026-09-17 17:08:32,612 | INFO | research_agent.evaluation | score | 3 | keep | 10.1609/aaai.v38i16.29771 | The abstract discusses alignment via Direct Preference Optimization to prevent hallucinations in vis
+2026-09-17 17:08:32,612 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2202.03629 | The abstract provides a general survey of hallucination measurement and mitigation techniques in nat
+2026-09-17 17:08:32,612 | INFO | research_agent.evaluation | score | 1 | drop | 10.48550/arxiv.1803.01164 | The abstract presents a broad historical survey of deep learning approaches across various domains a
+2026-09-17 17:08:32,612 | INFO | research_agent.evaluation | score | 2 | drop | 10.1145/3617592 | The abstract mentions object hallucination as a challenge in image captioning, but it does not addre
+2026-09-17 17:08:32,612 | INFO | research_agent.evaluation | score | 2 | drop | 10.1039/d4sc03921a | The abstract reviews autonomous agent workflows and LLM capabilities in chemistry and other scientif
+2026-09-17 17:08:32,612 | INFO | research_agent.evaluation | score | 3 | keep | 10.3389/frai.2025.1622292 | The abstract investigates LLM hallucination attribution and prompting strategies, providing useful c
+2026-09-17 17:08:32,612 | INFO | research_agent.evaluation | score | 3 | keep | 10.1145/3743127 | The abstract analyzes reinforcement learning from human feedback as an alignment method for LLMs, of
+2026-09-17 17:08:32,612 | INFO | research_agent.evaluation | score | 2 | drop | 10.3390/healthcare11202776 | The abstract discusses LLM integration and training strategies in healthcare generally, but does not
+2026-09-17 17:08:32,612 | INFO | research_agent.evaluation | score | 1 | drop | 10.3390/s21144758 | The abstract focuses on graph neural networks for medical data analysis and does not involve LLMs, h
+2026-09-17 17:08:32,612 | INFO | research_agent.evaluation | evaluating | subquestion=3 | batch=2/2 | papers=4
+2026-09-17 17:08:32,612 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2307.06435 | This paper provides a broad survey of general large language model concepts and fine-tuning, but it 
+2026-09-17 17:08:32,612 | INFO | research_agent.evaluation | score | 2 | drop | 10.1609/aaai.v38i8.28777 | This paper explores fine-tuning and reinforcement learning for explainable recommendation systems, b
+2026-09-17 17:08:32,612 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s13347-025-00928-y | This paper focuses on political and moral bias resulting from reinforcement learning from human feed
+2026-09-17 17:08:32,612 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2404.18930 | This survey provides useful background on hallucination mitigation strategies and fine-tuning in mul
+2026-09-17 17:08:32,612 | INFO | research_agent.evaluation | evaluate summary | scored=14 | selected=5 | dropped=9 | cutoff=3
+2026-09-17 17:08:32,612 | INFO | research_agent.retrieval | retrieving | subquestion=4 | query='benchmarking detecting hallucination evaluation metrics autonomous language model agents'
+2026-09-17 17:08:32,616 | INFO | research_agent.retrieval | retrieved | subquestion=4 | records=20 | with_abstract=20
+2026-09-17 17:08:32,616 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 17:08:32,616 | INFO | research_agent.validation | verify | match | 10.1007/s11704-024-40231-1
+2026-09-17 17:08:32,617 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2204.14198
+2026-09-17 17:08:32,617 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.03109
+2026-09-17 17:08:32,617 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2402.06196
+2026-09-17 17:08:32,617 | INFO | research_agent.validation | verify | match | 10.2196/57400
+2026-09-17 17:08:32,617 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2302.04761
+2026-09-17 17:08:32,618 | INFO | research_agent.validation | verify | match | 10.1145/3604237.3626869
+2026-09-17 17:08:32,618 | INFO | research_agent.validation | verify | match | 10.36227/techrxiv.23589741.v1
+2026-09-17 17:08:32,618 | INFO | research_agent.validation | verify | match | 10.1038/s43018-025-00991-6
+2026-09-17 17:08:32,619 | INFO | research_agent.validation | verify | not in Crossref | 10.4230/oasics.icpec.2023.9
+2026-09-17 17:08:32,619 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.findings-acl.738
+2026-09-17 17:08:32,619 | INFO | research_agent.validation | verify | match | 10.1007/s11280-024-01276-1
+2026-09-17 17:08:32,619 | INFO | research_agent.validation | verify summary | {'verified': 7, 'flagged': 5, 'unchecked': 0}
+2026-09-17 17:08:32,620 | INFO | research_agent.evaluation | evaluating | subquestion=4 | batch=1/2 | papers=10
+2026-09-17 17:08:32,620 | INFO | research_agent.evaluation | score | 3 | keep | 10.1007/s11704-024-40231-1 | The abstract provides a general survey of LLM-based autonomous agents, including evaluation strategi
+2026-09-17 17:08:32,620 | INFO | research_agent.evaluation | score | 1 | drop | 10.48550/arxiv.2204.14198 | The abstract describes the Flamingo multimodal model for few-shot learning tasks, with no relevance 
+2026-09-17 17:08:32,620 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2307.03109 | The abstract broadly surveys LLM evaluation methodologies and briefly mentions agent applications, b
+2026-09-17 17:08:32,620 | INFO | research_agent.evaluation | score | 1 | drop | 10.48550/arxiv.2402.06196 | The abstract presents a general survey of large language models, their training datasets, and standa
+2026-09-17 17:08:32,620 | INFO | research_agent.evaluation | score | 1 | drop | 10.2196/57400 | The abstract covers a systematic review of large language models in mental health clinical applicati
+2026-09-17 17:08:32,620 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2302.04761 | The abstract introduces Toolformer to enable language models to use external APIs, sharing concepts 
+2026-09-17 17:08:32,620 | INFO | research_agent.evaluation | score | 1 | drop | 10.1145/3604237.3626869 | The abstract surveys financial applications of large language models and does not discuss hallucinat
+2026-09-17 17:08:32,620 | INFO | research_agent.evaluation | score | 1 | drop | 10.36227/techrxiv.23589741.v1 | The abstract offers a broad overview of LLM architectures and applications across domains, without a
+2026-09-17 17:08:32,620 | INFO | research_agent.evaluation | score | 2 | drop | 10.1038/s43018-025-00991-6 | The abstract evaluates a tool-augmented clinical AI agent for decision-making accuracy, which touche
+2026-09-17 17:08:32,620 | INFO | research_agent.evaluation | score | 1 | drop | 10.4230/oasics.icpec.2023.9 | The abstract explores knowledge engineering and hybrid neuro-symbolic systems, offering no coverage 
+2026-09-17 17:08:32,620 | INFO | research_agent.evaluation | evaluating | subquestion=4 | batch=2/2 | papers=2
+2026-09-17 17:08:32,621 | INFO | research_agent.evaluation | score | 1 | drop | 10.18653/v1/2024.findings-acl.738 | This paper provides a general survey of multimodal large language models and does not address halluc
+2026-09-17 17:08:32,621 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s11280-024-01276-1 | This paper focuses on personalization and user interaction in large language models without discussi
+2026-09-17 17:08:32,621 | INFO | research_agent.evaluation | evaluate summary | scored=12 | selected=1 | dropped=11 | cutoff=3
+2026-09-17 17:08:32,621 | INFO | research_agent.orchestrator | threshold | subquestion=4 | the query returned 12 records but only 1 were relevant (minimum 5); typical rejections: The abstract describes the Flamingo multimodal model for few-shot learning tasks, with no  | The abstract broadly surveys LLM evaluation methodologies and briefly mentions agent appli | The abstract presents a general survey of large language models, their training datasets,  | reformulating (1 of 1 allowed)
+2026-09-17 17:08:36,285 | WARNING | research_agent.llm | llm | HTTP 503 (transient) - retry 1/5 in 2s
+2026-09-17 17:08:38,719 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 2/5 in 4s
+2026-09-17 17:08:42,929 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 3/5 in 8s
+2026-09-17 17:08:51,243 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 4/5 in 16s
+2026-09-17 17:09:07,491 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 5/5 in 32s
+2026-09-17 18:33:09,135 | INFO | research_agent.orchestrator | run | question='What approaches reduce hallucination in LLM-based autonomous agents?'
+2026-09-17 18:33:09,137 | INFO | research_agent.planning | planning | question='What approaches reduce hallucination in LLM-based autonomous agents?' | feedback=''
+2026-09-17 18:33:09,138 | INFO | research_agent.planning | planned | 1 | What retrieval-augmented generation and external tool-integration frameworks reduce hallucination in autonomous LLM agents? | query='retrieval augmented generation tool integration reduce hallucination llm agents'
+2026-09-17 18:33:09,138 | INFO | research_agent.planning | planned | 2 | How do self-reflection, planning feedback loops, and multi-agent consensus mechanisms mitigate unfaithful reasoning? | query='self reflection multi agent collaboration reduce hallucination autonomous reasoning'
+2026-09-17 18:33:09,138 | INFO | research_agent.planning | planned | 3 | Which fine-tuning, alignment, and constrained decoding methods specifically target hallucination reduction in agentic workflows? | query='reinforcement learning alignment fine tuning decoding hallucination reduction agents'
+2026-09-17 18:33:09,138 | INFO | research_agent.planning | planned | 4 | How are hallucinations in autonomous agents benchmarked, detected, and evaluated during long-horizon tasks? | query='benchmarking detecting hallucination evaluation metrics autonomous language model agents'
+2026-09-17 18:33:12,727 | INFO | research_agent.orchestrator | review1 | decision=approve | feedback=''
+2026-09-17 18:33:12,727 | INFO | research_agent.retrieval | retrieving | subquestion=1 | query='retrieval augmented generation tool integration reduce hallucination llm agents'
+2026-09-17 18:33:12,731 | INFO | research_agent.retrieval | retrieved | subquestion=1 | records=20 | with_abstract=19
+2026-09-17 18:33:12,731 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 18:33:12,732 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2312.10997
+2026-09-17 18:33:12,732 | INFO | research_agent.validation | verify | match | 10.18653/v1/2023.emnlp-main.322
+2026-09-17 18:33:12,733 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.naacl-long.219
+2026-09-17 18:33:12,733 | INFO | research_agent.validation | verify | match | 10.1038/s41591-024-03425-5
+2026-09-17 18:33:12,734 | INFO | research_agent.validation | verify | match | 10.1016/j.aei.2025.103212
+2026-09-17 18:33:12,734 | INFO | research_agent.validation | verify | match | 10.1038/s41746-025-01519-z
+2026-09-17 18:33:12,735 | INFO | research_agent.validation | verify | match | 10.1093/jamia/ocaf008
+2026-09-17 18:33:12,735 | INFO | research_agent.validation | verify | match | 10.1145/3728894
+2026-09-17 18:33:12,736 | INFO | research_agent.validation | verify | match | 10.18653/v1/2023.emnlp-main.187
+2026-09-17 18:33:12,736 | INFO | research_agent.validation | verify | match | 10.1145/3605764.3623985
+2026-09-17 18:33:12,737 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.01219
+2026-09-17 18:33:12,737 | INFO | research_agent.validation | verify | match | 10.1007/s11704-026-60308-3
+2026-09-17 18:33:12,738 | INFO | research_agent.validation | verify | match | 10.1111/jels.12413
+2026-09-17 18:33:12,739 | INFO | research_agent.validation | verify | match | 10.1007/s10462-024-10888-y
+2026-09-17 18:33:12,739 | INFO | research_agent.validation | verify | match | 10.1007/s12599-025-00945-3
+2026-09-17 18:33:12,740 | INFO | research_agent.validation | verify | match | 10.1145/3637528.3671458
+2026-09-17 18:33:12,741 | INFO | research_agent.validation | verify | match | 10.1162/coli.a.16
+2026-09-17 18:33:12,741 | INFO | research_agent.validation | verify | match | 10.3390/make6040116
+2026-09-17 18:33:12,742 | INFO | research_agent.validation | verify | match | 10.3390/ai6090226
+2026-09-17 18:33:12,742 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v38i17.29936
+2026-09-17 18:33:12,742 | INFO | research_agent.validation | verify summary | {'verified': 18, 'flagged': 2, 'unchecked': 0}
+2026-09-17 18:33:12,742 | INFO | research_agent.evaluation | evaluating | subquestion=1 | batch=1/2 | papers=10
+2026-09-17 18:33:12,743 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2312.10997 | The paper reviews general RAG paradigms and their role in mitigating LLM hallucinations, providing u
+2026-09-17 18:33:12,743 | INFO | research_agent.evaluation | score | 2 | drop | 10.18653/v1/2023.emnlp-main.322 | The paper proposes a query-rewriting framework for retrieval-augmented LLMs in question-answering ta
+2026-09-17 18:33:12,743 | INFO | research_agent.evaluation | score | 3 | keep | 10.18653/v1/2024.naacl-long.219 | Rated from the title alone as the abstract contains no summary text, the paper explores using knowle
+2026-09-17 18:33:12,743 | INFO | research_agent.evaluation | score | 1 | drop | 10.1038/s41591-024-03425-5 | Rated from the title alone as no abstract is available, the paper focuses on reporting guidelines fo
+2026-09-17 18:33:12,743 | INFO | research_agent.evaluation | score | 2 | drop | 10.1016/j.aei.2025.103212 | The paper proposes a hybrid RAG framework for domain-centric question answering in smart manufacturi
+2026-09-17 18:33:12,743 | INFO | research_agent.evaluation | score | 2 | drop | 10.1038/s41746-025-01519-z | The paper studies RAG for medical fitness assessment and observes reduced hallucinations, but it tar
+2026-09-17 18:33:12,743 | INFO | research_agent.evaluation | score | 2 | drop | 10.1093/jamia/ocaf008 | The paper presents a systematic review of RAG applications in biomedicine, which does not address ha
+2026-09-17 18:33:12,743 | INFO | research_agent.evaluation | score | 2 | drop | 10.1145/3728894 | The paper investigates hallucination taxonomy and mitigation in repository-level code generation, wi
+2026-09-17 18:33:12,743 | INFO | research_agent.evaluation | score | 3 | keep | 10.18653/v1/2023.emnlp-main.187 | The paper introduces a benchmark for tool-augmented LLMs, providing relevant background on external 
+2026-09-17 18:33:12,743 | INFO | research_agent.evaluation | score | 1 | drop | 10.1145/3605764.3623985 | The paper focuses on security risks and indirect prompt injection attacks in LLM-integrated applicat
+2026-09-17 18:33:12,743 | INFO | research_agent.evaluation | evaluating | subquestion=1 | batch=2/2 | papers=10
+2026-09-17 18:33:12,744 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2309.01219 | This paper provides a general survey on LLM hallucination mitigation, offering useful background con
+2026-09-17 18:33:12,744 | INFO | research_agent.evaluation | score | 2 | drop | 10.1007/s11704-026-60308-3 | This paper offers a broad overview of LLM development and agentic reasoning tangentially, but it doe
+2026-09-17 18:33:12,744 | INFO | research_agent.evaluation | score | 3 | keep | 10.1111/jels.12413 | This paper empirically evaluates how RAG reduces hallucinations in commercial AI legal tools, provid
+2026-09-17 18:33:12,744 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s10462-024-10888-y | This paper presents a general survey of LLM architectures and downstream applications without addres
+2026-09-17 18:33:12,744 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s12599-025-00945-3 | This paper addresses general user dissatisfaction with enterprise search systems and does not discus
+2026-09-17 18:33:12,744 | INFO | research_agent.evaluation | score | 1 | drop | 10.1145/3637528.3671458 | This paper focuses on bias and fairness issues in information retrieval systems, which is unrelated 
+2026-09-17 18:33:12,744 | INFO | research_agent.evaluation | score | 3 | keep | 10.1162/coli.a.16 | This paper surveys LLM hallucination mitigation strategies generally, serving as useful context but 
+2026-09-17 18:33:12,744 | INFO | research_agent.evaluation | score | 3 | keep | 10.3390/make6040116 | This paper investigates RAG implementation in medical chatbots to improve response generation and fa
+2026-09-17 18:33:12,744 | INFO | research_agent.evaluation | score | 3 | keep | 10.3390/ai6090226 | This paper reviews RAG architectural variants used to reduce hallucinations and ensure factual consi
+2026-09-17 18:33:12,744 | INFO | research_agent.evaluation | score | 3 | keep | 10.1609/aaai.v38i17.29936 | This paper proposes a retrieval-based experiential learning framework for autonomous LLM agents, whi
+2026-09-17 18:33:12,744 | INFO | research_agent.evaluation | evaluate summary | scored=20 | selected=9 | dropped=11 | cutoff=3
+2026-09-17 18:33:12,744 | INFO | research_agent.retrieval | retrieving | subquestion=2 | query='self reflection multi agent collaboration reduce hallucination autonomous reasoning'
+2026-09-17 18:33:12,747 | INFO | research_agent.retrieval | retrieved | subquestion=2 | records=20 | with_abstract=20
+2026-09-17 18:33:12,747 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 18:33:12,747 | INFO | research_agent.validation | verify | match | 10.1145/3586183.3606763
+2026-09-17 18:33:12,748 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2308.11432
+2026-09-17 18:33:12,748 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.naacl-long.15
+2026-09-17 18:33:12,748 | INFO | research_agent.validation | verify | match | 10.1109/mwc.016.2300600
+2026-09-17 18:33:12,748 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.07864
+2026-09-17 18:33:12,749 | INFO | research_agent.validation | verify | match | 10.3390/fi17090404
+2026-09-17 18:33:12,749 | INFO | research_agent.validation | verify | not in Crossref | 10.4230/lipics.cosit.2024.11
+2026-09-17 18:33:12,750 | INFO | research_agent.validation | verify | match | 10.1080/00207543.2025.2604311
+2026-09-17 18:33:12,750 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2402.01680
+2026-09-17 18:33:12,750 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v40i35.40229
+2026-09-17 18:33:12,751 | INFO | research_agent.validation | verify | match | 10.1038/s41586-025-10097-9
+2026-09-17 18:33:12,751 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.06794
+2026-09-17 18:33:12,751 | INFO | research_agent.validation | verify | match | 10.1109/access.2021.3140175
+2026-09-17 18:33:12,752 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2404.11584
+2026-09-17 18:33:12,752 | INFO | research_agent.validation | verify | match | 10.1007/s10462-025-11422-4
+2026-09-17 18:33:12,754 | INFO | research_agent.validation | verify | match | 10.1007/s44212-024-00060-w
+2026-09-17 18:33:12,754 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.05300
+2026-09-17 18:33:12,754 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.findings-emnlp.329
+2026-09-17 18:33:12,754 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.02427
+2026-09-17 18:33:12,754 | INFO | research_agent.validation | verify summary | {'verified': 11, 'flagged': 8, 'unchecked': 0}
+2026-09-17 18:33:12,754 | INFO | research_agent.evaluation | evaluating | subquestion=2 | batch=1/2 | papers=10
+2026-09-17 18:33:12,755 | INFO | research_agent.evaluation | score | 3 | keep | 10.1145/3586183.3606763 | The abstract discusses an agent architecture incorporating reflection and dynamic planning, but it d
+2026-09-17 18:33:12,755 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2308.11432 | This broad survey introduces LLM-based autonomous agent frameworks and applications without specific
+2026-09-17 18:33:12,755 | INFO | research_agent.evaluation | score | 2 | drop | 10.18653/v1/2024.naacl-long.15 | The abstract is missing, and the title indicates a focus on multi-persona self-collaboration without
+2026-09-17 18:33:12,755 | INFO | research_agent.evaluation | score | 2 | drop | 10.1109/mwc.016.2300600 | The abstract applies agent planning and reflection specifically to 6G communication tasks rather tha
+2026-09-17 18:33:12,755 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2309.07864 | This survey provides a general overview of LLM-based agents without addressing hallucination reducti
+2026-09-17 18:33:12,755 | INFO | research_agent.evaluation | score | 2 | drop | 10.3390/fi17090404 | The abstract presents a broad review of agentic AI architectures including planning and reflection, 
+2026-09-17 18:33:12,755 | INFO | research_agent.evaluation | score | 1 | drop | 10.4230/lipics.cosit.2024.11 | The abstract proposes a framework for deterministic software artifacts from LLMs and does not addres
+2026-09-17 18:33:12,755 | INFO | research_agent.evaluation | score | 2 | drop | 10.1080/00207543.2025.2604311 | The abstract investigates multi-agent consensus-seeking specifically for supply chain management wit
+2026-09-17 18:33:12,755 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2402.01680 | This survey covers general LLM-based multi-agent systems and communication mechanisms, but does not 
+2026-09-17 18:33:12,756 | INFO | research_agent.evaluation | score | 5 | keep | 10.1609/aaai.v40i35.40229 | The abstract directly addresses hallucination mitigation by proposing a framework that combines intr
+2026-09-17 18:33:12,756 | INFO | research_agent.evaluation | evaluating | subquestion=2 | batch=2/2 | papers=9
+2026-09-17 18:33:12,756 | INFO | research_agent.evaluation | score | 3 | keep | 10.1038/s41586-025-10097-9 | The paper describes a multi-agent system designed for clinical diagnostic decision support with veri
+2026-09-17 18:33:12,756 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2309.06794 | The abstract presents a broad review of hallucination taxonomies and improvement approaches in gener
+2026-09-17 18:33:12,756 | INFO | research_agent.evaluation | score | 1 | drop | 10.1109/access.2021.3140175 | The paper focuses on the taxonomy and applications of the Metaverse and does not cover large languag
+2026-09-17 18:33:12,756 | INFO | research_agent.evaluation | score | 4 | keep | 10.48550/arxiv.2404.11584 | The paper surveys single- and multi-agent architectures, specifically detailing planning, execution,
+2026-09-17 18:33:12,756 | INFO | research_agent.evaluation | score | 3 | keep | 10.1007/s10462-025-11422-4 | The abstract provides a high-level survey of agentic AI architectures and paradigms without explicit
+2026-09-17 18:33:12,756 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s44212-024-00060-w | The paper focuses on generative AI applications for urban digital twins and smart city planning, whi
+2026-09-17 18:33:12,756 | INFO | research_agent.evaluation | score | 5 | keep | 10.48550/arxiv.2307.05300 | The paper directly demonstrates how a multi-persona self-collaboration and reflection mechanism in l
+2026-09-17 18:33:12,756 | INFO | research_agent.evaluation | score | 4 | keep | 10.18653/v1/2024.findings-emnlp.329 | The paper proposes a multi-agent collaboration framework with multi-round discussions and confidence
+2026-09-17 18:33:12,756 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2309.02427 | The paper outlines a general cognitive architecture framework for language agents covering decision-
+2026-09-17 18:33:12,756 | INFO | research_agent.evaluation | evaluate summary | scored=19 | selected=9 | dropped=10 | cutoff=3
+2026-09-17 18:33:12,756 | INFO | research_agent.retrieval | retrieving | subquestion=3 | query='reinforcement learning alignment fine tuning decoding hallucination reduction agents'
+2026-09-17 18:33:12,760 | INFO | research_agent.retrieval | retrieved | subquestion=3 | records=20 | with_abstract=20
+2026-09-17 18:33:12,760 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 18:33:12,760 | INFO | research_agent.validation | verify | match | 10.1186/s40537-021-00492-0
+2026-09-17 18:33:12,761 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v38i16.29771
+2026-09-17 18:33:12,761 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2202.03629
+2026-09-17 18:33:12,761 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.1803.01164
+2026-09-17 18:33:12,761 | INFO | research_agent.validation | verify | match | 10.1145/3617592
+2026-09-17 18:33:12,763 | INFO | research_agent.validation | verify | match | 10.1039/d4sc03921a
+2026-09-17 18:33:12,763 | INFO | research_agent.validation | verify | match | 10.3389/frai.2025.1622292
+2026-09-17 18:33:12,764 | INFO | research_agent.validation | verify | match | 10.1145/3743127
+2026-09-17 18:33:12,764 | INFO | research_agent.validation | verify | match | 10.3390/healthcare11202776
+2026-09-17 18:33:12,765 | INFO | research_agent.validation | verify | match | 10.3390/s21144758
+2026-09-17 18:33:12,765 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.06435
+2026-09-17 18:33:12,766 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v38i8.28777
+2026-09-17 18:33:12,766 | INFO | research_agent.validation | verify | match | 10.1007/s13347-025-00928-y
+2026-09-17 18:33:12,766 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2404.18930
+2026-09-17 18:33:12,766 | INFO | research_agent.validation | verify summary | {'verified': 10, 'flagged': 4, 'unchecked': 0}
+2026-09-17 18:33:12,766 | INFO | research_agent.evaluation | evaluating | subquestion=3 | batch=1/2 | papers=10
+2026-09-17 18:33:12,767 | INFO | research_agent.evaluation | score | 1 | drop | 10.1186/s40537-021-00492-0 | The abstract discusses text data augmentation techniques for deep learning in NLP without addressing
+2026-09-17 18:33:12,767 | INFO | research_agent.evaluation | score | 3 | keep | 10.1609/aaai.v38i16.29771 | The abstract discusses alignment via Direct Preference Optimization to prevent hallucinations in vis
+2026-09-17 18:33:12,767 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2202.03629 | The abstract provides a general survey of hallucination measurement and mitigation techniques in nat
+2026-09-17 18:33:12,767 | INFO | research_agent.evaluation | score | 1 | drop | 10.48550/arxiv.1803.01164 | The abstract presents a broad historical survey of deep learning approaches across various domains a
+2026-09-17 18:33:12,767 | INFO | research_agent.evaluation | score | 2 | drop | 10.1145/3617592 | The abstract mentions object hallucination as a challenge in image captioning, but it does not addre
+2026-09-17 18:33:12,767 | INFO | research_agent.evaluation | score | 2 | drop | 10.1039/d4sc03921a | The abstract reviews autonomous agent workflows and LLM capabilities in chemistry and other scientif
+2026-09-17 18:33:12,767 | INFO | research_agent.evaluation | score | 3 | keep | 10.3389/frai.2025.1622292 | The abstract investigates LLM hallucination attribution and prompting strategies, providing useful c
+2026-09-17 18:33:12,767 | INFO | research_agent.evaluation | score | 3 | keep | 10.1145/3743127 | The abstract analyzes reinforcement learning from human feedback as an alignment method for LLMs, of
+2026-09-17 18:33:12,767 | INFO | research_agent.evaluation | score | 2 | drop | 10.3390/healthcare11202776 | The abstract discusses LLM integration and training strategies in healthcare generally, but does not
+2026-09-17 18:33:12,767 | INFO | research_agent.evaluation | score | 1 | drop | 10.3390/s21144758 | The abstract focuses on graph neural networks for medical data analysis and does not involve LLMs, h
+2026-09-17 18:33:12,767 | INFO | research_agent.evaluation | evaluating | subquestion=3 | batch=2/2 | papers=4
+2026-09-17 18:33:12,768 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2307.06435 | This paper provides a broad survey of general large language model concepts and fine-tuning, but it 
+2026-09-17 18:33:12,768 | INFO | research_agent.evaluation | score | 2 | drop | 10.1609/aaai.v38i8.28777 | This paper explores fine-tuning and reinforcement learning for explainable recommendation systems, b
+2026-09-17 18:33:12,768 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s13347-025-00928-y | This paper focuses on political and moral bias resulting from reinforcement learning from human feed
+2026-09-17 18:33:12,768 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2404.18930 | This survey provides useful background on hallucination mitigation strategies and fine-tuning in mul
+2026-09-17 18:33:12,768 | INFO | research_agent.evaluation | evaluate summary | scored=14 | selected=5 | dropped=9 | cutoff=3
+2026-09-17 18:33:12,768 | INFO | research_agent.retrieval | retrieving | subquestion=4 | query='benchmarking detecting hallucination evaluation metrics autonomous language model agents'
+2026-09-17 18:33:12,771 | INFO | research_agent.retrieval | retrieved | subquestion=4 | records=20 | with_abstract=20
+2026-09-17 18:33:12,771 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 18:33:12,771 | INFO | research_agent.validation | verify | match | 10.1007/s11704-024-40231-1
+2026-09-17 18:33:12,772 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2204.14198
+2026-09-17 18:33:12,772 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.03109
+2026-09-17 18:33:12,772 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2402.06196
+2026-09-17 18:33:12,772 | INFO | research_agent.validation | verify | match | 10.2196/57400
+2026-09-17 18:33:12,773 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2302.04761
+2026-09-17 18:33:12,773 | INFO | research_agent.validation | verify | match | 10.1145/3604237.3626869
+2026-09-17 18:33:12,773 | INFO | research_agent.validation | verify | match | 10.36227/techrxiv.23589741.v1
+2026-09-17 18:33:12,774 | INFO | research_agent.validation | verify | match | 10.1038/s43018-025-00991-6
+2026-09-17 18:33:12,774 | INFO | research_agent.validation | verify | not in Crossref | 10.4230/oasics.icpec.2023.9
+2026-09-17 18:33:12,774 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.findings-acl.738
+2026-09-17 18:33:12,775 | INFO | research_agent.validation | verify | match | 10.1007/s11280-024-01276-1
+2026-09-17 18:33:12,775 | INFO | research_agent.validation | verify summary | {'verified': 7, 'flagged': 5, 'unchecked': 0}
+2026-09-17 18:33:12,775 | INFO | research_agent.evaluation | evaluating | subquestion=4 | batch=1/2 | papers=10
+2026-09-17 18:33:12,775 | INFO | research_agent.evaluation | score | 3 | keep | 10.1007/s11704-024-40231-1 | The abstract provides a general survey of LLM-based autonomous agents, including evaluation strategi
+2026-09-17 18:33:12,775 | INFO | research_agent.evaluation | score | 1 | drop | 10.48550/arxiv.2204.14198 | The abstract describes the Flamingo multimodal model for few-shot learning tasks, with no relevance 
+2026-09-17 18:33:12,775 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2307.03109 | The abstract broadly surveys LLM evaluation methodologies and briefly mentions agent applications, b
+2026-09-17 18:33:12,775 | INFO | research_agent.evaluation | score | 1 | drop | 10.48550/arxiv.2402.06196 | The abstract presents a general survey of large language models, their training datasets, and standa
+2026-09-17 18:33:12,775 | INFO | research_agent.evaluation | score | 1 | drop | 10.2196/57400 | The abstract covers a systematic review of large language models in mental health clinical applicati
+2026-09-17 18:33:12,775 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2302.04761 | The abstract introduces Toolformer to enable language models to use external APIs, sharing concepts 
+2026-09-17 18:33:12,775 | INFO | research_agent.evaluation | score | 1 | drop | 10.1145/3604237.3626869 | The abstract surveys financial applications of large language models and does not discuss hallucinat
+2026-09-17 18:33:12,775 | INFO | research_agent.evaluation | score | 1 | drop | 10.36227/techrxiv.23589741.v1 | The abstract offers a broad overview of LLM architectures and applications across domains, without a
+2026-09-17 18:33:12,776 | INFO | research_agent.evaluation | score | 2 | drop | 10.1038/s43018-025-00991-6 | The abstract evaluates a tool-augmented clinical AI agent for decision-making accuracy, which touche
+2026-09-17 18:33:12,776 | INFO | research_agent.evaluation | score | 1 | drop | 10.4230/oasics.icpec.2023.9 | The abstract explores knowledge engineering and hybrid neuro-symbolic systems, offering no coverage 
+2026-09-17 18:33:12,776 | INFO | research_agent.evaluation | evaluating | subquestion=4 | batch=2/2 | papers=2
+2026-09-17 18:33:12,776 | INFO | research_agent.evaluation | score | 1 | drop | 10.18653/v1/2024.findings-acl.738 | This paper provides a general survey of multimodal large language models and does not address halluc
+2026-09-17 18:33:12,776 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s11280-024-01276-1 | This paper focuses on personalization and user interaction in large language models without discussi
+2026-09-17 18:33:12,776 | INFO | research_agent.evaluation | evaluate summary | scored=12 | selected=1 | dropped=11 | cutoff=3
+2026-09-17 18:33:12,776 | INFO | research_agent.orchestrator | threshold | subquestion=4 | the query returned 12 records but only 1 were relevant (minimum 5); typical rejections: The abstract describes the Flamingo multimodal model for few-shot learning tasks, with no  | The abstract broadly surveys LLM evaluation methodologies and briefly mentions agent appli | The abstract presents a general survey of large language models, their training datasets,  | reformulating (1 of 1 allowed)
+2026-09-17 18:33:17,874 | INFO | research_agent.llm | llm | prompt_chars=1052 | response_chars=105
+2026-09-17 18:33:17,876 | INFO | research_agent.planning | reformulated | subquestion=4 | old='benchmarking detecting hallucination evaluation metrics autonomous language model agents' | new='hallucination benchmark evaluation long horizon autonomous agent trajectory detection'
+2026-09-17 18:33:17,876 | INFO | research_agent.retrieval | retrieving | subquestion=4 | query='hallucination benchmark evaluation long horizon autonomous agent trajectory detection'
+2026-09-17 18:33:19,222 | INFO | research_agent.retrieval | retrieved | subquestion=4 | records=20 | with_abstract=20
+2026-09-17 18:33:19,222 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 18:33:19,786 | INFO | research_agent.validation | verify | match | 10.1016/j.inffus.2025.103599
+2026-09-17 18:33:20,175 | INFO | research_agent.validation | verify | match | 10.70777/si.v2i3.15161
+2026-09-17 18:33:20,574 | INFO | research_agent.validation | verify | match | 10.3390/s25196033
+2026-09-17 18:33:20,961 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2311.10813
+2026-09-17 18:33:21,485 | INFO | research_agent.validation | verify | match | 10.32388/gxr68q
+2026-09-17 18:33:21,872 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2402.10350
+2026-09-17 18:33:22,239 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2112.11561
+2026-09-17 18:33:22,752 | INFO | research_agent.validation | verify | match | 10.1145/3676536.3698390
+2026-09-17 18:33:23,257 | INFO | research_agent.validation | verify | match | 10.3390/s25175272
+2026-09-17 18:33:23,641 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2404.04442
+2026-09-17 18:33:24,043 | INFO | research_agent.validation | verify | match | 10.3390/en19030617
+2026-09-17 18:33:24,579 | INFO | research_agent.validation | verify | match | 10.3390/eng6070153
+2026-09-17 18:33:24,972 | INFO | research_agent.validation | verify | match | 10.3390/app15169096
+2026-09-17 18:33:24,973 | INFO | research_agent.validation | verify summary | {'verified': 9, 'flagged': 4, 'unchecked': 0}
+2026-09-17 18:33:24,973 | INFO | research_agent.evaluation | evaluating | subquestion=4 | batch=1/2 | papers=10
+2026-09-17 18:33:25,244 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 1/5 in 2s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa
+2026-09-17 18:33:27,479 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 2/5 in 4s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa
+2026-09-17 18:33:31,757 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 3/5 in 8s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa
+2026-09-17 18:33:40,005 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 4/5 in 16s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa
+2026-09-17 18:33:56,276 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 5/5 in 32s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa
+2026-09-17 18:36:00,047 | INFO | research_agent.orchestrator | run | question='What approaches reduce hallucination in LLM-based autonomous agents?'
+2026-09-17 18:36:00,049 | INFO | research_agent.planning | planning | question='What approaches reduce hallucination in LLM-based autonomous agents?' | feedback=''
+2026-09-17 18:36:00,050 | INFO | research_agent.planning | planned | 1 | What retrieval-augmented generation and external tool-integration frameworks reduce hallucination in autonomous LLM agents? | query='retrieval augmented generation tool integration reduce hallucination llm agents'
+2026-09-17 18:36:00,050 | INFO | research_agent.planning | planned | 2 | How do self-reflection, planning feedback loops, and multi-agent consensus mechanisms mitigate unfaithful reasoning? | query='self reflection multi agent collaboration reduce hallucination autonomous reasoning'
+2026-09-17 18:36:00,050 | INFO | research_agent.planning | planned | 3 | Which fine-tuning, alignment, and constrained decoding methods specifically target hallucination reduction in agentic workflows? | query='reinforcement learning alignment fine tuning decoding hallucination reduction agents'
+2026-09-17 18:36:00,050 | INFO | research_agent.planning | planned | 4 | How are hallucinations in autonomous agents benchmarked, detected, and evaluated during long-horizon tasks? | query='benchmarking detecting hallucination evaluation metrics autonomous language model agents'
+2026-09-17 18:36:05,621 | INFO | research_agent.orchestrator | review1 | decision=approve | feedback=''
+2026-09-17 18:36:05,621 | INFO | research_agent.retrieval | retrieving | subquestion=1 | query='retrieval augmented generation tool integration reduce hallucination llm agents'
+2026-09-17 18:36:05,625 | INFO | research_agent.retrieval | retrieved | subquestion=1 | records=20 | with_abstract=19
+2026-09-17 18:36:05,625 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 18:36:05,625 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2312.10997
+2026-09-17 18:36:05,626 | INFO | research_agent.validation | verify | match | 10.18653/v1/2023.emnlp-main.322
+2026-09-17 18:36:05,626 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.naacl-long.219
+2026-09-17 18:36:05,627 | INFO | research_agent.validation | verify | match | 10.1038/s41591-024-03425-5
+2026-09-17 18:36:05,627 | INFO | research_agent.validation | verify | match | 10.1016/j.aei.2025.103212
+2026-09-17 18:36:05,627 | INFO | research_agent.validation | verify | match | 10.1038/s41746-025-01519-z
+2026-09-17 18:36:05,628 | INFO | research_agent.validation | verify | match | 10.1093/jamia/ocaf008
+2026-09-17 18:36:05,628 | INFO | research_agent.validation | verify | match | 10.1145/3728894
+2026-09-17 18:36:05,629 | INFO | research_agent.validation | verify | match | 10.18653/v1/2023.emnlp-main.187
+2026-09-17 18:36:05,629 | INFO | research_agent.validation | verify | match | 10.1145/3605764.3623985
+2026-09-17 18:36:05,629 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.01219
+2026-09-17 18:36:05,630 | INFO | research_agent.validation | verify | match | 10.1007/s11704-026-60308-3
+2026-09-17 18:36:05,631 | INFO | research_agent.validation | verify | match | 10.1111/jels.12413
+2026-09-17 18:36:05,631 | INFO | research_agent.validation | verify | match | 10.1007/s10462-024-10888-y
+2026-09-17 18:36:05,631 | INFO | research_agent.validation | verify | match | 10.1007/s12599-025-00945-3
+2026-09-17 18:36:05,632 | INFO | research_agent.validation | verify | match | 10.1145/3637528.3671458
+2026-09-17 18:36:05,633 | INFO | research_agent.validation | verify | match | 10.1162/coli.a.16
+2026-09-17 18:36:05,633 | INFO | research_agent.validation | verify | match | 10.3390/make6040116
+2026-09-17 18:36:05,633 | INFO | research_agent.validation | verify | match | 10.3390/ai6090226
+2026-09-17 18:36:05,634 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v38i17.29936
+2026-09-17 18:36:05,634 | INFO | research_agent.validation | verify summary | {'verified': 18, 'flagged': 2, 'unchecked': 0}
+2026-09-17 18:36:05,634 | INFO | research_agent.evaluation | evaluating | subquestion=1 | batch=1/2 | papers=10
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2312.10997 | The paper reviews general RAG paradigms and their role in mitigating LLM hallucinations, providing u
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 2 | drop | 10.18653/v1/2023.emnlp-main.322 | The paper proposes a query-rewriting framework for retrieval-augmented LLMs in question-answering ta
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 3 | keep | 10.18653/v1/2024.naacl-long.219 | Rated from the title alone as the abstract contains no summary text, the paper explores using knowle
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 1 | drop | 10.1038/s41591-024-03425-5 | Rated from the title alone as no abstract is available, the paper focuses on reporting guidelines fo
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 2 | drop | 10.1016/j.aei.2025.103212 | The paper proposes a hybrid RAG framework for domain-centric question answering in smart manufacturi
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 2 | drop | 10.1038/s41746-025-01519-z | The paper studies RAG for medical fitness assessment and observes reduced hallucinations, but it tar
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 2 | drop | 10.1093/jamia/ocaf008 | The paper presents a systematic review of RAG applications in biomedicine, which does not address ha
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 2 | drop | 10.1145/3728894 | The paper investigates hallucination taxonomy and mitigation in repository-level code generation, wi
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 3 | keep | 10.18653/v1/2023.emnlp-main.187 | The paper introduces a benchmark for tool-augmented LLMs, providing relevant background on external 
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 1 | drop | 10.1145/3605764.3623985 | The paper focuses on security risks and indirect prompt injection attacks in LLM-integrated applicat
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | evaluating | subquestion=1 | batch=2/2 | papers=10
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2309.01219 | This paper provides a general survey on LLM hallucination mitigation, offering useful background con
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 2 | drop | 10.1007/s11704-026-60308-3 | This paper offers a broad overview of LLM development and agentic reasoning tangentially, but it doe
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 3 | keep | 10.1111/jels.12413 | This paper empirically evaluates how RAG reduces hallucinations in commercial AI legal tools, provid
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s10462-024-10888-y | This paper presents a general survey of LLM architectures and downstream applications without addres
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s12599-025-00945-3 | This paper addresses general user dissatisfaction with enterprise search systems and does not discus
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 1 | drop | 10.1145/3637528.3671458 | This paper focuses on bias and fairness issues in information retrieval systems, which is unrelated 
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 3 | keep | 10.1162/coli.a.16 | This paper surveys LLM hallucination mitigation strategies generally, serving as useful context but 
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 3 | keep | 10.3390/make6040116 | This paper investigates RAG implementation in medical chatbots to improve response generation and fa
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 3 | keep | 10.3390/ai6090226 | This paper reviews RAG architectural variants used to reduce hallucinations and ensure factual consi
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | score | 3 | keep | 10.1609/aaai.v38i17.29936 | This paper proposes a retrieval-based experiential learning framework for autonomous LLM agents, whi
+2026-09-17 18:36:05,635 | INFO | research_agent.evaluation | evaluate summary | scored=20 | selected=9 | dropped=11 | cutoff=3
+2026-09-17 18:36:05,635 | INFO | research_agent.retrieval | retrieving | subquestion=2 | query='self reflection multi agent collaboration reduce hallucination autonomous reasoning'
+2026-09-17 18:36:05,638 | INFO | research_agent.retrieval | retrieved | subquestion=2 | records=20 | with_abstract=20
+2026-09-17 18:36:05,638 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 18:36:05,638 | INFO | research_agent.validation | verify | match | 10.1145/3586183.3606763
+2026-09-17 18:36:05,638 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2308.11432
+2026-09-17 18:36:05,639 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.naacl-long.15
+2026-09-17 18:36:05,639 | INFO | research_agent.validation | verify | match | 10.1109/mwc.016.2300600
+2026-09-17 18:36:05,639 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.07864
+2026-09-17 18:36:05,639 | INFO | research_agent.validation | verify | match | 10.3390/fi17090404
+2026-09-17 18:36:05,640 | INFO | research_agent.validation | verify | not in Crossref | 10.4230/lipics.cosit.2024.11
+2026-09-17 18:36:05,640 | INFO | research_agent.validation | verify | match | 10.1080/00207543.2025.2604311
+2026-09-17 18:36:05,640 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2402.01680
+2026-09-17 18:36:05,640 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v40i35.40229
+2026-09-17 18:36:05,641 | INFO | research_agent.validation | verify | match | 10.1038/s41586-025-10097-9
+2026-09-17 18:36:05,641 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.06794
+2026-09-17 18:36:05,641 | INFO | research_agent.validation | verify | match | 10.1109/access.2021.3140175
+2026-09-17 18:36:05,641 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2404.11584
+2026-09-17 18:36:05,642 | INFO | research_agent.validation | verify | match | 10.1007/s10462-025-11422-4
+2026-09-17 18:36:05,643 | INFO | research_agent.validation | verify | match | 10.1007/s44212-024-00060-w
+2026-09-17 18:36:05,643 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.05300
+2026-09-17 18:36:05,643 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.findings-emnlp.329
+2026-09-17 18:36:05,643 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2309.02427
+2026-09-17 18:36:05,643 | INFO | research_agent.validation | verify summary | {'verified': 11, 'flagged': 8, 'unchecked': 0}
+2026-09-17 18:36:05,643 | INFO | research_agent.evaluation | evaluating | subquestion=2 | batch=1/2 | papers=10
+2026-09-17 18:36:05,644 | INFO | research_agent.evaluation | score | 3 | keep | 10.1145/3586183.3606763 | The abstract discusses an agent architecture incorporating reflection and dynamic planning, but it d
+2026-09-17 18:36:05,644 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2308.11432 | This broad survey introduces LLM-based autonomous agent frameworks and applications without specific
+2026-09-17 18:36:05,644 | INFO | research_agent.evaluation | score | 2 | drop | 10.18653/v1/2024.naacl-long.15 | The abstract is missing, and the title indicates a focus on multi-persona self-collaboration without
+2026-09-17 18:36:05,644 | INFO | research_agent.evaluation | score | 2 | drop | 10.1109/mwc.016.2300600 | The abstract applies agent planning and reflection specifically to 6G communication tasks rather tha
+2026-09-17 18:36:05,644 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2309.07864 | This survey provides a general overview of LLM-based agents without addressing hallucination reducti
+2026-09-17 18:36:05,644 | INFO | research_agent.evaluation | score | 2 | drop | 10.3390/fi17090404 | The abstract presents a broad review of agentic AI architectures including planning and reflection, 
+2026-09-17 18:36:05,644 | INFO | research_agent.evaluation | score | 1 | drop | 10.4230/lipics.cosit.2024.11 | The abstract proposes a framework for deterministic software artifacts from LLMs and does not addres
+2026-09-17 18:36:05,644 | INFO | research_agent.evaluation | score | 2 | drop | 10.1080/00207543.2025.2604311 | The abstract investigates multi-agent consensus-seeking specifically for supply chain management wit
+2026-09-17 18:36:05,644 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2402.01680 | This survey covers general LLM-based multi-agent systems and communication mechanisms, but does not 
+2026-09-17 18:36:05,644 | INFO | research_agent.evaluation | score | 5 | keep | 10.1609/aaai.v40i35.40229 | The abstract directly addresses hallucination mitigation by proposing a framework that combines intr
+2026-09-17 18:36:05,644 | INFO | research_agent.evaluation | evaluating | subquestion=2 | batch=2/2 | papers=9
+2026-09-17 18:36:05,645 | INFO | research_agent.evaluation | score | 3 | keep | 10.1038/s41586-025-10097-9 | The paper describes a multi-agent system designed for clinical diagnostic decision support with veri
+2026-09-17 18:36:05,645 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2309.06794 | The abstract presents a broad review of hallucination taxonomies and improvement approaches in gener
+2026-09-17 18:36:05,645 | INFO | research_agent.evaluation | score | 1 | drop | 10.1109/access.2021.3140175 | The paper focuses on the taxonomy and applications of the Metaverse and does not cover large languag
+2026-09-17 18:36:05,645 | INFO | research_agent.evaluation | score | 4 | keep | 10.48550/arxiv.2404.11584 | The paper surveys single- and multi-agent architectures, specifically detailing planning, execution,
+2026-09-17 18:36:05,645 | INFO | research_agent.evaluation | score | 3 | keep | 10.1007/s10462-025-11422-4 | The abstract provides a high-level survey of agentic AI architectures and paradigms without explicit
+2026-09-17 18:36:05,645 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s44212-024-00060-w | The paper focuses on generative AI applications for urban digital twins and smart city planning, whi
+2026-09-17 18:36:05,645 | INFO | research_agent.evaluation | score | 5 | keep | 10.48550/arxiv.2307.05300 | The paper directly demonstrates how a multi-persona self-collaboration and reflection mechanism in l
+2026-09-17 18:36:05,645 | INFO | research_agent.evaluation | score | 4 | keep | 10.18653/v1/2024.findings-emnlp.329 | The paper proposes a multi-agent collaboration framework with multi-round discussions and confidence
+2026-09-17 18:36:05,645 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2309.02427 | The paper outlines a general cognitive architecture framework for language agents covering decision-
+2026-09-17 18:36:05,645 | INFO | research_agent.evaluation | evaluate summary | scored=19 | selected=9 | dropped=10 | cutoff=3
+2026-09-17 18:36:05,645 | INFO | research_agent.retrieval | retrieving | subquestion=3 | query='reinforcement learning alignment fine tuning decoding hallucination reduction agents'
+2026-09-17 18:36:05,647 | INFO | research_agent.retrieval | retrieved | subquestion=3 | records=20 | with_abstract=20
+2026-09-17 18:36:05,647 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 18:36:05,648 | INFO | research_agent.validation | verify | match | 10.1186/s40537-021-00492-0
+2026-09-17 18:36:05,648 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v38i16.29771
+2026-09-17 18:36:05,648 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2202.03629
+2026-09-17 18:36:05,649 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.1803.01164
+2026-09-17 18:36:05,649 | INFO | research_agent.validation | verify | match | 10.1145/3617592
+2026-09-17 18:36:05,650 | INFO | research_agent.validation | verify | match | 10.1039/d4sc03921a
+2026-09-17 18:36:05,650 | INFO | research_agent.validation | verify | match | 10.3389/frai.2025.1622292
+2026-09-17 18:36:05,651 | INFO | research_agent.validation | verify | match | 10.1145/3743127
+2026-09-17 18:36:05,651 | INFO | research_agent.validation | verify | match | 10.3390/healthcare11202776
+2026-09-17 18:36:05,652 | INFO | research_agent.validation | verify | match | 10.3390/s21144758
+2026-09-17 18:36:05,652 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.06435
+2026-09-17 18:36:05,652 | INFO | research_agent.validation | verify | match | 10.1609/aaai.v38i8.28777
+2026-09-17 18:36:05,653 | INFO | research_agent.validation | verify | match | 10.1007/s13347-025-00928-y
+2026-09-17 18:36:05,653 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2404.18930
+2026-09-17 18:36:05,653 | INFO | research_agent.validation | verify summary | {'verified': 10, 'flagged': 4, 'unchecked': 0}
+2026-09-17 18:36:05,653 | INFO | research_agent.evaluation | evaluating | subquestion=3 | batch=1/2 | papers=10
+2026-09-17 18:36:05,653 | INFO | research_agent.evaluation | score | 1 | drop | 10.1186/s40537-021-00492-0 | The abstract discusses text data augmentation techniques for deep learning in NLP without addressing
+2026-09-17 18:36:05,654 | INFO | research_agent.evaluation | score | 3 | keep | 10.1609/aaai.v38i16.29771 | The abstract discusses alignment via Direct Preference Optimization to prevent hallucinations in vis
+2026-09-17 18:36:05,654 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2202.03629 | The abstract provides a general survey of hallucination measurement and mitigation techniques in nat
+2026-09-17 18:36:05,654 | INFO | research_agent.evaluation | score | 1 | drop | 10.48550/arxiv.1803.01164 | The abstract presents a broad historical survey of deep learning approaches across various domains a
+2026-09-17 18:36:05,654 | INFO | research_agent.evaluation | score | 2 | drop | 10.1145/3617592 | The abstract mentions object hallucination as a challenge in image captioning, but it does not addre
+2026-09-17 18:36:05,654 | INFO | research_agent.evaluation | score | 2 | drop | 10.1039/d4sc03921a | The abstract reviews autonomous agent workflows and LLM capabilities in chemistry and other scientif
+2026-09-17 18:36:05,654 | INFO | research_agent.evaluation | score | 3 | keep | 10.3389/frai.2025.1622292 | The abstract investigates LLM hallucination attribution and prompting strategies, providing useful c
+2026-09-17 18:36:05,654 | INFO | research_agent.evaluation | score | 3 | keep | 10.1145/3743127 | The abstract analyzes reinforcement learning from human feedback as an alignment method for LLMs, of
+2026-09-17 18:36:05,654 | INFO | research_agent.evaluation | score | 2 | drop | 10.3390/healthcare11202776 | The abstract discusses LLM integration and training strategies in healthcare generally, but does not
+2026-09-17 18:36:05,654 | INFO | research_agent.evaluation | score | 1 | drop | 10.3390/s21144758 | The abstract focuses on graph neural networks for medical data analysis and does not involve LLMs, h
+2026-09-17 18:36:05,654 | INFO | research_agent.evaluation | evaluating | subquestion=3 | batch=2/2 | papers=4
+2026-09-17 18:36:05,654 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2307.06435 | This paper provides a broad survey of general large language model concepts and fine-tuning, but it 
+2026-09-17 18:36:05,654 | INFO | research_agent.evaluation | score | 2 | drop | 10.1609/aaai.v38i8.28777 | This paper explores fine-tuning and reinforcement learning for explainable recommendation systems, b
+2026-09-17 18:36:05,654 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s13347-025-00928-y | This paper focuses on political and moral bias resulting from reinforcement learning from human feed
+2026-09-17 18:36:05,654 | INFO | research_agent.evaluation | score | 3 | keep | 10.48550/arxiv.2404.18930 | This survey provides useful background on hallucination mitigation strategies and fine-tuning in mul
+2026-09-17 18:36:05,654 | INFO | research_agent.evaluation | evaluate summary | scored=14 | selected=5 | dropped=9 | cutoff=3
+2026-09-17 18:36:05,654 | INFO | research_agent.retrieval | retrieving | subquestion=4 | query='benchmarking detecting hallucination evaluation metrics autonomous language model agents'
+2026-09-17 18:36:05,657 | INFO | research_agent.retrieval | retrieved | subquestion=4 | records=20 | with_abstract=20
+2026-09-17 18:36:05,657 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 18:36:05,658 | INFO | research_agent.validation | verify | match | 10.1007/s11704-024-40231-1
+2026-09-17 18:36:05,658 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2204.14198
+2026-09-17 18:36:05,658 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2307.03109
+2026-09-17 18:36:05,658 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2402.06196
+2026-09-17 18:36:05,659 | INFO | research_agent.validation | verify | match | 10.2196/57400
+2026-09-17 18:36:05,659 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2302.04761
+2026-09-17 18:36:05,659 | INFO | research_agent.validation | verify | match | 10.1145/3604237.3626869
+2026-09-17 18:36:05,659 | INFO | research_agent.validation | verify | match | 10.36227/techrxiv.23589741.v1
+2026-09-17 18:36:05,660 | INFO | research_agent.validation | verify | match | 10.1038/s43018-025-00991-6
+2026-09-17 18:36:05,660 | INFO | research_agent.validation | verify | not in Crossref | 10.4230/oasics.icpec.2023.9
+2026-09-17 18:36:05,660 | INFO | research_agent.validation | verify | match | 10.18653/v1/2024.findings-acl.738
+2026-09-17 18:36:05,661 | INFO | research_agent.validation | verify | match | 10.1007/s11280-024-01276-1
+2026-09-17 18:36:05,661 | INFO | research_agent.validation | verify summary | {'verified': 7, 'flagged': 5, 'unchecked': 0}
+2026-09-17 18:36:05,661 | INFO | research_agent.evaluation | evaluating | subquestion=4 | batch=1/2 | papers=10
+2026-09-17 18:36:05,661 | INFO | research_agent.evaluation | score | 3 | keep | 10.1007/s11704-024-40231-1 | The abstract provides a general survey of LLM-based autonomous agents, including evaluation strategi
+2026-09-17 18:36:05,661 | INFO | research_agent.evaluation | score | 1 | drop | 10.48550/arxiv.2204.14198 | The abstract describes the Flamingo multimodal model for few-shot learning tasks, with no relevance 
+2026-09-17 18:36:05,661 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2307.03109 | The abstract broadly surveys LLM evaluation methodologies and briefly mentions agent applications, b
+2026-09-17 18:36:05,661 | INFO | research_agent.evaluation | score | 1 | drop | 10.48550/arxiv.2402.06196 | The abstract presents a general survey of large language models, their training datasets, and standa
+2026-09-17 18:36:05,661 | INFO | research_agent.evaluation | score | 1 | drop | 10.2196/57400 | The abstract covers a systematic review of large language models in mental health clinical applicati
+2026-09-17 18:36:05,661 | INFO | research_agent.evaluation | score | 2 | drop | 10.48550/arxiv.2302.04761 | The abstract introduces Toolformer to enable language models to use external APIs, sharing concepts 
+2026-09-17 18:36:05,661 | INFO | research_agent.evaluation | score | 1 | drop | 10.1145/3604237.3626869 | The abstract surveys financial applications of large language models and does not discuss hallucinat
+2026-09-17 18:36:05,661 | INFO | research_agent.evaluation | score | 1 | drop | 10.36227/techrxiv.23589741.v1 | The abstract offers a broad overview of LLM architectures and applications across domains, without a
+2026-09-17 18:36:05,661 | INFO | research_agent.evaluation | score | 2 | drop | 10.1038/s43018-025-00991-6 | The abstract evaluates a tool-augmented clinical AI agent for decision-making accuracy, which touche
+2026-09-17 18:36:05,661 | INFO | research_agent.evaluation | score | 1 | drop | 10.4230/oasics.icpec.2023.9 | The abstract explores knowledge engineering and hybrid neuro-symbolic systems, offering no coverage 
+2026-09-17 18:36:05,661 | INFO | research_agent.evaluation | evaluating | subquestion=4 | batch=2/2 | papers=2
+2026-09-17 18:36:05,662 | INFO | research_agent.evaluation | score | 1 | drop | 10.18653/v1/2024.findings-acl.738 | This paper provides a general survey of multimodal large language models and does not address halluc
+2026-09-17 18:36:05,662 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s11280-024-01276-1 | This paper focuses on personalization and user interaction in large language models without discussi
+2026-09-17 18:36:05,662 | INFO | research_agent.evaluation | evaluate summary | scored=12 | selected=1 | dropped=11 | cutoff=3
+2026-09-17 18:36:05,662 | INFO | research_agent.orchestrator | threshold | subquestion=4 | the query returned 12 records but only 1 were relevant (minimum 5); typical rejections: The abstract describes the Flamingo multimodal model for few-shot learning tasks, with no  | The abstract broadly surveys LLM evaluation methodologies and briefly mentions agent appli | The abstract presents a general survey of large language models, their training datasets,  | reformulating (1 of 1 allowed)
+2026-09-17 18:36:05,662 | INFO | research_agent.planning | reformulated | subquestion=4 | old='benchmarking detecting hallucination evaluation metrics autonomous language model agents' | new='hallucination benchmark evaluation long horizon autonomous agent trajectory detection'
+2026-09-17 18:36:05,662 | INFO | research_agent.retrieval | retrieving | subquestion=4 | query='hallucination benchmark evaluation long horizon autonomous agent trajectory detection'
+2026-09-17 18:36:05,664 | INFO | research_agent.retrieval | retrieved | subquestion=4 | records=20 | with_abstract=20
+2026-09-17 18:36:05,664 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 18:36:05,665 | INFO | research_agent.validation | verify | match | 10.1016/j.inffus.2025.103599
+2026-09-17 18:36:05,665 | INFO | research_agent.validation | verify | match | 10.70777/si.v2i3.15161
+2026-09-17 18:36:05,666 | INFO | research_agent.validation | verify | match | 10.3390/s25196033
+2026-09-17 18:36:05,666 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2311.10813
+2026-09-17 18:36:05,666 | INFO | research_agent.validation | verify | match | 10.32388/gxr68q
+2026-09-17 18:36:05,666 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2402.10350
+2026-09-17 18:36:05,667 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2112.11561
+2026-09-17 18:36:05,667 | INFO | research_agent.validation | verify | match | 10.1145/3676536.3698390
+2026-09-17 18:36:05,668 | INFO | research_agent.validation | verify | match | 10.3390/s25175272
+2026-09-17 18:36:05,668 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2404.04442
+2026-09-17 18:36:05,668 | INFO | research_agent.validation | verify | match | 10.3390/en19030617
+2026-09-17 18:36:05,669 | INFO | research_agent.validation | verify | match | 10.3390/eng6070153
+2026-09-17 18:36:05,669 | INFO | research_agent.validation | verify | match | 10.3390/app15169096
+2026-09-17 18:36:05,669 | INFO | research_agent.validation | verify summary | {'verified': 9, 'flagged': 4, 'unchecked': 0}
+2026-09-17 18:36:05,669 | INFO | research_agent.evaluation | evaluating | subquestion=4 | batch=1/2 | papers=10
+2026-09-17 18:36:06,148 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 1/5 in 2s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/ [quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier]
+2026-09-17 18:36:08,408 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 2/5 in 4s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/ [quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier]
+2026-09-17 18:36:12,686 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 3/5 in 8s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/ [quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier]
+2026-09-17 18:36:20,937 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 4/5 in 16s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/ [quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier]
+2026-09-17 18:36:37,167 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 5/5 in 32s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/ [quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier]

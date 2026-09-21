@@ -1,0 +1,59 @@
+# Stage 5 live evidence - excerpt of output/run.log (17 Sept 2026), unedited lines
+# Run 1 (18:33): threshold trigger 2 fires for sub-question 4, Planning Agent reformulates the query live,
+#                OpenAlex returns 20 new records, Crossref verifies 9, then scoring meets HTTP 429.
+
+2026-09-17 18:33:12,776 | INFO | research_agent.orchestrator | threshold | subquestion=4 | the query returned 12 records but only 1 were relevant (minimum 5); typical rejections: The abstract describes the Flamingo multimodal model for few-shot learning tasks, with no  | The abstract broadly surveys LLM evaluation methodologies and briefly mentions agent appli | The abstract presents a general survey of large language models, their training datasets,  | reformulating (1 of 1 allowed)
+2026-09-17 18:33:17,874 | INFO | research_agent.llm | llm | prompt_chars=1052 | response_chars=105
+2026-09-17 18:33:17,876 | INFO | research_agent.planning | reformulated | subquestion=4 | old='benchmarking detecting hallucination evaluation metrics autonomous language model agents' | new='hallucination benchmark evaluation long horizon autonomous agent trajectory detection'
+2026-09-17 18:33:17,876 | INFO | research_agent.retrieval | retrieving | subquestion=4 | query='hallucination benchmark evaluation long horizon autonomous agent trajectory detection'
+2026-09-17 18:33:19,222 | INFO | research_agent.retrieval | retrieved | subquestion=4 | records=20 | with_abstract=20
+2026-09-17 18:33:19,222 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 18:33:19,786 | INFO | research_agent.validation | verify | match | 10.1016/j.inffus.2025.103599
+2026-09-17 18:33:20,175 | INFO | research_agent.validation | verify | match | 10.70777/si.v2i3.15161
+2026-09-17 18:33:20,574 | INFO | research_agent.validation | verify | match | 10.3390/s25196033
+2026-09-17 18:33:20,961 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2311.10813
+2026-09-17 18:33:21,485 | INFO | research_agent.validation | verify | match | 10.32388/gxr68q
+2026-09-17 18:33:21,872 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2402.10350
+2026-09-17 18:33:22,239 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2112.11561
+2026-09-17 18:33:22,752 | INFO | research_agent.validation | verify | match | 10.1145/3676536.3698390
+2026-09-17 18:33:23,257 | INFO | research_agent.validation | verify | match | 10.3390/s25175272
+2026-09-17 18:33:23,641 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2404.04442
+2026-09-17 18:33:24,043 | INFO | research_agent.validation | verify | match | 10.3390/en19030617
+2026-09-17 18:33:24,579 | INFO | research_agent.validation | verify | match | 10.3390/eng6070153
+2026-09-17 18:33:24,972 | INFO | research_agent.validation | verify | match | 10.3390/app15169096
+2026-09-17 18:33:24,973 | INFO | research_agent.validation | verify summary | {'verified': 9, 'flagged': 4, 'unchecked': 0}
+2026-09-17 18:33:24,973 | INFO | research_agent.evaluation | evaluating | subquestion=4 | batch=1/2 | papers=10
+2026-09-17 18:33:25,244 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 1/5 in 2s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa
+2026-09-17 18:33:27,479 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 2/5 in 4s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa
+2026-09-17 18:33:31,757 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 3/5 in 8s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa
+2026-09-17 18:33:40,005 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 4/5 in 16s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa
+2026-09-17 18:33:56,276 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 5/5 in 32s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa
+
+# Run 2 (18:36): same point replayed from cache; quota id now logged (remediation #6) ->
+#                GenerateRequestsPerDayPerProjectPerModel-FreeTier = daily free-tier quota exhausted.
+
+2026-09-17 18:36:05,662 | INFO | research_agent.orchestrator | threshold | subquestion=4 | the query returned 12 records but only 1 were relevant (minimum 5); typical rejections: The abstract describes the Flamingo multimodal model for few-shot learning tasks, with no  | The abstract broadly surveys LLM evaluation methodologies and briefly mentions agent appli | The abstract presents a general survey of large language models, their training datasets,  | reformulating (1 of 1 allowed)
+2026-09-17 18:36:05,662 | INFO | research_agent.planning | reformulated | subquestion=4 | old='benchmarking detecting hallucination evaluation metrics autonomous language model agents' | new='hallucination benchmark evaluation long horizon autonomous agent trajectory detection'
+2026-09-17 18:36:05,662 | INFO | research_agent.retrieval | retrieving | subquestion=4 | query='hallucination benchmark evaluation long horizon autonomous agent trajectory detection'
+2026-09-17 18:36:05,664 | INFO | research_agent.retrieval | retrieved | subquestion=4 | records=20 | with_abstract=20
+2026-09-17 18:36:05,664 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-09-17 18:36:05,665 | INFO | research_agent.validation | verify | match | 10.1016/j.inffus.2025.103599
+2026-09-17 18:36:05,665 | INFO | research_agent.validation | verify | match | 10.70777/si.v2i3.15161
+2026-09-17 18:36:05,666 | INFO | research_agent.validation | verify | match | 10.3390/s25196033
+2026-09-17 18:36:05,666 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2311.10813
+2026-09-17 18:36:05,666 | INFO | research_agent.validation | verify | match | 10.32388/gxr68q
+2026-09-17 18:36:05,666 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2402.10350
+2026-09-17 18:36:05,667 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2112.11561
+2026-09-17 18:36:05,667 | INFO | research_agent.validation | verify | match | 10.1145/3676536.3698390
+2026-09-17 18:36:05,668 | INFO | research_agent.validation | verify | match | 10.3390/s25175272
+2026-09-17 18:36:05,668 | INFO | research_agent.validation | verify | not in Crossref | 10.48550/arxiv.2404.04442
+2026-09-17 18:36:05,668 | INFO | research_agent.validation | verify | match | 10.3390/en19030617
+2026-09-17 18:36:05,669 | INFO | research_agent.validation | verify | match | 10.3390/eng6070153
+2026-09-17 18:36:05,669 | INFO | research_agent.validation | verify | match | 10.3390/app15169096
+2026-09-17 18:36:05,669 | INFO | research_agent.validation | verify summary | {'verified': 9, 'flagged': 4, 'unchecked': 0}
+2026-09-17 18:36:05,669 | INFO | research_agent.evaluation | evaluating | subquestion=4 | batch=1/2 | papers=10
+2026-09-17 18:36:06,148 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 1/5 in 2s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/ [quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier]
+2026-09-17 18:36:08,408 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 2/5 in 4s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/ [quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier]
+2026-09-17 18:36:12,686 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 3/5 in 8s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/ [quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier]
+2026-09-17 18:36:20,937 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 4/5 in 16s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/ [quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier]
+2026-09-17 18:36:37,167 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 5/5 in 32s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/ [quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier]

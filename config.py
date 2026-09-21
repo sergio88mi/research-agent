@@ -21,9 +21,10 @@ GEMINI_ENDPOINT = (
     f"{GEMINI_MODEL}:generateContent"
 )
 LLM_REPAIR_RETRIES = 1  # one repair attempt when the model returns invalid JSON
-LLM_TRANSIENT_RETRIES = 3       # retries on HTTP 429/503, timeouts and dropped connections
-LLM_BACKOFF_SECONDS = 2         # wait 2s, 4s, 8s between those retries
+LLM_TRANSIENT_RETRIES = 5       # retries on HTTP 429/503, timeouts and dropped connections (raised from 3, remediation #5)
+LLM_BACKOFF_SECONDS = 2         # wait 2, 4, 8, 16, 32 s between those retries (~1 min total)
 LLM_TIMEOUT_SECONDS = 90        # a 10-paper scoring prompt can take >60s when the service is busy
+LLM_MAX_RETRY_AFTER_SECONDS = 60  # cap on a provider-supplied Retry-After wait
 
 # --- Literature search --------------------------------------------------------
 OPENALEX_EMAIL = os.getenv("OPENALEX_EMAIL", "")
