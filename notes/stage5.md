@@ -54,6 +54,16 @@ window. The quota that ran out was
 `GenerateRequestsPerDayPerProjectPerModel-FreeTier`: every retry counts as a
 request, so the day's budget went on retries as much as on work.
 
+**Live completion (21 Sept, after the quota reset):** the reformulated
+query for sub-question 4 returned 13 new records of which only 2 were
+relevant - so the retry lifted that sub-question from 1 kept paper to 3, not
+to the threshold of 5. The cap held (no second attempt), Review 2 listed 26
+papers with scores and reasons, and the approved brief records 78 unique
+papers, 55 DOIs verified, 26 approved, 52 excluded, 1 reformulation. Honest
+reading: one automatic reformulation is a modest safety net, not a fix for a
+sub-question the corpus covers thinly; the researcher's reject-scope option
+exists for that case.
+
 **Evidence:** `python main.py "question"` now stops at Review 2; the summary
 line reports `reformulations: N, scope revisions: M`; the brief lists any
 reformulated query under its sub-question. `pytest` -> 41 passed (9 new:
