@@ -1,10 +1,18 @@
 """
-Evaluation & Synthesis Agent - relevance scoring (Stage 4); synthesis follows in Stage 6.
+Evaluation & Synthesis Agent - relevance scoring (Stage 4) and synthesis (Stage 6).
 
 This is the EvaluationSynthesisAgent from Diagram 1. Its local goal: decide,
 for every retrieved paper, whether it actually bears on the sub-question that
-found it. Keyword search returns papers that share words with the query, not
-papers that answer it, so this is the step that turns "results" into "evidence".
+found it, and then turn the approved evidence into a brief the researcher can
+check. Keyword search returns papers that share words with the query, not
+papers that answer it, so scoring is the step that turns "results" into
+"evidence"; synthesis is the step that turns evidence into an answer.
+
+Why synthesis is grounded paper-by-paper first: a summary written from one
+abstract can be checked against that abstract. Themes and gaps are then
+written from those summaries only, and every theme must cite paper numbers
+that exist - the schema rejects a theme that points at a paper not in the set.
+That is the "traceable rather than plausible" requirement from the proposal.
 
 Why the LLM does this and not a formula: judging whether an abstract addresses
 a question is a reading task with no exact answer, which is the proposal's
@@ -44,21 +52,105 @@ class ScoreResponse(BaseModel):
     scores: List[_Score]
 
 
-def _response_model_for(n: int) -> Type[ScoreResponse]:
-    """A ScoreResponse that also demands indices 1..n, each exactly once.
+def _exact_index_model(base: Type[BaseModel], field: str, n: int) -> Type[BaseModel]:
+    """A copy of `base` whose list `field` must contain indices 1..n, each exactly once.
 
     Built per batch because the expected count is only known at call time;
     putting the check in the schema means the LLM repair retry covers it.
     """
-    class _Exact(ScoreResponse):
+    class _Exact(base):
         @model_validator(mode="after")
         def _covers_every_paper(self):
-            got = sorted(s.index for s in self.scores)
+            got = sorted(item.index for item in getattr(self, field))
             if got != list(range(1, n + 1)):
-                raise ValueError(f"expected one score for each index 1..{n}, got {got}")
+                raise ValueError(f"expected one entry for each index 1..{n}, got {got}")
             return self
-    _Exact.__name__ = "ScoreResponse"
+    _Exact.__name__ = base.__name__
     return _Exact
+
+
+def _response_model_for(n: int) -> Type[ScoreResponse]:
+    return _exact_index_model(ScoreResponse, "scores", n)
+
+
+class _Summary(BaseModel):
+    index: int
+    summary: str
+
+
+class SummaryResponse(BaseModel):
+    summaries: List[_Summary]
+
+
+class _Theme(BaseModel):
+    statement: str
+    paper_numbers: List[int]
+
+
+class SynthesisResponse(BaseModel):
+    themes: List[_Theme]
+    gaps: List[str]
+
+
+def _synthesis_model_for(n_papers: int) -> Type[SynthesisResponse]:
+    """Themes must cite only papers 1..n_papers and stay within the configured count."""
+    class _Checked(SynthesisResponse):
+        @model_validator(mode="after")
+        def _grounded(self):
+            if not (config.MIN_THEMES <= len(self.themes) <= config.MAX_THEMES):
+                raise ValueError(f"need {config.MIN_THEMES}-{config.MAX_THEMES} themes, got {len(self.themes)}")
+            for t in self.themes:
+                bad = [k for k in t.paper_numbers if not 1 <= k <= n_papers]
+                if bad or not t.paper_numbers:
+                    raise ValueError(f"theme cites papers outside 1..{n_papers} or none: {t.paper_numbers}")
+            return self
+    _Checked.__name__ = "SynthesisResponse"
+    return _Checked
+
+
+_SUMMARY_PROMPT = """You are writing evidence notes for a literature review.
+
+Research question: "{question}"
+Sub-question: "{subquestion}"
+
+For each paper below write a summary of 2-3 sentences: what the paper does, what it reports, and how
+it bears on the sub-question.
+
+Rules:
+- Use ONLY the title and abstract given. Do not add findings, numbers, methods or claims that are not
+  in the abstract, and do not use anything you may know about the paper from elsewhere.
+- If the abstract says a result was observed, report it as the abstract states it; do not strengthen it.
+- If the abstract is missing, write exactly: "No abstract available; the title suggests: ..." and stop.
+
+Papers:
+{papers}
+
+Return ONLY JSON in this exact shape, with exactly one entry for every index 1 to {n}:
+{{"summaries": [{{"index": 1, "summary": "..."}}]}}"""
+
+
+_SYNTHESIS_PROMPT = """You are synthesising the evidence collected for a literature review.
+
+Research question: "{question}"
+
+Sub-questions:
+{subquestions}
+
+Numbered evidence notes (each written from one paper's abstract):
+{notes}
+
+Tasks:
+1. Identify {min_t} to {max_t} themes that run across the notes. Each theme is one or two sentences and
+   must list the numbers of the papers that support it. Cite only numbers from the list above.
+2. List the gaps: which sub-questions or aspects of the research question the notes do NOT answer, or
+   answer only with general surveys rather than direct studies. Be specific about what is missing.
+
+Rules:
+- Use ONLY the notes above. Do not introduce papers, findings or claims that are not in them.
+- Where a sub-question has few or no papers, say so as a gap.
+
+Return ONLY JSON in this exact shape:
+{{"themes": [{{"statement": "...", "paper_numbers": [1, 4]}}], "gaps": ["...", "..."]}}"""
 
 
 _SCORE_PROMPT = """You are screening papers for a literature review. Rate each paper's relevance to the SUB-QUESTION.
@@ -145,6 +237,59 @@ class EvaluationSynthesisAgent:
         log.info("evaluate summary | scored=%d | selected=%d | dropped=%d | cutoff=%d",
                  len(assessments), kept, len(assessments) - kept, config.RELEVANCE_CUTOFF)
         return assessments
+
+    # ------------------------------------------------------------ synthesis
+    def summarise(self, question: str, subquestions: Sequence[SubQuestion],
+                  papers: Sequence[Paper]) -> List[str]:
+        """One grounded summary per approved paper, in the same order as `papers`.
+
+        Batched per sub-question like scoring, so each prompt carries the
+        sub-question the paper was found for. Returned strings are numbered
+        `[k] Title (year) - summary` where k is the paper's position in the
+        approved list, so the brief, the themes and the reference list all use
+        one numbering.
+        """
+        position = {_key(p): i + 1 for i, p in enumerate(papers)}
+        text_by_key: Dict[str, str] = {}
+        for sq in subquestions:
+            mine = [p for p in papers if p.subquestion_id == sq.id]
+            batches = [mine[i:i + config.EVAL_BATCH_SIZE] for i in range(0, len(mine), config.EVAL_BATCH_SIZE)]
+            for b, batch in enumerate(batches, start=1):
+                log.info("summarising | subquestion=%d | batch=%d/%d | papers=%d", sq.id, b, len(batches), len(batch))
+                prompt = _SUMMARY_PROMPT.format(question=question, subquestion=sq.text,
+                                                papers=self._format_papers(batch), n=len(batch))
+                parsed = llm_client.generate_json(prompt, _exact_index_model(SummaryResponse, "summaries", len(batch)))
+                by_index = {s.index: s.summary.strip() for s in parsed.summaries}
+                for i, p in enumerate(batch, start=1):
+                    text_by_key[_key(p)] = by_index[i]
+        out = []
+        for p in papers:
+            k = position[_key(p)]
+            out.append(f"[{k}] {p.title} ({p.year or 'n.d.'}) - {text_by_key.get(_key(p), 'No summary produced.')}")
+        log.info("summarised | papers=%d", len(out))
+        return out
+
+    def synthesise(self, question: str, subquestions: Sequence[SubQuestion],
+                   papers: Sequence[Paper], summaries: Sequence[str]) -> Tuple[List[str], List[str]]:
+        """Themes and gaps across the approved evidence, written from the summaries only.
+
+        Returns (themes, gaps). Each theme string ends with the paper numbers
+        that support it; the schema has already rejected any number outside
+        1..len(papers), so every citation in the brief points at a real paper.
+        """
+        if not papers:
+            log.warning("synthesise | no approved papers - themes skipped")
+            return [], ["No papers were approved, so no themes could be drawn."]
+        sq_lines = "\n".join(f"{sq.id}. {sq.text}" for sq in subquestions)
+        prompt = _SYNTHESIS_PROMPT.format(question=question, subquestions=sq_lines,
+                                          notes="\n".join(summaries),
+                                          min_t=config.MIN_THEMES, max_t=config.MAX_THEMES)
+        parsed = llm_client.generate_json(prompt, _synthesis_model_for(len(papers)))
+        themes = [f"{t.statement.strip()} [{', '.join(str(k) for k in sorted(set(t.paper_numbers)))}]"
+                  for t in parsed.themes]
+        gaps = [g.strip() for g in parsed.gaps if g.strip()]
+        log.info("synthesised | themes=%d | gaps=%d", len(themes), len(gaps))
+        return themes, gaps
 
 
 def select_papers(papers: Sequence[Paper], assessments: Sequence[Assessment]) -> Tuple[List[Paper], List[Paper]]:

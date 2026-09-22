@@ -24,12 +24,19 @@ def _scores(prompt, score):
 
 
 def _llm(score_by_call):
-    """Fake Gemini: plan JSON, a new query for reformulation prompts, scores for scoring prompts."""
+    """Fake Gemini: plan JSON, a new query for reformulation prompts, scores for scoring prompts,
+    and (since Stage 6) minimal summaries / themes so the run can finish."""
     def fake(prompt, **kw):
         if "research planning assistant" in prompt:
             return PLAN
         if "refining one scholarly search query" in prompt:
             return json.dumps({"search_query": "better query"})
+        if "evidence notes for a literature review" in prompt:
+            n = prompt.count("] Title:")
+            return json.dumps({"summaries": [{"index": i + 1, "summary": "s"} for i in range(n)]})
+        if "synthesising the evidence" in prompt:
+            return json.dumps({"themes": [{"statement": "t1", "paper_numbers": [1]},
+                                          {"statement": "t2", "paper_numbers": [1]}], "gaps": ["g"]})
         return _scores(prompt, score_by_call(prompt))
     return fake
 

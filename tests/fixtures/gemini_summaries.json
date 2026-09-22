@@ -1,0 +1,5 @@
+{"summaries": [
+  {"index": 1, "summary": "The paper proposes a retrieval-augmented method for agents and reports reduced hallucination in its evaluation. It bears directly on the sub-question by testing retrieval as a mitigation."},
+  {"index": 2, "summary": "The paper evaluates image captioning quality metrics. It does not address hallucination in language agents and offers only tangential background."},
+  {"index": 3, "summary": "No abstract available; the title suggests: a survey of grounding techniques."}
+]}

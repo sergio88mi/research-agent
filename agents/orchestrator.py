@@ -7,12 +7,12 @@ chain compound downstream (proposal, section 4). The orchestrator calls each
 agent in turn, enforces the review points and retry limits, and does the
 exact-answer work itself (de-duplication, verification, storage).
 
-Stage 5 wiring:
+Full wiring (Stage 6):
   plan -> review 1 (loop until approved)
   -> for each sub-question: retrieve -> [threshold miss? one reformulation]
        -> dedupe -> verify -> score -> [too few relevant? one reformulation]
   -> review 2: approve | refine (drop papers, re-show) | reject scope (once: back to planning)
-  -> save.
+  -> summarise each approved paper -> themes and gaps -> limitations (computed) -> save.
 
 The two bounded-autonomy limits from the design live here and nowhere else:
 one query reformulation per sub-question (SubQuestion.retried_once) and one
@@ -167,10 +167,11 @@ class Orchestrator:
             limitations.append(f"The researcher rejected the first evidence set and revised the scope once: {feedback!r}.")
             plan = self._approved_plan(question, feedback=feedback)
 
-        reformulated = [sq for sq in plan.subquestions if sq.previous_query]
-        if reformulated:
-            limitations.append("Queries reformulated once after a threshold miss: sub-question(s) "
-                               + ", ".join(str(sq.id) for sq in reformulated) + ".")
+        # Synthesis happens only on approved evidence - the agent never writes
+        # about a paper the researcher has not seen and accepted.
+        summaries = self.evaluator.summarise(question, plan.subquestions, selected)
+        themes, gaps = self.evaluator.synthesise(question, plan.subquestions, selected, summaries)
+
         n_dropped = sum(1 for a in assessments if not a.selected)
         brief = Brief(
             research_question=question,
@@ -178,18 +179,54 @@ class Orchestrator:
             subquestions=plan.subquestions,
             selected_papers=selected,
             assessments=assessments,
-            limitations=limitations + [
-                "Stage 5 output: evidence is screened and approved by the researcher but not yet summarised or synthesised.",
-                f"Relevance was judged from title and abstract only; {n_dropped} of {len(papers)} "
-                f"retrieved papers were excluded (score below {config.RELEVANCE_CUTOFF}/5 or removed at review 2).",
-                "Single source (OpenAlex); abstracts only.",
-            ],
+            summaries=summaries,
+            themes=themes,
+            gaps=gaps,
+            limitations=limitations + self._limitations(plan, papers, selected, assessments),
         )
         md_path, json_path = save_brief(brief)
         log.info("saved | %s | %s", md_path, json_path)
         print(f"\n{len(papers)} unique papers across {len(plan.subquestions)} sub-questions "
               f"| {sum(1 for p in papers if p.doi_verified)} DOIs verified "
               f"| {len(selected)} approved, {n_dropped} excluded "
+              f"| {len(themes)} themes, {len(gaps)} gaps "
               f"| reformulations: {sum(self.retry_counts.values())}, scope revisions: {self.scope_revision_count}")
         print(f"Saved: {md_path}")
         return brief
+
+    def _limitations(self, plan: ResearchPlan, papers: List[Paper], selected: List[Paper],
+                     assessments: List[Assessment]) -> List[str]:
+        """What this search could NOT establish - computed from the run, not written by the model.
+
+        The proposal's traceability requirement: a brief that says what it does
+        not cover is one a researcher can trust more than one that only says
+        what it found.
+        """
+        out = []
+        reformulated = [sq for sq in plan.subquestions if sq.previous_query]
+        if reformulated:
+            out.append("Queries were reformulated once after a threshold miss for sub-question(s) "
+                       + ", ".join(str(sq.id) for sq in reformulated) + "; no further automatic retries were made.")
+        thin = [sq for sq in plan.subquestions
+                if sum(1 for p in selected if p.subquestion_id == sq.id) < config.RETRIEVAL_THRESHOLD]
+        if thin:
+            out.append("Sub-question(s) " + ", ".join(
+                f"{sq.id} ({sum(1 for p in selected if p.subquestion_id == sq.id)} papers)" for sq in thin)
+                + f" ended with fewer than {config.RETRIEVAL_THRESHOLD} approved papers; conclusions there rest on thin evidence.")
+        removed = sum(1 for a in assessments if "removed by the researcher" in a.reason)
+        if removed:
+            out.append(f"{removed} paper(s) were removed by the researcher at review 2.")
+        unverified = sum(1 for p in selected if p.doi_verified is False)
+        if unverified:
+            out.append(f"{unverified} of {len(selected)} approved papers have DOIs not registered with Crossref "
+                       "(typically arXiv preprints registered with DataCite); they are flagged, not excluded.")
+        n_dropped = sum(1 for a in assessments if not a.selected)
+        out += [
+            f"Relevance was judged from title and abstract only; {n_dropped} of {len(papers)} retrieved papers "
+            f"were excluded (score below {config.RELEVANCE_CUTOFF}/5 or removed at review 2). Reasons are listed above.",
+            f"Summaries, themes and gaps were generated by {config.GEMINI_MODEL} from abstracts only and should be "
+            "checked against the full texts before being relied on.",
+            f"Single source (OpenAlex, {config.RESULTS_PER_QUERY} results per query); no full-text access; "
+            "no citation-chasing or date filtering.",
+        ]
+        return out

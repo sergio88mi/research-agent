@@ -1,0 +1,5 @@
+{"themes": [
+  {"statement": "Retrieval-based grounding is the most directly evidenced mitigation in this set.", "paper_numbers": [1]},
+  {"statement": "Much of the evidence is survey-level rather than direct experiments on agents.", "paper_numbers": [1, 3]}
+],
+ "gaps": ["No paper directly benchmarks hallucination in long-horizon agent tasks.", "Sub-question 3 is covered only by a survey without an abstract."]}

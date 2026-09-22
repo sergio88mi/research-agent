@@ -39,8 +39,10 @@ RETRIEVAL_THRESHOLD = 5         # minimum usable records (with abstracts) per su
 MAX_REFORMULATIONS = 1          # one automatic query reformulation per sub-question
 MAX_SCOPE_REVISIONS = 1         # one researcher-triggered scope revision per run
 RELEVANCE_CUTOFF = 3            # keep papers scored >= 3 on a 1-5 scale
-EVAL_BATCH_SIZE = 10            # papers scored per LLM call (bounded prompt size, fewer calls)
-EVAL_ABSTRACT_CHARS = 1200      # abstract is truncated to this many chars in the scoring prompt
+EVAL_BATCH_SIZE = 10            # papers scored (or summarised) per LLM call (bounded prompt size, fewer calls)
+EVAL_ABSTRACT_CHARS = 1200      # abstract is truncated to this many chars in the scoring/summary prompts
+MIN_THEMES = 2                  # synthesis must find at least this many cross-paper themes ...
+MAX_THEMES = 6                  # ... and at most this many, each tied to numbered papers
 
 # --- Files --------------------------------------------------------------------
 OUTPUT_DIR = "output"
