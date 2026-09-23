@@ -139,3 +139,13 @@ def test_review2_numbering_matches_display_order():
     papers = [Paper(doi=f"10.1/p{i}", title=f"P{i}", subquestion_id=1) for i in range(3)]
     decision, fb = ui.review_evidence([SQ], papers, [], can_reject_scope=True)
     assert decision is Decision.REFINE and Orchestrator._parse_numbers(fb) == [2]
+
+
+def test_review1_typo_is_reasked_not_sent_as_feedback(capsys):
+    # Why: 'approv' (seen live) must not trigger a re-plan; a real sentence still counts as feedback.
+    ui = ResearcherInterface(scripted=["approv", "approve"])
+    decision, fb = ui.review_subquestions("i", [])
+    assert decision is Decision.APPROVE and "Not understood" in capsys.readouterr().out
+    ui = ResearcherInterface(scripted=["focus on healthcare applications only"])
+    decision, fb = ui.review_subquestions("i", [])
+    assert decision is Decision.REVISE and fb.startswith("focus on")

@@ -1,0 +1,1570 @@
+{
+  "research_question": "What approaches reduce hallucination in LLM-based autonomous agents?",
+  "interpretation": "The research question is interpreted as an investigation into empirical studies that evaluate specific methodologies and frameworks designed to mitigate factual inaccuracies and hallucinations in autonomous agents powered by large language models.",
+  "subquestions": [
+    {
+      "id": 1,
+      "text": "What retrieval-augmented generation techniques are empirically tested to reduce hallucinations in LLM agents?",
+      "search_query": "retrieval augmented generation hallucination reduction large language model agents empirical study",
+      "approved": true,
+      "retried_once": false,
+      "previous_query": null
+    },
+    {
+      "id": 2,
+      "text": "How do memory management and context window optimization strategies affect hallucination rates in autonomous agents?",
+      "search_query": "memory retrieval context window pruning hallucination reduction autonomous agents",
+      "approved": true,
+      "retried_once": true,
+      "previous_query": "memory management context window optimization hallucination mitigation autonomous agents"
+    },
+    {
+      "id": 3,
+      "text": "What self-correction and reflection mechanisms are evaluated for minimizing errors in LLM-based agent execution?",
+      "search_query": "large language model autonomous agents self correction reflection error mitigation",
+      "approved": true,
+      "retried_once": true,
+      "previous_query": "self correction reflection mechanisms error reduction large language model agents"
+    },
+    {
+      "id": 4,
+      "text": "How do multi-agent debate and verification frameworks perform in empirical evaluations of factuality?",
+      "search_query": "multi agent debate verification frameworks factuality improvement empirical evaluation",
+      "approved": true,
+      "retried_once": false,
+      "previous_query": null
+    }
+  ],
+  "selected_papers": [
+    {
+      "doi": "10.1007/s11704-026-60308-3",
+      "title": "A Survey of Large Language Models",
+      "authors": [
+        "Wayne Xin Zhao",
+        "Kun Zhou",
+        "Junyi Li",
+        "Tianyi Tang",
+        "Zican Dong",
+        "Yupeng Hou",
+        "Beichen Zhang",
+        "Yingqian Min",
+        "Junjie Zhang",
+        "Peiyu Liu",
+        "Xiaolei Wang",
+        "Yifan Du",
+        "Yushuo Chen",
+        "Yushuo Chen",
+        "Zhipeng Chen",
+        "Jinhao Jiang",
+        "Ruiyang Ren",
+        "Yifan Li",
+        "Xinyu Tang",
+        "Peiyu Liu",
+        "Yiwen Hu",
+        "Jian‐Yun Nie",
+        "Ji-Rong Wen"
+      ],
+      "year": 2026,
+      "abstract": "Abstract The rapid evolution of large language models (LLMs) has driven a transformative shift in artificial intelligence (AI), reshaping both research paradigms and practical applications. Distinguished from their predecessors by unprecedented scale and advanced capabilities, LLMs necessitate new frameworks for understanding their development, behavior, and societal impact. This survey systematically reviews recent advancements in LLM techniques across four key dimensions: (1) pre-training methodologies, which establish core model capabilities through large-scale self-supervised training, architectural innovations, and data curation strategies; (2) post-training techniques, including supervised fine-tuning and reinforcement learning, which adapt foundational models to downstream tasks and enhance their alignment and safety; (3) utilization strategies, such as in-context learning, prompt engineering, and agentic reasoning, that optimize real-world deployment and enable effective interaction with external environments; and (4) evaluation methods, encompassing benchmarks for key ability dimensions such as core language capabilities, reasoning, and safety, which support comprehensive and reliable assessment of model performance. Additionally, we identify critical research issues, including those concerning theoretical foundations, efficient scaling, alignment, and agentic capability, and highlight the open challenges they present. By synthesizing state-of-the-art insights and emerging trends, this survey aims to provide a systematic and comprehensive framework for understanding the trajectory, current limitations, and future directions of LLM progress.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.18653/v1/2021.findings-emnlp.320",
+      "title": "Retrieval Augmentation Reduces Hallucination in Conversation",
+      "authors": [
+        "Kurt Shuster",
+        "Spencer Poff",
+        "Moya Chen",
+        "Douwe Kiela",
+        "Jason Weston"
+      ],
+      "year": 2021,
+      "abstract": "Despite showing increasingly human-like conversational abilities, state-of-the-art dialogue models often suffer from factual incorrectness and hallucination of knowledge (Roller et al., 2021).In this work we explore the use of neural-retrieval-in-the-loop architectures -recently shown to be effective in open-domain QA (Lewis et al., 2020b; Izacard and Grave, 2021b) -for knowledge-grounded dialogue, a task that is arguably more challenging as it requires querying based on complex multi-turn dialogue context and generating conversationally coherent responses.We study various types of architectures with multiple components -retrievers, rankers, and encoder-decoders -with the goal of maximizing knowledgeability while retaining conversational ability.We demonstrate that our best models obtain state-of-the-art performance on two knowledge-grounded conversational tasks.The models exhibit open-domain conversational capabilities, generalize effectively to scenarios not within the training data, and, as verified by human evaluations, substantially reduce the well-known problem of knowledge hallucination in state-of-the-art chatbots. * Equal ContributionThe following is a conversation with an AI assistant.The assistant is helpful, creative, clever, and very friendly.Human: Hello, who are you?AI: I am an AI created by OpenAI.How can I help you today?Human: Tell me about Kyunghyun",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.18653/v1/2024.findings-acl.212",
+      "title": "Chain-of-Verification Reduces Hallucination in Large Language Models",
+      "authors": [
+        "Shehzaad Dhuliawala",
+        "Mojtaba Komeili",
+        "Jing Xu",
+        "Roberta Răileanu",
+        "Xian Li",
+        "Aslı Çelikyılmaz",
+        "Jason Weston"
+      ],
+      "year": 2024,
+      "abstract": "Generation of plausible yet incorrect factual information, termed hallucination, is an unsolved issue in large language models.We study the ability of language models to deliberate on the responses they give in order to correct their mistakes.We develop the Chain-of-Verification (COVE) method whereby the model first (i) drafts an initial response; then (ii) plans verification questions to fact-check its draft; (iii) answers those questions independently so the answers are not biased by other responses; and (iv) generates its final verified response.In experiments, we show COVE decreases hallucinations across a variety of tasks, from list-based questions from Wikidata, closed book Multi-SpanQA and longform text generation.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.48550/arxiv.2309.01219",
+      "title": "Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models",
+      "authors": [
+        "Yue Zhang",
+        "Yafu Li",
+        "Leyang Cui",
+        "Deng Cai",
+        "Lemao Liu",
+        "Tingchen Fu",
+        "Xinting Huang",
+        "Enbo Zhao",
+        "Yu Zhang",
+        "Xu, Chen",
+        "Yulong Chen",
+        "Longyue Wang",
+        "Anh Tuan Luu",
+        "Wei Bi",
+        "Freda Shi",
+        "Shuming Shi"
+      ],
+      "year": 2023,
+      "abstract": "While large language models (LLMs) have demonstrated remarkable capabilities across a range of downstream tasks, a significant concern revolves around their propensity to exhibit hallucinations: LLMs occasionally generate content that diverges from the user input, contradicts previously generated context, or misaligns with established world knowledge. This phenomenon poses a substantial challenge to the reliability of LLMs in real-world scenarios. In this paper, we survey recent efforts on the detection, explanation, and mitigation of hallucination, with an emphasis on the unique challenges posed by LLMs. We present taxonomies of the LLM hallucination phenomena and evaluation benchmarks, analyze existing approaches aiming at mitigating LLM hallucination, and discuss potential directions for future research.",
+      "source": "openalex",
+      "doi_verified": false,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.1162/coli.a.16",
+      "title": "🧜Siren’s Song in the AI Ocean: A Survey on Hallucination in Large Language Models",
+      "authors": [
+        "Yue Zhang",
+        "Yafu Li",
+        "Leyang Cui",
+        "Cai Deng",
+        "Lemao Liu",
+        "Tingchen Fu",
+        "Xinting Huang",
+        "Enbo Zhao",
+        "Yanwen Zhang",
+        "Yulong Chen",
+        "Longyue Wang",
+        "Ahn Tuan Luu",
+        "Wei Bi",
+        "Freda Shi",
+        "Shuming Shi"
+      ],
+      "year": 2025,
+      "abstract": "Abstract While large language models (LLMs) have demonstrated remarkable capabilities across a range of downstream tasks, a significant concern revolves around their propensity to exhibit hallucinations: LLMs occasionally generate content that diverges from the user input, contradicts previously generated context, or misaligns with established world knowledge. This phenomenon poses a substantial challenge to the reliability of LLMs in real-world scenarios. In this article, we survey recent efforts on the detection, explanation, and mitigation of hallucination, with an emphasis on the unique challenges posed by LLMs. We present taxonomies of the LLM hallucination phenomena and evaluation benchmarks, analyze existing approaches aiming at mitigating LLM hallucination, and discuss potential directions for future research.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.1145/3805774",
+      "title": "A Survey on Retrieval-Augmented Text Generation for Large Language Models",
+      "authors": [
+        "Yizheng Huang",
+        "Jimmy Xiangji Huang"
+      ],
+      "year": 2026,
+      "abstract": "Retrieval-Augmented Generation (RAG) merges information retrieval (IR) techniques with deep learning advancements to address the static limitations of large language models (LLMs) by enabling the dynamic integration of up-to-date external information. This methodology, focusing primarily on the text domain, provides a cost-effective solution to the generation of plausible but possibly incorrect responses by LLMs, thereby enhancing the accuracy and reliability of their outputs through the use of real-world data. As RAG grows in complexity and incorporates multiple concepts that can influence its performance, this article organizes the RAG paradigm into four categories: pre-retrieval, retrieval, post-retrieval, and generation, offering a detailed perspective from the retrieval viewpoint. It outlines RAG’s mechanics and discusses the field’s progression through the analysis of significant studies. Additionally, the article introduces evaluation methods for RAG, addressing the challenges faced and proposing future research directions. By offering an organized framework and categorization, the study aims at consolidating existing research on RAG, clarify its technological underpinnings, and highlight its potential to broaden the adaptability and applications of LLMs.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.48550/arxiv.2202.03629",
+      "title": "Survey of Hallucination in Natural Language Generation",
+      "authors": [
+        "Ziwei Ji",
+        "Nayeon Lee",
+        "Rita Frieske",
+        "Tiezheng Yu",
+        "Dan Su",
+        "Yan Xu",
+        "Etsuko Ishii",
+        "Yejin Bang",
+        "Chen, Delong",
+        "Dai, Wenliang",
+        "Chan, Ho Shu",
+        "Madotto, Andrea",
+        "Fung, Pascale"
+      ],
+      "year": 2022,
+      "abstract": "Natural Language Generation (NLG) has improved exponentially in recent years thanks to the development of sequence-to-sequence deep learning technologies such as Transformer-based language models. This advancement has led to more fluent and coherent NLG, leading to improved development in downstream tasks such as abstractive summarization, dialogue generation and data-to-text generation. However, it is also apparent that deep learning based generation is prone to hallucinate unintended text, which degrades the system performance and fails to meet user expectations in many real-world scenarios. To address this issue, many studies have been presented in measuring and mitigating hallucinated texts, but these have never been reviewed in a comprehensive manner before. In this survey, we thus provide a broad overview of the research progress and challenges in the hallucination problem in NLG. The survey is organized into two parts: (1) a general overview of metrics, mitigation methods, and future directions; (2) an overview of task-specific research progress on hallucinations in the following downstream tasks, namely abstractive summarization, dialogue generation, generative question answering, data-to-text generation, machine translation, and visual-language generation; and (3) hallucinations in large language models (LLMs). This survey serves to facilitate collaborative efforts among researchers in tackling the challenge of hallucinated texts in NLG.",
+      "source": "openalex",
+      "doi_verified": false,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.3389/frai.2025.1622292",
+      "title": "Survey and analysis of hallucinations in large language models: attribution to prompting strategies or model behavior",
+      "authors": [
+        "Dang Anh-Hoang",
+        "Vu Tran",
+        "Le-Minh Nguyen"
+      ],
+      "year": 2025,
+      "abstract": "Hallucination in Large Language Models (LLMs) refers to outputs that appear fluent and coherent but are factually incorrect, logically inconsistent, or entirely fabricated. As LLMs are increasingly deployed in education, healthcare, law, and scientific research, understanding and mitigating hallucinations has become critical. In this work, we present a comprehensive survey and empirical analysis of hallucination attribution in LLMs. Introducing a novel framework to determine whether a given hallucination stems from not optimize prompting or the model's intrinsic behavior. We evaluate state-of-the-art LLMs—including GPT-4, LLaMA 2, DeepSeek, and others—under various controlled prompting conditions, using established benchmarks (TruthfulQA, HallucinationEval) to judge factuality. Our attribution framework defines metrics for Prompt Sensitivity (PS) and Model Variability (MV) , which together quantify the contribution of prompts vs. model-internal factors to hallucinations. Through extensive experiments and comparative analyses, we identify distinct patterns in hallucination occurrence, severity, and mitigation across models. Notably, structured prompt strategies such as chain-of-thought (CoT) prompting significantly reduce hallucinations in prompt-sensitive scenarios, though intrinsic model limitations persist in some cases. These findings contribute to a deeper understanding of LLM reliability and provide insights for prompt engineers, model developers, and AI practitioners. We further propose best practices and future directions to reduce hallucinations in both prompt design and model development pipelines.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.18653/v1/2022.acl-long.579",
+      "title": "Internet-Augmented Dialogue Generation",
+      "authors": [
+        "Mojtaba Komeili",
+        "Kurt Shuster",
+        "Jason Weston"
+      ],
+      "year": 2022,
+      "abstract": "The largest store of continually updating knowledge on our planet can be accessed via internet search.In this work we study giving access to this information to conversational agents.Large language models, even though they store an impressive amount of knowledge within their weights, are known to hallucinate facts when generating dialogue (Shuster et al., 2021); moreover, those facts are frozen in time at the point of model training.In contrast, we propose an approach that learns to generate an internet search query based on the context, and then conditions on the search results to finally generate a response, a method that can employ up-to-the-minute relevant information.We train and evaluate such models on a newly collected dataset of human-human conversations whereby one of the speakers is given access to internet search during knowledge-driven discussions in order to ground their responses.We find that search-query based access of the internet in conversation provides superior performance compared to existing approaches that either use no augmentation or FAISS-based retrieval (Lewis et al., 2020b).",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.3390/computers14080332",
+      "title": "Multi-Layered Framework for LLM Hallucination Mitigation in High-Stakes Applications: A Tutorial",
+      "authors": [
+        "Sachin Hiriyanna",
+        "Wenbing Zhao"
+      ],
+      "year": 2025,
+      "abstract": "Large language models (LLMs) now match or exceed human performance on many open-ended language tasks, yet they continue to produce fluent but incorrect statements, which is a failure mode widely referred to as hallucination. In low-stakes settings this may be tolerable; in regulated or safety-critical domains such as financial services, compliance review, and client decision support, it is not. Motivated by these realities, we develop an integrated mitigation framework that layers complementary controls rather than relying on any single technique. The framework combines structured prompt design, retrieval-augmented generation (RAG) with verifiable evidence sources, and targeted fine-tuning aligned with domain truth constraints. Our interest in this problem is practical. Individual mitigation techniques have matured quickly, yet teams deploying LLMs in production routinely report difficulty stitching them together in a coherent, maintainable pipeline. Decisions about when to ground a response in retrieved data, when to escalate uncertainty, how to capture provenance, and how to evaluate fidelity are often made ad hoc. Drawing on experience from financial technology implementations, where even rare hallucinations can carry material cost, regulatory exposure, or loss of customer trust, we aim to provide clearer guidance in the form of an easy-to-follow tutorial. This paper makes four contributions. First, we introduce a three-layer reference architecture that organizes mitigation activities across input governance, evidence-grounded generation, and post-response verification. Second, we describe a lightweight supervisory agent that manages uncertainty signals and triggers escalation (to humans, alternate models, or constrained workflows) when confidence falls below policy thresholds. Third, we analyze common but under-addressed security surfaces relevant to hallucination mitigation, including prompt injection, retrieval poisoning, and policy evasion attacks. Finally, we outline an implementation playbook for production deployment, including evaluation metrics, operational trade-offs, and lessons learned from early financial-services pilots.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.1145/3718958.3750537",
+      "title": "Intent-Driven Network Management with Multi-Agent LLMs: The Confucius Framework",
+      "authors": [
+        "Zhaodong Wang",
+        "Samuel Lin",
+        "Guanqing Yan",
+        "Soudeh Ghorbani",
+        "Minlan Yu",
+        "Jiawei Zhou",
+        "Nathan Hu",
+        "Lopa Baruah",
+        "Sam Peters",
+        "Srikanth Kamath",
+        "Jian Yang",
+        "Ying Zhang"
+      ],
+      "year": 2025,
+      "abstract": "Advancements in Large Language Models (LLMs) are significantly transforming network management practices. In this paper, we present our experience developing Confucius, a multi-agent framework for network management at Meta. We model network management workflows as directed acyclic graphs (DAGs) to aid planning. Our framework integrates LLMs with existing management tools to achieve seamless operational integration, employs retrieval-augmented generation (RAG) to improve long-term memory, and establishes a set of primitives to systematically support human/model interaction. To ensure the accuracy of critical network operations, Confucius closely integrates with existing network validation methods and incorporates its own validation framework to prevent regressions. Remarkably, Confucius is a production-ready LLM development framework that has been operational for two years, with over 60 applications onboarded. To our knowledge, this is the first report on employing multi-agent LLMs for hyper-scale networks.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.48550/arxiv.2401.05459",
+      "title": "Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security",
+      "authors": [
+        "Yuanchun Li",
+        "Hao Wen",
+        "Weijun Wang",
+        "Xiangyu Li",
+        "Yi-Zhen Yuan",
+        "Guohong Liu",
+        "Jiacheng Liu",
+        "Wenxing Xu",
+        "Xiang Wang",
+        "Yi Sun",
+        "Rui Kong",
+        "Yile Wang",
+        "Hanfei Geng",
+        "Jian Luan",
+        "Xuefeng Jin",
+        "Zilong Ye",
+        "Guanjing Xiong",
+        "Fan Zhang",
+        "Xiang Li",
+        "Mengwei Xu",
+        "Zhijun Li",
+        "Peng Li",
+        "Yang Liu",
+        "Ya-Qin Zhang",
+        "Yunxin Liu"
+      ],
+      "year": 2024,
+      "abstract": "Since the advent of personal computing devices, intelligent personal assistants (IPAs) have been one of the key technologies that researchers and engineers have focused on, aiming to help users efficiently obtain information and execute tasks, and provide users with more intelligent, convenient, and rich interaction experiences. With the development of smartphones and IoT, computing and sensing devices have become ubiquitous, greatly expanding the boundaries of IPAs. However, due to the lack of capabilities such as user intent understanding, task planning, tool using, and personal data management etc., existing IPAs still have limited practicality and scalability. Recently, the emergence of foundation models, represented by large language models (LLMs), brings new opportunities for the development of IPAs. With the powerful semantic understanding and reasoning capabilities, LLM can enable intelligent agents to solve complex problems autonomously. In this paper, we focus on Personal LLM Agents, which are LLM-based agents that are deeply integrated with personal data and personal devices and used for personal assistance. We envision that Personal LLM Agents will become a major software paradigm for end-users in the upcoming era. To realize this vision, we take the first step to discuss several important questions about Personal LLM Agents, including their architecture, capability, efficiency and security. We start by summarizing the key components and design choices in the architecture of Personal LLM Agents, followed by an in-depth analysis of the opinions collected from domain experts. Next, we discuss several key challenges to achieve intelligent, efficient and secure Personal LLM Agents, followed by a comprehensive survey of representative solutions to address these challenges.",
+      "source": "openalex",
+      "doi_verified": false,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.3390/ai6100260",
+      "title": "From Illusion to Insight: A Taxonomic Survey of Hallucination Mitigation Techniques in LLMs",
+      "authors": [
+        "Ioannis Kazlaris",
+        "Efstathios N. Antoniou",
+        "Konstantinos Diamantaras",
+        "Charalampos Bratsas"
+      ],
+      "year": 2025,
+      "abstract": "Large Language Models (LLMs) exhibit remarkable generative capabilities but remain vulnerable to hallucinations—outputs that are fluent yet inaccurate, ungrounded, or inconsistent with source material. To address the lack of methodologically grounded surveys, this paper introduces a novel method-oriented taxonomy of hallucination mitigation strategies in text-based LLMs. The taxonomy organizes over 300 studies into six principled categories: Training and Learning Approaches, Architectural Modifications, Input/Prompt Optimization, Post-Generation Quality Control, Interpretability and Diagnostic Methods, and Agent-Based Orchestration. Beyond mapping the field, we identify persistent challenges such as the absence of standardized evaluation benchmarks, attribution difficulties in multi-method systems, and the fragility of retrieval-based methods when sources are noisy or outdated. We also highlight emerging directions, including knowledge-grounded fine-tuning and hybrid retrieval–generation pipelines integrated with self-reflective reasoning agents. This taxonomy provides a methodological framework for advancing reliable, context-sensitive LLM deployment in high-stakes domains such as healthcare, law, and defense.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.3390/bdcc9120309",
+      "title": "Evaluating Faithfulness in Agentic RAG Systems for e-Governance Applications Using LLM-Based Judging Frameworks",
+      "authors": [
+        "George Papageorgiou",
+        "Vangelis Sarlis",
+        "Manolis Μaragoudakis",
+        "Ioannis D. Magnisalis",
+        "Christos Tjortjis"
+      ],
+      "year": 2025,
+      "abstract": "As Large Language Models (LLMs) are core components in Retrieval-Augmented Generation (RAG) systems for knowledge-intensive tasks, concerns regarding hallucinations, redundancy, and unverifiable outputs have intensified, particularly in high-stakes domains, such as e-government. This study proposes a modular, multi-pipeline framework for statement-level faithfulness evaluation for characterizing hallucination and redundancy across both simple and agentic RAG pipelines. Using GPT-4.1, Claude Sonnet-4.0, and Gemini 2.5 Pro as LLM-based judges, this study examines how tool-specific attribution within agentic multi-tool architectures influences the interpretability and traceability of the generated content. By using a modular agentic RAG framework combining symbolic (GraphRAG), semantic (embedding), and real-time (web) retrieval, we benchmark hallucination and redundancy patterns, using state-of-the-art LLM judges. The study examines RAG and agent-based pipelines that attribute outputs to distinct tools, in contrast to traditional single-source RAG systems that rely on aggregated retrieval. Using e-government data sourced from the European Commission’s Press Corner, our evaluation framework assesses not only the frequency, but also the source-aware detectability of hallucinated content. The findings provide actionable insights into how source granularity and retrieval orchestration impact faithfulness evaluation across different pipeline architectures, while also suggesting new directions for explainability-aware RAG design. The study contributes a reproducible, modular framework for automated faithfulness assessment, with implications for transparency, governance compliance, and trustworthy AI deployment.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.20944/preprints202508.1942.v1",
+      "title": "From Illusion to Insight: A Taxonomic Survey of Hallucination Mitigation Techniques in LLMs",
+      "authors": [
+        "Ioannis Kazlaris",
+        "Efstathios Antoniou",
+        "Konstantinos Diamantaras",
+        "Charalampos Bratsas"
+      ],
+      "year": 2025,
+      "abstract": "Large Language Models (LLMs) exhibit remarkable generative capabilities but remain susceptible to hallucinations—outputs that are fluent yet inaccurate, ungrounded, or in-consistent with source material. This paper presents a method-oriented taxonomy of hallucination mitigation strategies in text-based Large Language Models (LLMs), encompassing six categories: Training and Learning Approaches, Architectural Modifications, Input / Prompt Optimization, Post-Generation Quality Control, Interpretability and Diagnostic Methods, and Agent-Based Orchestration. By synthesizing over 300 studies, we identify persistent challenges including the lack of standardized evaluation benchmarks, attribution difficulties in multi-method frameworks, computational trade-offs between accuracy and latency, and the vulnerability of retrieval-based methods to noisy or outdated sources. We highlight underexplored research directions such as knowledge-grounded fine-tuning strategies balancing factuality with creative utility; and hybrid retrieval–generation pipelines integrated with self-reflective reasoning agents. This taxonomy offers both a synthesis of current knowledge and a roadmap for advancing reliable, con-text-sensitive mitigation in high-stakes domains such as healthcare, law, and defense.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.48550/arxiv.2510.04618",
+      "title": "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models",
+      "authors": [
+        "Qizheng Zhang",
+        "Changran Hu",
+        "Shubhangi Upasani",
+        "Boyuan Ma",
+        "Hong, Fenglu",
+        "Vamsidhar Kamanuru",
+        "Jay Rainton",
+        "Wu Chen",
+        "Mengmeng Ji",
+        "Hanchen Li",
+        "Urmish Thakker",
+        "James Zou",
+        "Kunle Olukotun"
+      ],
+      "year": 2025,
+      "abstract": "Large language model (LLM) applications such as agents and domain-specific reasoning increasingly rely on context adaptation: modifying inputs with instructions, strategies, or evidence, rather than weight updates. Prior approaches improve usability but often suffer from brevity bias, which drops domain insights for concise summaries, and from context collapse, where iterative rewriting erodes details over time. We introduce ACE (Agentic Context Engineering), a framework that treats contexts as evolving playbooks that accumulate, refine, and organize strategies through a modular process of generation, reflection, and curation. ACE prevents collapse with structured, incremental updates that preserve detailed knowledge and scale with long-context models. Across agent and domain-specific benchmarks, ACE optimizes contexts both offline (e.g., system prompts) and online (e.g., agent memory), consistently outperforming strong baselines: +10.6% on agents and +8.6% on finance, while significantly reducing adaptation latency and rollout cost. Notably, ACE could adapt effectively without labeled supervision and instead by leveraging natural execution feedback. On the AppWorld leaderboard, ACE matches the top-ranked production-level agent on the overall average and surpasses it on the harder test-challenge split, despite using a smaller open-source model. These results show that comprehensive, evolving contexts enable scalable, efficient, and self-improving LLM systems with low overhead.",
+      "source": "openalex",
+      "doi_verified": false,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.18653/v1/2026.findings-acl.2069",
+      "title": "From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms",
+      "authors": [
+        "Jinghao Luo",
+        "Yuchen Tian",
+        "Chuxue Cao",
+        "Ziyang Luo",
+        "Hongzhan Lin",
+        "Kaixin Li",
+        "Chuyi Kong",
+        "Ruichao Yang",
+        "Jing Ma"
+      ],
+      "year": 2026,
+      "abstract": "Large Language Model (LLM)-based agents have fundamentally reshaped artificial intelligence by integrating external tools and planning capabilities.While memory mechanisms have emerged as the architectural cornerstone of these systems, current research remains fragmented, oscillating between operating system engineering and cognitive science.This theoretical divide prevents a unified view of technological synthesis and a coherent evolutionary perspective.To bridge this gap, this survey proposes a novel evolutionary framework for LLM agent memory mechanisms, formalizing the development process into three stages: Storage (trajectory preservation), Reflection (trajectory refinement), and Experience (trajectory abstraction).We first formally define these three stages before analyzing the three core drivers of this evolution: the necessity for long-range consistency, the challenges in dynamic environments, and the ultimate goal of continual learning.Furthermore, we specifically explore two transformative mechanisms in the frontier Experience stage: active exploration and cross-trajectory abstraction.By synthesizing these disparate views, this work offers robust design principles and a clear roadmap for the development of next-generation LLM agents.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.48550/arxiv.2410.15665",
+      "title": "Long Term Memory: The Foundation of AI Self-Evolution",
+      "authors": [
+        "Xun Jiang",
+        "Feng Li",
+        "Han Zhao",
+        "Qiu, Jiahao",
+        "Jiaying Wang",
+        "Jun Shao",
+        "Shihao Xu",
+        "Shu Zhang",
+        "Weiling Chen",
+        "Tang, Xavier",
+        "Yize Chen",
+        "Mengyue Wu",
+        "Weizhi Ma",
+        "Mengdi Wang",
+        "Tianqiao Chen"
+      ],
+      "year": 2024,
+      "abstract": "Large language models (LLMs) like GPTs, trained on vast datasets, have demonstrated impressive capabilities in language understanding, reasoning, and planning, achieving human-level performance in various tasks. Most studies focus on enhancing these models by training on ever-larger datasets to build more powerful foundation models. While training stronger models is important, enabling models to evolve during inference is equally crucial, a process we refer to as AI self-evolution. Unlike large-scale training, self-evolution may rely on limited data or interactions. Inspired by the columnar organization of the human cerebral cortex, we hypothesize that AI models could develop cognitive abilities and build internal representations through iterative interactions with their environment. To achieve this, models need long-term memory (LTM) to store and manage processed interaction data. LTM supports self-evolution by representing diverse experiences across environments and agents. In this report, we explore AI self-evolution and its potential to enhance models during inference. We examine LTM's role in lifelong learning, allowing models to evolve based on accumulated interactions. We outline the structure of LTM and the systems needed for effective data retention and representation. We also classify approaches for building personalized models with LTM data and show how these models achieve self-evolution through interaction. Using LTM, our multi-agent framework OMNE achieved first place on the GAIA benchmark, demonstrating LTM's potential for AI self-evolution. Finally, we present a roadmap for future research, emphasizing the importance of LTM for advancing AI technology and its practical applications.",
+      "source": "openalex",
+      "doi_verified": false,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.22541/au.173040837.79423019/v1",
+      "title": "Dynamic Semantic Memory Retention in Large Language Models: An Exploration of Spontaneous Retrieval Mechanisms",
+      "authors": [
+        "Juri Kong",
+        "Hong Liang",
+        "Yuan Zhang",
+        "Hongxiang Li",
+        "Pengcheng Shen",
+        "Lu Fang"
+      ],
+      "year": 2024,
+      "abstract": "Models designed for artificial language understanding increasingly require robust memory retention mechanisms to maintain coherence and relevance across extended interactions. Introducing Dynamic Semantic Memory Retention (DSMR) provides a breakthrough in autonomous memory management, enabling hierarchical and context-driven memory recall that operates independently of user-prompt dependency. DSMR establishes a layered memory structure that supports the recall of semantically relevant information, reinforcing response coherence across both short-and long-term contexts. Through quantitative and qualitative analyses, DSMR consistently demonstrated higher retrieval accuracy, memory stability, and latency efficiency in contrast to standard configurations, proving effective in reducing error rates and enhancing contextual consistency across diverse scenarios. Additionally, DSMR's structured approach to memory retention and node prioritization offers scalability, positioning it as a foundational model for advanced memory functions within future interactive systems. Overall, the findings demonstrate DSMR's capacity to elevate language model performance by fostering a durable, autonomous memory framework suited for applications where long-term memory recall is critical.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.48550/arxiv.2410.20724",
+      "title": "Simple Is Effective: The Roles of Graphs and Large Language Models in Knowledge-Graph-Based Retrieval-Augmented Generation",
+      "authors": [
+        "Mufei Li",
+        "Siqi Miao",
+        "Li Pan"
+      ],
+      "year": 2024,
+      "abstract": "Large Language Models (LLMs) demonstrate strong reasoning abilities but face limitations such as hallucinations and outdated knowledge. Knowledge Graph (KG)-based Retrieval-Augmented Generation (RAG) addresses these issues by grounding LLM outputs in structured external knowledge from KGs. However, current KG-based RAG frameworks still struggle to optimize the trade-off between retrieval effectiveness and efficiency in identifying a suitable amount of relevant graph information for the LLM to digest. We introduce SubgraphRAG, extending the KG-based RAG framework that retrieves subgraphs and leverages LLMs for reasoning and answer prediction. Our approach innovatively integrates a lightweight multilayer perceptron with a parallel triple-scoring mechanism for efficient and flexible subgraph retrieval while encoding directional structural distances to enhance retrieval effectiveness. The size of retrieved subgraphs can be flexibly adjusted to match the query's need and the downstream LLM's capabilities. This design strikes a balance between model complexity and reasoning power, enabling scalable and generalizable retrieval processes. Notably, based on our retrieved subgraphs, smaller LLMs like Llama3.1-8B-Instruct deliver competitive results with explainable reasoning, while larger models like GPT-4o achieve state-of-the-art accuracy compared with previous baselines -- all without fine-tuning. Extensive evaluations on the WebQSP and CWQ benchmarks highlight SubgraphRAG's strengths in efficiency, accuracy, and reliability by reducing hallucinations and improving response grounding.",
+      "source": "openalex",
+      "doi_verified": false,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.48550/arxiv.2309.02427",
+      "title": "Cognitive Architectures for Language Agents",
+      "authors": [
+        "Theodore R. Sumers",
+        "Shunyu Yao",
+        "Karthik Narasimhan",
+        "Thomas L. Griffiths"
+      ],
+      "year": 2023,
+      "abstract": "Recent efforts have augmented large language models (LLMs) with external resources (e.g., the Internet) or internal control flows (e.g., prompt chaining) for tasks requiring grounding or reasoning, leading to a new class of language agents. While these agents have achieved substantial empirical success, we lack a systematic framework to organize existing agents and plan future developments. In this paper, we draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA). CoALA describes a language agent with modular memory components, a structured action space to interact with internal memory and external environments, and a generalized decision-making process to choose actions. We use CoALA to retrospectively survey and organize a large body of recent work, and prospectively identify actionable directions towards more capable agents. Taken together, CoALA contextualizes today's language agents within the broader history of AI and outlines a path towards language-based general intelligence.",
+      "source": "openalex",
+      "doi_verified": false,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.48550/arxiv.2312.10997",
+      "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "authors": [
+        "Yunfan Gao",
+        "Yun Xiong",
+        "Xinyu Gao",
+        "Kangxiang Jia",
+        "Jinliu Pan",
+        "Yuxi Bi",
+        "Yi Qi Dai",
+        "Jiawei Sun",
+        "Wang, Meng",
+        "Wang, Haofen"
+      ],
+      "year": 2023,
+      "abstract": "Large Language Models (LLMs) showcase impressive capabilities but encounter challenges like hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes. Retrieval-Augmented Generation (RAG) has emerged as a promising solution by incorporating knowledge from external databases. This enhances the accuracy and credibility of the generation, particularly for knowledge-intensive tasks, and allows for continuous knowledge updates and integration of domain-specific information. RAG synergistically merges LLMs' intrinsic knowledge with the vast, dynamic repositories of external databases. This comprehensive review paper offers a detailed examination of the progression of RAG paradigms, encompassing the Naive RAG, the Advanced RAG, and the Modular RAG. It meticulously scrutinizes the tripartite foundation of RAG frameworks, which includes the retrieval, the generation and the augmentation techniques. The paper highlights the state-of-the-art technologies embedded in each of these critical components, providing a profound understanding of the advancements in RAG systems. Furthermore, this paper introduces up-to-date evaluation framework and benchmark. At the end, this article delineates the challenges currently faced and points out prospective avenues for research and development.",
+      "source": "openalex",
+      "doi_verified": false,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.48550/arxiv.2309.07864",
+      "title": "The Rise and Potential of Large Language Model Based Agents: A Survey",
+      "authors": [
+        "Zhiheng Xi",
+        "Wen-Xiang Chen",
+        "Xin Guo",
+        "Wei He",
+        "Yiwen Ding",
+        "Boyang Hong",
+        "Ming Zhang",
+        "Junzhe Wang",
+        "Senjie Jin",
+        "Enyu Zhou",
+        "Rui Zheng",
+        "Xiaoran Fan",
+        "Xiao Wang",
+        "Limao Xiong",
+        "Yuhao Zhou",
+        "Weiran Wang",
+        "Changhao Jiang",
+        "Yicheng Zou",
+        "Xiangyang Liu",
+        "Zhangyue Yin",
+        "Shihan Dou",
+        "Rongxiang Weng",
+        "Wensen Cheng",
+        "Qi Zhang",
+        "Wenjuan Qin",
+        "Yongyan Zheng",
+        "Xipeng Qiu",
+        "Huang, Xuanjing",
+        "Tao Gui"
+      ],
+      "year": 2023,
+      "abstract": "For a long time, humanity has pursued artificial intelligence (AI) equivalent to or surpassing the human level, with AI agents considered a promising vehicle for this pursuit. AI agents are artificial entities that sense their environment, make decisions, and take actions. Many efforts have been made to develop intelligent agents, but they mainly focus on advancement in algorithms or training strategies to enhance specific capabilities or performance on particular tasks. Actually, what the community lacks is a general and powerful model to serve as a starting point for designing AI agents that can adapt to diverse scenarios. Due to the versatile capabilities they demonstrate, large language models (LLMs) are regarded as potential sparks for Artificial General Intelligence (AGI), offering hope for building general AI agents. Many researchers have leveraged LLMs as the foundation to build AI agents and have achieved significant progress. In this paper, we perform a comprehensive survey on LLM-based agents. We start by tracing the concept of agents from its philosophical origins to its development in AI, and explain why LLMs are suitable foundations for agents. Building upon this, we present a general framework for LLM-based agents, comprising three main components: brain, perception, and action, and the framework can be tailored for different applications. Subsequently, we explore the extensive applications of LLM-based agents in three aspects: single-agent scenarios, multi-agent scenarios, and human-agent cooperation. Following this, we delve into agent societies, exploring the behavior and personality of LLM-based agents, the social phenomena that emerge from an agent society, and the insights they offer for human society. Finally, we discuss several key topics and open problems within the field. A repository for the related papers at https://github.com/WooooDyy/LLM-Agent-Paper-List.",
+      "source": "openalex",
+      "doi_verified": false,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1371/journal.pdig.0000877",
+      "title": "Retrieval augmented generation for large language models in healthcare: A systematic review",
+      "authors": [
+        "Lameck Mbangula Amugongo",
+        "Pietro Mascheroni",
+        "Steven E. Brooks",
+        "Stefan Doering",
+        "Jan Seidel"
+      ],
+      "year": 2025,
+      "abstract": "Large Language Models (LLMs) have demonstrated promising capabilities to solve complex tasks in critical sectors such as healthcare. However, LLMs are limited by their training data which is often outdated, the tendency to generate inaccurate (\"hallucinated\") content and a lack of transparency in the content they generate. To address these limitations, retrieval augmented generation (RAG) grounds the responses of LLMs by exposing them to external knowledge sources. However, in the healthcare domain there is currently a lack of systematic understanding of which datasets, RAG methodologies and evaluation frameworks are available. This review aims to bridge this gap by assessing RAG-based approaches employed by LLMs in healthcare, focusing on the different steps of retrieval, augmentation and generation. Additionally, we identify the limitations, strengths and gaps in the existing literature. Our synthesis shows that 78.9% of studies used English datasets and 21.1% of the datasets are in Chinese. We find that a range of techniques are employed RAG-based LLMs in healthcare, including Naive RAG, Advanced RAG, and Modular RAG. Surprisingly, proprietary models such as GPT-3.5/4 are the most used for RAG applications in healthcare. We find that there is a lack of standardised evaluation frameworks for RAG-based applications. In addition, the majority of the studies do not assess or address ethical considerations related to RAG in healthcare. It is important to account for ethical challenges that are inherent when AI systems are implemented in the clinical setting. Lastly, we highlight the need for further research and development to ensure responsible and effective adoption of RAG in the medical domain.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1109/tnnls.2024.3497992",
+      "title": "Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods",
+      "authors": [
+        "Yuji Cao",
+        "Huan Zhao",
+        "Yuheng Cheng",
+        "Ting Shu",
+        "Yue Chen",
+        "Guolong Liu",
+        "Gaoqi Liang",
+        "Junhua Zhao",
+        "Jinyue Yan",
+        "Yun Li"
+      ],
+      "year": 2024,
+      "abstract": "With extensive pretrained knowledge and high-level general capabilities, large language models (LLMs) emerge as a promising avenue to augment reinforcement learning (RL) in aspects, such as multitask learning, sample efficiency, and high-level task planning. In this survey, we provide a comprehensive review of the existing literature in LLM-enhanced RL and summarize its characteristics compared with conventional RL methods, aiming to clarify the research scope and directions for future studies. Utilizing the classical agent-environment interaction paradigm, we propose a structured taxonomy to systematically categorize LLMs' functionalities in RL, including four roles: information processor, reward designer, decision-maker, and generator. For each role, we summarize the methodologies, analyze the specific RL challenges that are mitigated and provide insights into future directions. Finally, the comparative analysis of each role, potential applications, prospective opportunities, and challenges of the LLM-enhanced RL are discussed. By proposing this taxonomy, we aim to provide a framework for researchers to effectively leverage LLMs in the RL field, potentially accelerating RL applications in complex applications, such as robotics, autonomous driving, and energy systems.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.48550/arxiv.2309.03409",
+      "title": "Large Language Models as Optimizers",
+      "authors": [
+        "Chengrun Yang",
+        "Xuezhi Wang",
+        "Yifeng Lu",
+        "Hanxiao Liu",
+        "Quoc Viet Le",
+        "Denny Zhou",
+        "Xinyun Chen"
+      ],
+      "year": 2023,
+      "abstract": "Optimization is ubiquitous. While derivative-based algorithms have been powerful tools for various problems, the absence of gradient imposes challenges on many real-world applications. In this work, we propose Optimization by PROmpting (OPRO), a simple and effective approach to leverage large language models (LLMs) as optimizers, where the optimization task is described in natural language. In each optimization step, the LLM generates new solutions from the prompt that contains previously generated solutions with their values, then the new solutions are evaluated and added to the prompt for the next optimization step. We first showcase OPRO on linear regression and traveling salesman problems, then move on to our main application in prompt optimization, where the goal is to find instructions that maximize the task accuracy. With a variety of LLMs, we demonstrate that the best prompts optimized by OPRO outperform human-designed prompts by up to 8% on GSM8K, and by up to 50% on Big-Bench Hard tasks. Code at https://github.com/google-deepmind/opro.",
+      "source": "openalex",
+      "doi_verified": false,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1093/jamia/ocaf008",
+      "title": "Improving large language model applications in biomedicine with retrieval-augmented generation: a systematic review, meta-analysis, and clinical development guidelines",
+      "authors": [
+        "Siru Liu",
+        "Allison B. McCoy",
+        "Adam T. Wright"
+      ],
+      "year": 2025,
+      "abstract": "OBJECTIVE: The objectives of this study are to synthesize findings from recent research of retrieval-augmented generation (RAG) and large language models (LLMs) in biomedicine and provide clinical development guidelines to improve effectiveness. MATERIALS AND METHODS: We conducted a systematic literature review and a meta-analysis. The report was created in adherence to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses 2020 analysis. Searches were performed in 3 databases (PubMed, Embase, PsycINFO) using terms related to \"retrieval augmented generation\" and \"large language model,\" for articles published in 2023 and 2024. We selected studies that compared baseline LLM performance with RAG performance. We developed a random-effect meta-analysis model, using odds ratio as the effect size. RESULTS: Among 335 studies, 20 were included in this literature review. The pooled effect size was 1.35, with a 95% confidence interval of 1.19-1.53, indicating a statistically significant effect (P = .001). We reported clinical tasks, baseline LLMs, retrieval sources and strategies, as well as evaluation methods. DISCUSSION: Building on our literature review, we developed Guidelines for Unified Implementation and Development of Enhanced LLM Applications with RAG in Clinical Settings to inform clinical applications using RAG. CONCLUSION: Overall, RAG implementation showed a 1.35 odds ratio increase in performance compared to baseline LLMs. Future research should focus on (1) system-level enhancement: the combination of RAG and agent, (2) knowledge-level enhancement: deep integration of knowledge into LLM, and (3) integration-level enhancement: integrating RAG systems within electronic health records.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.48550/arxiv.2309.16292",
+      "title": "DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models",
+      "authors": [
+        "Licheng Wen",
+        "Daocheng Fu",
+        "Xin Li",
+        "Xinyu Cai",
+        "Tao Ma",
+        "Pinlong Cai",
+        "Min Dou",
+        "Botian Shi",
+        "Liang He",
+        "Yu Qiao"
+      ],
+      "year": 2023,
+      "abstract": "Recent advancements in autonomous driving have relied on data-driven approaches, which are widely adopted but face challenges including dataset bias, overfitting, and uninterpretability. Drawing inspiration from the knowledge-driven nature of human driving, we explore the question of how to instill similar capabilities into autonomous driving systems and summarize a paradigm that integrates an interactive environment, a driver agent, as well as a memory component to address this question. Leveraging large language models (LLMs) with emergent abilities, we propose the DiLu framework, which combines a Reasoning and a Reflection module to enable the system to perform decision-making based on common-sense knowledge and evolve continuously. Extensive experiments prove DiLu's capability to accumulate experience and demonstrate a significant advantage in generalization ability over reinforcement learning-based methods. Moreover, DiLu is able to directly acquire experiences from real-world datasets which highlights its potential to be deployed on practical autonomous driving systems. To the best of our knowledge, we are the first to leverage knowledge-driven capability in decision-making for autonomous vehicles. Through the proposed DiLu framework, LLM is strengthened to apply knowledge and to reason causally in the autonomous driving domain. Project page: https://pjlab-adg.github.io/DiLu/",
+      "source": "openalex",
+      "doi_verified": false,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.3390/app14198868",
+      "title": "A Survey of Robot Intelligence with Large Language Models",
+      "authors": [
+        "Hyeongyo Jeong",
+        "Haechan Lee",
+        "Changwon Kim",
+        "Sungtae Shin"
+      ],
+      "year": 2024,
+      "abstract": "Since the emergence of ChatGPT, research on large language models (LLMs) has actively progressed across various fields. LLMs, pre-trained on vast text datasets, have exhibited exceptional abilities in understanding natural language and planning tasks. These abilities of LLMs are promising in robotics. In general, traditional supervised learning-based robot intelligence systems have a significant lack of adaptability to dynamically changing environments. However, LLMs help a robot intelligence system to improve its generalization ability in dynamic and complex real-world environments. Indeed, findings from ongoing robotics studies indicate that LLMs can significantly improve robots’ behavior planning and execution capabilities. Additionally, vision-language models (VLMs), trained on extensive visual and linguistic data for the vision question answering (VQA) problem, excel at integrating computer vision with natural language processing. VLMs can comprehend visual contexts and execute actions through natural language. They also provide descriptions of scenes in natural language. Several studies have explored the enhancement of robot intelligence using multimodal data, including object recognition and description by VLMs, along with the execution of language-driven commands integrated with visual information. This review paper thoroughly investigates how foundation models such as LLMs and VLMs have been employed to boost robot intelligence. For clarity, the research areas are categorized into five topics: reward design in reinforcement learning, low-level control, high-level planning, manipulation, and scene understanding. This review also summarizes studies that show how foundation models, such as the Eureka model for automating reward function design in reinforcement learning, RT-2 for integrating visual data, language, and robot actions in vision-language-action models, and AutoRT for generating feasible tasks and executing robot behavior policies via LLMs, have improved robot intelligence.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.18653/v1/2024.emnlp-main.992",
+      "title": "Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate",
+      "authors": [
+        "Liang Tian",
+        "Zhiwei He",
+        "Wenxiang Jiao",
+        "Xing Wang",
+        "Yan Wang",
+        "Rui Wang",
+        "Yujiu Yang",
+        "Shuming Shi",
+        "Zhaopeng Tu"
+      ],
+      "year": 2024,
+      "abstract": "Modern large language models (LLMs) like ChatGPT have shown remarkable performance on general language tasks but still struggle on complex reasoning tasks, which drives the research on cognitive behaviors of LLMs to explore human-like problem-solving strategies.Along this direction, one representative strategy is self-reflection, which asks an LLM to refine the solution with the feedback generated by itself iteratively.However, our study shows that such reflection-style methods suffer from the Degeneration-of-Thought (DoT) problem: once the LLM has established confidence in its solutions, it is unable to generate novel thoughts later through reflection even if its initial stance is incorrect.To address the DoT problem, we propose a Multi-Agent Debate (MAD) framework, in which multiple agents express their arguments in the state of \"tit for tat\" and a judge manages the debate process to obtain a final solution.Clearly, our MAD framework encourages divergent thinking in LLMs which would be helpful for tasks that require deep levels of contemplation.Experiment results on two challenging datasets, commonsense machine translation and counterintuitive arithmetic reasoning, demonstrate the effectiveness of our MAD framework.Extensive analyses suggest that the adaptive break of debate and the modest level of \"tit for tat\" state are required for MAD to obtain good performance.Moreover, we find that LLMs might not be a fair judge if different LLMs are used for agents.Code is available at https://github. com/Skytliang/Multi-Agents-Debate.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.48550/arxiv.2305.19118",
+      "title": "Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate",
+      "authors": [
+        "Liang Tian",
+        "Zhiwei He",
+        "Wenxiang Jiao",
+        "Xing Wang",
+        "Yan Wang",
+        "Rui Wang",
+        "Yujiu Yang",
+        "Shuming Shi",
+        "Zhaopeng Tu"
+      ],
+      "year": 2023,
+      "abstract": "Modern large language models (LLMs) like ChatGPT have shown remarkable performance on general language tasks but still struggle on complex reasoning tasks, which drives the research on cognitive behaviors of LLMs to explore human-like problem-solving strategies. Along this direction, one representative strategy is self-reflection, which asks an LLM to refine the solution with the feedback generated by itself iteratively. However, our study shows that such reflection-style methods suffer from the Degeneration-of-Thought (DoT) problem: once the LLM has established confidence in its solutions, it is unable to generate novel thoughts later through reflection even if its initial stance is incorrect. To address the DoT problem, we propose a Multi-Agent Debate (MAD) framework, in which multiple agents express their arguments in the state of \"tit for tat\" and a judge manages the debate process to obtain a final solution. Clearly, our MAD framework encourages divergent thinking in LLMs which would be helpful for tasks that require deep levels of contemplation. Experiment results on two challenging datasets, commonsense machine translation and counter-intuitive arithmetic reasoning, demonstrate the effectiveness of our MAD framework. Extensive analyses suggest that the adaptive break of debate and the modest level of \"tit for tat\" state are required for MAD to obtain good performance. Moreover, we find that LLMs might not be a fair judge if different LLMs are used for agents. Code is available at https://github.com/Skytliang/Multi-Agents-Debate.",
+      "source": "openalex",
+      "doi_verified": false,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.1145/3711896.3736570",
+      "title": "Evaluation and Benchmarking of LLM Agents: A Survey",
+      "authors": [
+        "Mahmoud Mohammadi",
+        "Yipeng Li",
+        "Jane C. Lo",
+        "Wendy Yip"
+      ],
+      "year": 2025,
+      "abstract": "The rise of LLM-based agents has opened new frontiers in AI applications, yet evaluating these agents remains a complex and underdeveloped area.This survey provides an in-depth overview of the emerging field of LLM agent evaluation, introducing a twodimensional taxonomy that organizes existing work along (1) evaluation objectives-what to evaluate, such as agent behavior, capabilities, reliability, and safety-and (2) evaluation process-how to evaluate, including interaction modes, datasets and benchmarks, metric computation methods, and tooling.In addition to taxonomy, we highlight enterprise-specific challenges, such as role-based access to data, the need for reliability guarantees, dynamic and longhorizon interactions, and compliance, which are often overlooked in current research.We also identify the future research directions, including holistic, more realistic, and scalable evaluation.This work aims to bring clarity to the fragmented landscape of agent evaluation and provide a framework for systematic assessment, enabling researchers and practitioners to evaluate LLM agents for real-world deployment.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.18653/v1/2023.emnlp-main.778",
+      "title": "LM vs LM: Detecting Factual Errors via Cross Examination",
+      "authors": [
+        "Roi Jacob Cohen",
+        "May Hamri",
+        "Mor Geva",
+        "Amir Globerson"
+      ],
+      "year": 2023,
+      "abstract": "A prominent weakness of modern language models (LMs) is their tendency to generate factually incorrect text, which hinders their usability.A natural question is whether such factual errors can be detected automatically.Inspired by truth-seeking mechanisms in law, we propose a factuality evaluation framework for LMs that is based on cross-examination.Our key idea is that an incorrect claim is likely to result in inconsistency with other claims that the model generates.To discover such inconsistencies, we facilitate a multi-turn interaction between the LM that generated the claim and another LM (acting as an examiner) which introduces questions to discover inconsistencies.We empirically evaluate our method on factual claims made by multiple recent LMs on four benchmarks, finding that it outperforms existing methods and baselines, often by a large gap.Our results demonstrate the potential of using interacting LMs to capture factual errors.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.18653/v1/2024.findings-emnlp.427",
+      "title": "Improving Multi-Agent Debate with Sparse Communication Topology",
+      "authors": [
+        "Yunxuan Li",
+        "Yibing Du",
+        "Jiageng Zhang",
+        "Longxiang Hou",
+        "Peter Grabowski",
+        "Yeqing Li",
+        "Eugene Ie"
+      ],
+      "year": 2024,
+      "abstract": "Multi-agent debate has proven effective in improving large language models quality for reasoning and factuality tasks.While various roleplaying strategies in multi-agent debates have been explored, in terms of the communication among agents, existing approaches adopt a brute-force algorithm -each agent can communicate with all other agents.In this paper, we systematically investigate the effect of communication connectivity in multi-agent systems.Our experiments on GPT and Mistral models reveal that multi-agent debates leveraging sparse communication topology can achieve comparable or superior performance while significantly reducing computational costs.Furthermore, we extend the multi-agent debate framework to multimodal reasoning and alignment labeling tasks, showcasing its broad applicability and effectiveness.Our findings underscore the importance of communication connectivity on enhancing the efficiency and effectiveness of the \"society of minds\" approach.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    }
+  ],
+  "assessments": [
+    {
+      "paper_doi": "10.1007/s11704-026-60308-3",
+      "paper_title": "A Survey of Large Language Models",
+      "subquestion_id": 1,
+      "relevance_score": 3,
+      "reason": "The abstract surveys LLM utilization strategies including agentic reasoning and utilization methods, but does not focus specifically on empirically tested retrieval-augmented generation for autonomous agents.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.18653/v1/2021.findings-emnlp.320",
+      "paper_title": "Retrieval Augmentation Reduces Hallucination in Conversation",
+      "subquestion_id": 1,
+      "relevance_score": 4,
+      "reason": "The abstract discusses neural-retrieval-in-the-loop architectures and demonstrates that they substantially reduce knowledge hallucination in conversational models.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.18653/v1/2024.findings-acl.212",
+      "paper_title": "Chain-of-Verification Reduces Hallucination in Large Language Models",
+      "subquestion_id": 1,
+      "relevance_score": 3,
+      "reason": "The abstract introduces a verification method to reduce hallucinations through self-deliberation rather than retrieval-augmented generation techniques.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2309.01219",
+      "paper_title": "Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models",
+      "subquestion_id": 1,
+      "relevance_score": 3,
+      "reason": "The abstract covers the general detection, explanation, and mitigation of hallucinations in LLMs without a specific focus on retrieval-augmented generation for autonomous agents.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1162/coli.a.16",
+      "paper_title": "🧜Siren’s Song in the AI Ocean: A Survey on Hallucination in Large Language Models",
+      "subquestion_id": 1,
+      "relevance_score": 3,
+      "reason": "The abstract discusses general mitigation strategies for LLM hallucinations in a survey format, lacking specific emphasis on retrieval-augmented generation for agents.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1039/d4sc03921a",
+      "paper_title": "A review of large language models and autonomous agents in chemistry",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract reviews LLM-based autonomous agents in chemistry and other domains, but does not discuss retrieval-augmented generation or hallucination reduction.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2307.06435",
+      "paper_title": "A Comprehensive Overview of Large Language Models",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract provides a broad overview of LLM research topics and architectures without focusing on hallucination reduction or retrieval-augmented generation.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2402.06196",
+      "paper_title": "Large Language Models: A Survey",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract mentions reviewing techniques to build and augment LLMs, but does not focus on retrieval-augmented generation for mitigating agent hallucinations.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1007/s10462-024-10888-y",
+      "paper_title": "Large language models (LLMs): survey, technical frameworks, and future challenges",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract provides a comprehensive overview of LLM frameworks, applications, and limitations, but does not address retrieval-augmented generation or hallucinations.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.36227/techrxiv.23589741.v1",
+      "paper_title": "A Survey on Large Language Models: Applications, Challenges, Limitations, and Practical Usage",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract outlines a survey on LLM applications, history, and general challenges, but does not cover retrieval-augmented generation techniques for reducing agent hallucinations.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1145/3805774",
+      "paper_title": "A Survey on Retrieval-Augmented Text Generation for Large Language Models",
+      "subquestion_id": 1,
+      "relevance_score": 3,
+      "reason": "The paper provides a comprehensive survey on retrieval-augmented text generation for large language models, offering background relevant to reducing hallucinations via RAG.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2202.03629",
+      "paper_title": "Survey of Hallucination in Natural Language Generation",
+      "subquestion_id": 1,
+      "relevance_score": 3,
+      "reason": "The abstract discusses measuring and mitigating hallucinations in natural language generation broadly, but does not focus specifically on empirically tested RAG techniques in LLM agents.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3389/frai.2025.1622292",
+      "paper_title": "Survey and analysis of hallucinations in large language models: attribution to prompting strategies or model behavior",
+      "subquestion_id": 1,
+      "relevance_score": 3,
+      "reason": "The abstract evaluates hallucination attribution and mitigation under prompt strategies and model behaviors, rather than focusing on retrieval-augmented generation techniques for agents.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.18653/v1/2022.acl-long.579",
+      "paper_title": "Internet-Augmented Dialogue Generation",
+      "subquestion_id": 1,
+      "relevance_score": 4,
+      "reason": "The abstract empirically tests an internet-augmented dialogue generation approach for conversational agents to ground responses and prevent hallucinations.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2308.07107",
+      "paper_title": "Large Language Models for Information Retrieval: A Survey",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract focuses on leveraging large language models for information retrieval tasks rather than testing retrieval-augmented generation to reduce agent hallucinations.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.18653/v1/2024.acl-long.586",
+      "paper_title": "The Dawn After the Dark: An Empirical Study on Factuality Hallucination in Large Language Models",
+      "subquestion_id": 1,
+      "relevance_score": 1,
+      "reason": "The abstract is missing, and the title alone does not provide sufficient evidence regarding retrieval-augmented generation techniques for agent hallucinations.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2307.03109",
+      "paper_title": "A Survey on Evaluation of Large Language Models",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract outlines general evaluation methods and benchmarks for large language models across various applications without focusing on RAG techniques for hallucination reduction.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/healthcare11202776",
+      "paper_title": "Leveraging Generative AI and Large Language Models: A Comprehensive Roadmap for Healthcare Integration",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract reviews the integration of generative AI and LLMs in healthcare, mentioning information retrieval and prompt strategies generally rather than testing RAG for agent hallucinations.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2307.10169",
+      "paper_title": "Challenges and Applications of Large Language Models",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract broadly discusses open problems and challenges of large language models without specifically addressing RAG techniques or agent hallucinations.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.4230/lipics.cosit.2024.11",
+      "paper_title": "GPT-4 Technical Report",
+      "subquestion_id": 1,
+      "relevance_score": 1,
+      "reason": "The abstract discusses transforming natural language intent into deterministic software artifacts using a custom framework, which is unrelated to RAG techniques for LLM agents.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1007/s11704-024-40231-1",
+      "paper_title": "A survey on large language model based autonomous agents",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract discusses a general survey of LLM-based autonomous agents without mentioning memory management or context window optimization strategies.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.inffus.2025.103599",
+      "paper_title": "AI Agents vs. Agentic AI: A Conceptual taxonomy, applications and challenges",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract introduces a conceptual taxonomy of AI agents and agentic AI mentioning persistent memory, but does not examine how memory management or context windows affect hallucination rates.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2308.11432",
+      "paper_title": "A Survey on Large Language Model based Autonomous Agents",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract provides a general overview and framework for LLM-based autonomous agents without addressing memory management or context optimization.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.70777/si.v2i3.15161",
+      "paper_title": "AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract outlines taxonomies and applications of AI agents and agentic AI, mentioning persistent memory, but lacks discussion on hallucination rates or context window optimization.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1080/00207543.2025.2604311",
+      "paper_title": "Agentic LLMs in the supply chain: towards autonomous multi-agent consensus-seeking",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract focuses on LLM agents automating consensus-seeking in supply chains and does not cover memory management or hallucination reduction.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1007/s10462-025-11422-4",
+      "paper_title": "Agentic AI: a comprehensive survey of architectures, applications, and future directions",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract presents a survey on agentic AI architectures and paradigms, but does not address memory management or context window optimization for reducing hallucinations.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1007/s44212-024-00060-w",
+      "paper_title": "Leveraging generative AI for urban digital twins: a scoping review on the autonomous generation of urban data, scenarios, designs, and 3D city models for smart city advancement",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract explores the integration of generative AI with urban digital twins and does not discuss autonomous agents, memory management, or hallucinations.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1109/access.2021.3140175",
+      "paper_title": "A Metaverse: Taxonomy, Components, Applications, and Open Challenges",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract discusses the taxonomy, components, and applications of the Metaverse without addressing LLM autonomous agents or context window optimization.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/info16060469",
+      "paper_title": "AI-Powered Educational Agents: Opportunities, Innovations, and Ethical Challenges",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract reviews AI-powered educational agents and design principles but does not discuss memory management or context window optimization strategies for hallucinations.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/app152111515",
+      "paper_title": "Toward Autonomous LLM-Based AI Agents for Predictive Maintenance: State of the Art, Challenges, and Future Perspectives",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract reviews autonomous LLM-based agents for predictive maintenance without covering memory management or context window optimization strategies for hallucinations.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1145/3676536.3698390",
+      "paper_title": "Generative AI Agents in Autonomous Machines: A Safety Perspective",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract discusses safety concerns and challenges for generative AI in autonomous machines but does not address memory management or context window optimization for hallucination reduction.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/jcp5040095",
+      "paper_title": "AI-Augmented SOC: A Survey of LLMs and Agents for Security Automation",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract reviews LLMs and agents in security operations and briefly mentions the risk of hallucinations, but does not cover memory management or context window optimization.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2407.01603",
+      "paper_title": "A Review of Large Language Models and Autonomous Agents in Chemistry",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract outlines the capabilities and challenges of LLMs and autonomous agents in chemistry and other scientific domains without discussing memory or context window strategies for hallucinations.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/computers14080332",
+      "paper_title": "Multi-Layered Framework for LLM Hallucination Mitigation in High-Stakes Applications: A Tutorial",
+      "subquestion_id": 2,
+      "relevance_score": 3,
+      "reason": "The abstract covers hallucination mitigation frameworks including retrieval-augmented generation and prompt design, but does not explicitly focus on memory management or context window optimization for autonomous agents.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2404.04442",
+      "paper_title": "Exploring Autonomous Agents through the Lens of Large Language Models: A Review",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract broadly reviews autonomous agents and mentions challenges like hallucinations and techniques like in-context learning, but lacks specific focus on memory management or context window optimization affecting hallucination rates.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1145/3718958.3750537",
+      "paper_title": "Intent-Driven Network Management with Multi-Agent LLMs: The Confucius Framework",
+      "subquestion_id": 2,
+      "relevance_score": 4,
+      "reason": "The abstract explicitly mentions employing retrieval-augmented generation to improve long-term memory within a multi-agent LLM framework for network management.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3992/1943-4618.15.2.185",
+      "paper_title": "HEALTH ENGAGED ARCHITECTURE IN THE CONTEXT OF COVID-19",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract is about architecture and urbanism in the context of COVID-19 and is completely unrelated to large language models or autonomous agents.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1038/s41392-024-01911-3",
+      "paper_title": "Recent advances in Alzheimer’s disease: mechanisms, clinical trials and new drug development strategies",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract discusses mechanisms, clinical trials, and drug development strategies for Alzheimer's disease, which has no connection to the research question.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2401.05459",
+      "paper_title": "Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security",
+      "subquestion_id": 2,
+      "relevance_score": 3,
+      "reason": "The abstract discusses Personal LLM Agents and general capabilities like data management, but does not specifically analyze memory management or context window optimization for reducing hallucinations.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/eng6070153",
+      "paper_title": "Vision-Based Navigation and Perception for Autonomous Robots: Sensors, SLAM, Control Strategies, and Cross-Domain Applications—A Review",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract focuses on vision-based robotic navigation, sensors, and SLAM without mentioning LLMs or agent hallucinations.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/ai6100260",
+      "paper_title": "From Illusion to Insight: A Taxonomic Survey of Hallucination Mitigation Techniques in LLMs",
+      "subquestion_id": 2,
+      "relevance_score": 3,
+      "reason": "The abstract introduces a taxonomy of hallucination mitigation techniques including agent-based orchestration and input optimization, but does not explicitly focus on memory management or context window optimization.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2501.13958",
+      "paper_title": "A Survey of Graph Retrieval-Augmented Generation for Customized Large Language Models",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract covers Graph-based Retrieval-Augmented Generation for customizing LLMs, but lacks specific discussion on agent memory management or context window optimization effects on hallucination rates.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/bdcc9120309",
+      "paper_title": "Evaluating Faithfulness in Agentic RAG Systems for e-Governance Applications Using LLM-Based Judging Frameworks",
+      "subquestion_id": 2,
+      "relevance_score": 3,
+      "reason": "The abstract discusses evaluating faithfulness and hallucinations in agentic RAG systems using various retrieval tools, which is partially relevant to context integration.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.20944/preprints202508.1942.v1",
+      "paper_title": "From Illusion to Insight: A Taxonomic Survey of Hallucination Mitigation Techniques in LLMs",
+      "subquestion_id": 2,
+      "relevance_score": 3,
+      "reason": "The abstract outlines a taxonomy of hallucination mitigation strategies for LLMs including agent-based orchestration, yet lacks a deep focus on memory management or context window optimization.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2402.10350",
+      "paper_title": "Large Language Models for Forecasting and Anomaly Detection: A Systematic Literature Review",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract reviews LLMs for forecasting and anomaly detection and mentions model hallucinations as a challenge, but does not address memory management or context window optimization.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2409.14924",
+      "paper_title": "Retrieval Augmented Generation (RAG) and Beyond: A Comprehensive Survey on How to Make your LLMs use External Data More Wisely",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract presents a survey on Retrieval-Augmented Generation and external data integration for LLMs, but does not specifically cover agent memory management or context window optimization.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2510.04618",
+      "paper_title": "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models",
+      "subquestion_id": 2,
+      "relevance_score": 5,
+      "reason": "The abstract directly addresses context adaptation, evolving playbooks, and agent memory mechanisms that optimize context and prevent collapse in language model applications.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.18653/v1/2026.findings-acl.2069",
+      "paper_title": "From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms",
+      "subquestion_id": 2,
+      "relevance_score": 4,
+      "reason": "The abstract surveys LLM-based agent memory mechanisms, covering storage, reflection, and experience stages, providing strongly related evidence on how memory architecture supports long-range consistency.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2410.15665",
+      "paper_title": "Long Term Memory: The Foundation of AI Self-Evolution",
+      "subquestion_id": 2,
+      "relevance_score": 3,
+      "reason": "The abstract discusses the importance of long-term memory for AI self-evolution and inference, but does not explicitly address its impact on hallucination rates.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.22541/au.173040837.79423019/v1",
+      "paper_title": "Dynamic Semantic Memory Retention in Large Language Models: An Exploration of Spontaneous Retrieval Mechanisms",
+      "subquestion_id": 2,
+      "relevance_score": 5,
+      "reason": "The abstract directly evaluates a dynamic semantic memory retention mechanism that effectively reduces error rates and enhances contextual consistency across interactions.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2410.20724",
+      "paper_title": "Simple Is Effective: The Roles of Graphs and Large Language Models in Knowledge-Graph-Based Retrieval-Augmented Generation",
+      "subquestion_id": 2,
+      "relevance_score": 4,
+      "reason": "The abstract strongly relates to context optimization by showing how adjustable subgraphs in retrieval-augmented generation help mitigate LLM hallucinations.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/electronics15122740",
+      "paper_title": "Agentic AI and Large Language Models for Autonomous IoT Cybersecurity: A Systematic Survey, Taxonomy, and Research Roadmap",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract mentions hallucination as an open challenge in a survey of autonomous IoT cybersecurity agents, but does not evaluate memory or context window strategies.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1145/3729218",
+      "paper_title": "A Survey of Reasoning with Foundation Models: Concepts, Methodologies, and Outlook",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract provides a broad overview of reasoning in foundation models and autonomous agents without specifically addressing memory management or context window optimization for hallucinations.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2503.24047",
+      "paper_title": "Towards Scientific Intelligence: A Survey of LLM-based Scientific Agents",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract surveys LLM-based scientific agents and general validation mechanisms, but does not examine memory management or context window optimization strategies.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1017/s0140525x12000477",
+      "paper_title": "Whatever next? Predictive brains, situated agents, and the future of cognitive science",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract discusses predictive processing in human brains rather than self-correction or hallucination reduction in LLM-based agents.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1017/s0140525x12001495",
+      "paper_title": "An integrated theory of language production and comprehension",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract focuses on language production and comprehension in humans using forward models, not LLM agents.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1038/s44159-021-00006-y",
+      "paper_title": "The psychological drivers of misinformation belief and its resistance to correction",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "There is no abstract available, and the title refers to human psychological drivers of misinformation rather than LLM self-correction.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1017/s0140525x04000056",
+      "paper_title": "Toward a mechanistic psychology of dialogue",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract outlines a mechanistic account of human dialogue and self-monitoring in production, lacking any connection to LLM agents.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.inffus.2019.12.012",
+      "paper_title": "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "There is no abstract available, and the title addresses general Explainable Artificial Intelligence rather than LLM agent reflection mechanisms.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1109/access.2020.2970143",
+      "paper_title": "Digital Twin: Values, Challenges and Enablers From a Modeling Perspective",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract discusses digital twins as virtual representations of physical assets, which is tangential to LLM hallucination reduction.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1017/s027226310505014x",
+      "paper_title": "AT THE INTERFACE: DYNAMIC INTERACTIONS OF EXPLICIT AND IMPLICIT LANGUAGE KNOWLEDGE",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract examines implicit and explicit human language knowledge and cognitive learning interfaces, not LLM agent execution errors.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1007/s43681-023-00289-2",
+      "paper_title": "Auditing large language models: a three-layered approach",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract discusses auditing frameworks for large language models to address ethical and social risks, but does not evaluate self-correction or reflection mechanisms for agent execution.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1146/annurev-psych-120709-145346",
+      "paper_title": "Heuristic Decision Making",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract covers heuristic decision-making in human psychology and organizations, not LLM-based agent error correction.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1109/tdsc.2004.2",
+      "paper_title": "Basic concepts and taxonomy of dependable and secure computing",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract defines general concepts of dependable and secure computing like fault tolerance, without addressing LLMs or agent hallucinations.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1111/j.1540-4781.2008.00716.x",
+      "paper_title": "The Dynamics of Second Language Emergence: Cycles of Language Use, Language Change, and Language Acquisition",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract discusses second language emergence and language acquisition in humans, which is entirely unrelated to LLM-based autonomous agents.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2112.11446",
+      "paper_title": "Scaling Language Models: Methods, Analysis & Insights from Training Gopher",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract discusses scaling transformer-based language models and general task performance, but does not evaluate self-correction or reflection mechanisms in LLM agents.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.arcontrol.2020.09.001",
+      "paper_title": "All you need to know about model predictive control for buildings",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract focuses on model predictive control for buildings and energy use, which has no connection to large language models or autonomous agents.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.envsoft.2015.11.016",
+      "paper_title": "Modelling with stakeholders – Next generation",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The paper has no abstract available and its title on stakeholder modeling is not relevant to LLM agent error minimization.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.envsoft.2013.05.005",
+      "paper_title": "Selecting among five common modelling approaches for integrated environmental assessment and management",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The paper has no abstract available and its title on integrated environmental assessment is not relevant to LLM agents.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3847/2041-8213/ab481c",
+      "paper_title": "A NICER View of PSR J0030+0451: Millisecond Pulsar Parameter Estimation",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract reports on Bayesian parameter estimation of a millisecond pulsar, which is completely irrelevant to LLM-based agents.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1007/s40593-014-0029-5",
+      "paper_title": "AutoTutor and Family: A Review of 17 Years of Natural Language Tutoring",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract reviews natural language tutoring systems and conversational scaffolding, but does not address self-correction or error minimization in LLM-based autonomous agents.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2309.02427",
+      "paper_title": "Cognitive Architectures for Language Agents",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract presents a cognitive architecture framework for language agents with modular memory and action spaces, providing useful background though not specifically focusing on self-correction mechanisms.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2312.10997",
+      "paper_title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract discusses retrieval-augmented generation to reduce hallucinations in LLMs, providing useful background but not focusing specifically on agent self-correction and reflection mechanisms.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1109/access.2020.2983149",
+      "paper_title": "A Survey of Autonomous Driving: Common Practices and Emerging Technologies",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract focuses on automated driving systems and core functions like perception and planning, sharing no relevance to LLM-based agent hallucination or reflection.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2309.07864",
+      "paper_title": "The Rise and Potential of Large Language Model Based Agents: A Survey",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract surveys LLM-based agents broadly, offering contextual background rather than evaluating specific self-correction and reflection mechanisms for error minimization.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1371/journal.pdig.0000877",
+      "paper_title": "Retrieval augmented generation for large language models in healthcare: A systematic review",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract reviews retrieval-augmented generation for LLMs in healthcare to address inaccuracies, offering tangential background rather than agent reflection.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1109/tnnls.2024.3497992",
+      "paper_title": "Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract surveys LLM-enhanced reinforcement learning and task planning, providing background related to agent capabilities but not specifically focusing on reflection and self-correction for error minimization.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.18653/v1/2024.emnlp-main.54",
+      "paper_title": "Large Language Models for Data Annotation and Synthesis: A Survey",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract is missing and the title only indicates a survey on data annotation and synthesis, which is not relevant to the sub-question.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2309.03409",
+      "paper_title": "Large Language Models as Optimizers",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract proposes using LLMs as optimizers to iteratively generate and evaluate new solutions based on previous prompts, which is related to iterative refinement but not focused on autonomous agent reflection.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1039/d4cs00913d",
+      "paper_title": "From text to insight: large language models for chemical data extraction",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract focuses on LLM-based structured data extraction in chemistry and does not address agent self-correction or hallucination reduction.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1093/jamia/ocaf008",
+      "paper_title": "Improving large language model applications in biomedicine with retrieval-augmented generation: a systematic review, meta-analysis, and clinical development guidelines",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract examines retrieval-augmented generation in biomedicine to improve LLM effectiveness, providing useful context on addressing inaccuracies but not on agent reflection.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2309.16292",
+      "paper_title": "DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models",
+      "subquestion_id": 3,
+      "relevance_score": 5,
+      "reason": "The abstract directly evaluates an autonomous driving framework utilizing reasoning and reflection modules to enable the agent to evolve and minimize errors based on experience.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/app14198868",
+      "paper_title": "A Survey of Robot Intelligence with Large Language Models",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract discusses the general capabilities of LLMs in robotics and behavior planning, which provides useful background context but does not specifically evaluate self-correction or reflection mechanisms for minimizing errors.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.18653/v1/2024.emnlp-main.992",
+      "paper_title": "Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate",
+      "subquestion_id": 4,
+      "relevance_score": 4,
+      "reason": "The abstract proposes a Multi-Agent Debate framework to improve LLM reasoning and correctness, which strongly relates to multi-agent factuality approaches.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1016/j.lindif.2023.102274",
+      "paper_title": "ChatGPT for good? On opportunities and challenges of large language models for education",
+      "subquestion_id": 4,
+      "relevance_score": 1,
+      "reason": "The abstract is missing, and the title indicates the paper discusses ChatGPT in education rather than multi-agent debate or factuality frameworks.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/su9101889",
+      "paper_title": "Connecting Competences and Pedagogical Approaches for Sustainable Development in Higher Education: A Literature Review and Framework Proposal",
+      "subquestion_id": 4,
+      "relevance_score": 1,
+      "reason": "The abstract discusses Higher Education for Sustainable Development and pedagogical approaches, which is entirely unrelated to LLM agents or hallucination.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.ijinfomgt.2023.102642",
+      "paper_title": "Opinion Paper: “So what if ChatGPT wrote it?” Multidisciplinary perspectives on opportunities, challenges and implications of generative conversational AI for research, practice and policy",
+      "subquestion_id": 4,
+      "relevance_score": 2,
+      "reason": "The abstract mentions general challenges and misinformation associated with generative conversational AI, but does not address multi-agent debate or verification frameworks.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.18653/v1/2024.acl-long.810",
+      "paper_title": "ChatDev: Communicative Agents for Software Development",
+      "subquestion_id": 4,
+      "relevance_score": 2,
+      "reason": "The citation lacks an informative abstract, and the title suggests communicative agents for software development rather than factuality evaluation.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.18653/v1/2023.ijcnlp-main.45",
+      "paper_title": "A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity",
+      "subquestion_id": 4,
+      "relevance_score": 2,
+      "reason": "The abstract is missing, but the title references evaluation of ChatGPT on reasoning and hallucination without specifying multi-agent frameworks.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2302.04023",
+      "paper_title": "A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity",
+      "subquestion_id": 4,
+      "relevance_score": 2,
+      "reason": "The abstract evaluates ChatGPT's reasoning and hallucination problems, but does not cover multi-agent debate or verification frameworks.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2201.08239",
+      "paper_title": "LaMDA: Language Models for Dialog Applications",
+      "subquestion_id": 4,
+      "relevance_score": 2,
+      "reason": "The abstract discusses language model dialogue applications and external knowledge sources for factual grounding, but does not feature multi-agent debate frameworks.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.18564/jasss.3423",
+      "paper_title": "Agent-Based Modelling of Social-Ecological Systems: Achievements, Challenges, and a Way Forward",
+      "subquestion_id": 4,
+      "relevance_score": 1,
+      "reason": "The abstract focuses on agent-based modelling of social-ecological systems, which is unrelated to large language models or AI hallucination.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.22163/fteval.2012.100",
+      "paper_title": "Broadening the range of designs and methods for impact evaluations",
+      "subquestion_id": 4,
+      "relevance_score": 1,
+      "reason": "The abstract discusses methodological challenges in impact evaluations of international development policy, unrelated to LLMs.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/fi17020057",
+      "paper_title": "AI Agents Meet Blockchain: A Survey on Secure and Scalable Collaboration for Multi-Agents",
+      "subquestion_id": 4,
+      "relevance_score": 2,
+      "reason": "The abstract discusses multi-agent systems and blockchain integration but does not evaluate factuality or hallucination reduction in LLMs.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.48550/arxiv.2305.19118",
+      "paper_title": "Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate",
+      "subquestion_id": 4,
+      "relevance_score": 4,
+      "reason": "The abstract introduces a Multi-Agent Debate framework to encourage divergent thinking and presents experimental results on reasoning tasks, offering strong evidence related to multi-agent approaches.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1145/3711896.3736570",
+      "paper_title": "Evaluation and Benchmarking of LLM Agents: A Survey",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract provides a broad survey on evaluating LLM agents, including reliability and behavior, but does not focus specifically on empirical evaluations of multi-agent debate or verification frameworks for factuality.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.18653/v1/2023.emnlp-main.778",
+      "paper_title": "LM vs LM: Detecting Factual Errors via Cross Examination",
+      "subquestion_id": 4,
+      "relevance_score": 4,
+      "reason": "The abstract presents a cross-examination verification framework between language models to detect factual errors and empirically evaluates it across multiple benchmarks.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.18653/v1/2024.findings-emnlp.427",
+      "paper_title": "Improving Multi-Agent Debate with Sparse Communication Topology",
+      "subquestion_id": 4,
+      "relevance_score": 5,
+      "reason": "The abstract directly evaluates multi-agent debate frameworks with varying communication topologies and explicitly addresses their performance on factuality and reasoning tasks.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1007/s11948-019-00165-5",
+      "paper_title": "From What to How: An Initial Review of Publicly Available AI Ethics Tools, Methods and Research to Translate Principles into Practices",
+      "subquestion_id": 4,
+      "relevance_score": 1,
+      "reason": "The abstract focuses on AI ethics principles and practices rather than multi-agent debate or hallucination reduction in LLMs.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.erss.2018.07.007",
+      "paper_title": "Promoting novelty, rigor, and style in energy social science: Towards codes of practice for appropriate methods and research design",
+      "subquestion_id": 4,
+      "relevance_score": 1,
+      "reason": "The abstract discusses research methods and codes of practice in energy social science, lacking any relevance to LLM hallucination or multi-agent frameworks.",
+      "selected": false
+    }
+  ],
+  "summaries": [
+    "[1] A Survey of Large Language Models (2026) - This paper provides a systematic survey of recent advancements in large language models across pre-training, post-training, utilization strategies like agentic reasoning, and evaluation methods. It discusses frameworks for understanding LLM development and behavior, but it does not specifically report empirical tests of retrieval-augmented generation techniques for reducing agent hallucinations.",
+    "[2] Retrieval Augmentation Reduces Hallucination in Conversation (2021) - This paper explores neural-retrieval-in-the-loop architectures for knowledge-grounded dialogue to maximize knowledgeability and conversational ability. It demonstrates that the best models obtain state-of-the-art performance on two knowledge-grounded conversational tasks and substantially reduce knowledge hallucination as verified by human evaluations. This bears directly on the sub-question by empirically testing and validating retrieval-augmentation to reduce hallucinations in conversational settings.",
+    "[3] Chain-of-Verification Reduces Hallucination in Large Language Models (2024) - This paper develops the Chain-of-Verification (COVE) method, where a model drafts a response, plans verification questions, answers them independently, and generates a verified response. It reports that COVE decreases hallucinations across tasks such as list-based questions, closed-book Multi-SpanQA, and longform text generation. This bears on the sub-question by testing a specific verification and reasoning approach, though it focuses on self-deliberation rather than retrieval-augmented generation.",
+    "[4] Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models (2023) - This paper surveys recent efforts on the detection, explanation, and mitigation of hallucinations in large language models, presenting taxonomies and analyzing existing approaches. It discusses challenges related to LLM reliability but does not report new empirical tests of retrieval-augmented generation techniques for reducing agent hallucinations.",
+    "[5] 🧜Siren’s Song in the AI Ocean: A Survey on Hallucination in Large Language Models (2025) - This paper presents a survey on hallucination in large language models, covering detection, explanation, and mitigation of hallucinations alongside taxonomies and evaluation benchmarks. It analyzes existing mitigation approaches and future directions, but does not provide empirical tests of retrieval-augmented generation techniques.",
+    "[6] A Survey on Retrieval-Augmented Text Generation for Large Language Models (2026) - This article organizes the Retrieval-Augmented Generation (RAG) paradigm into pre-retrieval, retrieval, post-retrieval, and generation categories to address the static limitations of LLMs. It outlines RAG mechanics, discusses significant studies, and introduces evaluation methods for RAG, bearing on the sub-question by reviewing how retrieval-augmented text generation enhances accuracy and reliability.",
+    "[7] Survey of Hallucination in Natural Language Generation (2022) - This survey provides a broad overview of the research progress and challenges regarding hallucinations in Natural Language Generation, organizing metrics, mitigation methods, and task-specific research. It discusses the problem of hallucinated text across downstream tasks like dialogue generation and question answering, but does not present new empirical tests of retrieval-augmented generation techniques.",
+    "[8] Survey and analysis of hallucinations in large language models: attribution to prompting strategies or model behavior (2025) - This paper presents a survey and empirical analysis of hallucination attribution in large language models under controlled prompting conditions, introducing metrics for Prompt Sensitivity and Model Variability. It evaluates models on benchmarks like TruthfulQA and HallucinationEval to quantify the contribution of prompts versus model-internal factors, but does not focus on retrieval-augmented generation techniques.",
+    "[9] Internet-Augmented Dialogue Generation (2022) - This paper studies giving conversational agents access to continually updating internet knowledge by generating search queries based on context and conditioning responses on search results. It finds that search-query based internet access provides superior performance compared to approaches using no augmentation or FAISS-based retrieval, bearing directly on the sub-question by empirically testing retrieval-based grounding to reduce dialogue hallucinations.",
+    "[10] Multi-Layered Framework for LLM Hallucination Mitigation in High-Stakes Applications: A Tutorial (2025) - This paper develops an integrated multi-layered hallucination mitigation framework for LLMs in high-stakes applications, combining structured prompts, RAG with verifiable evidence sources, and targeted fine-tuning. It reports that deployment teams frequently face difficulties in stitching mitigation techniques together into a coherent pipeline. This bears on the sub-question by highlighting how retrieval-augmented generation and grounded evidence sources serve as key components within a structured framework to reduce incorrect statements.",
+    "[11] Intent-Driven Network Management with Multi-Agent LLMs: The Confucius Framework (2025) - This paper presents Confucius, a production-ready multi-agent framework for network management at Meta that models workflows as directed acyclic graphs and integrates management tools. It reports that the framework employs RAG to improve long-term memory and closely integrates with network validation methods to ensure accuracy and prevent regressions. This bears on the sub-question by showing how retrieval-augmented generation is utilized to enhance the long-term memory of a multi-agent system.",
+    "[12] Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security (2024) - This paper surveys Personal LLM Agents, which are foundation model-based agents deeply integrated with personal data and devices to provide personal assistance. It reports that existing intelligent personal assistants exhibit limited practicality and scalability due to a lack of capabilities such as user intent understanding, task planning, tool use, and personal data management. This bears on the sub-question by identifying personal data management and contextual capability gaps as central challenges in agent development.",
+    "[13] From Illusion to Insight: A Taxonomic Survey of Hallucination Mitigation Techniques in LLMs (2025) - This paper introduces a method-oriented taxonomy of hallucination mitigation strategies in text-based LLMs by organizing over 300 studies into six categories, including input/prompt optimization and agent-based orchestration. It reports persistent challenges such as attribution difficulties and the fragility of retrieval-based methods when sources are noisy or outdated, while highlighting hybrid retrieval-generation pipelines. This bears on the sub-question by noting that retrieval-based strategies can be vulnerable to source quality, directly impacting hallucination risks.",
+    "[14] Evaluating Faithfulness in Agentic RAG Systems for e-Governance Applications Using LLM-Based Judging Frameworks (2025) - This study proposes a modular, multi-pipeline framework for statement-level faithfulness evaluation to characterize hallucination and redundancy across simple and agentic RAG pipelines using LLM-based judges. It examines how tool-specific attribution within agentic multi-tool architectures influences interpretability and traceability. This bears on the sub-question by benchmarking hallucination patterns across agentic RAG systems that combine symbolic, semantic, and real-time retrieval.",
+    "[15] From Illusion to Insight: A Taxonomic Survey of Hallucination Mitigation Techniques in LLMs (2025) - This paper presents a method-oriented taxonomy of hallucination mitigation strategies across six categories by synthesizing over 300 studies on text-based LLMs. It reports persistent challenges including attribution difficulties and the vulnerability of retrieval-based methods to noisy or outdated sources, while proposing hybrid retrieval-generation pipelines with self-reflective reasoning agents. This bears on the sub-question by outlining how retrieval approaches factor into hallucination vulnerabilities and mitigation taxonomies.",
+    "[16] Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models (2025) - This paper introduces Agentic Context Engineering (ACE), a framework that treats contexts as evolving playbooks that accumulate, refine, and organize strategies through generation, reflection, and curation. It reports that ACE prevents brevity bias and context collapse while significantly improving agent performance by optimizing contexts both offline and online. This bears on the sub-question by demonstrating that managing and evolving context windows and agent memory through structured updates enhances agent performance and reduces adaptation limitations.",
+    "[17] From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms (2026) - This survey proposes an evolutionary framework for LLM agent memory mechanisms divided into storage, reflection, and experience stages, driven by the need for long-range consistency, dynamic environments, and continual learning. It synthesizes disparate views from operating system engineering and cognitive science to bridge the theoretical divide in memory mechanisms. This bears on the sub-question by categorizing how agent memory structures evolve to support long-range consistency and interaction trajectories.",
+    "[18] Long Term Memory: The Foundation of AI Self-Evolution (2024) - This report explores AI self-evolution during inference and examines the role of long-term memory (LTM) in allowing models to evolve based on accumulated interactions and limited data. It outlines how LTM supports self-evolution by representing diverse experiences across environments and agents. This bears on the sub-question by establishing long-term memory as a foundation for managing processed interaction data to support autonomous model improvement.",
+    "[19] Dynamic Semantic Memory Retention in Large Language Models: An Exploration of Spontaneous Retrieval Mechanisms (2024) - This paper introduces Dynamic Semantic Memory Retention (DSMR) to provide autonomous memory management, enabling hierarchical and context-driven memory recall independently of user prompts. It reports that DSMR consistently demonstrated higher retrieval accuracy, memory stability, and latency efficiency, proving effective in reducing error rates and enhancing contextual consistency. This bears on the sub-question by demonstrating that structured, autonomous memory retention and recall mechanisms directly reduce error rates and improve consistency across extended interactions.",
+    "[20] Simple Is Effective: The Roles of Graphs and Large Language Models in Knowledge-Graph-Based Retrieval-Augmented Generation (2024) - This paper introduces SubgraphRAG, a Knowledge-Graph-based Retrieval-Augmented Generation framework that uses a lightweight multilayer perceptron and parallel triple-scoring mechanism to efficiently retrieve subgraphs of flexible sizes for LLMs. It reports that this design balances model complexity and reasoning power to address LLM limitations like hallucinations and outdated knowledge. This bears on the sub-question by demonstrating how adjusting the amount of retrieved graph information to match downstream LLM capabilities helps optimize context utilization to reduce hallucination.",
+    "[21] Cognitive Architectures for Language Agents (2023) - This paper proposes Cognitive Architectures for Language Agents (CoALA) to systematically organize existing language agents featuring modular memory components, a structured action space, and a generalized decision-making process. It uses CoALA to retrospectively survey and organize recent work and prospectively identify actionable directions toward more capable agents. However, the abstract does not specifically evaluate or report on self-correction and reflection mechanisms for minimizing errors in agent execution.",
+    "[22] Retrieval-Augmented Generation for Large Language Models: A Survey (2023) - This paper provides a comprehensive review of Retrieval-Augmented Generation (RAG) paradigms, including Naive RAG, Advanced RAG, and Modular RAG, which incorporate external databases to address LLM challenges like hallucination and outdated knowledge. It scrutinizes the tripartite foundation of RAG frameworks involving retrieval, generation, and augmentation techniques, and introduces up-to-date evaluation frameworks and benchmarks. Regarding the sub-question, the abstract focuses on external knowledge integration via RAG rather than evaluating specific internal self-correction or reflection mechanisms during agent execution.",
+    "[23] The Rise and Potential of Large Language Model Based Agents: A Survey (2023) - This paper performs a comprehensive survey on LLM-based agents, tracing the concept of agents from philosophical origins to AI development and explaining why LLMs serve as suitable foundations. It reviews efforts to develop intelligent agents using LLMs to achieve versatile capabilities and adapt to diverse scenarios. However, the abstract does not discuss or report on self-correction and reflection mechanisms for minimizing execution errors.",
+    "[24] Retrieval augmented generation for large language models in healthcare: A systematic review (2025) - This systematic review assesses RAG-based approaches employed by LLMs in healthcare to address limitations such as outdated training data, lack of transparency, and the generation of hallucinated content. The synthesis shows that a range of techniques including Naive RAG, Advanced RAG, and Modular RAG are employed, and identifies the datasets, methodologies, and evaluation frameworks used. While it addresses hallucination reduction through retrieval augmentation, the abstract does not evaluate specific self-correction or reflection mechanisms for agent execution.",
+    "[25] Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods (2024) - This paper reviews the existing literature in LLM-enhanced reinforcement learning and proposes a structured taxonomy categorizing LLMs into four roles: information processor, reward designer, decision-maker, and generator. It summarizes methodologies and analyzes specific RL challenges mitigated by these roles. The abstract does not specifically evaluate self-correction or reflection mechanisms for minimizing errors in agent execution.",
+    "[26] Large Language Models as Optimizers (2023) - This paper proposes Optimization by PROmpting (OPRO), an approach that uses large language models as optimizers where the optimization task is described in natural language and new solutions are evaluated and added to prompts in iterative steps. It demonstrates that OPRO-optimized prompts outperform human-designed prompts across linear regression, traveling salesman problems, prompt optimization, and datasets like GSM8K and Big-Bench Hard. The abstract does not bear on self-correction and reflection mechanisms for minimizing errors during agent execution.",
+    "[27] Improving large language model applications in biomedicine with retrieval-augmented generation: a systematic review, meta-analysis, and clinical development guidelines (2025) - This paper conducts a systematic literature review and meta-analysis of retrieval-augmented generation (RAG) and LLMs in biomedicine, comparing baseline LLM performance with RAG performance. It reports a statistically significant pooled effect size indicating improved effectiveness when using RAG, and develops clinical development guidelines. The abstract focuses on retrieval augmentation rather than evaluating self-correction and reflection mechanisms for agent execution errors.",
+    "[28] DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models (2023) - This paper proposes the DiLu framework for autonomous driving, which combines a Reasoning module and a Reflection module to enable decision-making based on common-sense knowledge and continuous evolution. Experiments demonstrate DiLu's capability to accumulate experience and its significant advantage in generalization ability over reinforcement learning-based methods. This directly bears on the sub-question by evaluating a reflection mechanism that allows the system to accumulate experience and evolve continuously during execution.",
+    "[29] A Survey of Robot Intelligence with Large Language Models (2024) - This paper explores the enhancement of robot intelligence using large language models and vision-language models to improve behavior planning, execution capabilities, and generalization in dynamic environments. It discusses how LLMs understand natural language and plan tasks, and how VLMs integrate computer vision with natural language processing. However, the abstract does not report on evaluations of self-correction or reflection mechanisms for minimizing errors in agent execution.",
+    "[30] Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate (2024) - This paper proposes a Multi-Agent Debate (MAD) framework to address the Degeneration-of-Thought problem in self-reflection methods, allowing multiple agents to argue in a 'tit for tat' manner managed by a judge. It reports experiment results on two challenging datasets, commonsense machine translation and counterintuitive arithmetic reasoning. This bears on the sub-question by introducing a multi-agent debate approach intended for tasks requiring deep levels of contemplation.",
+    "[31] Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate (2023) - This paper proposes a Multi-Agent Debate (MAD) framework, where multiple agents express arguments in a 'tit for tat' state and a judge manages the process, to overcome the Degeneration-of-Thought problem in reflection-style methods. It reports experiment results on two challenging datasets: commonsense machine translation and counter-intuitive arithmetic reasoning. This bears on the sub-question by presenting a multi-agent framework designed to encourage divergent thinking in LLMs.",
+    "[32] Evaluation and Benchmarking of LLM Agents: A Survey (2025) - This paper provides an overview of the emerging field of LLM agent evaluation by introducing a two-dimensional taxonomy covering evaluation objectives and processes, while highlighting enterprise-specific challenges and future research directions. It reports a systematic framework aimed at bringing clarity to the fragmented landscape of agent evaluation. This bears on the sub-question by providing a broader context on how agent capabilities, reliability, and safety are assessed.",
+    "[33] LM vs LM: Detecting Factual Errors via Cross Examination (2023) - This paper proposes a factuality evaluation framework for language models based on cross-examination, where a multi-turn interaction uses an examiner LM to uncover inconsistencies in claims generated by another LM. It empirically evaluates the method on factual claims across four benchmarks and reports that it outperforms existing baselines, often by a large gap, demonstrating the potential of interacting LMs to capture factual errors. This bears on the sub-question by showing how multi-agent interaction and verification frameworks perform in detecting factual errors.",
+    "[34] Improving Multi-Agent Debate with Sparse Communication Topology (2024) - This paper investigates the effect of communication connectivity in multi-agent systems by implementing a sparse communication topology instead of a brute-force approach where every agent communicates with all others. It reports that sparse communication topology can achieve comparable or superior performance while significantly reducing computational costs on GPT and Mistral models. This bears on the sub-question by showing that multi-agent debate is effective for factuality tasks and that modifying communication structures can maintain or improve its performance."
+  ],
+  "themes": [
+    "Retrieval-augmented generation (RAG) and neural-retrieval architectures are empirically shown to ground LLM responses, reduce knowledge hallucination, and improve long-term agent memory. [2, 6, 9, 10, 11, 14, 20, 22, 24, 27]",
+    "Advanced memory management, context window optimization, and structured memory retention mechanisms (such as DSMR and ACE) help maintain contextual consistency and reduce error rates in autonomous agents. [12, 16, 17, 18, 19]",
+    "Self-deliberation, verification frameworks like COVE, and reflection modules (such as DiLu) provide structured execution steps to minimize errors and enable continuous evolution. [3, 28]",
+    "Multi-agent debate and cross-examination frameworks (such as MAD and LM vs LM) successfully leverage interacting agents and sparse communication topologies to encourage divergent thinking and capture factual errors. [30, 31, 33, 34]"
+  ],
+  "gaps": [
+    "Sub-question 3 lacks direct empirical studies evaluating general internal self-correction mechanisms outside of specific verification methods (like COVE) and reflection modules (like DiLu), as many survey papers do not report novel empirical tests for execution error minimization.",
+    "Sub-question 1 contains multiple broad theoretical surveys and systematic reviews that discuss RAG taxonomy rather than presenting direct empirical tests of retrieval techniques specifically tailored to autonomous agent hallucination reduction."
+  ],
+  "limitations": [
+    "The researcher rejected the first evidence set and revised the scope once: 'focus on empirical studies of agents rather than surveys'.",
+    "Queries were reformulated once after a threshold miss for sub-question(s) 2, 3; no further automatic retries were made.",
+    "12 of 34 approved papers have DOIs not registered with Crossref (typically arXiv preprints registered with DataCite); they are flagged, not excluded.",
+    "Relevance was judged from title and abstract only; 66 of 100 retrieved papers were excluded (score below 3/5 or removed at review 2). Reasons are listed above.",
+    "Summaries, themes and gaps were generated by gemini-3.5-flash-lite from abstracts only and should be checked against the full texts before being relied on.",
+    "Single source (OpenAlex, 20 results per query); no full-text access; no citation-chasing or date filtering."
+  ]
+}

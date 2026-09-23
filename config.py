@@ -13,7 +13,7 @@ load_dotenv()  # reads .env if present; environment variables still win
 
 # --- LLM ---------------------------------------------------------------------
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")  # free tier: 500 requests/day vs 20 for the full Flash models (remediation #8)
 # Provider endpoint is kept here (not in the client) so a different hosted model
 # could be substituted by changing configuration, as the proposal requires.
 GEMINI_ENDPOINT = (
@@ -28,9 +28,12 @@ LLM_MAX_RETRY_AFTER_SECONDS = 60  # cap on a provider-supplied Retry-After wait
 
 # --- Literature search --------------------------------------------------------
 OPENALEX_EMAIL = os.getenv("OPENALEX_EMAIL", "")
+OPENALEX_API_KEY = os.getenv("OPENALEX_API_KEY", "")  # free account key: $1/day (~1,000 searches) vs $0.10 keyless (remediation #10)
 OPENALEX_ENDPOINT = "https://api.openalex.org/works"
 RESULTS_PER_QUERY = 20          # ~20 results per sub-question (proposal, section 6)
 CROSSREF_ENDPOINT = "https://api.crossref.org/works"
+API_TRANSIENT_RETRIES = 4       # OpenAlex/Crossref: retries on 429/5xx, timeouts (remediation #9)
+API_BACKOFF_SECONDS = 3         # wait 3, 6, 12, 24 s
 
 # --- Agent behaviour (the bounded-autonomy numbers from the design) ----------
 MIN_SUBQUESTIONS = 3

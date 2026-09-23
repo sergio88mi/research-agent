@@ -9,10 +9,9 @@ any agent - exactly the decoupling the design promised.
 """
 from typing import Any, Dict, List, Optional
 
-import requests
 
 import config
-from agents import cache
+from agents import cache, http
 from agents.models import Paper
 
 # Ask OpenAlex for only the fields we use. Why: smaller responses, faster calls,
@@ -60,13 +59,14 @@ def search(query: str, per_page: int = config.RESULTS_PER_QUERY) -> List[Paper]:
     """Run one literature search and return normalised Paper records."""
     params = {"search": query, "per-page": per_page, "select": _FIELDS}
     if config.OPENALEX_EMAIL:
-        params["mailto"] = config.OPENALEX_EMAIL   # polite pool: better rate limits
+        params["mailto"] = config.OPENALEX_EMAIL   # contact address, as OpenAlex asks
+    if config.OPENALEX_API_KEY:
+        params["api_key"] = config.OPENALEX_API_KEY  # free key = 10x the keyless daily budget
 
     cache_key = f"{query}|{per_page}"
     data = cache.get("openalex", cache_key)
     if data is None:
-        response = requests.get(config.OPENALEX_ENDPOINT, params=params, timeout=30)
-        response.raise_for_status()
+        response = http.get_with_retry(config.OPENALEX_ENDPOINT, params=params, timeout=30, name="openalex")
         data = response.json()
         cache.put("openalex", cache_key, data)     # replayable later, and quota-safe
 

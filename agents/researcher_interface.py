@@ -31,11 +31,19 @@ class ResearcherInterface:
         print(f"Interpretation: {interpretation}\n")
         for sq in subqs:
             print(f"  {sq.id}. {sq.text}\n     query: {sq.search_query}")
-        print("\nType 'approve' to search, or describe what to change (e.g. 'focus on healthcare, drop #3').")
-        answer = self._ask("> ")
-        if answer.lower() in _APPROVE_WORDS:
-            return Decision.APPROVE, ""
-        return Decision.REVISE, answer
+        while True:
+            print("\nType 'approve' to search, or describe what to change (e.g. 'focus on healthcare, drop #3').")
+            answer = self._ask("> ")
+            low = answer.lower().strip()
+            if low in _APPROVE_WORDS:
+                return Decision.APPROVE, ""
+            # A typo like 'approv' must not be sent to the planner as feedback - that
+            # costs a model call and a re-plan (seen live, functional test FT-03).
+            # Real feedback is a sentence; anything under 3 words is re-asked.
+            if len(low.split()) < 3:
+                print(f"Not understood: {answer!r}. Type 'approve', or describe the change in a sentence.")
+                continue
+            return Decision.REVISE, answer
 
     def review_evidence(self, subqs: List[SubQuestion], selected: List[Paper],
                         assessments: List[Assessment], can_reject_scope: bool) -> Tuple[Decision, str]:
