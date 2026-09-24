@@ -56,8 +56,8 @@ and if that fails the run stops rather than continuing on bad data.
 Python 3.11 or newer.
 
 ```bash
-git clone <this repository>
-cd research_agent
+git clone https://github.com/sergio88mi/research-agent.git
+cd research-agent
 python3 -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
@@ -117,7 +117,7 @@ Live functional tests are recorded in `evidence/functional_tests.md` (nine
 scenarios, each with the command, expected and observed result). Things that
 went wrong during development and what was done about them are in
 `evidence/remediation_log.md` (eleven entries). Screenshots and log captures
-from each stage are in `evidence/`, and `notes/stage0.md` to `stage6.md`
+from the build stages are in `evidence/`, and `notes/stage0.md` to `stage6.md`
 explain what each stage added and why it was built that way.
 
 ## Project layout
@@ -162,9 +162,11 @@ output/                    briefs from the live runs and run.log
 
 ## Sources and libraries
 
-Design: Group D proposal, *An agent-based system for academic research*,
-Intelligent Agents, University of Essex Online, 2026 (sections 4–6 and the
-class, sequence and activity diagrams). The reasons behind individual design
+Design: Group D, *Proposed Team Project: Agent-Based Academic Research
+System* (Assessment 1, Team Design Proposal), Intelligent Agents, University of
+Essex Online, 2026 – in particular sections 3 (agent architecture), 4
+(workflow), 5 (expected output), 8 (design decisions) and 9 (challenges and
+mitigations), and the class, sequence and activity diagrams. The reasons behind individual design
 decisions are given in the module docstrings and comments where they apply.
 
 Services: Google Gemini API (`generativelanguage.googleapis.com`, model set in
