@@ -9,3 +9,4 @@ cache/
 # Editor / OS noise
 .vscode/
 .DS_Store
+.Rhistory
