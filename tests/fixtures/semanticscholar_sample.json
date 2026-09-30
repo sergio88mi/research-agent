@@ -1,0 +1,23 @@
+{
+  "total": 6488,
+  "offset": 0,
+  "next": 2,
+  "data": [
+    {
+      "paperId": "2faa696c4d0f14c073d12c20894946d53a096f8d",
+      "externalIds": {"DBLP": "conf/wisee/RafiqueWHHM25", "DOI": "10.1109/WiSEE57913.2025.11229863", "CorpusId": 283015762},
+      "title": "From Prompt to Action: A Comprehensive Review of LLM Autonomous Agents",
+      "year": 2025,
+      "authors": [{"authorId": "2352466494", "name": "Zainab Rafique"}, {"authorId": "2202015152", "name": "Muhammad Wasim"}],
+      "abstract": "\n \n \n Large Language Models (LLMs) have quickly pushed the frontiers of autonomous agents.\n \n \n"
+    },
+    {
+      "paperId": "0000000000000000000000000000000000000000",
+      "externalIds": {"CorpusId": 1},
+      "title": "A record with no DOI and no abstract",
+      "year": 2023,
+      "authors": [],
+      "abstract": null
+    }
+  ]
+}

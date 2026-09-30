@@ -24,4 +24,4 @@ if __name__ == "__main__":
     ui = ResearcherInterface()
     question = " ".join(sys.argv[1:]).strip() or ui.submit_question()
     Orchestrator(interface=ui).run(question)
-    print("\nStage 6 complete - brief written.")
+    print("\nRun complete - brief written.")

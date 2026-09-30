@@ -1,0 +1,38 @@
+# Stage 7 live evidence, run 2 (30 Sept 2026, 10:21-10:54) - excerpt of output/run.log, unedited lines: retrieval, HTTP retry and reformulation entries only
+# Command: S2_ENDPOINT=https://api.semanticscholar.org/graph/v1/paper/nonexistent python main.py "<standard question>"  (Semantic Scholar pointed at a path that does not exist)
+# What it shows: (a) sub-question 3 - a non-transient answer (HTTP 404) is NOT retried: the source fails at once and the run continues on OpenAlex;
+# (b) sub-questions 1 and 4 - the public pool rate-limited the request (429) before the path was even resolved, so the transient policy ran its 4 retries first;
+# (c) sub-question 2 and the reformulated sub-question 4 - both sources answered from the disk cache of run 1 (no request made, timestamps milliseconds apart).
+# Every Gemini result was cached from run 1 as well, so the whole run made no model calls. Brief written: output/brief-20260930-105451-...
+2026-09-30 10:21:23,592 | INFO | research_agent.orchestrator | run | question='What approaches reduce hallucination in LLM-based autonomous agents?'
+2026-09-30 10:21:36,724 | INFO | research_agent.retrieval | retrieving | subquestion=1 | query='large language model agents hallucination reduction prompting reasoning' | sources=openalex,semanticscholar
+2026-09-30 10:21:36,730 | INFO | research_agent.retrieval | retrieved | subquestion=1 | source=openalex | records=20 | with_abstract=20
+2026-09-30 10:21:37,355 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 1/4 in 3s
+2026-09-30 10:21:40,901 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 2/4 in 6s
+2026-09-30 10:21:47,494 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 3/4 in 12s
+2026-09-30 10:22:00,033 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 4/4 in 24s
+2026-09-30 10:22:24,666 | WARNING | research_agent.retrieval | retrieval | subquestion=1 | source=semanticscholar failed (semanticscholar unavailable after 4 retries (last problem: HTTP 429)) - continuing with remaining sources
+2026-09-30 10:22:24,669 | INFO | research_agent.retrieval | retrieved | subquestion=1 | sources_answered=openalex | records=20 | with_abstract=20
+2026-09-30 10:22:24,717 | INFO | research_agent.retrieval | retrieving | subquestion=2 | query='retrieval augmented generation tool use agent factuality verification' | sources=openalex,semanticscholar
+2026-09-30 10:22:24,720 | INFO | research_agent.retrieval | retrieved | subquestion=2 | source=openalex | records=20 | with_abstract=20
+2026-09-30 10:22:24,721 | INFO | research_agent.retrieval | retrieved | subquestion=2 | source=semanticscholar | records=20 | with_abstract=20
+2026-09-30 10:22:24,721 | INFO | research_agent.retrieval | retrieved | subquestion=2 | sources_answered=openalex,semanticscholar | records=40 | with_abstract=40
+2026-09-30 10:22:24,736 | INFO | research_agent.retrieval | retrieving | subquestion=3 | query='autonomous agents self correction memory management hallucination mitigation' | sources=openalex,semanticscholar
+2026-09-30 10:22:24,739 | INFO | research_agent.retrieval | retrieved | subquestion=3 | source=openalex | records=20 | with_abstract=20
+2026-09-30 10:22:24,957 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 1/4 in 3s
+2026-09-30 10:22:28,558 | WARNING | research_agent.retrieval | retrieval | subquestion=3 | source=semanticscholar failed (404 Client Error: Not Found for url: https://api.semanticscholar.org/graph/v1/paper/nonexistent?query=autonomous+agents+self+correction+memory+management+hallucination+mitigation&limit=20&fields=title%2Cabstract%2Cyear%2Cauthors%2CexternalIds) - continuing with remaining sources
+2026-09-30 10:22:28,562 | INFO | research_agent.retrieval | retrieved | subquestion=3 | sources_answered=openalex | records=20 | with_abstract=20
+2026-09-30 10:22:28,604 | INFO | research_agent.retrieval | retrieving | subquestion=4 | query='evaluation benchmarks hallucination detection multi step language model agents' | sources=openalex,semanticscholar
+2026-09-30 10:22:28,609 | INFO | research_agent.retrieval | retrieved | subquestion=4 | source=openalex | records=20 | with_abstract=19
+2026-09-30 10:22:29,138 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 1/4 in 3s
+2026-09-30 10:22:32,394 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 2/4 in 6s
+2026-09-30 10:22:39,003 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 3/4 in 12s
+2026-09-30 10:22:51,596 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 4/4 in 24s
+2026-09-30 10:23:16,172 | WARNING | research_agent.retrieval | retrieval | subquestion=4 | source=semanticscholar failed (semanticscholar unavailable after 4 retries (last problem: HTTP 429)) - continuing with remaining sources
+2026-09-30 10:23:16,173 | INFO | research_agent.retrieval | retrieved | subquestion=4 | sources_answered=openalex | records=20 | with_abstract=19
+2026-09-30 10:23:16,187 | INFO | research_agent.planning | reformulated | subquestion=4 | old='evaluation benchmarks hallucination detection multi step language model agents' | new='factuality evaluation hallucination measurement multi step llm agent workflows'
+2026-09-30 10:23:16,187 | INFO | research_agent.retrieval | retrieving | subquestion=4 | query='factuality evaluation hallucination measurement multi step llm agent workflows' | sources=openalex,semanticscholar
+2026-09-30 10:23:16,193 | INFO | research_agent.retrieval | retrieved | subquestion=4 | source=openalex | records=20 | with_abstract=19
+2026-09-30 10:23:16,196 | INFO | research_agent.retrieval | retrieved | subquestion=4 | source=semanticscholar | records=20 | with_abstract=20
+2026-09-30 10:23:16,196 | INFO | research_agent.retrieval | retrieved | subquestion=4 | sources_answered=openalex,semanticscholar | records=40 | with_abstract=39
+2026-09-30 10:54:51,469 | INFO | research_agent.orchestrator | saved | output/brief-20260930-105451-what-approaches-reduce-hallucination-in-.md | output/brief-20260930-105451-what-approaches-reduce-hallucination-in-.json

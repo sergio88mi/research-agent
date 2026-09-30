@@ -1,10 +1,13 @@
 # Functional test log
 
 Live, end-to-end tests of the built system, run from the terminal against the
-real services (OpenAlex, Crossref, Gemini). Unit tests (`pytest`, 56 tests,
-recorded API responses, no network) cover the same behaviours in isolation;
-these tests confirm them in the running system. Observed results are copied
-from the terminal / `output/run.log`; screenshots are in this folder.
+real services (OpenAlex, Semantic Scholar, Crossref, Gemini). Unit tests
+(`pytest`, 68 tests, recorded API responses, no network) cover the same
+behaviours in isolation; these tests confirm them in the running system.
+Observed results are copied from the terminal / `output/run.log`; screenshots
+and log excerpts are in this folder. FT-01 to FT-09 were run on the
+single-source system (Stages 1-6); FT-10 and FT-11 on the two-source system
+(Stage 7).
 
 | ID | Behaviour under test | Steps | Expected | Observed | Result |
 |---|---|---|---|---|---|
@@ -17,12 +20,15 @@ from the terminal / `output/run.log`; screenshots are in this folder.
 | FT-07 | Transient provider errors are retried, not fatal | Included in FT-05 | `HTTP 503 (transient) - retry n/5` lines followed by a successful `llm | prompt_chars=` line | 22 Sept: 7 retries across 4 summary batches, all recovered; one batch succeeded on retry 5/5 (see `stage6_01_...png`) | PASS |
 | FT-08 | Daily quota exhaustion stops immediately with a plain message | Observed live 22 Sept 10:19 during the FT-01 mis-run | Run stops on the first 429 whose quota id contains `PerDay`, message names the quota and the reset time, no retries | `LLMError: Gemini daily free-tier quota is exhausted for this model; it resets at midnight Pacific time. Provider message: ... [quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier]` raised on the first 429, ~0 s wasted (17 Sept, before remediation #7, the same condition cost 62 s of retries) | PASS |
 | FT-09 | LLM returns malformed JSON -> one repair retry, then accepted | Observed 23 Sept on gemini-3.5-flash-lite | `invalid JSON ... (attempt 1)` warning followed by a successful parse on the repaired reply; never a second warning for the same batch | 23 Sept 10:58-11:02: four batches (three scoring, one summary) came back as a bare JSON list instead of an object; each was repaired on the single retry and parsed. This path never fired on gemini-3.6-flash | PASS |
+| FT-10 | Two sources searched for every sub-question; automatic failover when one fails after its retries | Standard question, `approve`, `approve`, with `SOURCES=openalex,semanticscholar` (the default) and no Semantic Scholar key | Every `retrieving` line names both sources; one `retrieved ... source=<name>` line per source that answered; a source whose retries run out logs `source=... failed (...) - continuing with remaining sources` and the run goes on; the brief's Limitations tally each source and record the failover | 30 Sept 10:11-10:18: OpenAlex answered 5 of 5 searches (100 records). Semantic Scholar's public pool answered HTTP 429 on 3 of 5 searches (sub-questions 1, 3 and the first query for 4); each time the 4 retries (3/6/12/24 s) ran out, the agent logged the failure and continued on OpenAlex. It answered the other 2 (sub-question 2 after 3 retries; the reformulated sub-question 4 at once), 20 records each. Run finished: 117 unique papers (78 on the same question with one source), 78 DOIs verified, 77 approved. Brief limitations: "openalex: 5 of 5 searches answered, 100 records; semanticscholar: 2 of 5 searches answered, 40 records" and "Automatic failover was used: semanticscholar failed for 3 search(es) ..." (see `stage7_01_...log`) | PASS |
+| FT-11 | A non-transient error from a source fails over at once (no retries); cached answers still serve | `S2_ENDPOINT=https://api.semanticscholar.org/graph/v1/paper/nonexistent python main.py "<standard question>"`, `approve`, `approve` | An HTTP 404 from Semantic Scholar is not retried: the failure line appears immediately with the 404 in it and the run continues on OpenAlex; searches cached from FT-10 are answered without any request; no model calls (all cached) | 30 Sept 10:21-10:54: sub-question 3 - one 429 retry, then `failed (404 Client Error: Not Found for url: .../paper/nonexistent?...) - continuing with remaining sources` 3.6 s after the search began; sub-questions 1 and 4 were rate-limited (429) before the bad path was reached, so those took the transient route (4 retries, then failover); sub-question 2 and the reformulated sub-question 4 were served from the disk cache by both sources within milliseconds. Same brief (117 / 78 / 77) written with no Gemini requests (see `stage7_02_...log`) | PASS |
 
 ## Summary
 
-Nine tests, all PASS (23 Sept 2026). Along the way the live tests produced remediations #8-#11 (model quota, OpenAlex key and retry policy, Review 1 typo handling) - see `remediation_log.md`.
+Eleven tests, all PASS (FT-01 to FT-09 on 23 Sept 2026; FT-10 and FT-11 on 30 Sept 2026 after Stage 7). Along the way the live tests produced remediations #8-#11 (model quota, OpenAlex key and retry policy, Review 1 typo handling) - see `remediation_log.md`.
 
 ## Notes
 
 - Every Gemini request counts against the free daily quota, retries included. On 22 Sept the Stage 6 run (~20 requests with retries) plus the FT-01 mis-run (~7) exhausted it, so the remaining live tests are spread over separate days or run on a model with a larger free allowance (`GEMINI_MODEL` in `.env`, no code change).
 - Cached results (plan, searches, verification, scores for the standard question) make re-runs cheap: only new prompts cost requests.
+- Semantic Scholar without a key shares one public rate pool; in FT-10 it refused 3 of 5 searches with 429 even at one request every few seconds. A free key (`S2_API_KEY`, 1 request/second dedicated) is the fix; failover means the run completes either way, with narrower coverage recorded in the brief.

@@ -3,9 +3,11 @@ OpenAlex search client - the Retrieval Agent's connection to the outside world.
 
 Why OpenAlex: it needs no API key (a contact email gets you the faster "polite
 pool"), has strong abstract coverage, and is the proposal's named fallback
-source. Semantic Scholar could be substituted later: this module returns
-normalised Paper records, so swapping the source changes one function, not
-any agent - exactly the decoupling the design promised.
+source. This module returns normalised Paper records, so adding a source
+changes one function, not any agent - exactly the decoupling the design
+promised. Stage 7 used that: Semantic Scholar (s2_client.py) now runs
+alongside this client for every search, and the Retrieval Agent fails over
+between them.
 """
 from typing import Any, Dict, List, Optional
 

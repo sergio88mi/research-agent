@@ -123,5 +123,7 @@ def test_full_run_produces_summaries_themes_gaps_and_computed_limitations():
     assert len(brief.summaries) == 18 and brief.summaries[0].startswith("[1] ")
     assert brief.themes and brief.gaps == ["g"]
     joined = " ".join(brief.limitations)
-    assert "abstract" in joined and "OpenAlex" in joined and "checked against the full texts" in joined
+    assert "abstract" in joined and "checked against the full texts" in joined
+    assert "openalex: 3 of 3 searches answered, 18 records" in joined       # Stage 7: sources tally, no failover line
+    assert "failover" not in joined
     assert "18 of 18 approved papers have DOIs not registered" in joined     # all mocked as not-in-Crossref

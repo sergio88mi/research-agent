@@ -32,8 +32,20 @@ OPENALEX_API_KEY = os.getenv("OPENALEX_API_KEY", "")  # free account key: $1/day
 OPENALEX_ENDPOINT = "https://api.openalex.org/works"
 RESULTS_PER_QUERY = 20          # ~20 results per sub-question (proposal, section 6)
 CROSSREF_ENDPOINT = "https://api.crossref.org/works"
-API_TRANSIENT_RETRIES = 4       # OpenAlex/Crossref: retries on 429/5xx, timeouts (remediation #9)
+API_TRANSIENT_RETRIES = 4       # OpenAlex/Crossref/Semantic Scholar: retries on 429/5xx, timeouts (remediation #9)
 API_BACKOFF_SECONDS = 3         # wait 3, 6, 12, 24 s
+
+# Stage 7 - several sources as part of the normal retrieval process, with automatic failover.
+# The team-project feedback pointed out that leaning on one API (with a second only as a
+# fallback) narrows coverage and makes the run hostage to that API's downtime and rate
+# limits. Every sub-question is now searched on every source listed here; if one source
+# fails after its retries the run carries on with the rest and the brief says so. The
+# list is configuration, not code, so a source can be dropped or reordered without a
+# change to any agent (order matters only for which copy of a duplicate is kept: the
+# first source's).
+SOURCES = [s.strip() for s in os.getenv("SOURCES", "openalex,semanticscholar").split(",") if s.strip()]
+S2_ENDPOINT = os.getenv("S2_ENDPOINT", "https://api.semanticscholar.org/graph/v1/paper/search")  # overridable so failover can be demonstrated live
+S2_API_KEY = os.getenv("S2_API_KEY", "")  # optional: a key gives a dedicated 1 request/s; without one, requests share the public pool
 
 # --- Agent behaviour (the bounded-autonomy numbers from the design) ----------
 MIN_SUBQUESTIONS = 3

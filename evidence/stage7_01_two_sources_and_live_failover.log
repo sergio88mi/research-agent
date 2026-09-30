@@ -1,0 +1,44 @@
+# Stage 7 live evidence - excerpt of output/run.log (30 Sept 2026, 10:11-10:18), unedited lines: retrieval, HTTP retry and threshold entries only
+# Both sources are searched for every sub-question. Semantic Scholar's public (keyless) pool answered HTTP 429 on 3 of the 5 searches; each time the
+# retry policy ran out the Retrieval Agent logged the failure and continued on OpenAlex (automatic failover). It answered on the other 2 searches.
+# Brief written: output/brief-20260930-101857-... ; its Limitations section records "openalex: 5 of 5 searches answered, 100 records; semanticscholar: 2 of 5 searches answered, 40 records" and the failover line.
+2026-09-30 10:11:04,673 | INFO | research_agent.orchestrator | run | question='What approaches reduce hallucination in LLM-based autonomous agents?'
+2026-09-30 10:11:08,339 | INFO | research_agent.retrieval | retrieving | subquestion=1 | query='large language model agents hallucination reduction prompting reasoning' | sources=openalex,semanticscholar
+2026-09-30 10:11:09,332 | INFO | research_agent.retrieval | retrieved | subquestion=1 | source=openalex | records=20 | with_abstract=20
+2026-09-30 10:11:10,662 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 1/4 in 3s
+2026-09-30 10:11:14,206 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 2/4 in 6s
+2026-09-30 10:11:20,757 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 3/4 in 12s
+2026-09-30 10:11:33,297 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 4/4 in 24s
+2026-09-30 10:11:57,846 | WARNING | research_agent.retrieval | retrieval | subquestion=1 | source=semanticscholar failed (semanticscholar unavailable after 4 retries (last problem: HTTP 429)) - continuing with remaining sources
+2026-09-30 10:11:57,848 | INFO | research_agent.retrieval | retrieved | subquestion=1 | sources_answered=openalex | records=20 | with_abstract=20
+2026-09-30 10:12:09,212 | INFO | research_agent.retrieval | retrieving | subquestion=2 | query='retrieval augmented generation tool use agent factuality verification' | sources=openalex,semanticscholar
+2026-09-30 10:12:09,804 | INFO | research_agent.retrieval | retrieved | subquestion=2 | source=openalex | records=20 | with_abstract=20
+2026-09-30 10:12:10,330 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 1/4 in 3s
+2026-09-30 10:12:13,946 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 2/4 in 6s
+2026-09-30 10:12:20,478 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 3/4 in 12s
+2026-09-30 10:12:33,708 | INFO | research_agent.retrieval | retrieved | subquestion=2 | source=semanticscholar | records=20 | with_abstract=20
+2026-09-30 10:12:33,708 | INFO | research_agent.retrieval | retrieved | subquestion=2 | sources_answered=openalex,semanticscholar | records=40 | with_abstract=40
+2026-09-30 10:13:05,769 | INFO | research_agent.retrieval | retrieving | subquestion=3 | query='autonomous agents self correction memory management hallucination mitigation' | sources=openalex,semanticscholar
+2026-09-30 10:13:06,679 | INFO | research_agent.retrieval | retrieved | subquestion=3 | source=openalex | records=20 | with_abstract=20
+2026-09-30 10:13:07,217 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 1/4 in 3s
+2026-09-30 10:13:10,782 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 2/4 in 6s
+2026-09-30 10:13:17,064 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 3/4 in 12s
+2026-09-30 10:13:29,634 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 4/4 in 24s
+2026-09-30 10:13:54,301 | WARNING | research_agent.retrieval | retrieval | subquestion=3 | source=semanticscholar failed (semanticscholar unavailable after 4 retries (last problem: HTTP 429)) - continuing with remaining sources
+2026-09-30 10:13:54,306 | INFO | research_agent.retrieval | retrieved | subquestion=3 | sources_answered=openalex | records=20 | with_abstract=20
+2026-09-30 10:14:05,329 | INFO | research_agent.retrieval | retrieving | subquestion=4 | query='evaluation benchmarks hallucination detection multi step language model agents' | sources=openalex,semanticscholar
+2026-09-30 10:14:06,204 | INFO | research_agent.retrieval | retrieved | subquestion=4 | source=openalex | records=20 | with_abstract=19
+2026-09-30 10:14:06,737 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 1/4 in 3s
+2026-09-30 10:14:10,377 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 2/4 in 6s
+2026-09-30 10:14:16,976 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 3/4 in 12s
+2026-09-30 10:14:29,628 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 4/4 in 24s
+2026-09-30 10:14:54,205 | WARNING | research_agent.retrieval | retrieval | subquestion=4 | source=semanticscholar failed (semanticscholar unavailable after 4 retries (last problem: HTTP 429)) - continuing with remaining sources
+2026-09-30 10:14:54,207 | INFO | research_agent.retrieval | retrieved | subquestion=4 | sources_answered=openalex | records=20 | with_abstract=19
+2026-09-30 10:14:59,277 | INFO | research_agent.orchestrator | threshold | subquestion=4 | the query returned 8 records but only 2 were relevant (minimum 5); typical rejections: The abstract describes an architecture for generative agents and believable human behavior | The abstract is a conference preface and does not contain any information about hallucinat | The abstract outlines an evaluation pipeline for LLMs in computational social science task | reformulating (1 of 1 allowed)
+2026-09-30 10:14:59,762 | INFO | research_agent.planning | reformulated | subquestion=4 | old='evaluation benchmarks hallucination detection multi step language model agents' | new='factuality evaluation hallucination measurement multi step llm agent workflows'
+2026-09-30 10:14:59,762 | INFO | research_agent.retrieval | retrieving | subquestion=4 | query='factuality evaluation hallucination measurement multi step llm agent workflows' | sources=openalex,semanticscholar
+2026-09-30 10:15:00,491 | INFO | research_agent.retrieval | retrieved | subquestion=4 | source=openalex | records=20 | with_abstract=19
+2026-09-30 10:15:01,581 | INFO | research_agent.retrieval | retrieved | subquestion=4 | source=semanticscholar | records=20 | with_abstract=20
+2026-09-30 10:15:01,581 | INFO | research_agent.retrieval | retrieved | subquestion=4 | sources_answered=openalex,semanticscholar | records=40 | with_abstract=39
+2026-09-30 10:15:23,018 | INFO | research_agent.orchestrator | threshold | subquestion=4 | after reformulation: 33 new records, 20 relevant
+2026-09-30 10:18:57,932 | INFO | research_agent.orchestrator | saved | output/brief-20260930-101857-what-approaches-reduce-hallucination-in-.md | output/brief-20260930-101857-what-approaches-reduce-hallucination-in-.json
