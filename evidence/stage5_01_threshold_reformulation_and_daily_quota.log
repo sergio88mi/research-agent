@@ -1,6 +1,6 @@
 # Stage 5 live evidence - excerpt of output/run.log (17 Sept 2026), unedited lines
 # Run 1 (18:33): threshold trigger 2 fires for sub-question 4, Planning Agent reformulates the query live,
-#                OpenAlex returns 20 new records, Crossref verifies 9, then scoring meets HTTP 429.
+#                OpenAlex returns 20 records, 13 of them new; Crossref verifies 9 of the 13; then scoring meets HTTP 429.
 
 2026-09-17 18:33:12,776 | INFO | research_agent.orchestrator | threshold | subquestion=4 | the query returned 12 records but only 1 were relevant (minimum 5); typical rejections: The abstract describes the Flamingo multimodal model for few-shot learning tasks, with no  | The abstract broadly surveys LLM evaluation methodologies and briefly mentions agent appli | The abstract presents a general survey of large language models, their training datasets,  | reformulating (1 of 1 allowed)
 2026-09-17 18:33:17,874 | INFO | research_agent.llm | llm | prompt_chars=1052 | response_chars=105
@@ -29,7 +29,7 @@
 2026-09-17 18:33:40,005 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 4/5 in 16s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa
 2026-09-17 18:33:56,276 | WARNING | research_agent.llm | llm | HTTP 429 (transient) - retry 5/5 in 32s | You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa
 
-# Run 2 (18:36): same point replayed from cache; quota id now logged (remediation #6) ->
+# Run 2 (18:36): same point replayed from cache; the quota id is in the log line from this run on (see remediation #7) ->
 #                GenerateRequestsPerDayPerProjectPerModel-FreeTier = daily free-tier quota exhausted.
 
 2026-09-17 18:36:05,662 | INFO | research_agent.orchestrator | threshold | subquestion=4 | the query returned 12 records but only 1 were relevant (minimum 5); typical rejections: The abstract describes the Flamingo multimodal model for few-shot learning tasks, with no  | The abstract broadly surveys LLM evaluation methodologies and briefly mentions agent appli | The abstract presents a general survey of large language models, their training datasets,  | reformulating (1 of 1 allowed)

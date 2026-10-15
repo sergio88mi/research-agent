@@ -1,0 +1,374 @@
+2026-10-02 09:15:12,094 | INFO | research_agent.orchestrator | run | question='is remote work good'
+2026-10-02 09:15:12,094 | INFO | research_agent.planning | planning | question='is remote work good' | feedback=''
+2026-10-02 09:15:13,123 | INFO | research_agent.llm | llm | prompt_chars=562 | response_chars=998
+2026-10-02 09:15:13,130 | INFO | research_agent.planning | planned | 1 | How does remote work affect employee productivity and performance? | query='remote work employee productivity performance output efficiency'
+2026-10-02 09:15:13,130 | INFO | research_agent.planning | planned | 2 | What are the psychological and well-being impacts of working remotely? | query='remote work mental health stress isolation well-being burnout'
+2026-10-02 09:15:13,130 | INFO | research_agent.planning | planned | 3 | How does remote work influence work-life balance and personal relationships? | query='telecommuting work-life balance personal life family dynamics boundary'
+2026-10-02 09:15:13,130 | INFO | research_agent.planning | planned | 4 | What is the impact of remote work on organizational culture and collaboration? | query='virtual teams organizational culture collaboration communication cohesion management'
+
+=== Review 1: proposed research plan ===
+Interpretation: I interpret the question as an inquiry into the overall impacts of remote work on employee productivity, organizational outcomes, and individual well-being.
+
+  1. How does remote work affect employee productivity and performance?
+     query: remote work employee productivity performance output efficiency
+  2. What are the psychological and well-being impacts of working remotely?
+     query: remote work mental health stress isolation well-being burnout
+  3. How does remote work influence work-life balance and personal relationships?
+     query: telecommuting work-life balance personal life family dynamics boundary
+  4. What is the impact of remote work on organizational culture and collaboration?
+     query: virtual teams organizational culture collaboration communication cohesion management
+
+Type 'approve' to search, or describe what to change (e.g. 'focus on healthcare, drop #3').
+> 2026-10-02 09:15:13,131 | INFO | research_agent.orchestrator | review1 | decision=approve | feedback=''
+2026-10-02 09:15:13,131 | INFO | research_agent.retrieval | retrieving | subquestion=1 | query='remote work employee productivity performance output efficiency' | sources=openalex,semanticscholar
+2026-10-02 09:15:14,244 | INFO | research_agent.retrieval | retrieved | subquestion=1 | source=openalex | records=20 | with_abstract=17
+2026-10-02 09:15:14,792 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 1/4 in 3s
+2026-10-02 09:15:18,325 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 2/4 in 6s
+2026-10-02 09:15:24,882 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 3/4 in 12s
+2026-10-02 09:15:37,443 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 4/4 in 24s
+2026-10-02 09:16:02,034 | WARNING | research_agent.retrieval | retrieval | subquestion=1 | source=semanticscholar failed (semanticscholar unavailable after 4 retries (last problem: HTTP 429)) - continuing with remaining sources
+2026-10-02 09:16:02,036 | INFO | research_agent.retrieval | retrieved | subquestion=1 | sources_answered=openalex | records=20 | with_abstract=17
+2026-10-02 09:16:02,036 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-10-02 09:16:02,473 | INFO | research_agent.validation | verify | match | 10.1111/apps.12290
+2026-10-02 09:16:02,887 | INFO | research_agent.validation | verify | match | 10.2139/ssrn.1714428
+2026-10-02 09:16:03,289 | INFO | research_agent.validation | verify | match | 10.3386/w31161
+2026-10-02 09:16:03,710 | INFO | research_agent.validation | verify | match | 10.3390/su15054529
+2026-10-02 09:16:04,247 | INFO | research_agent.validation | verify | match | 10.1016/j.buildenv.2016.06.001
+2026-10-02 09:16:04,653 | INFO | research_agent.validation | verify | not in Crossref | 10.5281/zenodo.3464807
+2026-10-02 09:16:05,069 | INFO | research_agent.validation | verify | match | 10.1146/annurev-orgpsych-041015-062352
+2026-10-02 09:16:05,542 | INFO | research_agent.validation | verify | match | 10.1111/apps.12241
+2026-10-02 09:16:05,966 | INFO | research_agent.validation | verify | match | 10.1080/09585192.2023.2221385
+2026-10-02 09:16:06,487 | INFO | research_agent.validation | verify | match | 10.3389/fpls.2017.01111
+2026-10-02 09:16:06,901 | INFO | research_agent.validation | verify | match | 10.3390/su14010294
+2026-10-02 09:16:07,319 | INFO | research_agent.validation | verify | match | 10.3390/su12135332
+2026-10-02 09:16:07,729 | INFO | research_agent.validation | verify | match | 10.3389/fpsyg.2021.730969
+2026-10-02 09:16:08,128 | INFO | research_agent.validation | verify | match | 10.1257/jep.24.1.203
+2026-10-02 09:16:08,533 | INFO | research_agent.validation | verify | match | 10.1038/s41586-024-07500-2
+2026-10-02 09:16:08,937 | INFO | research_agent.validation | verify | match | 10.1257/jep.37.4.23
+2026-10-02 09:16:09,353 | INFO | research_agent.validation | verify | match | 10.3390/su14074220
+2026-10-02 09:16:09,755 | INFO | research_agent.validation | verify | match | 10.1145/3454122.3454124
+2026-10-02 09:16:10,166 | INFO | research_agent.validation | verify | match | 10.1016/j.jbusres.2021.08.007
+2026-10-02 09:16:10,696 | INFO | research_agent.validation | verify | match | 10.1038/s44159-022-00056-w
+2026-10-02 09:16:10,696 | INFO | research_agent.validation | verify summary | {'verified': 19, 'flagged': 1, 'unchecked': 0}
+2026-10-02 09:16:10,697 | INFO | research_agent.evaluation | evaluating | subquestion=1 | batch=1/2 | papers=10
+2026-10-02 09:16:12,786 | INFO | research_agent.llm | llm | prompt_chars=11318 | response_chars=1955
+2026-10-02 09:16:12,788 | WARNING | research_agent.llm | llm | invalid JSON for ScoreResponse (attempt 1): 1 validation error for _Exact
+  Input should be an object [type=model_type, input_value=[{'index': 1, 'relevance_...evant to remote work.'}], input_type=list]
+    For further information visit https:/
+2026-10-02 09:16:14,776 | INFO | research_agent.llm | llm | prompt_chars=11689 | response_chars=2073
+2026-10-02 09:16:14,780 | INFO | research_agent.evaluation | score | 4 | keep | 10.1111/apps.12290 | The abstract examines the challenges of remote working during the pandemic and how virtual work char
+2026-10-02 09:16:14,781 | INFO | research_agent.evaluation | score | 1 | drop | 10.2139/ssrn.1714428 | The paper has no abstract available and its title indicates it is about economic performance and soc
+2026-10-02 09:16:14,781 | INFO | research_agent.evaluation | score | 2 | drop | 10.3386/w31161 | The abstract investigates the impact of generative AI on customer support agent productivity rather 
+2026-10-02 09:16:14,781 | INFO | research_agent.evaluation | score | 5 | keep | 10.3390/su15054529 | The abstract explicitly reviews the impact of work-from-home on employee productivity and performanc
+2026-10-02 09:16:14,781 | INFO | research_agent.evaluation | score | 1 | drop | 10.1016/j.buildenv.2016.06.001 | The paper has no abstract available and its title focuses on office indoor environment quality rathe
+2026-10-02 09:16:14,781 | INFO | research_agent.evaluation | score | 2 | drop | 10.5281/zenodo.3464807 | The abstract investigates the relationship between training and development and employee performance
+2026-10-02 09:16:14,781 | INFO | research_agent.evaluation | score | 2 | drop | 10.1146/annurev-orgpsych-041015-062352 | The abstract reviews the effects of technology on work and organizations but does not specifically f
+2026-10-02 09:16:14,781 | INFO | research_agent.evaluation | score | 2 | drop | 10.1111/apps.12241 | The abstract discusses how digital technologies affect job resources and performance, but is not spe
+2026-10-02 09:16:14,781 | INFO | research_agent.evaluation | score | 4 | keep | 10.1080/09585192.2023.2221385 | The abstract outlines a scoping review on the impacts of post-COVID remote working on people and pro
+2026-10-02 09:16:14,781 | INFO | research_agent.evaluation | score | 1 | drop | 10.3389/fpls.2017.01111 | The abstract is about unmanned aerial vehicle remote sensing for crop phenotyping, sharing the word 
+2026-10-02 09:16:14,781 | INFO | research_agent.evaluation | evaluating | subquestion=1 | batch=2/2 | papers=10
+2026-10-02 09:16:16,883 | INFO | research_agent.llm | llm | prompt_chars=11512 | response_chars=2043
+2026-10-02 09:16:16,886 | INFO | research_agent.evaluation | score | 4 | keep | 10.3390/su14010294 | The abstract discusses remote and hybrid work benefits, specifically mentioning individual performan
+2026-10-02 09:16:16,886 | INFO | research_agent.evaluation | score | 3 | keep | 10.3390/su12135332 | The abstract examines factors affecting telework efficiency and qualities required from remote worke
+2026-10-02 09:16:16,886 | INFO | research_agent.evaluation | score | 3 | keep | 10.3389/fpsyg.2021.730969 | The abstract investigates the effects of remote work on psychological and physical stress responses 
+2026-10-02 09:16:16,886 | INFO | research_agent.evaluation | score | 1 | drop | 10.1257/jep.24.1.203 | The abstract focuses on general management practices and productivity differences across firms rathe
+2026-10-02 09:16:16,886 | INFO | research_agent.evaluation | score | 5 | keep | 10.1038/s41586-024-07500-2 | The abstract directly addresses how hybrid working from home affects employee performance grades, pr
+2026-10-02 09:16:16,886 | INFO | research_agent.evaluation | score | 3 | keep | 10.1257/jep.37.4.23 | The abstract discusses the evolution of work from home and briefly mentions implications for pay, pr
+2026-10-02 09:16:16,887 | INFO | research_agent.evaluation | score | 4 | keep | 10.3390/su14074220 | The abstract explores remote work efficiency and the supervision of work performance from the employ
+2026-10-02 09:16:16,887 | INFO | research_agent.evaluation | score | 2 | drop | 10.1145/3454122.3454124 | The abstract outlines a framework for developer productivity but does not specifically address remot
+2026-10-02 09:16:16,887 | INFO | research_agent.evaluation | score | 2 | drop | 10.1016/j.jbusres.2021.08.007 | The abstract examines employee perceptions of ICTs, burnout, and job satisfaction without focusing o
+2026-10-02 09:16:16,887 | INFO | research_agent.evaluation | score | 1 | drop | 10.1038/s44159-022-00056-w | The paper has no abstract available and its title does not mention remote work or productivity.
+2026-10-02 09:16:16,887 | INFO | research_agent.evaluation | evaluate summary | scored=20 | selected=9 | dropped=11 | cutoff=3
+2026-10-02 09:16:16,887 | INFO | research_agent.retrieval | retrieving | subquestion=2 | query='remote work mental health stress isolation well-being burnout' | sources=openalex,semanticscholar
+2026-10-02 09:16:17,566 | INFO | research_agent.retrieval | retrieved | subquestion=2 | source=openalex | records=20 | with_abstract=19
+2026-10-02 09:16:18,074 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 1/4 in 3s
+2026-10-02 09:16:21,610 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 2/4 in 6s
+2026-10-02 09:16:28,146 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 3/4 in 12s
+2026-10-02 09:16:40,671 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 4/4 in 24s
+2026-10-02 09:17:05,231 | WARNING | research_agent.retrieval | retrieval | subquestion=2 | source=semanticscholar failed (semanticscholar unavailable after 4 retries (last problem: HTTP 429)) - continuing with remaining sources
+2026-10-02 09:17:05,233 | INFO | research_agent.retrieval | retrieved | subquestion=2 | sources_answered=openalex | records=20 | with_abstract=19
+2026-10-02 09:17:05,233 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-10-02 09:17:05,643 | INFO | research_agent.validation | verify | match | 10.3389/fpubh.2021.679397
+2026-10-02 09:17:06,058 | INFO | research_agent.validation | verify | match | 10.1080/1359432x.2018.1541886
+2026-10-02 09:17:06,560 | INFO | research_agent.validation | verify | match | 10.3390/ijerph19031780
+2026-10-02 09:17:06,973 | INFO | research_agent.validation | verify | match | 10.1108/er-08-2012-0059
+2026-10-02 09:17:07,544 | INFO | research_agent.validation | verify | match | 10.3390/jcm12134425
+2026-10-02 09:17:07,960 | INFO | research_agent.validation | verify | match | 10.3390/healthcare4030037
+2026-10-02 09:17:08,369 | INFO | research_agent.validation | verify | match | 10.1111/jocn.15307
+2026-10-02 09:17:08,782 | INFO | research_agent.validation | verify | match | 10.1590/0102-311x00063520
+2026-10-02 09:17:09,303 | INFO | research_agent.validation | verify | match | 10.1016/j.euroneuro.2021.10.864
+2026-10-02 09:17:09,717 | INFO | research_agent.validation | verify | match | 10.3390/su12239804
+2026-10-02 09:17:10,135 | INFO | research_agent.validation | verify | match | 10.1007/s11218-022-09686-7
+2026-10-02 09:17:10,554 | INFO | research_agent.validation | verify | match | 10.1213/ane.0000000000004866
+2026-10-02 09:17:10,960 | INFO | research_agent.validation | verify | match | 10.3390/ijerph19073879
+2026-10-02 09:17:11,466 | INFO | research_agent.validation | verify | match | 10.3390/ijerph18094486
+2026-10-02 09:17:11,872 | INFO | research_agent.validation | verify | match | 10.1080/1359432x.2021.2002299
+2026-10-02 09:17:12,282 | INFO | research_agent.validation | verify | match | 10.1007/s10578-020-01037-x
+2026-10-02 09:17:12,690 | INFO | research_agent.validation | verify | match | 10.3390/ijerph17228297
+2026-10-02 09:17:13,099 | INFO | research_agent.validation | verify | match | 10.1002/hrm.22102
+2026-10-02 09:17:13,501 | INFO | research_agent.validation | verify | match | 10.1017/s1049023x19004874
+2026-10-02 09:17:13,501 | INFO | research_agent.validation | verify summary | {'verified': 19, 'flagged': 0, 'unchecked': 0}
+2026-10-02 09:17:13,501 | INFO | research_agent.evaluation | evaluating | subquestion=2 | batch=1/2 | papers=10
+2026-10-02 09:17:15,586 | INFO | research_agent.llm | llm | prompt_chars=12924 | response_chars=1892
+2026-10-02 09:17:15,587 | WARNING | research_agent.llm | llm | invalid JSON for ScoreResponse (attempt 1): 1 validation error for _Exact
+  Input should be an object [type=model_type, input_value=[{'index': 1, 'relevance_...ion and productivity.'}], input_type=list]
+    For further information visit https:/
+2026-10-02 09:17:17,812 | INFO | research_agent.llm | llm | prompt_chars=13295 | response_chars=2079
+2026-10-02 09:17:17,816 | INFO | research_agent.evaluation | score | 1 | drop | 10.3389/fpubh.2021.679397 | The abstract discusses the mental health of frontline healthcare workers during the pandemic rather 
+2026-10-02 09:17:17,816 | INFO | research_agent.evaluation | score | 5 | keep | 10.1080/1359432x.2018.1541886 | The abstract directly reviews remote e-workers' well-being across multiple dimensions, including aff
+2026-10-02 09:17:17,816 | INFO | research_agent.evaluation | score | 2 | drop | 10.3390/ijerph19031780 | The abstract focuses generally on occupational burnout and stress theory without addressing remote w
+2026-10-02 09:17:17,816 | INFO | research_agent.evaluation | score | 5 | keep | 10.1108/er-08-2012-0059 | The abstract explicitly explores the impact of remote e-working on well-being and work-life balance.
+2026-10-02 09:17:17,817 | INFO | research_agent.evaluation | score | 1 | drop | 10.3390/jcm12134425 | The abstract reviews the mental health and well-being of university faculty in demanding campus envi
+2026-10-02 09:17:17,817 | INFO | research_agent.evaluation | score | 1 | drop | 10.3390/healthcare4030037 | The abstract covers burnout and stress specifically among doctors in medical practice settings witho
+2026-10-02 09:17:17,817 | INFO | research_agent.evaluation | score | 1 | drop | 10.1111/jocn.15307 | The abstract is incomplete and only provides a title fragment regarding nurses' psychological health
+2026-10-02 09:17:17,817 | INFO | research_agent.evaluation | score | 1 | drop | 10.1590/0102-311x00063520 | The abstract focuses on the mental health impact of COVID-19 on frontline healthcare professionals r
+2026-10-02 09:17:17,817 | INFO | research_agent.evaluation | score | 1 | drop | 10.1016/j.euroneuro.2021.10.864 | The abstract broadly reviews how the pandemic has impacted the mental health of various vulnerable p
+2026-10-02 09:17:17,817 | INFO | research_agent.evaluation | score | 5 | keep | 10.3390/su12239804 | The abstract investigates social isolation and stress as predictors of remote work satisfaction and 
+2026-10-02 09:17:17,817 | INFO | research_agent.evaluation | evaluating | subquestion=2 | batch=2/2 | papers=9
+2026-10-02 09:17:19,857 | INFO | research_agent.llm | llm | prompt_chars=11686 | response_chars=1730
+2026-10-02 09:17:19,859 | WARNING | research_agent.llm | llm | invalid JSON for ScoreResponse (attempt 1): 1 validation error for _Exact
+  Input should be an object [type=model_type, input_value=[{'index': 1, 'relevance_...ntion of remote work.'}], input_type=list]
+    For further information visit https:/
+2026-10-02 09:17:21,825 | INFO | research_agent.llm | llm | prompt_chars=12057 | response_chars=1953
+2026-10-02 09:17:21,828 | INFO | research_agent.evaluation | score | 3 | keep | 10.1007/s11218-022-09686-7 | The abstract examines teacher stress and burnout in Australia and briefly mentions teachers working 
+2026-10-02 09:17:21,828 | INFO | research_agent.evaluation | score | 2 | drop | 10.1213/ane.0000000000004866 | The abstract discusses provider burnout and fatigue during the COVID-19 pandemic in an intensive car
+2026-10-02 09:17:21,828 | INFO | research_agent.evaluation | score | 5 | keep | 10.3390/ijerph19073879 | The abstract directly evaluates existing research about telework and its impacts on worker health an
+2026-10-02 09:17:21,828 | INFO | research_agent.evaluation | score | 1 | drop | 10.3390/ijerph18094486 | The abstract is about the impacts of climate change on population mental health and has no relation 
+2026-10-02 09:17:21,828 | INFO | research_agent.evaluation | score | 5 | keep | 10.1080/1359432x.2021.2002299 | The abstract directly investigates how remote work practices impact perceptions of isolation and psy
+2026-10-02 09:17:21,828 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s10578-020-01037-x | There is no abstract available for this paper, and the title refers to caregiving and the parent-chi
+2026-10-02 09:17:21,828 | INFO | research_agent.evaluation | score | 2 | drop | 10.3390/ijerph17228297 | The abstract focuses on family stress, quarantine, and well-being in Italian children and parents wi
+2026-10-02 09:17:21,828 | INFO | research_agent.evaluation | score | 5 | keep | 10.1002/hrm.22102 | The abstract directly investigates how a forced shift to remote work impacted employee well-being, e
+2026-10-02 09:17:21,828 | INFO | research_agent.evaluation | score | 1 | drop | 10.1017/s1049023x19004874 | The abstract reviews the mental health impacts of disasters on medical responders and does not discu
+2026-10-02 09:17:21,828 | INFO | research_agent.evaluation | evaluate summary | scored=19 | selected=7 | dropped=12 | cutoff=3
+2026-10-02 09:17:21,829 | INFO | research_agent.retrieval | retrieving | subquestion=3 | query='telecommuting work-life balance personal life family dynamics boundary' | sources=openalex,semanticscholar
+2026-10-02 09:17:22,567 | INFO | research_agent.retrieval | retrieved | subquestion=3 | source=openalex | records=20 | with_abstract=17
+2026-10-02 09:17:23,099 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 1/4 in 3s
+2026-10-02 09:17:26,721 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 2/4 in 6s
+2026-10-02 09:17:33,271 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 3/4 in 12s
+2026-10-02 09:17:45,869 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 4/4 in 24s
+2026-10-02 09:18:10,402 | WARNING | research_agent.retrieval | retrieval | subquestion=3 | source=semanticscholar failed (semanticscholar unavailable after 4 retries (last problem: HTTP 429)) - continuing with remaining sources
+2026-10-02 09:18:10,404 | INFO | research_agent.retrieval | retrieved | subquestion=3 | sources_answered=openalex | records=20 | with_abstract=17
+2026-10-02 09:18:10,404 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-10-02 09:18:11,028 | INFO | research_agent.validation | verify | match | 10.1146/annurev-orgpsych-031413-091330
+2026-10-02 09:18:11,441 | INFO | research_agent.validation | verify | match | 10.1016/j.hrmr.2008.09.001
+2026-10-02 09:18:11,856 | INFO | research_agent.validation | verify | match | 10.1016/j.ijinfomgt.2020.102211
+2026-10-02 09:18:12,265 | INFO | research_agent.validation | verify | match | 10.1177/0003122414531435
+2026-10-02 09:18:12,673 | INFO | research_agent.validation | verify | match | 10.1146/annurev-psych-122414-033710
+2026-10-02 09:18:13,087 | INFO | research_agent.validation | verify | match | 10.1007/978-3-031-17299-1
+2026-10-02 09:18:13,504 | INFO | research_agent.validation | verify | match | 10.1016/j.iimb.2010.10.010
+2026-10-02 09:18:13,934 | INFO | research_agent.validation | verify | match | 10.1111/soc4.12881
+2026-10-02 09:18:14,391 | INFO | research_agent.validation | verify | match | 10.3390/ijerph18137069
+2026-10-02 09:18:14,807 | INFO | research_agent.validation | verify | match | 10.1080/23311975.2023.2242160
+2026-10-02 09:18:15,229 | INFO | research_agent.validation | verify | match | 10.1371/journal.pcbi.1009124
+2026-10-02 09:18:15,640 | INFO | research_agent.validation | verify | match | 10.1111/jomf.12810
+2026-10-02 09:18:16,050 | INFO | research_agent.validation | verify | match | 10.3390/su12093567
+2026-10-02 09:18:16,507 | INFO | research_agent.validation | verify | match | 10.5465/annals.2017.0020
+2026-10-02 09:18:16,915 | INFO | research_agent.validation | verify | match | 10.17705/1thci.00059
+2026-10-02 09:18:17,349 | INFO | research_agent.validation | verify | match | 10.9790/487x-1901032023
+2026-10-02 09:18:17,757 | INFO | research_agent.validation | verify | match | 10.1177/0018726718823071
+2026-10-02 09:18:18,170 | INFO | research_agent.validation | verify | match | 10.1002/hrm.21875
+2026-10-02 09:18:18,581 | INFO | research_agent.validation | verify | match | 10.3390/bs13110916
+2026-10-02 09:18:18,582 | INFO | research_agent.validation | verify summary | {'verified': 19, 'flagged': 0, 'unchecked': 0}
+2026-10-02 09:18:18,582 | INFO | research_agent.evaluation | evaluating | subquestion=3 | batch=1/2 | papers=10
+2026-10-02 09:18:20,815 | INFO | research_agent.llm | llm | prompt_chars=9058 | response_chars=2204
+2026-10-02 09:18:20,817 | WARNING | research_agent.llm | llm | invalid JSON for ScoreResponse (attempt 1): 1 validation error for _Exact
+  Input should be an object [type=model_type, input_value=[{'index': 1, 'relevance_...nd professional life.'}], input_type=list]
+    For further information visit https:/
+2026-10-02 09:18:22,963 | INFO | research_agent.llm | llm | prompt_chars=9429 | response_chars=2094
+2026-10-02 09:18:22,968 | INFO | research_agent.evaluation | score | 3 | keep | 10.1146/annurev-orgpsych-031413-091330 | The abstract reviews work-family boundary dynamics and management strategies, providing useful backg
+2026-10-02 09:18:22,968 | INFO | research_agent.evaluation | score | 1 | drop | 10.1016/j.hrmr.2008.09.001 | There is no abstract available, and the title alone is too broad to confirm relevance to remote work
+2026-10-02 09:18:22,968 | INFO | research_agent.evaluation | score | 1 | drop | 10.1016/j.ijinfomgt.2020.102211 | There is no abstract available, and the title is too general regarding education, work, and life dur
+2026-10-02 09:18:22,968 | INFO | research_agent.evaluation | score | 4 | keep | 10.1177/0003122414531435 | The abstract discusses how schedule control and workplace interventions targeting when and where peo
+2026-10-02 09:18:22,968 | INFO | research_agent.evaluation | score | 2 | drop | 10.1146/annurev-psych-122414-033710 | The abstract focuses on work-family research history and workplace norms regarding class and gender 
+2026-10-02 09:18:22,968 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/978-3-031-17299-1 | There is no abstract available, and the title refers to a general encyclopedia on quality of life.
+2026-10-02 09:18:22,968 | INFO | research_agent.evaluation | score | 2 | drop | 10.1016/j.iimb.2010.10.010 | The abstract examines work-family balance among Indian women IT professionals but does not focus on 
+2026-10-02 09:18:22,968 | INFO | research_agent.evaluation | score | 3 | keep | 10.1111/soc4.12881 | The abstract discusses pandemic-related telecommuting and its gendered implications for work and fam
+2026-10-02 09:18:22,968 | INFO | research_agent.evaluation | score | 5 | keep | 10.3390/ijerph18137069 | The abstract directly explores how remote work during the pandemic affected work-life balance, perce
+2026-10-02 09:18:22,969 | INFO | research_agent.evaluation | score | 5 | keep | 10.1080/23311975.2023.2242160 | The abstract directly examines the impact of telecommuting on work-life balance, work-family conflic
+2026-10-02 09:18:22,969 | INFO | research_agent.evaluation | evaluating | subquestion=3 | batch=2/2 | papers=9
+2026-10-02 09:18:24,871 | INFO | research_agent.llm | llm | prompt_chars=12944 | response_chars=1776
+2026-10-02 09:18:24,874 | INFO | research_agent.evaluation | score | 3 | keep | 10.1371/journal.pcbi.1009124 | The abstract discusses academic work-life balance and working environments, but does not specificall
+2026-10-02 09:18:24,875 | INFO | research_agent.evaluation | score | 5 | keep | 10.1111/jomf.12810 | The abstract examines how telecommuting influences gender inequalities in parents' time use and work
+2026-10-02 09:18:24,875 | INFO | research_agent.evaluation | score | 5 | keep | 10.3390/su12093567 | The abstract investigates female telework and its relationship with work-life balance and social sus
+2026-10-02 09:18:24,875 | INFO | research_agent.evaluation | score | 2 | drop | 10.5465/annals.2017.0020 | The abstract reviews the literature and research clusters on virtual work and telecommuting without 
+2026-10-02 09:18:24,875 | INFO | research_agent.evaluation | score | 4 | keep | 10.17705/1thci.00059 | The abstract analyzes how technology-mediated interruptions affect the conflict between work and per
+2026-10-02 09:18:24,875 | INFO | research_agent.evaluation | score | 4 | keep | 10.9790/487x-1901032023 | The abstract explores telecommuting as a key driver of work-life balance and productivity.
+2026-10-02 09:18:24,876 | INFO | research_agent.evaluation | score | 5 | keep | 10.1177/0018726718823071 | The abstract specifically examines how home-based telework affects daily work-to-home and home-to-wo
+2026-10-02 09:18:24,876 | INFO | research_agent.evaluation | score | 2 | drop | 10.1002/hrm.21875 | The abstract focuses on work-life initiatives and gender differences in leadership aspirations rathe
+2026-10-02 09:18:24,876 | INFO | research_agent.evaluation | score | 5 | keep | 10.3390/bs13110916 | The abstract evaluates work-life balance, positive spillover, and job satisfaction specifically amon
+2026-10-02 09:18:24,876 | INFO | research_agent.evaluation | evaluate summary | scored=19 | selected=12 | dropped=7 | cutoff=3
+2026-10-02 09:18:24,876 | INFO | research_agent.retrieval | retrieving | subquestion=4 | query='virtual teams organizational culture collaboration communication cohesion management' | sources=openalex,semanticscholar
+2026-10-02 09:18:25,666 | INFO | research_agent.retrieval | retrieved | subquestion=4 | source=openalex | records=20 | with_abstract=16
+2026-10-02 09:18:26,187 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 1/4 in 3s
+2026-10-02 09:18:29,800 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 2/4 in 6s
+2026-10-02 09:18:36,455 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 3/4 in 12s
+2026-10-02 09:18:49,050 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 4/4 in 24s
+2026-10-02 09:19:13,670 | WARNING | research_agent.retrieval | retrieval | subquestion=4 | source=semanticscholar failed (semanticscholar unavailable after 4 retries (last problem: HTTP 429)) - continuing with remaining sources
+2026-10-02 09:19:13,681 | INFO | research_agent.retrieval | retrieved | subquestion=4 | sources_answered=openalex | records=20 | with_abstract=16
+2026-10-02 09:19:13,682 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-10-02 09:19:14,151 | INFO | research_agent.validation | verify | match | 10.1177/0149206314527128
+2026-10-02 09:19:14,731 | INFO | research_agent.validation | verify | match | 10.1007/s42452-020-2801-5
+2026-10-02 09:19:15,175 | INFO | research_agent.validation | verify | match | 10.1111/j.1468-2370.2006.00121.x
+2026-10-02 09:19:15,631 | INFO | research_agent.validation | verify | match | 10.1016/j.apmrv.2022.07.003
+2026-10-02 09:19:16,106 | INFO | research_agent.validation | verify | match | 10.1016/j.im.2019.103174
+2026-10-02 09:19:16,713 | INFO | research_agent.validation | verify | match | 10.3389/frobt.2016.00074
+2026-10-02 09:19:17,161 | INFO | research_agent.validation | verify | match | 10.1111/j.1365-2575.2005.00200.x
+2026-10-02 09:19:17,608 | INFO | research_agent.validation | verify | match | 10.1111/j.1467-8691.2010.00574.x
+2026-10-02 09:19:18,181 | INFO | research_agent.validation | verify | match | 10.3390/jintelligence11030054
+2026-10-02 09:19:18,635 | INFO | research_agent.validation | verify | match | 10.1016/j.amepre.2008.05.003
+2026-10-02 09:19:19,089 | INFO | research_agent.validation | verify | match | 10.2753/mis0742-1222260210
+2026-10-02 09:19:19,535 | INFO | research_agent.validation | verify | match | 10.17705/1jais.00183
+2026-10-02 09:19:19,975 | INFO | research_agent.validation | verify | not in Crossref | 10.5281/zenodo.10632
+2026-10-02 09:19:20,417 | INFO | research_agent.validation | verify | match | 10.1016/j.im.2012.10.002
+2026-10-02 09:19:20,869 | INFO | research_agent.validation | verify | match | 10.1108/ijmpb-06-2017-0068
+2026-10-02 09:19:21,310 | INFO | research_agent.validation | verify | match | 10.3389/fpsyg.2021.624637
+2026-10-02 09:19:21,761 | INFO | research_agent.validation | verify | match | 10.17705/1jais.00028
+2026-10-02 09:19:22,196 | INFO | research_agent.validation | verify | match | 10.1002/job.2735
+2026-10-02 09:19:22,755 | INFO | research_agent.validation | verify | match | 10.1016/j.riob.2016.11.004
+2026-10-02 09:19:22,756 | INFO | research_agent.validation | verify summary | {'verified': 18, 'flagged': 1, 'unchecked': 0}
+2026-10-02 09:19:22,757 | INFO | research_agent.evaluation | evaluating | subquestion=4 | batch=1/2 | papers=10
+2026-10-02 09:19:24,767 | INFO | research_agent.llm | llm | prompt_chars=10860 | response_chars=2053
+2026-10-02 09:19:24,768 | WARNING | research_agent.llm | llm | invalid JSON for ScoreResponse (attempt 1): 1 validation error for _Exact
+  Input should be an object [type=model_type, input_value=[{'index': 1, 'relevance_...ganizational culture.'}], input_type=list]
+    For further information visit https:/
+2026-10-02 09:19:26,589 | INFO | research_agent.llm | llm | prompt_chars=11231 | response_chars=1582
+2026-10-02 09:19:26,593 | INFO | research_agent.evaluation | score | 3 | keep | 10.1177/0149206314527128 | The abstract reviews organizational innovation and creativity generally without addressing remote wo
+2026-10-02 09:19:26,594 | INFO | research_agent.evaluation | score | 3 | keep | 10.1007/s42452-020-2801-5 | No abstract is available, but the title suggests a focus on virtual teams which partially relates to
+2026-10-02 09:19:26,594 | INFO | research_agent.evaluation | score | 2 | drop | 10.1111/j.1468-2370.2006.00121.x | The abstract discusses inter-organizational collaboration and proximity dimensions rather than remot
+2026-10-02 09:19:26,594 | INFO | research_agent.evaluation | score | 5 | keep | 10.1016/j.apmrv.2022.07.003 | The abstract directly explores organizational culture and leadership in virtual team environments.
+2026-10-02 09:19:26,594 | INFO | research_agent.evaluation | score | 2 | drop | 10.1016/j.im.2019.103174 | The abstract focuses on artificial intelligence as teammates rather than human remote work.
+2026-10-02 09:19:26,594 | INFO | research_agent.evaluation | score | 1 | drop | 10.3389/frobt.2016.00074 | The abstract surveys immersive virtual reality applications across various fields rather than remote
+2026-10-02 09:19:26,594 | INFO | research_agent.evaluation | score | 4 | keep | 10.1111/j.1365-2575.2005.00200.x | The abstract examines virtual teams and performance, touching on distribution and work practices.
+2026-10-02 09:19:26,595 | INFO | research_agent.evaluation | score | 2 | drop | 10.1111/j.1467-8691.2010.00574.x | The abstract investigates team creativity, trust, and collaborative culture without mentioning remot
+2026-10-02 09:19:26,595 | INFO | research_agent.evaluation | score | 1 | drop | 10.3390/jintelligence11030054 | The abstract discusses educational 21st-century skills and soft competencies rather than remote work
+2026-10-02 09:19:26,595 | INFO | research_agent.evaluation | score | 1 | drop | 10.1016/j.amepre.2008.05.003 | No abstract is available and the title is too vague to determine relevance to remote work.
+2026-10-02 09:19:26,595 | INFO | research_agent.evaluation | evaluating | subquestion=4 | batch=2/2 | papers=9
+2026-10-02 09:19:28,608 | INFO | research_agent.llm | llm | prompt_chars=10171 | response_chars=2239
+2026-10-02 09:19:28,610 | WARNING | research_agent.llm | llm | invalid JSON for ScoreResponse (attempt 1): 1 validation error for _Exact
+  Input should be an object [type=model_type, input_value=[{'scores': [{'index': 1,...ioning remote work.'}]}], input_type=list]
+    For further information visit https:/
+2026-10-02 09:19:30,214 | INFO | research_agent.llm | llm | prompt_chars=10542 | response_chars=1601
+2026-10-02 09:19:30,217 | INFO | research_agent.evaluation | score | 3 | keep | 10.2753/mis0742-1222260210 | The abstract discusses trust formation in virtual teams but does not directly examine broader organi
+2026-10-02 09:19:30,218 | INFO | research_agent.evaluation | score | 3 | keep | 10.17705/1jais.00183 | The abstract outlines a conceptual model for using virtual worlds for global virtual team collaborat
+2026-10-02 09:19:30,218 | INFO | research_agent.evaluation | score | 3 | keep | 10.5281/zenodo.10632 | The abstract provides a literature review on virtual teams, identifying characteristics and challeng
+2026-10-02 09:19:30,218 | INFO | research_agent.evaluation | score | 1 | drop | 10.1016/j.im.2012.10.002 | No abstract is available to determine relevance, so it is rated based on the title alone.
+2026-10-02 09:19:30,218 | INFO | research_agent.evaluation | score | 3 | keep | 10.1108/ijmpb-06-2017-0068 | The abstract examines trust and collaboration in project teams and their impact on success, but does
+2026-10-02 09:19:30,218 | INFO | research_agent.evaluation | score | 3 | keep | 10.3389/fpsyg.2021.624637 | The abstract discusses factors influencing performance in virtual teams during the pandemic, touchin
+2026-10-02 09:19:30,218 | INFO | research_agent.evaluation | score | 3 | keep | 10.17705/1jais.00028 | The abstract explores how virtual teams develop over time and how communication, team development, a
+2026-10-02 09:19:30,218 | INFO | research_agent.evaluation | score | 2 | drop | 10.1002/job.2735 | The abstract focuses on artificial intelligence in organizations rather than remote work and its imp
+2026-10-02 09:19:30,218 | INFO | research_agent.evaluation | score | 1 | drop | 10.1016/j.riob.2016.11.004 | No abstract is available, and the title refers to organizational culture broadly without mentioning 
+2026-10-02 09:19:30,218 | INFO | research_agent.evaluation | evaluate summary | scored=19 | selected=10 | dropped=9 | cutoff=3
+
+=== Review 2: selected evidence ===
+
+Sub-question 1: How does remote work affect employee productivity and performance?
+   1. [4/5] Achieving Effective Remote Working During the COVID‐19 Pandemic: A Work Design Perspective (2020) - DOI verified
+      The abstract examines the challenges of remote working during the pandemic and how virtual work characteristics link to worker performance.
+   2. [5/5] The Impact of Work-from-Home on Employee Performance and Productivity: A Systematic Review (2023) - DOI verified
+      The abstract explicitly reviews the impact of work-from-home on employee productivity and performance.
+   3. [4/5] Post-COVID remote working and its impact on people, productivity, and the planet: an exploratory scoping review (2023) - DOI verified
+      The abstract outlines a scoping review on the impacts of post-COVID remote working on people and productivity.
+   4. [4/5] Post-Pandemic Office Work: Perceived Challenges and Opportunities for a Sustainable Work Environment (2021) - DOI verified
+      The abstract discusses remote and hybrid work benefits, specifically mentioning individual performance alongside flexibility and work-life b
+   5. [3/5] Working from Home—Who Is Happy? A Survey of Lithuania’s Employees during the COVID-19 Quarantine Period (2020) - DOI verified
+      The abstract examines factors affecting telework efficiency and qualities required from remote workers, which relates broadly to performance
+   6. [3/5] Remote Work Decreases Psychological and Physical Stress Responses, but Full-Remote Work Increases Presenteeism (2021) - DOI verified
+      The abstract investigates the effects of remote work on psychological and physical stress responses and presenteeism among office workers.
+   7. [5/5] Hybrid working from home improves retention without damaging performance (2024) - DOI verified
+      The abstract directly addresses how hybrid working from home affects employee performance grades, promotions, and output.
+   8. [3/5] The Evolution of Work from Home (2023) - DOI verified
+      The abstract discusses the evolution of work from home and briefly mentions implications for pay, productivity, and innovation.
+   9. [4/5] Remote Work Efficiency from the Employers’ Perspective—What’s Next? (2022) - DOI verified
+      The abstract explores remote work efficiency and the supervision of work performance from the employers' perspective.
+
+Sub-question 2: What are the psychological and well-being impacts of working remotely?
+  10. [5/5] Systematically reviewing remote e-workers’ well-being at work: a multidimensional approach (2018) - DOI verified
+      The abstract directly reviews remote e-workers' well-being across multiple dimensions, including affective, cognitive, social, professional,
+  11. [5/5] An exploration of the psychological factors affecting remote e‐worker's job effectiveness, well‐being and work‐life balance (2013) - DOI verified
+      The abstract explicitly explores the impact of remote e-working on well-being and work-life balance.
+  12. [5/5] Social Isolation and Stress as Predictors of Productivity Perception and Remote Work Satisfaction during the COVID-19 Pandemic: The Role of Concern about the Virus in a Moderated Double Mediation (2020) - DOI verified
+      The abstract investigates social isolation and stress as predictors of remote work satisfaction and productivity during pandemic lockdowns.
+  13. [3/5] Teacher stress and burnout in Australia: examining the role of intrapersonal and environmental factors (2022) - DOI verified
+      The abstract examines teacher stress and burnout in Australia and briefly mentions teachers working in rural and remote areas, but does not 
+  14. [5/5] Telework and Worker Health and Well-Being: A Review and Recommendations for Research and Practice (2022) - DOI verified
+      The abstract directly evaluates existing research about telework and its impacts on worker health and well-being.
+  15. [5/5] The impact of remote work and mediated communication frequency on isolation and psychological distress (2021) - DOI verified
+      The abstract directly investigates how remote work practices impact perceptions of isolation and psychological distress.
+  16. [5/5] Surviving remotely: How job control and loneliness during a forced shift to remote work impacted employee work behaviors and well‐being (2022) - DOI verified
+      The abstract directly investigates how a forced shift to remote work impacted employee well-being, emotional exhaustion, depression, and wor
+
+Sub-question 3: How does remote work influence work-life balance and personal relationships?
+  17. [3/5] Work–Family Boundary Dynamics (2014) - DOI verified
+      The abstract reviews work-family boundary dynamics and management strategies, providing useful background context for the sub-question.
+  18. [4/5] Changing Work and Work-Family Conflict (2014) - DOI verified
+      The abstract discusses how schedule control and workplace interventions targeting when and where people work affect work-family conflict and
+  19. [3/5] The gendered pandemic: The implications of COVID‐19 for work and family (2021) - DOI verified
+      The abstract discusses pandemic-related telecommuting and its gendered implications for work and family patterns.
+  20. [5/5] Remote Work, Work Stress, and Work–Life during Pandemic Times: A Latin America Situation (2021) - DOI verified
+      The abstract directly explores how remote work during the pandemic affected work-life balance, perceived stress, and work satisfaction.
+  21. [5/5] Revolutionizing work-life balance: Unleashing the power of telecommuting on work engagement and exhaustion levels (2023) - DOI verified
+      The abstract directly examines the impact of telecommuting on work-life balance, work-family conflict, and the boundaries between personal a
+  22. [3/5] Ten simple rules to improve academic work–life balance (2021) - DOI verified
+      The abstract discusses academic work-life balance and working environments, but does not specifically focus on remote work.
+  23. [5/5] Telecommuting and gender inequalities in parents' paid and unpaid work before and during the COVID ‐19 pandemic (2021) - DOI verified
+      The abstract examines how telecommuting influences gender inequalities in parents' time use and work-family demands.
+  24. [5/5] Work–Life Balance, Organizations and Social Sustainability: Analyzing Female Telework in Spain (2020) - DOI verified
+      The abstract investigates female telework and its relationship with work-life balance and social sustainability.
+  25. [4/5] Boundaryless Technology: Understanding the Effects of Technology-Mediated Interruptions across the Boundaries between Work and Personal Life (2014) - DOI verified
+      The abstract analyzes how technology-mediated interruptions affect the conflict between work and personal life.
+  26. [4/5] Telecommuting – A Key Driver to Work-Life Balance and Productivity (2017) - DOI verified
+      The abstract explores telecommuting as a key driver of work-life balance and productivity.
+  27. [5/5] Boundary role transitions: A day-to-day approach to explain the effects of home-based telework on work-to-home conflict and home-to-work conflict (2019) - DOI verified
+      The abstract specifically examines how home-based telework affects daily work-to-home and home-to-work conflicts.
+  28. [5/5] Job Satisfaction in Remote Work: The Role of Positive Spillover from Work to Family and Work–Life Balance (2023) - DOI verified
+      The abstract evaluates work-life balance, positive spillover, and job satisfaction specifically among remote workers.
+
+Sub-question 4: What is the impact of remote work on organizational culture and collaboration?
+  29. [3/5] Innovation and Creativity in Organizations (2014) - DOI verified
+      The abstract reviews organizational innovation and creativity generally without addressing remote work or its specific impact.
+  30. [3/5] Challenges and barriers in virtual teams: a literature review (2020) - DOI verified
+      No abstract is available, but the title suggests a focus on virtual teams which partially relates to remote work collaboration.
+  31. [5/5] The mediating role of organizational culture: Transformational leadership and change management in virtual teams (2022) - DOI verified
+      The abstract directly explores organizational culture and leadership in virtual team environments.
+  32. [4/5] How virtual are we? Measuring virtuality and understanding its impact in a global organization (2005) - DOI verified
+      The abstract examines virtual teams and performance, touching on distribution and work practices.
+  33. [3/5] Individual Swift Trust and Knowledge-Based Trust in Face-to-Face and Virtual Team Members (2009) - DOI verified
+      The abstract discusses trust formation in virtual teams but does not directly examine broader organizational culture or collaboration impact
+  34. [3/5] Avatars, People, and Virtual Worlds: Foundations for Research in Metaverses (2009) - DOI verified
+      The abstract outlines a conceptual model for using virtual worlds for global virtual team collaboration.
+  35. [3/5] Virtual Teams: A Literature Review (2009) - DOI UNVERIFIED
+      The abstract provides a literature review on virtual teams, identifying characteristics and challenges, but focuses broadly rather than deep
+  36. [3/5] Linking trust and collaboration in project teams to project management success (2018) - DOI verified
+      The abstract examines trust and collaboration in project teams and their impact on success, but does not focus specifically on remote work e
+  37. [3/5] Virtual Teams in Times of Pandemic: Factors That Influence Performance (2021) - DOI verified
+      The abstract discusses factors influencing performance in virtual teams during the pandemic, touching on remote teamwork factors.
+  38. [3/5] Understanding Virtual Team Development: An Interpretive Study (2003) - DOI verified
+      The abstract explores how virtual teams develop over time and how communication, team development, and collaboration relate.
+
+38 papers selected; 39 screened out (reasons are recorded in the brief).
+
+Type 'approve' to write the brief, or 'drop 3, 7' to remove papers by number, or 'reject' to revise the scope of the plan (one scope revision per run).
+> 2026-10-02 09:19:30,219 | INFO | research_agent.orchestrator | review2 | decision=approve | feedback=''
+2026-10-02 09:19:30,220 | INFO | research_agent.evaluation | summarising | subquestion=1 | batch=1/1 | papers=9
+2026-10-02 09:19:33,785 | INFO | research_agent.llm | llm | prompt_chars=12408 | response_chars=5338
+2026-10-02 09:19:33,786 | WARNING | research_agent.llm | llm | invalid JSON for SummaryResponse (attempt 1): 1 validation error for _Exact
+  Input should be an object [type=model_type, input_value=[{'summaries': [{'index':...in remote settings."}]}], input_type=list]
+    For further information visit https:/
+2026-10-02 09:19:37,384 | INFO | research_agent.llm | llm | prompt_chars=12779 | response_chars=4969
+2026-10-02 09:19:37,387 | INFO | research_agent.evaluation | summarising | subquestion=2 | batch=1/1 | papers=7
+2026-10-02 09:19:40,249 | INFO | research_agent.llm | llm | prompt_chars=10230 | response_chars=3841
+2026-10-02 09:19:40,252 | INFO | research_agent.evaluation | summarising | subquestion=3 | batch=1/2 | papers=10
+2026-10-02 09:19:43,411 | INFO | research_agent.llm | llm | prompt_chars=13000 | response_chars=4782
+2026-10-02 09:19:43,414 | INFO | research_agent.evaluation | summarising | subquestion=3 | batch=2/2 | papers=2
+2026-10-02 09:19:45,004 | INFO | research_agent.llm | llm | prompt_chars=3596 | response_chars=1485
+2026-10-02 09:19:45,007 | INFO | research_agent.evaluation | summarising | subquestion=4 | batch=1/1 | papers=10
+2026-10-02 09:19:48,656 | INFO | research_agent.llm | llm | prompt_chars=12413 | response_chars=5587
+2026-10-02 09:19:48,659 | INFO | research_agent.evaluation | summarised | papers=38
+2026-10-02 09:19:51,063 | INFO | research_agent.llm | llm | prompt_chars=24070 | response_chars=2069
+2026-10-02 09:19:51,066 | INFO | research_agent.evaluation | synthesised | themes=4 | gaps=3
+2026-10-02 09:19:51,069 | INFO | research_agent.orchestrator | saved | output/brief-20261002-091951-is-remote-work-good.md | output/brief-20261002-091951-is-remote-work-good.json
+
+77 unique papers across 4 sub-questions | 75 DOIs verified | 38 approved, 39 excluded | 4 themes, 3 gaps | reformulations: 0, scope revisions: 0
+Saved: output/brief-20261002-091951-is-remote-work-good.md
+
+Run complete - brief written.

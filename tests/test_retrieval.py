@@ -66,7 +66,7 @@ def test_all_sources_failing_stops_the_run_with_the_reasons(monkeypatch):
 
 def test_unknown_source_name_is_a_configuration_error(monkeypatch):
     monkeypatch.setattr(config, "SOURCES", ["openalex", "scopus"])
-    with pytest.raises(ValueError, match="scopus"):
+    with pytest.raises(RuntimeError, match="scopus"):
         RetrievalAgent()
 
 

@@ -25,8 +25,9 @@
 **Why grounding is done paper-by-paper before any cross-paper writing:** a
 note written from one abstract can be checked against that abstract in
 seconds. Themes are then written only from those notes, so the chain
-abstract -> note -> theme -> reference is traceable end to end, which is the
-proposal's "traceable rather than plausible" requirement.
+abstract -> note -> theme -> reference is traceable end to end - what the
+proposal calls content grounding, "summarising only approved abstracts and
+linking summaries to sources" (section 5).
 
 **Why synthesis runs only after review 2:** the agent never writes about a
 paper the researcher has not seen and accepted. Summarising 78 papers before
@@ -40,11 +41,11 @@ gaps; limitations; references - as Markdown for reading and JSON for machines.
 
 **Live run (22 Sept):** 26 approved papers summarised in 4 calls (one per
 sub-question), themes and gaps in 1 call; the whole pipeline finished in about
-four minutes with 7 transient 503s absorbed by the retry logic (one batch
+four minutes with 10 transient 503s absorbed by the retry logic (one batch
 succeeded on its fifth and last retry). Spot-check of grounding: every number
-quoted in the notes (17-33% residual hallucination in legal RAG tools, 57.18%
-Recall@1, 2,919 diseases, 30 and 90 reviewed studies) appears in the paper's
-own abstract. The three themes cite 6, 5 and 8 papers respectively; the gaps
+quoted in the notes (among them 17-33% residual hallucination in legal RAG
+tools, 57.18% Recall@1, 2,919 diseases, 30 and 90 reviewed studies) appears in
+the paper's own abstract. The three themes cite 6, 5 and 8 papers respectively; the gaps
 name sub-questions 3 and 4 as thin and the set as survey-heavy - the same
 verdict the per-sub-question counts give. The brief is 6,387 words including
 the 52 exclusion reasons and the reference list.

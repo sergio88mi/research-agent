@@ -1,0 +1,1398 @@
+{
+  "research_question": "What interventions reduce food waste in retail supply chains?",
+  "interpretation": "I interpret the question as an investigation into peer-reviewed, data-driven studies that evaluate the practical effectiveness of specific methods or programs aimed at lowering food loss and waste within retail operations.",
+  "subquestions": [
+    {
+      "id": 1,
+      "text": "How do inventory management practices impact food waste reduction in supermarkets?",
+      "search_query": "retail food waste reduction inventory management stock control supermarkets",
+      "approved": true,
+      "retried_once": false,
+      "previous_query": null
+    },
+    {
+      "id": 2,
+      "text": "What is the impact of dynamic pricing and markdown strategies on surplus food generation in retail?",
+      "search_query": "dynamic pricing markdowns surplus food retail empirical",
+      "approved": true,
+      "retried_once": true,
+      "previous_query": "dynamic pricing markdown strategies retail food waste prevention perishable goods"
+    },
+    {
+      "id": 3,
+      "text": "How do supply chain collaboration and supplier agreements mitigate retail food waste?",
+      "search_query": "food waste reduction retail supplier agreements supply chain partnerships empirical study",
+      "approved": true,
+      "retried_once": true,
+      "previous_query": "supply chain collaboration retailer supplier relationships food waste mitigation"
+    },
+    {
+      "id": 4,
+      "text": "What role do consumer-facing retail innovations and packaging technologies play in minimizing food waste?",
+      "search_query": "active packaging intelligent packaging retail innovations food waste reduction",
+      "approved": true,
+      "retried_once": false,
+      "previous_query": null
+    }
+  ],
+  "selected_papers": [
+    {
+      "doi": "10.3390/su7021429",
+      "title": "Cutting Food Waste through Cooperation along the Food Supply Chain",
+      "authors": [
+        "Christine Göbel",
+        "Nina Langen",
+        "Antonia Blumenthal",
+        "Petra Teitscheid",
+        "Guido Ritter"
+      ],
+      "year": 2015,
+      "abstract": "Food produced but not used for human consumption is a waste of natural resources. In order to prevent and reduce food waste, the main causes have to be identified systematically along the food supply chain (FSC). The aim of this study is (1) to shed light on the causes and effects of food waste through the analysis of 44 qualitative expert interviews examining the processes and intermediaries along the German food chain and (2) to find methods to reduce it. Results indicate that food waste occurs at all stages in the food chain. Thus, there is no single culprit to be blamed. Besides, the identified reasons for food waste differ between product groups; not a single solution can cause notable change. Furthermore, the analysis demonstrates that the causes and effects of food waste are to be found at different stages of the value chain. Hence, it is of high importance to improve communication and to raise a new appreciation for food among all stakeholders of the food supply chain in order to develop a more sustainable food system. Information on the topic of food waste needs to be shared among all actors of the supply chain. They need to share responsibility and work together to reduce food waste.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.3390/su14052494",
+      "title": "Reducing Food Waste at Retail Stores—An Explorative Study",
+      "authors": [
+        "Lena Riesenegger",
+        "Alexander Hübner"
+      ],
+      "year": 2022,
+      "abstract": "Grocery retailers are in a dilemma. They often prioritize availability over other aspects due to strong competition in this sector and the imperative of realizing sales. The target for many grocery retailers has been high on-shelf availability and large variety to increase customer satisfaction. However, this policy contributes to a significant share of overstock. The economic pressure of unsold products, the environmental impact of wasted resources, and the ethical questions arising from discarding edible food, have increasingly thrown the spotlight on grocery retailers to change their strategies. Grocery retailers are thus facing a trade-off between increasing attractiveness via high availability on the one hand, and the environmental, social, and financial impacts of overstock, on the other. One common practice in dealing with overstock is mainly being reactive to mitigate the impact, using initiatives such as price promotions or donations. This explorative study investigates options for how grocery retailers can proactively reduce food waste via better planning of their store operations. Seven case companies participated in this qualitative study, where we focused on ultra-fresh products as the most important waste category. Face-to-face interviews with managers were the primary source for data collection. The heterogeneity of our sample enabled us to build a common understanding of proactive options to reduce food waste with enhanced operations. The analysis reveals six coherent and distinct topics. A basis for all proactive operational planning processes is (1) the use of a comprehensive database and information systems. This builds the foundation for (2) tailored demand forecasts related to perishable product-specific requirements. Subsequently, consideration is needed of (3) the enhanced planning of assortment sizes, (4) the definitions of differentiated service levels and (5) the tailored ordering and replenishment processes that impact food waste. Finally, (6) salvage options, such as dynamic pricing, secondary usage, and sustainable waste streams constitute valuable mitigation strategies. We formulated 15 propositions that could support the decisions of grocery retailers developing proactive food waste reduction practices. These propositions will guide future research, as they provide a coherent and cohesive picture of related topics in grocery retail operations.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.1016/j.ijpe.2017.10.003",
+      "title": "Quantifying the potential to improve on food waste, freshness and sales for perishables in supermarkets",
+      "authors": [
+        "Rob A. C. M. Broekmeulen",
+        "Karel van Donselaar"
+      ],
+      "year": 2017,
+      "abstract": "The focus of this paper is on improving the performance of fresh departments in supermarkets by reducing food waste, increasing freshness and/or increasing sales. First, two concepts will be introduced to quantify the improvement potential. Next, these concepts will be applied on empirical data for 3 product categories in 27 stores from 3 large retailers in Europe. The two concepts to quantify the improvement potential are called the Fresh Case Cover and the Efficient Frontier. The Fresh Case Cover is defined as the case pack size divided by the average demand during the store shelf life. A regression analysis shows that this single variable explains 42% of the variation in waste. The Efficient Frontier represents a lower bound on the waste needed in a store for any given On-Shelf Availability (OSA). It is demonstrated how the Efficient Frontier can be used to quantify the benefits from supply chain improvement projects and to evaluate fresh departments within a store. To quantify product freshness, an exact expression is derived and an approximation is developed and tested. To quantify waste an existing approximation is generalized. The results show that the improvement potential is very large. For example, increasing the store shelf life with just one day results in 43.1% less waste and 17% more freshness (or in 3.4% higher OSA) and unpacking in the DC results in 34.8% less waste and 1.6% more freshness (or in 2.0% higher OSA). Improving the store replenishment and execution is especially beneficial for medium and large stores.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.1016/j.ijpe.2017.07.016",
+      "title": "Discounting and dynamic shelf life to reduce fresh food waste at retailers",
+      "authors": [
+        "Marjolein E. Buisman",
+        "R. Haijema",
+        "Jacqueline M. Bloemhof‐Ruwaard"
+      ],
+      "year": 2017,
+      "abstract": "Approximately 89 million of tonnes of food is wasted every year in the EU along the whole food supply chain. The reasons for food waste by retailers include inappropriate quality control, overstocking and inaccurate forecasting. This study shows that food wasted by retailers can be reduced by discounting old products or by applying a dynamically adjustable expiration date (in other words dynamic shelf life (DSL)). We developed a simulation based optimization model to optimize the replenishment and discounting policy of a retailer who sells meat products. DSL outperforms a fixed shelf life (FSL) in terms of profit, waste, shortages and food safety. Furthermore, replenishment quantities can be higher. The benefits of DSL are greater when demand is low or when the shelf life of products is short. Discounting is a successful strategy to reduce food waste for both FSL and DSL. DSL without discounting is more effective than FSL with discounting. Combining DSL and discounting, allows for a further reduction of food waste.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.1016/j.techfore.2021.121062",
+      "title": "A digitally enabled circular economy for mitigating food waste: Understanding innovative marketing strategies in the context of an emerging economy",
+      "authors": [
+        "Michele de Souza",
+        "Giancarlo Medeiros Pereira",
+        "Ana Beatriz Lopes de Sousa Jabbour",
+        "Charbel José Chiappetta Jabbour",
+        "Luiz Reni Trento",
+        "Míriam Borchardt",
+        "Leandro Zvirtes"
+      ],
+      "year": 2021,
+      "abstract": "Within the context of the circular economy, this article analyses how supermarkets can reduce food waste by implementing appropriate marketing strategies underpinned by digital technologies, such as Big Data predictive analytics. Little is currently known of the potential role of the emerging digital technologies in furthering the sustainability of supermarket chains in emerging economies. Thus, an original multiple case study has been conducted, involving six supermarket chains operating in Brazil and six farming distributors that produce fruit and vegetables (F&V). The findings show that actions towards food waste reduction based on the principles of the circular economy begin with an understanding of F&V stages of deterioration. Through such an understanding, a number of actions can be undertaken to reduce the negative effects of this deterioration. These include (among others) the management of prices, sales, operations, and purchases, all of which can be underpinned by such technologies as sensors and augmented reality in order to manage dynamic pricing, storage, and item display. The findings contribute to demonstrating how digital technologies can help supermarkets’ marketing departments in driving corporate sustainability while also benefiting both consumers and societal well-being.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.1016/j.apm.2016.12.024",
+      "title": "Effects of dynamic pricing of perishable products on revenue and waste",
+      "authors": [
+        "Belarmino Adenso-Dı́az",
+        "Sebastián Lozano",
+        "A. Palacio"
+      ],
+      "year": 2016,
+      "abstract": null,
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.1080/00207543.2025.2603570",
+      "title": "Balancing profitability and waste reduction: optimizing markdown policies for retail inventory",
+      "authors": [
+        "Lena Riesenegger",
+        "Alexander Hübner"
+      ],
+      "year": 2026,
+      "abstract": "Retailers resort to short-term price reductions when dealing with overstock and combating food waste to stimulate demand for excess and close-to-expire inventory. Expiration-based pricing is one of the most common mitigation practices to reduce food waste in retail stores. It attracts price-sensitive customers, but may also influence the purchasing decision of consumers who prioritize a long shelf life. It is, therefore, essential to incorporate the actual customer behaviour in the markdown optimization. We determine optimal markdown policies by analyzing demand interactions and addressing the nonlinear dependencies between demand effects. To achieve this, we develop a simulation model that captures customers' sequential arrival, the dynamic evolution of inventory over time, and the freshness levels of the inventories. We conducted several experiments that considered different customer behaviour patterns. We show that the efficiency of markdown policies mainly depends on the customer probability of a Last-Expired-First-Out (LEFO) withdrawal. Results show that discounts are particularly worthwhile for products where customers prefer fresh products and withdraw them according to the last-expired-first-out principle. While small discounts can already reduce food waste by up to 80%, the impact on profit mainly depends on the LEFO withdrawal.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.3390/foods15040742",
+      "title": "IoT-Enabled Quality-Triggered Markdown Pricing for Perishable Food: Equity and Waste Implications",
+      "authors": [
+        "Elkafi Hassini",
+        "Mohamed Ben‐Daya",
+        "Zied Bahroun"
+      ],
+      "year": 2026,
+      "abstract": "Inequitable access to affordable, nutritious food is partly sustained because markdowns on perishable products are often delayed until quality deterioration becomes visible, through which affordability gains are limited and waste is increased. In this study, the extent to which Internet of Things (IoT) real-time quality monitoring enables quality-triggered markdowns that reduce waste while improving food equity is examined. An analytical pricing and markdown model for perishables with quality-sensitive demand is developed, and optimal decisions under IoT-enabled quality observability and under a baseline setting without IoT are compared. Convexity is established for the retailer's problem, and closed-form solutions are derived for the optimal regular price, markdown timing, and markdown depth. Under continuous quality visibility, earlier markdown initiation within the selling horizon is shown to be optimal while product quality remains acceptable, and a deeper markdown than in the non-IoT setting is shown to be optimal. Through numerical experiments, increased sell-through before products become unsalable is demonstrated, waste reduction is quantified, and an expanded time window is shown in which price-sensitive consumers can purchase acceptable-quality food at a lower price. Overall, improved food equity is supported by proactive, quality-aligned pricing policies without retailer profitability being sacrificed.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.1016/j.foodqual.2021.104179",
+      "title": "Making ugly food beautiful: Consumer barriers to purchase and marketing options for Suboptimal Food at retail level – A systematic review",
+      "authors": [
+        "Theresa Hartmann",
+        "Benedikt Jahnke",
+        "Ulrich Hamm"
+      ],
+      "year": 2021,
+      "abstract": "The commercialization of Suboptimal Food (SF) constitutes a promising lever to tackle food waste. SF describes products that are unreservedly consumable but which have an abnormal appearance, and/or are nearing or have already passed their expiration date. Consumers may show awareness on food waste, yet do not choose SF accordingly. The aim of this review is thus to support the commercialization of SF by answering two questions: 1. Which barriers prevent consumers from buying SF?; and 2. How can retailers address these barriers? A systematic literature review was conducted in online databases, using a fixed search term and 2004–2019 as timespan. Forty relevant consumer studies were found. Alphabet Theory was applied as a framework for the analysis of the barriers, while the four P’s of marketing were used for the measures. The review confirmed a variety of attitude-related quality concerns, often stemming from ill-founded conclusions based on appearance or nearing expiration, leading to an expectation of price discounts. While educational measures conducted by retailers (as part of SF campaigns) might be helpful, their effects on purchase behavior has not yet been well confirmed. More evidence exists on the effectiveness of framing SF positively, e.g. with sustainability and Corporate Social Responsibility messages or by highlighting the products ‘naturalness’. Contextual changes are identified to be especially effective for supporting SF. In particular, increasing the availability of SF and enhancing the attractiveness of its presentation appears crucial. In future research, more store-tests are needed as well as investigations along the entire value chain.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.3390/su7066457",
+      "title": "Consumer-Related Food Waste: Causes and Potential for Action",
+      "authors": [
+        "Jessica Aschemann‐Witzel",
+        "Ilona E. de Hooge",
+        "Pegah Amani",
+        "Tino Bech‐Larsen",
+        "Marije Oostindjer"
+      ],
+      "year": 2015,
+      "abstract": "In the past decade, food waste has received increased attention on both academic and societal levels. As a cause of negative economic, environmental and social effects, food waste is considered to be one of the sustainability issues that needs to be addressed. In developed countries, consumers are one of the biggest sources of food waste. To successfully reduce consumer-related food waste, it is necessary to have a clear understanding of the factors influencing food waste-related consumer perceptions and behaviors. The present paper presents the results of a literature review and expert interviews on factors causing consumer-related food waste in households and supply chains. Results show that consumers’ motivation to avoid food waste, their management skills of food provisioning and food handling and their trade-offs between priorities have an extensive influence on their food waste behaviors. We identify actions that governments, societal stakeholders and retailers can undertake to reduce consumer-related food waste, highlighting that synergistic actions between all parties are most promising. Further research should focus on exploring specific food waste contexts and interactions more in-depth. Experiments and interventions in particular can contribute to a shift from analysis to solutions.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1016/j.jclepro.2021.126438",
+      "title": "Food loss and waste in food supply chains. A systematic literature review and framework development approach",
+      "authors": [
+        "Chetna Chauhan",
+        "Amandeep Dhir",
+        "Manzoor Ul Akram",
+        "Jari Salo"
+      ],
+      "year": 2021,
+      "abstract": "This study examines the state of the art of the literature in the domain of food loss and waste (FLW) in food supply chains (FSC). The authors used a systematic literature review (SLR) approach to examine and synthesise the findings of the existing literature to identify the key research themes, research gaps and avenues of future research on FLW in FSC. To this end, this SLR considered 152 articles relevant for the review. The authors uncovered the extant literature in the domain by presenting the research profile of the selected studies, along with thematic analysis. The authors identified eight key themes from the extant literature. The themes range from factors responsible for FLW generation to new, emerging areas of research such as digitalisation and food surplus redistribution. The study’s findings will help clarify existing practices in FSC for waste mitigation and act as a foundation for strategic and policy initiatives in this area. The findings indicate that the major factors responsible for FLW include the poor management of perishable food items, stakeholder attitudes, buyer−supplier agreements and supply chain interruptions. Some of the important implications of the study include formal guidelines and policy-level interventions for assisting the accurate quantification of FLW along with an impetus on digitalisation to reduce FLW. The study concludes with the development of a research framework to assist future research in this domain.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1016/j.jom.2015.11.001",
+      "title": "Sustainability in multi‐tier supply chains: Understanding the double agency role of the first‐tier supplier",
+      "authors": [
+        "Miriam Michiko Wilhelm",
+        "Constantin Blome",
+        "Vikram Bhakoo",
+        "Antony Paulraj"
+      ],
+      "year": 2015,
+      "abstract": "Abstract In light of the growing complexity of globally dispersed, multi‐tier supply chains, the involvement of first‐tier suppliers has become instrumental in the quest for achieving sustainability compliance along the supply chain. We describe this new responsibility as the double agency role. We employ agency and institutional theory arguments to explore the conditions under which first‐tier suppliers will act as agents who fulfill the lead firm's sustainability requirements (i.e., the primary agency role) and implement these requirements in their suppliers' operations (i.e., the secondary agency role). The findings from three in‐depth case studies embedded in different institutional contexts highlight the importance for lead firms to incentivize each agency role separately and to reduce information asymmetries, particularly at the second‐tier level. In addition, our inductive analysis reveals several contingency factors that influence the coupling of the secondary agency role of the first‐tier supplier. These factors include resource availability at the first‐tier supplier's firm, the lead firm's focus on the triple‐bottom‐line dimension (i.e., environmental or social), the lead firm's use of power, and the lead firm's internal alignment of the sustainability and purchasing function. We integrate our findings in a conceptual framework that advances the research agenda on multi‐tier sustainable supply chains, and we subsequently outline the practical implications of assigning the double agency role to first tier suppliers.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1007/s10551-019-04160-5",
+      "title": "Circularity Brokers: Digital Platform Organizations and Waste Recovery in Food Supply Chains",
+      "authors": [
+        "Francesca Ciulli",
+        "Ans Kolk",
+        "Siri Nordland Bøe-Lillegraven"
+      ],
+      "year": 2019,
+      "abstract": "Abstract In recent years, researchers and practitioners have increasingly paid attention to food waste, which is seen as highly unethical given its negative environmental and societal implications. Waste recovery is dependent on the creation of connections along the supply chain, so that actors with goods at risk of becoming waste can transfer them to those who may be able to use them as inputs or for their own consumption. Such waste recovery is, however, often hampered by what we call ‘circularity holes’, i.e., missing linkages between waste generators and potential receivers. A new type of actor, the digital platform organization, has recently taken on a brokerage function to bridge circularity holes, particularly in the food supply chain. Yet, extant literature has overlooked this novel type of brokerage that exploits digital technology for the transfer and recovery of discarded resources between supply chain actors. Our study investigates this actor, conceptualized as a ‘circularity broker’, and thus unites network research and circular supply chain research. Focusing on the food supply chain, we adopt an interpretive inductive theory-building approach to uncover how platform organizations foster the recovery of waste by bridging circularity holes. We identify and explicate six brokerage roles, i.e., connecting, informing, protecting, mobilizing, integrating and measuring, and discuss them in relation to extant literature, highlighting novelties compared to earlier studies. The final section reflects on contributions, implications, limitations and areas for further research.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1016/j.jclepro.2015.10.065",
+      "title": "The role of Supplier Relationship Management in reducing Greenhouse Gas emissions from food supply chains: supplier engagement in the UK supermarket sector",
+      "authors": [
+        "Martin Tidy",
+        "Xiaojun Wang",
+        "Mark Hall"
+      ],
+      "year": 2015,
+      "abstract": null,
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1108/ijlm-12-2019-0332",
+      "title": "Supply chain management for circular economy: conceptual framework and research agenda",
+      "authors": [
+        "Benjamin Thomas Hazen",
+        "Ivan Russo",
+        "Ilenia Confente",
+        "Daniel A. Pellathy"
+      ],
+      "year": 2020,
+      "abstract": "Purpose Circular economy (CE) initiatives are taking hold across both developed and developing nations. Central to these initiatives is the reconfiguration of core supply chain management (SCM) processes that underlie current production and consumption patterns. This conceptual article provides a detailed discussion of how supply chain processes can support the successful implementation of CE. The article highlights areas of convergence in hopes of sparking collaboration among scholars and practitioners in SCM, CE, and related fields. Design/methodology/approach This article adopts a theory extension approach to conceptual development that uses CE as a “method” for exploring core processes within the domain of SCM. The article offers a discussion of the ways in which the five principles of CE (closing, slowing, intensifying, narrowing, dematerialising loops) intersect with eight core SCM processes (customer relationship management, supplier relationship management, customer service management, demand management, order fulfilment, manufacturing flow management, product development and commercialization, returns management). Findings This article identifies specific ways in which core SCM processes can support the transition from traditional linear approaches to production and consumption to a more circular approach. This paper results in a conceptual framework and research agenda for researchers and practitioners working to adapt current supply chain processes to support the implementation of CE. Originality/value This article highlights key areas of convergence among scholars and practitioners through a systematic extension of CE principles into the domain of SCM. In so doing, the paper lays out a potential agenda for collaboration among these groups.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.3390/land9070231",
+      "title": "Challenges of Food Waste Governance: An Assessment of European Legislation on Food Waste and Recommendations for Improvement by Economic Instruments",
+      "authors": [
+        "Beatrice Garske",
+        "Katharine Heyl",
+        "Felix Ekardt",
+        "Lea Weber",
+        "Wiktoria Gradzka"
+      ],
+      "year": 2020,
+      "abstract": "Food is wasted throughout the entire food supply chain—from agricultural production to the household level. This has negative impacts on natural resources and the environment. At the same time, food waste is undermining the global target of food security. In turn, reducing food waste can minimise the environmental effects of agriculture on climate, biodiversity, soils, water bodies and the atmosphere. All of this is reflected in the fact that food waste is subject to various legal acts of the European Union and that it is also a major subject in the new EU Farm to Fork Strategy from May 2020. Supported by an analysis of the diffuse empirical data on food waste, the purpose of this article is to analyse the current EU legislation on food waste and its reduction to answer the following research questions: How is food waste integrated into European policies? What is the impact of European legislation on food waste? Is European legislation sufficient to trigger not only food waste reduction but also comprehensive changes in the agricultural and food sector to support global climate and environmental targets as set in the Paris Agreement and the Convention on Biological Diversity? Which instruments are the most suitable to do so? Methodologically, a qualitative governance analysis is applied. It is found that relevant legal acts for governing food waste include circular economy and waste law, the Common Agricultural Policy and the Common Fisheries Policy as well as food law, while international environmental targets serve as an overarching measure for governance analysis. The legal analysis shows that existing legislation lacks steering effect to significantly reduce food waste. To overcome current governance problems, the article introduces economic policy instruments. It is concluded that quantity control focusing on overarching parameters such as fossil fuels or animal-derived products has not only the potential to reduce food waste by increasing food prices but can also address the multiple interlinked environmental challenges of the agricultural and food sector.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1111/1541-4337.12322",
+      "title": "Active Packaging Applications for Food",
+      "authors": [
+        "Selçuk Yildirim",
+        "Bettina Röcker",
+        "Marit Kvalvåg Pettersen",
+        "Julie Nilsen‐Nygaard",
+        "Zehra Ayhan",
+        "Ramunė Rutkaitė",
+        "Tanja Radusin",
+        "Patrycja Sumińska",
+        "Begonya Marcos",
+        "Véronique Coma"
+      ],
+      "year": 2017,
+      "abstract": "The traditional role of food packaging is continuing to evolve in response to changing market needs. Current drivers such as consumer's demand for safer, \"healthier,\" and higher-quality foods, ideally with a long shelf-life; the demand for convenient and transparent packaging, and the preference for more sustainable packaging materials, have led to the development of new packaging technologies, such as active packaging (AP). As defined in the European regulation (EC) No 450/2009, AP systems are designed to \"deliberately incorporate components that would release or absorb substances into or from the packaged food or the environment surrounding the food.\" Active packaging materials are thereby \"intended to extend the shelf-life or to maintain or improve the condition of packaged food.\" Although extensive research on AP technologies is being undertaken, many of these technologies have not yet been implemented successfully in commercial food packaging systems. Broad communication of their benefits in food product applications will facilitate the successful development and market introduction. In this review, an overview of AP technologies, such as antimicrobial, antioxidant or carbon dioxide-releasing systems, and systems absorbing oxygen, moisture or ethylene, is provided, and, in particular, scientific publications illustrating the benefits of such technologies for specific food products are reviewed. Furthermore, the challenges in applying such AP technologies to food systems and the anticipated direction of future developments are discussed. This review will provide food and packaging scientists with a thorough understanding of the benefits of AP technologies when applied to specific foods and hence can assist in accelerating commercial adoption.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.1016/j.jcis.2011.07.017",
+      "title": "Applications of nanotechnology in food packaging and food safety: Barrier materials, antimicrobials and sensors",
+      "authors": [
+        "Timothy V. Duncan"
+      ],
+      "year": 2011,
+      "abstract": null,
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.1016/j.foodhyd.2021.107328",
+      "title": "Chitosan for food packaging: Recent advances in active and intelligent films",
+      "authors": [
+        "María Flórez",
+        "Esther Guerra‐Rodríguez",
+        "Patricia Cazón",
+        "Manuel Vázquez"
+      ],
+      "year": 2021,
+      "abstract": "The massive and uncontrolled use of food packaging derived from petroleum-based plastics has created a serious environmental problem. Hence, the food packaging industry needs to develop packaging from biodegradable polymers. Among the many raw materials studied in the literature, chitosan is one of the most abundant polysaccharides in the nature. Chitosan has attracted attention due to its non-toxicity, antimicrobial, and antifungal properties. Because of this, chitosan is considered a perfect material for the development of films for food use. In this review, recent studies on active and/or intelligent chitosan-based films has been evaluated. Active packaging maintains or improves the condition of packaged food or extends its shelf-life meanwhile intelligent packaging monitors the condition of packaged food or the environment surrounding the food. The effect of the addition of active compounds on the mechanical, barrier and functional properties of chitosan-based films has been assessed. The antimicrobial and antioxidant activity, as well as the potential application of these active and intelligent composite films have also been revised. Literature shows that the presence of phenolic compounds improves both mechanical and barrier properties of chitosan films. The antimicrobial and antioxidant capacity of the films improved significantly by the addition of essential oils, phenolic compounds, and other fruit extracts. Intelligent pH-indicator chitosan-based films have been extensively studied. Further research on chitosan and its combinations with other materials is needed to study which type of foodstuffs could be in contact with chitosan packaging.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.1007/s00217-017-2878-2",
+      "title": "Innovations in the food packaging market: active packaging",
+      "authors": [
+        "Joanna Wyrwa",
+        "Anetta Barska"
+      ],
+      "year": 2017,
+      "abstract": "The requirements towards packaging and articles intended to come into contact with food are systematically growing. Due to the growing consumer interest in consumption of fresh products with extended shelf life and controlled quality, manufacturers have to provide modern and safe packaging. It is a challenge for the food packaging industry and also acts as a driving force for the development of new and improved concepts of technology packaging. It is in order to meet these needs that active packaging can be applied. This article presents a new generation of packaging, which allows to maintain and even improve the quality of the packaged product, which is an essential advantage particularly in the food industry. It is to this end that the role and the application of active packaging were discussed. Among the solutions belonging to the active packaging, there are oxygen and moisture scavengers, ethylene regulators, and antimicrobial packaging. Active packaging is an excellent solution for a wide range of applications in the food industry. The most important advantage resulting from their use is reduction in loss of food products due to extension of their shelf life. Active systems are the future direction for development of food packaging and their commercial success should be expected in the coming years. It will undoubtedly result from constantly improved technologies of their production and the knowledge about mechanisms of their functioning and the effectiveness of their operation in ensuring food safety accumulated by both producers and consumers over time.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.3390/foods8010016",
+      "title": "Intelligent Packaging in the Food Sector: A Brief Overview",
+      "authors": [
+        "Patricia Müller",
+        "Markus C. Schmid"
+      ],
+      "year": 2019,
+      "abstract": "The trend towards sustainability, improved product safety, and high-quality standards are important in all areas of life sciences. In order to satisfy these requirements, intelligent packaging is used in the food sector. These systems can monitor permanently the quality status of a product and share the information with the customer. In this way, food waste can be reduced and customer satisfaction can be optimized. Depending on the product, different types of intelligent packaging technologies are used and discussed in this review. The three main groups are: data carriers, indicators, and sensors. At this time, they are not that widespread, but their potential is already known. In which areas intelligent packaging should be implemented, how the systems work, and which values they offer are dealt in this review.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.1016/j.jssas.2016.11.003",
+      "title": "Novel food packaging technologies: Innovations and future prospective",
+      "authors": [
+        "Ishrat Majid",
+        "Gulzar Ahmad Nayik",
+        "Shuaib Mohammad Dar",
+        "Vikas Nanda"
+      ],
+      "year": 2016,
+      "abstract": "Novel food packaging technologies arose as a result of consumer’s desire for convenient, ready to eat, tasty and mild processed food products with extended shelf life and maintained quality. Recent trend of lifestyle changes with less time for consumers to prepare foods posed a great challenge toward food packaging sector for the evolution of novel and innovative food packaging techniques. The novel food packaging techniques, viz. active packaging, intelligent packaging and bio active packaging which involve intentional interaction with the food or its surroundings and influence on consumer’s health have been the major innovations in the field of packaging technology. These novel techniques act by prolonging the shelf life, enhancing or maintaining the quality, providing indication and to regulate freshness of food product. The advancement in novel food packaging technologies involves retardation in oxidation, hindered respiratory process, prevention of microbial attack, prevention of moisture infusion, use of CO2 scavengers/emitters, ethylene scavengers, aroma emitters, time-temperature sensors, ripeness indicators, biosensors and sustained release of antioxidants during storage. The novel food packaging technologies besides the basic function of containment increase the margin of food quality and safety. The novel food packaging techniques thus help in fulfilling the demands throughout the food supply chain by gearing up toward persons own lifestyle. The main objectives of this review article are to provide basic knowledge of different new and innovative food packaging techniques about their way of preservative action, effectiveness and suitability in various types of foods.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.3389/fnut.2018.00121",
+      "title": "The Next Generation of Sustainable Food Packaging to Preserve Our Environment in a Circular Economy Context",
+      "authors": [
+        "Valérie Guillard",
+        "Sébastien Gaucel",
+        "Claudio Fornaciari",
+        "Hélène Angellier‐Coussy",
+        "Patrice Buche",
+        "Nathalie Gontard"
+      ],
+      "year": 2018,
+      "abstract": "Packaging is an essential element of response to address key challenges of sustainable food consumption on the international scene, which is clearly about minimizing the environmental footprint of packed food. An innovative sustainable packaging aims to address food waste and loss reduction by preserving food quality, as well as food safety issues by preventing food-borne diseases and food chemical contamination. Moreover, it must address the long-term crucial issue of environmentally persistent plastic waste accumulation as well as the saving of oil and food material resources. This paper reviews the major challenges that food packaging must tackle in the near future in order to enter the virtuous loop of circular bio-economy. Some solutions are proposed to address pressing international stakes in terms of food and plastic waste reduction and end-of-life issues of persistent materials. Among potential solutions, production of microbial biodegradable polymers from agro-food waste residues seems a promising route to create an innovative, more resilient, and productive waste-based food packaging economy by decoupling the food packaging industry from fossil feed stocks and permitting nutrients to return to the soil. To respond to the lack of tools and approach to properly design and adapt food packaging to food needs, mathematical simulation, based on modeling of mass transfer and reactions into food/packaging systems are promising tools. The next generation of such modeling and tools should help the food packaging sector to validate usage benefit of new packaging solutions and chose, in a fair and transparent way, the best packaging solution to contribute to the overall decrease of food losses and persistent plastic accumulation.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.3390/molecules26051263",
+      "title": "Progresses in Food Packaging, Food Quality, and Safety—Controlled-Release Antioxidant and/or Antimicrobial Packaging",
+      "authors": [
+        "Cornelia Vasile",
+        "Mihaela Cristina Baican"
+      ],
+      "year": 2021,
+      "abstract": "Food packaging is designed to protect foods, to provide required information about the food, and to make food handling convenient for distribution to consumers. Packaging has a crucial role in the process of food quality, safety, and shelf-life extension. Possible interactions between food and packaging are important in what is concerning food quality and safety. This review tries to offer a picture of the most important types of active packaging emphasizing the controlled/target release antimicrobial and/or antioxidant packaging including system design, different methods of polymer matrix modification, and processing. The testing methods for the appreciation of the performance of active food packaging, as well as mechanisms and kinetics implied in active compounds release, are summarized. During the last years, many fast advancements in packaging technology appeared, including intelligent or smart packaging (IOSP), (i.e., time-temperature indicators (TTIs), gas indicators, radiofrequency identification (RFID), and others). Legislation is also discussed.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.3389/fmicb.2023.1198124",
+      "title": "Linking microbial contamination to food spoilage and food waste: the role of smart packaging, spoilage risk assessments, and date labeling",
+      "authors": [
+        "Shraddha Karanth",
+        "Shuyi Feng",
+        "Debasmita Patra",
+        "Abani K. Pradhan"
+      ],
+      "year": 2023,
+      "abstract": "Ensuring a safe and adequate food supply is a cornerstone of human health and food security. However, a significant portion of the food produced for human consumption is wasted annually on a global scale. Reducing harvest and postharvest food waste, waste during food processing, as well as food waste at the consumer level, have been key objectives of improving and maintaining sustainability. These issues can range from damage during processing, handling, and transport, to the use of inappropriate or outdated systems, and storage and packaging-related issues. Microbial growth and (cross)contamination during harvest, processing, and packaging, which causes spoilage and safety issues in both fresh and packaged foods, is an overarching issue contributing to food waste. Microbial causes of food spoilage are typically bacterial or fungal in nature and can impact fresh, processed, and packaged foods. Moreover, spoilage can be influenced by the intrinsic factors of the food (water activity, pH), initial load of the microorganism and its interaction with the surrounding microflora, and external factors such as temperature abuse and food acidity, among others. Considering this multifaceted nature of the food system and the factors driving microbial spoilage, there is an immediate need for the use of novel approaches to predict and potentially prevent the occurrence of such spoilage to minimize food waste at the harvest, post-harvest, processing, and consumer levels. Quantitative microbial spoilage risk assessment (QMSRA) is a predictive framework that analyzes information on microbial behavior under the various conditions encountered within the food ecosystem, while employing a probabilistic approach to account for uncertainty and variability. Widespread adoption of the QMSRA approach could help in predicting and preventing the occurrence of spoilage along the food chain. Alternatively, the use of advanced packaging technologies would serve as a direct prevention strategy, potentially minimizing (cross)contamination and assuring the safe handling of foods, in order to reduce food waste at the post-harvest and retail stages. Finally, increasing transparency and consumer knowledge regarding food date labels, which typically are indicators of food quality rather than food safety, could also contribute to reduced food waste at the consumer level. The objective of this review is to highlight the impact of microbial spoilage and (cross)contamination events on food loss and waste. The review also discusses some novel methods to mitigate food spoilage and food loss and waste, and ensure the quality and safety of our food supply.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.2478/v10222-012-0091-3",
+      "title": "Active and Intelligent Packaging Food - Research and Development – A Review",
+      "authors": [
+        "Renata Dobrucka",
+        "Ryszard Cierpiszewski"
+      ],
+      "year": 2014,
+      "abstract": "Key words: active",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.3390/app11083532",
+      "title": "Intelligent Packaging for Real-Time Monitoring of Food-Quality: Current and Future Developments",
+      "authors": [
+        "Andrea Dodero",
+        "Andrea Escher",
+        "Simone Bertucci",
+        "Maila Castellano",
+        "Paola Lova"
+      ],
+      "year": 2021,
+      "abstract": "Food packaging encompasses the topical role of preserving food, hence, extending the shelf-life, while ensuring the highest quality and safety along the production chain as well as during storage. Intelligent food packaging further develops the functions of traditional packages by introducing the capability of continuously monitoring food quality during the whole chain to assess and reduce the insurgence of food-borne disease and food waste. To this purpose, several sensing systems based on different food quality indicators have been proposed in recent years, but commercial applications remain a challenge. This review provides a critical summary of responsive systems employed in the real-time monitoring of food quality and preservation state. First, food quality indicators are briefly presented, and subsequently, their exploitation to fabricate intelligent packaging based on responsive materials is discussed. Finally, current challenges and future trends are reviewed to highlight the importance of concentrating efforts on developing new functional solutions.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.3390/su11010264",
+      "title": "Packaging-Related Food Losses and Waste: An Overview of Drivers and Issues",
+      "authors": [
+        "Bernhard Wohner",
+        "Erik Pauer",
+        "Victoria Heinrich",
+        "Manfred Tacker"
+      ],
+      "year": 2019,
+      "abstract": "Packaging is often criticized as a symbol of today’s throwaway society, as it is mostly made of plastic, which is in itself quite controversial, and is usually used only once. However, as packaging’s main function is to protect its content and 30% of all food produced worldwide is lost or wasted along the supply chain, optimized packaging may be one of the solutions to reduce this staggering amount. Developing countries struggle with losses in the supply chain before food reaches the consumer. Here, appropriate packaging may help to protect food and prolong its shelf life so that it safely reaches these households. In developed countries, food tends to be wasted rather at the household’s level due to wasteful behavior. There, packaging may be one of the drivers due to inappropriate packaging sizes and packaging that is difficult to empty. When discussing the sustainability of packaging, its protective function is often neglected and only revolves around the type and amount of material used for production. In this review, drivers, issues, and implications of packaging-related food losses and waste (FLW) are discussed, as well as the implication for the implementation in life cycle assessments (LCA).",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.3390/foods10092088",
+      "title": "Seaweed Polysaccharide in Food Contact Materials (Active Packaging, Intelligent Packaging, Edible Films, and Coatings)",
+      "authors": [
+        "Kalpani Y. Perera",
+        "Shubham Sharma",
+        "Dileswar Pradhan",
+        "Amit Kumar Jaiswal",
+        "Swarna Jaiswal"
+      ],
+      "year": 2021,
+      "abstract": "Food contact materials (FCMs) are materials that come in contact with food products such as food packaging which play a significant role in the food quality and safety. Plastic, which is a major food packaging material, harms the eco-system, wildlife, and the environment. As a result, numerous researches have been in progress on alternative polymers, which has similar properties as plastic but is also environmentally friendly (biodegradable). In recent years, the utilization of seaweed polysaccharides has piqued interest due to its biodegradability, non-toxicity, antioxidant capabilities, and excellent film formation ability. However, it has a number of drawbacks such as low tensile strength, water solubility, and moderate antibacterial characteristics, among others. The addition of other biopolymers, nanoparticles, or natural active agents improves these features. In this review article, we have summarized the current state of seaweed polysaccharide research in active packaging, intelligent packaging, edible films, and coatings. It also highlights the physical, thermal, antioxidant, and other properties of these materials. Finally, the article discusses the relevant legislation as well as the field's future prospects. Research shows that seaweeds polysaccharide looks promising as a sustainable food contact material, but there is always a potential for development to make it market feasible.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.3390/pr13020539",
+      "title": "Recent Advances in the Fabrication of Intelligent Packaging for Food Preservation: A Review",
+      "authors": [
+        "Tshamisane Mkhari",
+        "Jerry Oluwasegun Adeyemi",
+        "Olaniyi Amos Fawole"
+      ],
+      "year": 2025,
+      "abstract": "The advancement of intelligent packaging technologies has emerged as a pivotal innovation in the food industry, significantly enhancing food safety and preservation. This review explores the latest developments in the fabrication of intelligent packaging, with a focus on applications in food preservation. Intelligent packaging systems, which include sensors, indicators, and RFID technologies, offer the real-time monitoring of food quality and safety by detecting changes in environmental conditions and microbial activity. Innovations in nanotechnology, bio-based materials, and smart polymers have led to the development of eco-friendly and highly responsive packaging solutions. This review underscores the role of active and intelligent packaging components—such as oxygen scavengers, freshness indicators, and antimicrobial agents in extending shelf life and ensuring product integrity. Moreover, it highlights the transformative potential of intelligent packaging in food preservation through the examination of recent case studies. Finally, this review provides a comprehensive overview of current trends, challenges, and potential future directions in this rapidly evolving field.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.1016/j.tifs.2017.05.003",
+      "title": "Packaging, blessing in disguise. Review on its diverse contribution to food sustainability",
+      "authors": [
+        "Fabio Licciardello"
+      ],
+      "year": 2017,
+      "abstract": null,
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.3390/molecules26134031",
+      "title": "Valorization and Application of Fruit and Vegetable Wastes and By-Products for Food Packaging Materials",
+      "authors": [
+        "Banu Bayram",
+        "Gülay Özkan",
+        "Tina Kostka",
+        "Esra Çapanoğlu",
+        "Tuba Esatbeyoglu"
+      ],
+      "year": 2021,
+      "abstract": "The important roles of food packaging are food protection and preservation during processing, transportation, and storage. Food can be altered biologically, chemically, and physically if the packaging is unsuitable or mechanically damaged. Furthermore, packaging is an important marketing and communication tool to consumers. Due to the worldwide problem of environmental pollution by microplastics and the large amounts of unused food wastes and by-products from the food industry, it is important to find more environmentally friendly alternatives. Edible and functional food packaging may be a suitable alternative to reduce food waste and avoid the use of non-degradable plastics. In the present review, the production and assessment of edible food packaging from food waste as well as fruit and vegetable by-products and their applications are demonstrated. Innovative food packaging made of biopolymers and biocomposites, as well as active packaging, intelligent packaging, edible films, and coatings are covered.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    }
+  ],
+  "assessments": [
+    {
+      "paper_doi": "10.1016/j.resconrec.2015.11.016",
+      "paper_title": "Drivers of food waste and their implications for sustainable policy development",
+      "subquestion_id": 1,
+      "relevance_score": 1,
+      "reason": "The abstract is missing, and the title only mentions general drivers of food waste and sustainable policy development without addressing supermarket inventory management practices.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/su7021429",
+      "paper_title": "Cutting Food Waste through Cooperation along the Food Supply Chain",
+      "subquestion_id": 1,
+      "relevance_score": 3,
+      "reason": "The abstract discusses causes and methods to reduce food waste across the general food supply chain through expert interviews, but does not specifically focus on supermarket inventory management practices.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1007/s11356-023-26462-y",
+      "paper_title": "New insights in food security and environmental sustainability through waste food management",
+      "subquestion_id": 1,
+      "relevance_score": 1,
+      "reason": "The abstract is missing, and the title only addresses food security and environmental sustainability through waste food management broadly.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.indmarman.2021.01.005",
+      "paper_title": "Digitalization within food supply chains to prevent food waste. Drivers, barriers and collaboration practices",
+      "subquestion_id": 1,
+      "relevance_score": 1,
+      "reason": "The abstract is missing, and the title broadly mentions digitalization and collaboration practices within food supply chains to prevent food waste.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1002/cb.1488",
+      "paper_title": "Identifying factors that promote consumer behaviours causing expired domestic food waste",
+      "subquestion_id": 1,
+      "relevance_score": 1,
+      "reason": "The abstract focuses exclusively on consumer behaviors and domestic food waste rather than retail or supermarket inventory management.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/su9010037",
+      "paper_title": "Food Waste Drivers in Europe, from Identification to Possible Interventions",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract describes a broad literature review on food waste drivers across Europe without specifically examining supermarket inventory management practices.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.spc.2020.12.021",
+      "paper_title": "The extent of food waste generation in the UK and its environmental impacts",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract details the estimation of food waste quantities and environmental impacts across the entire UK supply chain rather than supermarket inventory practices.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/su14052494",
+      "paper_title": "Reducing Food Waste at Retail Stores—An Explorative Study",
+      "subquestion_id": 1,
+      "relevance_score": 5,
+      "reason": "The abstract explicitly investigates how grocery retailers can proactively reduce food waste through better planning and store operations regarding overstock and availability.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1007/s11356-023-27901-6",
+      "paper_title": "Insights into the management of food waste in developing countries: with special reference to India",
+      "subquestion_id": 1,
+      "relevance_score": 1,
+      "reason": "The abstract is missing, and the title only refers broadly to the management of food waste in developing countries with a reference to India.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.ijpe.2017.10.003",
+      "paper_title": "Quantifying the potential to improve on food waste, freshness and sales for perishables in supermarkets",
+      "subquestion_id": 1,
+      "relevance_score": 5,
+      "reason": "The abstract directly addresses improving fresh departments in supermarkets by quantifying food waste reduction, freshness, and sales in relation to case pack sizes and demand.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.22004/ag.econ.234453",
+      "paper_title": "Estimating and Addressing America's Food Losses",
+      "subquestion_id": 1,
+      "relevance_score": 1,
+      "reason": "The abstract does not contain any information regarding inventory management practices or food waste reduction in supermarkets.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.jclepro.2016.06.071",
+      "paper_title": "The role of life cycle assessment in supporting sustainable agri-food systems: A review of the challenges",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract discusses life cycle assessment in agri-food systems broadly but lacks specific focus on supermarket inventory management practices for food waste reduction.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.ijpe.2017.07.016",
+      "paper_title": "Discounting and dynamic shelf life to reduce fresh food waste at retailers",
+      "subquestion_id": 1,
+      "relevance_score": 5,
+      "reason": "The abstract directly investigates how replenishment, discounting, and dynamic shelf life impact retail food waste reduction for meat products.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/foods6120104",
+      "paper_title": "Consumers in a Sustainable Food Supply Chain (COSUS): Understanding Consumer Behavior to Encourage Food Waste Reduction",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract focuses on consumer behavior and acceptance of suboptimal food rather than supermarket inventory management practices.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3389/fsufs.2020.00016",
+      "paper_title": "Food Security, Safety, and Sustainability—Getting the Trade-Offs Right",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract explores high-level trade-offs in food security and sustainability strategies without addressing retail inventory management practices.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.jclepro.2020.120975",
+      "paper_title": "Food waste management in Shanghai full-service restaurants: A senior managers’ perspective",
+      "subquestion_id": 1,
+      "relevance_score": 1,
+      "reason": "The abstract is missing, and the title refers to full-service restaurants rather than supermarket inventory management.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1108/bfj-07-2020-0658",
+      "paper_title": "Food waste measurement toward a fair, healthy and environmental-friendly food system: a critical review",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract reviews methodologies for measuring food waste globally rather than examining supermarket inventory management practices.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/foods12051057",
+      "paper_title": "Sustainable and Bio-Based Food Packaging: A Review on Past and Current Design Innovations",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract focuses on food packaging design and material innovations to reduce supply chain waste rather than retail inventory management.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.techfore.2021.121062",
+      "paper_title": "A digitally enabled circular economy for mitigating food waste: Understanding innovative marketing strategies in the context of an emerging economy",
+      "subquestion_id": 1,
+      "relevance_score": 4,
+      "reason": "The abstract strongly relates by examining how supermarkets use digital technologies for operations, purchases, and pricing to reduce food waste.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/su8070693",
+      "paper_title": "Towards a More Sustainable Food Supply Chain: Opening up Invisible Waste in Food Service",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract focuses on food service companies and invisible waste rather than supermarket inventory management practices.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.apm.2016.12.024",
+      "paper_title": "Effects of dynamic pricing of perishable products on revenue and waste",
+      "subquestion_id": 2,
+      "relevance_score": 3,
+      "reason": "Since no abstract is available, the title indicates it covers dynamic pricing of perishables and waste, making it partially relevant as background.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1080/09537287.2023.2226622",
+      "paper_title": "Food waste management for the UK grocery retail sector—a supply chain collaboration perspective",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract discusses retail food waste management and supply chain collaboration but does not evaluate dynamic pricing or markdowns.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/foods13203273",
+      "paper_title": "A Holistic Framework for Evaluating Food Loss and Waste Due to Marketing Standards across the Entire Food Supply Chain",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract focuses on evaluating food loss and waste resulting from marketing standards rather than dynamic pricing or markdown strategies.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1155/2018/7279491",
+      "paper_title": "Quality and Operations Management in Food Supply Chains: A Literature Review",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract provides a broad literature review on quality and operations management in food supply chains without specifically addressing markdown strategies.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1080/00207543.2025.2603570",
+      "paper_title": "Balancing profitability and waste reduction: optimizing markdown policies for retail inventory",
+      "subquestion_id": 2,
+      "relevance_score": 5,
+      "reason": "The abstract directly addresses optimal markdown policies and expiration-based pricing to reduce retail food waste and stimulate demand for excess inventory.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/foods15040742",
+      "paper_title": "IoT-Enabled Quality-Triggered Markdown Pricing for Perishable Food: Equity and Waste Implications",
+      "subquestion_id": 2,
+      "relevance_score": 5,
+      "reason": "The abstract directly investigates IoT-enabled quality-triggered markdown pricing models and their impact on waste reduction in perishable food retail.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.15388/23-infor520",
+      "paper_title": "On Order Policies for a Perishable Product in Retail",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract focuses on inventory control, order policies, and product withdrawal heuristics rather than dynamic pricing or markdown strategies.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.4060/cb8396en",
+      "paper_title": "Case studies on food waste quantification, characterization, and identification of prevention and reduction options in Colombo, Sri Lanka",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract outlines case studies on food waste quantification and general prevention options in various sectors without focusing on pricing strategies.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.24818/ea/2024/s18/1292",
+      "paper_title": "Could Assortment Rationalisation Help Reduce Food Waste in Grocery Stores?",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract explores assortment rationalization as a method to prevent food waste in grocery stores rather than examining markdown strategies.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.wasman.2026.115536",
+      "paper_title": "Food waste in European Households: A Meta-Analysis of behavioural drivers and quantitative trends",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract examines household food waste and behavioural drivers in Europe, which is outside the scope of retail supply chain markdowns.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.12681/eadd/47379",
+      "paper_title": "Strategic design of transport networks for sustainable supply chains of perishable food products",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract discusses sustainable supply chains and reducing food waste through redistribution and responsible policies, but does not mention dynamic pricing or markdown strategies.",
+      "selected": false
+    },
+    {
+      "paper_doi": null,
+      "paper_title": "Stochastic Optimization Models for Perishable Products",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract focuses on stochastic optimization models for perishable product inventory management to reduce waste under demand uncertainty, but does not examine dynamic pricing or markdowns.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/agriculture16050587",
+      "paper_title": "Logistics Practices to Reduce Food Loss in Sustainable Agri-Food Supply Chains: From Literature Review to Research Framework",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract reviews logistics practices and mitigation strategies for food loss across agri-food supply chains without addressing dynamic pricing or markdowns.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.58291/ijmsa.v4i2.441",
+      "paper_title": "Systematic Analysis of IoT, AI, Active Packaging, and Blockchain for Food Waste Reduction across the Farm-to-Fork Supply Chain",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract evaluates IoT, AI, active packaging, and blockchain for food waste reduction, omitting any focus on dynamic pricing or markdown strategies.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/su18042066",
+      "paper_title": "Digital Traceability and Contract Coordination for Sustainable Agri-Food Supply Chains",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract examines digital traceability and contract coordination to mitigate freshness-related food waste, but does not cover dynamic pricing or markdown strategies.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.22541/au.159076896.69508246",
+      "paper_title": "Inventory models for managing deteriorating products: a literature review",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract provides a literature review on inventory models for deteriorating items and fresh produce, but does not specifically discuss pricing or markdown interventions.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/su17041355",
+      "paper_title": "Shaping the Future of Freight Logistics: Use Cases of Artificial Intelligence",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract investigates AI use cases in freight logistics to improve sustainability, making no mention of retail food waste, pricing, or markdowns.",
+      "selected": false
+    },
+    {
+      "paper_doi": null,
+      "paper_title": "Option Contracts for Supermarket Fruit Supply Chains: Theory and Practice",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract discusses option contracts and coordination between farmers and retailers to reduce supermarket fruit waste, but does not cover dynamic pricing or markdowns.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1086/346244",
+      "paper_title": "Consumer Perceptions of Price (Un)Fairness",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract discusses consumer perceptions of price fairness and corrective interventions for general goods, but does not address retail food waste or surplus food generation.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1007/s10551-019-04371-w",
+      "paper_title": "Mapping the Ethicality of Algorithmic Pricing: A Review of Dynamic and Personalized Pricing",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract reviews the ethics of algorithmic, dynamic, and personalized pricing, but does not discuss food waste or surplus food generation.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.foodqual.2021.104179",
+      "paper_title": "Making ugly food beautiful: Consumer barriers to purchase and marketing options for Suboptimal Food at retail level – A systematic review",
+      "subquestion_id": 2,
+      "relevance_score": 3,
+      "reason": "The abstract examines barriers and marketing measures for suboptimal food at the retail level including price discounts, but does not specifically focus on dynamic pricing impacts on surplus food.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1287/mnsc.2018.3046",
+      "paper_title": "Why Markdown as a Pricing Modality?",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract analyzes markdown pricing modalities and consumer behavior regarding stockouts and regret, but does not address retail food waste or surplus food generation.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.ijpe.2018.10.012",
+      "paper_title": "Fashion retail supply chain management: A review of operational models",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract is missing and the title only mentions fashion retail supply chain management without addressing food waste or markdown strategies.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1093/restud/rdy004",
+      "paper_title": "The Changing Returns to Crime: Do Criminals Respond to Prices?",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract investigates crime-price elasticities for stolen goods, which is completely irrelevant to retail food waste or dynamic pricing.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3386/w7981",
+      "paper_title": "Why Don't Prices Rise During Periods of Peak Demand? Evidence from Scanner Data",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract is corrupted/unreadable and the title concerns price rigidity during peak demand rather than food waste.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.2139/ssrn.2785242",
+      "paper_title": "Consumer Price Adjustment Under the Microscope: Germany in a Period of Low Inflation",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract is missing and the title focuses on consumer price adjustment in Germany during low inflation without mentioning food waste.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1017/s1068280500006687",
+      "paper_title": "Food Retailers' Pricing and Marketing Strategies, with Implications for Producers",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract discusses grocery retailers' pricing and marketing strategies and their implications for producers, but does not cover food waste or surplus food generation.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1787/3151e4ca-en",
+      "paper_title": "Concentration and market power in the food chain",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract examines market power and concentration in the agri-food chain, but does not address dynamic pricing or surplus food generation.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1146/annurev-resource-101721-023554",
+      "paper_title": "Empirical Industrial Organization Economics to Analyze Developing Country Food Value Chains",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract discusses food value chain transformations and industrial organization economics but does not address dynamic pricing or food waste.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.18520/cs/v116/i10/1648-1652",
+      "paper_title": "Dynamic Pricing and Markdown Timing Policies for Fashion Goods with Strategic Behaviour of Consumers",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract focuses on optimal pricing and markdown timing for fashion goods with strategic consumers, but does not mention surplus food generation or retail food waste.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1017/aae.2016.29",
+      "paper_title": "THE COMPETITIVENESS OF AGRICULTURAL PRODUCT AND INPUT MARKETS: A REVIEW AND SYNTHESIS OF RECENT RESEARCH",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract reviews market competitiveness and buyer power in agricultural and food markets without discussing pricing strategies or food waste.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3386/w19709",
+      "paper_title": "Efficiency and Foreclosure Effects of Vertical Rebates: Empirical Evidence",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract examines the efficiency and foreclosure effects of vertical rebates in retail without addressing dynamic pricing or food waste.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1086/716563",
+      "paper_title": "Efficiency and Foreclosure Effects of Vertical Rebates: Empirical Evidence",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract investigates the impact of vertical rebates on retail effort and product assortment without mentioning dynamic pricing or food waste.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1108/09574090410700275",
+      "paper_title": "Building the Resilient Supply Chain",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract discusses supply chain vulnerability and risk mitigation in general, without addressing retail food waste or supply chain collaboration for waste reduction.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/su7066457",
+      "paper_title": "Consumer-Related Food Waste: Causes and Potential for Action",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract focuses primarily on consumer-related food waste and household behaviors, with only tangential mention of supply chain actors and retailer actions.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1016/j.compind.2020.103187",
+      "paper_title": "Agri-food 4.0: A survey of the supply chains and technologies for the future agriculture",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "Rated from the title alone as no abstract is available, and it only broadly addresses agri-food supply chains without mentioning food waste or collaboration.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.ijpe.2016.03.014",
+      "paper_title": "Big data analytics in logistics and supply chain management: Certain investigations for research and applications",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "Rated from the title alone as no abstract is available, focusing broadly on big data analytics in supply chain management.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.jclepro.2021.126438",
+      "paper_title": "Food loss and waste in food supply chains. A systematic literature review and framework development approach",
+      "subquestion_id": 3,
+      "relevance_score": 4,
+      "reason": "The abstract explicitly identifies buyer-supplier agreements and stakeholder management as key factors responsible for food loss and waste in supply chains.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1016/j.jom.2014.01.005",
+      "paper_title": "Chain liability in multitier supply chains? Responsibility attributions for unsustainable supplier behavior",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract discusses chain liability and consumer responsibility attributions for unsustainable supplier behavior, lacking any focus on food waste or retail supply chains.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.cor.2020.104926",
+      "paper_title": "A systematic literature review on machine learning applications for sustainable agriculture supply chain performance",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "Rated from the title alone as no abstract is available, focusing on machine learning in sustainable agriculture supply chains rather than retail food waste.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1108/scm-06-2017-0201",
+      "paper_title": "Resilience in agri-food supply chains: a critical analysis of the literature and synthesis of a novel framework",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract discusses resilience in agri-food supply chains broadly through a literature review, but does not address retail food waste or supplier agreements.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1007/s10479-020-03912-1",
+      "paper_title": "Supply chain disruptions and resilience: a major review and future research agenda",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "Rated from the title alone as no abstract is available, focusing generally on supply chain disruptions and resilience.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1080/09537287.2018.1449265",
+      "paper_title": "Barriers to effective circular supply chain management in a developing country context",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract examines barriers to circular supply chain management and manufacturing flows, without focusing on retail food waste or supplier collaboration agreements.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1007/s10479-020-03685-7",
+      "paper_title": "Impacts of epidemic outbreaks on supply chains: mapping a research agenda amid the COVID-19 pandemic through a structured literature review",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract discusses epidemic impacts on commercial supply chains broadly without addressing retail food waste or supplier agreements.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1080/09537287.2021.1983661",
+      "paper_title": "Supply chain traceability: a review of the benefits and its relationship with supply chain resilience",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract focuses on supply chain traceability and resilience rather than specific interventions to mitigate retail food waste through collaboration.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.spc.2020.10.002",
+      "paper_title": "The logistics of the short food supply chain: A literature review",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The paper has no abstract available, and the title only mentions the logistics of short food supply chains without addressing retail food waste or supplier agreements.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1002/aepp.13121",
+      "paper_title": "Local Food Supply Chain Dynamics and Resilience during COVID ‐19",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract discusses local food supply chain resilience and innovations during COVID-19 but does not address retail food waste or supplier agreements.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1080/00207543.2011.613864",
+      "paper_title": "Supply-chain uncertainty: a review and theoretical foundation for future research",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract reviews supply-chain uncertainty and management strategies generally without addressing retail food waste or collaboration agreements.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.38124/ijisrt/ijisrt24aug1218",
+      "paper_title": "Implementing Blockchain Technology for Optimized Supply Chain and Enhanced Sustainability",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract mentions supply chain sustainability and reduced wastage using blockchain technology, but does not focus on retail food waste or supplier agreements.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1108/ijopm-03-2018-0184",
+      "paper_title": "Local food supply chain resilience to constitutional change: the Brexit effect",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract examines local food supply chain resilience to Brexit and mentions collaboration, but does not address retail food waste.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.techfore.2021.121403",
+      "paper_title": "Blockchain as a sustainability-oriented innovation?: Opportunities for and resistance to Blockchain technology as a driver of sustainability in global food supply chains",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract explores blockchain as a sustainability-oriented innovation in global food supply chains, but does not specifically address retail food waste mitigation through supplier agreements.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.apenergy.2020.114848",
+      "paper_title": "Technologies and policies to decarbonize global industry: Review and assessment of mitigation drivers through 2070",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract focuses on industrial decarbonization, energy efficiency, and material waste on a macro level rather than retail food supply chain waste interventions.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.jom.2015.11.001",
+      "paper_title": "Sustainability in multi‐tier supply chains: Understanding the double agency role of the first‐tier supplier",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract discusses first-tier supplier collaboration and agency roles in supply chain sustainability compliance, offering useful background on supplier agreements though it does not explicitly focus on retail food waste.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1007/s10551-019-04160-5",
+      "paper_title": "Circularity Brokers: Digital Platform Organizations and Waste Recovery in Food Supply Chains",
+      "subquestion_id": 3,
+      "relevance_score": 4,
+      "reason": "The abstract clearly addresses how connections and digital platforms link actors to recover waste in food supply chains, strongly relating to supply chain collaboration for food waste mitigation.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.18174/121244",
+      "paper_title": "Effective food supply chains : generating, modelling and evaluating supply chain scenarios",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract discusses logistical coordination and supply chain management performance in FMCG and food supply chains, but is tangential because it does not focus on food waste or supplier agreements.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1111/obr.13126",
+      "paper_title": "Ultra‐processed foods and the nutrition transition: Global, regional and national trends, food systems transformations and political economy drivers",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract focuses on global trends and drivers of ultra-processed food consumption and food systems transformations, containing no relevance to retail food waste interventions or supply chain collaboration.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.ijinfomgt.2019.08.002",
+      "paper_title": "Artificial Intelligence (AI): Multidisciplinary perspectives on emerging challenges, opportunities, and agenda for research, practice and policy",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract introduces multidisciplinary perspectives on artificial intelligence across various industries including supply chain and retail, but does not address food waste or supply chain collaboration.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.jclepro.2010.03.005",
+      "paper_title": "Shadows and lights of GSCM (Green Supply Chain Management): determinants and effects of these practices based on a multi-national study",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "There is no abstract available, and the title regarding Green Supply Chain Management is not relevant to retail food waste and supplier agreements.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1257/jep.28.2.99",
+      "paper_title": "Slicing Up Global Value Chains",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "The abstract focuses on global value chain fragmentation, labor, and capital value-added decomposition, with no relation to food waste or supply chain collaboration.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.jclepro.2015.10.065",
+      "paper_title": "The role of Supplier Relationship Management in reducing Greenhouse Gas emissions from food supply chains: supplier engagement in the UK supermarket sector",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "There is no abstract available, but the title and context suggest Supplier Relationship Management and supplier engagement in the UK supermarket sector provide partially relevant background.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1016/j.tre.2017.04.002",
+      "paper_title": "Data-driven supply chain capabilities and performance: A resource-based view",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "There is no abstract available, and the title regarding data-driven supply chain capabilities and performance is not specific enough to retail food waste.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1108/ijlm-12-2019-0332",
+      "paper_title": "Supply chain management for circular economy: conceptual framework and research agenda",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract discusses circular economy principles and core SCM processes such as supplier relationship management, offering useful conceptual background on supply chain collaboration.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1002/bse.527",
+      "paper_title": "Sustainable supply chain management in tourism",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract discusses sustainable supply chain management in the tourism and hospitality sector rather than addressing retail food waste or supplier agreements for reducing food loss.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/land9070231",
+      "paper_title": "Challenges of Food Waste Governance: An Assessment of European Legislation on Food Waste and Recommendations for Improvement by Economic Instruments",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract outlines food waste governance across the entire supply chain and the assessment of European legislation, but it does not specifically focus on retail supply chain collaboration or supplier agreements.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1080/00207543.2020.1743896",
+      "paper_title": "Information and digital technologies of Industry 4.0 and Lean supply chain management: a systematic literature review",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract focuses on the intersection of Industry 4.0 digital technologies and lean supply chain management in general, with no specific mention of retail food waste or related mitigation interventions.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1111/1541-4337.12322",
+      "paper_title": "Active Packaging Applications for Food",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract discusses active packaging technologies and shelf-life extension, providing useful background context without explicitly focusing on retail supply chain waste reduction.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1016/j.jcis.2011.07.017",
+      "paper_title": "Applications of nanotechnology in food packaging and food safety: Barrier materials, antimicrobials and sensors",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract is missing, so the rating is based on the title alone regarding nanotechnology applications in food packaging and safety.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1016/j.foodhyd.2021.107328",
+      "paper_title": "Chitosan for food packaging: Recent advances in active and intelligent films",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract covers active and intelligent chitosan-based films for shelf-life extension but lacks a direct focus on retail food waste management.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1007/s00217-017-2878-2",
+      "paper_title": "Innovations in the food packaging market: active packaging",
+      "subquestion_id": 4,
+      "relevance_score": 4,
+      "reason": "The abstract explicitly highlights how active packaging reduces the loss of food products through shelf-life extension.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/foods8010016",
+      "paper_title": "Intelligent Packaging in the Food Sector: A Brief Overview",
+      "subquestion_id": 4,
+      "relevance_score": 5,
+      "reason": "The abstract directly addresses how intelligent packaging technologies monitor product quality and reduce food waste for customers.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1016/j.jclepro.2018.02.030",
+      "paper_title": "Food waste matters - A systematic review of household food waste practices and their policy implications",
+      "subquestion_id": 4,
+      "relevance_score": 2,
+      "reason": "The abstract reviews household food waste practices rather than retail-level innovations or packaging technologies.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.jssas.2016.11.003",
+      "paper_title": "Novel food packaging technologies: Innovations and future prospective",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract reviews novel packaging innovations like active and intelligent systems for quality and shelf life, but does not explicitly analyze retail supply chain food waste.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3389/fnut.2018.00121",
+      "paper_title": "The Next Generation of Sustainable Food Packaging to Preserve Our Environment in a Circular Economy Context",
+      "subquestion_id": 4,
+      "relevance_score": 4,
+      "reason": "The abstract directly addresses how innovative sustainable packaging aims to reduce food waste and loss by preserving food quality and safety.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/molecules26051263",
+      "paper_title": "Progresses in Food Packaging, Food Quality, and Safety—Controlled-Release Antioxidant and/or Antimicrobial Packaging",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract discusses active and intelligent packaging for shelf-life extension and quality, but does not specifically focus on retail food waste outcomes.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3389/fmicb.2023.1198124",
+      "paper_title": "Linking microbial contamination to food spoilage and food waste: the role of smart packaging, spoilage risk assessments, and date labeling",
+      "subquestion_id": 4,
+      "relevance_score": 4,
+      "reason": "The abstract discusses the role of smart packaging and spoilage assessments in mitigating food waste across the supply chain and at the consumer level.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.2478/v10222-012-0091-3",
+      "paper_title": "Active and Intelligent Packaging Food - Research and Development – A Review",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract is limited to keywords mentioning active packaging but lacks detail on food waste or retail supply chains.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/app11083532",
+      "paper_title": "Intelligent Packaging for Real-Time Monitoring of Food-Quality: Current and Future Developments",
+      "subquestion_id": 4,
+      "relevance_score": 5,
+      "reason": "The abstract discusses how intelligent packaging continuously monitors food quality along the chain to assess and reduce food waste.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/su11010264",
+      "paper_title": "Packaging-Related Food Losses and Waste: An Overview of Drivers and Issues",
+      "subquestion_id": 4,
+      "relevance_score": 4,
+      "reason": "The abstract examines how optimized packaging and appropriate sizing can reduce food losses and waste in supply chains and at the household level.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/foods10092088",
+      "paper_title": "Seaweed Polysaccharide in Food Contact Materials (Active Packaging, Intelligent Packaging, Edible Films, and Coatings)",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract reviews seaweed polysaccharides in active and intelligent packaging and edible films, but does not explicitly focus on food waste reduction or retail supply chains.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/pr13020539",
+      "paper_title": "Recent Advances in the Fabrication of Intelligent Packaging for Food Preservation: A Review",
+      "subquestion_id": 4,
+      "relevance_score": 4,
+      "reason": "The abstract highlights the role of intelligent packaging technologies and active components in extending shelf life and preserving food to ensure product integrity.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1016/j.energy.2017.11.128",
+      "paper_title": "Municipal solid waste management and waste-to-energy in the context of a circular economy and energy recycling in Europe",
+      "subquestion_id": 4,
+      "relevance_score": 1,
+      "reason": "The abstract focuses on municipal solid waste management and waste-to-energy systems in Europe rather than food waste in retail supply chains.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.tifs.2017.05.003",
+      "paper_title": "Packaging, blessing in disguise. Review on its diverse contribution to food sustainability",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The rating is based on the title alone as there is no abstract available, and it broadly mentions packaging's contribution to food sustainability.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/su12062192",
+      "paper_title": "Consumer Considerations for the Implementation of Sustainable Packaging: A Review",
+      "subquestion_id": 4,
+      "relevance_score": 2,
+      "reason": "The abstract discusses consumer considerations and barriers to implementing sustainable packaging materials rather than minimizing food waste.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/molecules26134031",
+      "paper_title": "Valorization and Application of Fruit and Vegetable Wastes and By-Products for Food Packaging Materials",
+      "subquestion_id": 4,
+      "relevance_score": 4,
+      "reason": "The abstract discusses how edible and innovative food packaging made from by-products can be a suitable alternative to reduce food waste and preserve food.",
+      "selected": true
+    }
+  ],
+  "summaries": [
+    "[1] Cutting Food Waste through Cooperation along the Food Supply Chain (2015) - This study analyzes 44 qualitative expert interviews examining the German food chain to identify the causes and effects of food waste and find methods to reduce it. The results indicate that food waste occurs at all stages, reasons differ between product groups, and communication and shared responsibility among all stakeholders are necessary. Regarding the sub-question, the paper highlights that causes of food waste are found across the value chain, emphasizing the need for stakeholders to share information and work together rather than focusing specifically on supermarket inventory practices.",
+    "[2] Reducing Food Waste at Retail Stores—An Explorative Study (2022) - This explorative study investigates options for how grocery retailers can proactively reduce food waste via better planning of store operations, addressing the trade-off between high product availability and the impacts of overstock. Based on seven case companies focusing on ultra-fres[h products], it examines how retailers manage overstock reactively and explores proactive operational planning. This bears on the sub-question by addressing store operations and overstock management, which are key components of supermarket inventory management practices.",
+    "[3] Quantifying the potential to improve on food waste, freshness and sales for perishables in supermarkets (2017) - This paper introduces two concepts, the Fresh Case Cover and the Efficient Frontier, to improve the performance of fresh departments in supermarkets by reducing waste, increasing freshness, and/or increasing sales, applying them to empirical data from 3 retailers across 27 stores. A regression analysis shows that the Fresh Case Cover, defined as the case pack size divided by the average demand during store shelf life, explains 42% of the variation in waste. This directly addresses the sub-question by demonstrating how specific inventory parameters, such as case pack size and demand ratios, heavily impact food waste reduction in supermarkets.",
+    "[4] Discounting and dynamic shelf life to reduce fresh food waste at retailers (2017) - This study develops a simulation-based optimization model to evaluate the impact of discounting old products and applying dynamically adjustable expiration dates (dynamic shelf life, or DSL) on fresh food waste for retailers selling meat products. It reports that food waste caused by factors like overstocking and inaccurate forecasting can be reduced by discounting or DSL, with DSL outperforming fixed shelf life, and combining both strategies allowing for further reduction. This bears on the sub-question by showing how replenishment and discounting policies—core inventory management practices—directly reduce food waste in retail settings.",
+    "[5] A digitally enabled circular economy for mitigating food waste: Understanding innovative marketing strategies in the context of an emerging economy (2021) - This article analyzes how supermarkets can reduce food waste by implementing marketing strategies underpinned by digital technologies like Big Data predictive analytics, using a multiple case study of six supermarket chains in Brazil and six farming distributors. The findings show that actions begin with understanding deterioration stages, leading to actions including the management of prices, sales, operations, and purchases supported by technologies like sensors for dynamic pricing, storage, and item display. This relates to the sub-question by demonstrating how operational, purchasing, and storage management—facets of supermarket inventory and store practices—help mitigate food waste when enhanced by digital tools.",
+    "[6] Effects of dynamic pricing of perishable products on revenue and waste (2016) - No abstract available; the title suggests: Effects of dynamic pricing of perishable products on revenue and waste",
+    "[7] Balancing profitability and waste reduction: optimizing markdown policies for retail inventory (2026) - This paper develops a simulation model to determine optimal markdown policies for retail inventory by incorporating actual customer behavior, demand interactions, and freshness levels. The authors show that the efficiency of markdown policies mainly depends on the customer probability of a Last-Expired-First-Out withdrawal, and that discounts are particularly worthwhile for products where customers prefer fresh items. This bears on the sub-question by demonstrating how expiration-based pricing and markdown strategies stimulate demand for excess and close-to-expire inventory to reduce retail food waste.",
+    "[8] IoT-Enabled Quality-Triggered Markdown Pricing for Perishable Food: Equity and Waste Implications (2026) - This study examines the extent to which Internet of Things (IoT) real-time quality monitoring enables quality-triggered markdowns that reduce waste while improving food equity, by developing an analytical pricing and markdown model for perishables. The authors show that continuous quality visibility makes earlier markdown initiation and deeper markdowns optimal, and numerical experiments demonstrate waste reduction and increased sell-through. This bears on the sub-question by showing how enhanced markdown strategies and timing impact surplus food generation and waste in retail.",
+    "[9] Making ugly food beautiful: Consumer barriers to purchase and marketing options for Suboptimal Food at retail level – A systematic review (2021) - This paper conducts a systematic literature review of forty consumer studies to identify barriers preventing consumers from buying suboptimal food—products that have abnormal appearance or are nearing or past their expiration date—and how retailers can address them. The review confirms a variety of attitude-related quality concerns that lead to an expectation of price discounts. This bears on the sub-question by highlighting consumer expectations regarding price reductions and discounts in relation to near-expiration suboptimal foods.",
+    "[10] Consumer-Related Food Waste: Causes and Potential for Action (2015) - This paper presents a literature review and expert interviews to explore factors causing consumer-related food waste in households and supply chains. It reports that consumers' motivation, management skills, and priority trade-offs extensively influence food waste behaviors, and highlights that synergistic actions between governments, stakeholders, and retailers are most promising. Regarding the sub-question, the abstract does not specifically address supply chain collaboration or supplier agreements in mitigating retail food waste.",
+    "[11] Food loss and waste in food supply chains. A systematic literature review and framework development approach (2021) - This study uses a systematic literature review of 152 articles to examine food loss and waste in food supply chains and identify key research themes and gaps. It reports eight key themes ranging from waste generation factors to digitalisation and food surplus redistribution, indicating that major factors responsible for food loss and waste include buyer-supplier agreements and supply chain interruptions. Regarding the sub-question, the paper identifies buyer-supplier agreements as a major factor responsible for food loss and waste generation in supply chains.",
+    "[12] Sustainability in multi‐tier supply chains: Understanding the double agency role of the first‐tier supplier (2015) - This paper employs agency and institutional theory arguments across three case studies to explore the conditions under which first-tier suppliers act as agents fulfilling and implementing sustainability requirements in multi-tier supply chains. It reports that lead firms must incentivize each agency role separately and reduce information asymmetries at the second-tier level, influenced by various contingency factors. Regarding the sub-question, the abstract focuses on general sustainability compliance rather than supply chain collaboration or agreements specifically mitigating retail food waste.",
+    "[13] Circularity Brokers: Digital Platform Organizations and Waste Recovery in Food Supply Chains (2019) - This study uses an interpretive inductive theory-building approach to investigate digital platform organizations acting as 'circularity brokers' to bridge 'circularity holes' in food supply chains. It reports that waste recovery depends on creating connections along the supply chain so actors with goods at risk of becoming waste can transfer them to receivers. Regarding the sub-question, it highlights that waste recovery is enabled by connecting actors along the supply chain to transfer at-risk goods, though it does not explicitly focus on supplier agreements.",
+    "[14] The role of Supplier Relationship Management in reducing Greenhouse Gas emissions from food supply chains: supplier engagement in the UK supermarket sector (2015) - No abstract available; the title suggests: The role of Supplier Relationship Management in reducing Greenhouse Gas emissions from food supply chains: supplier engagement in the UK supermarket sector",
+    "[15] Supply chain management for circular economy: conceptual framework and research agenda (2020) - This conceptual article adopts a theory extension approach to discuss how supply chain processes can support the successful implementation of circular economy initiatives. It highlights areas of convergence and explores the intersection of circular economy principles with core supply chain management processes such as supplier relationship management. Regarding the sub-question, the abstract discusses core supply chain processes and circular economy principles in a conceptual manner without specifically detailing how supplier agreements mitigate retail food waste.",
+    "[16] Challenges of Food Waste Governance: An Assessment of European Legislation on Food Waste and Recommendations for Improvement by Economic Instruments (2020) - This article analyzes current European legislation on food waste and its reduction to evaluate how food waste is integrated into European policies and whether the legislation is sufficient. It reports that food is wasted throughout the entire supply chain, impacting natural resources and food security, and that food waste is subject to various legal acts and the EU Farm to Fork Strategy. Regarding the sub-question, the abstract does not mention supply chain collaboration or supplier agreements.",
+    "[17] Active Packaging Applications for Food (2017) - This paper reviews new packaging technologies, specifically active packaging (AP), which is designed to release or absorb substances to extend shelf-life or maintain food condition. It reports that while AP systems have many potential benefits, many have not yet been successfully implemented in commercial systems. Regarding the sub-question, AP technologies are intended to extend the shelf-life of packaged foods, though broad communication of their benefits is needed to facilitate market introduction.",
+    "[18] Applications of nanotechnology in food packaging and food safety: Barrier materials, antimicrobials and sensors (2011) - No abstract available; the title suggests: Applications of nanotechnology in food packaging and food safety: Barrier materials, antimicrobials and sensors",
+    "[19] Chitosan for food packaging: Recent advances in active and intelligent films (2021) - This paper reviews recent studies on active and/or intelligent chitosan-based films for food packaging, evaluating how active compounds affect their mechanical, barrier, and functional properties. It reports that active packaging maintains or improves food condition or extends shelf-life, while intelligent packaging monitors the condition of the food or its surrounding environment. Regarding the sub-question, these chitosan-based active and intelligent films utilize properties like antimicrobial and antioxidant activities to maintain or improve packaged food and extend shelf-life.",
+    "[20] Innovations in the food packaging market: active packaging (2017) - This article discusses the role and application of active packaging as a new generation of packaging that helps maintain and improve the quality of packaged products. It reports that active packaging solutions include oxygen and moisture scavengers, ethylene regulators, and antimicrobial packaging, with the most important advantage being the reduction in loss of food products due to extended shelf life. Regarding the sub-question, active packaging directly contributes to minimizing food waste by extending the shelf life of food products and reducing food losses.",
+    "[21] Intelligent Packaging in the Food Sector: A Brief Overview (2019) - This review provides an overview of intelligent packaging technologies in the food sector, grouping them into data carriers, indicators, and sensors. It reports that these systems can permanently monitor the quality status of a product and share the information with the customer. Regarding the sub-question, the paper highlights that by monitoring product quality and sharing this information, intelligent packaging can reduce food waste and optimize customer satisfaction.",
+    "[22] Novel food packaging technologies: Innovations and future prospective (2016) - This paper reviews novel food packaging technologies—such as active, intelligent, and bioactive packaging—that arose to meet consumer desires for extended shelf life and maintained quality. It reports that these techniques act by prolonging shelf life, enhancing or maintaining quality, providing indication, and regulating freshness through mechanisms like retardation in oxidation, prevention of microbial attack, and use of various scavengers, emitters, and sensors. Regarding the sub-question, these packaging innovations play a role by interacting with food or its surroundings to prolong shelf life and regulate freshness.",
+    "[23] The Next Generation of Sustainable Food Packaging to Preserve Our Environment in a Circular Economy Context (2018) - This paper reviews major challenges and solutions for sustainable food packaging in a circular bio-economy context, aiming to minimize the environmental footprint of packed food. It reports that innovative sustainable packaging targets food waste and loss reduction by preserving food quality and safety while addressing persistent plastic waste accumulation. Regarding the sub-question, innovative sustainable packaging contributes to minimizing food waste and loss by preserving food quality and safety.",
+    "[24] Progresses in Food Packaging, Food Quality, and Safety—Controlled-Release Antioxidant and/or Antimicrobial Packaging (2021) - This review discusses the most important types of active packaging, emphasizing controlled/target release antimicrobial and/or antioxidant packaging, along with fast advancements in intelligent or smart packaging (IOSP) like time-temperature indicators and gas indicators. It reports on system design, polymer matrix modification, performance testing methods, and release mechanisms for active compounds. Regarding the sub-question, these technologies play a role in food quality, safety, and shelf-life extension.",
+    "[25] Linking microbial contamination to food spoilage and food waste: the role of smart packaging, spoilage risk assessments, and date labeling (2023) - This paper discusses how microbial contamination leads to food spoilage and waste across various stages of the food supply chain, including packaging-related issues. It examines factors influencing spoilage such as intrinsic food properties, microbial load, and external factors like temperature abuse. Regarding the sub-question, the title and abstract establish a link between packaging issues and microbial food spoilage/waste, pointing to the role of smart packaging and other assessments in addressing these challenges.",
+    "[26] Active and Intelligent Packaging Food - Research and Development – A Review (2014) - No abstract available; the title suggests: Active and Intelligent Packaging Food - Research and Development – A Review",
+    "[27] Intelligent Packaging for Real-Time Monitoring of Food-Quality: Current and Future Developments (2021) - This review discusses intelligent food packaging systems that incorporate responsive materials to continuously monitor food quality and preservation state across the supply chain. It reports that while various sensing systems have been proposed to help assess and reduce food waste, commercial applications remain challenging. This bears on the sub-question by highlighting how real-time monitoring technologies can theoretically help minimize food waste, though practical deployment is still developing.",
+    "[28] Packaging-Related Food Losses and Waste: An Overview of Drivers and Issues (2019) - This review examines drivers, issues, and implications of packaging-related food losses and waste, noting that optimized packaging can protect food and prolong its shelf life. It reports that in developed countries, food tends to be wasted at the household level, where inappropriate packaging sizes and packaging difficult to empty can act as drivers of waste. This bears on the sub-question by demonstrating how consumer-facing packaging design features directly influence food waste outcomes at the retail-consumer interface.",
+    "[29] Seaweed Polysaccharide in Food Contact Materials (Active Packaging, Intelligent Packaging, Edible Films, and Coatings) (2021) - This review summarizes current research on seaweed polysaccharides utilized in active packaging, intelligent packaging, edible films, and coatings. It highlights the physical, thermal, and antioxidant properties of these materials, as well as modifications using biopolymers and nanoparticles to improve their features. This bears on the sub-question by showcasing material innovations in packaging technologies that can be applied to food contact materials.",
+    "[30] Recent Advances in the Fabrication of Intelligent Packaging for Food Preservation: A Review (2025) - This review explores recent advancements in the fabrication of intelligent packaging systems, such as sensors, indicators, and RFID technologies, for food preservation. It reports that these technologies offer real-time monitoring of food quality and safety by detecting environmental and microbial changes, and underscores the role of components like oxygen scavengers and freshness indicators in extending shelf life. This bears on the sub-question by illustrating how intelligent packaging technologies contribute to food preservation and product integrity.",
+    "[31] Packaging, blessing in disguise. Review on its diverse contribution to food sustainability (2017) - No abstract available; the title suggests: Packaging, blessing in disguise. Review on its diverse contribution to food sustainability",
+    "[32] Valorization and Application of Fruit and Vegetable Wastes and By-Products for Food Packaging Materials (2021) - This review demonstrates the production and assessment of edible food packaging from food waste, fruit, and vegetable by-products as environmentally friendly alternatives to non-degradable plastics. It covers innovative packaging solutions including biopolymers, biocomposites, active packaging, intelligent packaging, edible films, and coatings. This bears on the sub-question by identifying specific packaging technologies and edible innovations that may help reduce food waste."
+  ],
+  "themes": [
+    "Inventory management practices such as optimizing store operations, managing overstock trade-offs, adjusting case pack size relative to demand, and implementing replenishment and discounting policies significantly reduce retail food waste. [2, 3, 4, 5]",
+    "Dynamic pricing, markdown strategies, and expiration-based pricing help stimulate demand for excess or close-to-expiration products, thereby mitigating surplus food generation and waste. [4, 7, 8, 9]",
+    "Active and intelligent packaging technologies, including antimicrobial films, oxygen scavengers, and real-time freshness sensors, help extend product shelf life, monitor quality, and minimize food waste. [17, 19, 20, 21, 22, 23, 24, 27, 29, 30, 32]",
+    "Consumer-facing packaging design elements, such as appropriate package sizing and ease of emptying, directly influence food waste outcomes at the retail-consumer interface. [28]"
+  ],
+  "gaps": [
+    "Sub-question 3 regarding how supply chain collaboration and supplier agreements mitigate retail food waste is largely unaddressed by direct empirical studies in the notes, with most papers focusing instead on general supply chain issues, multi-tier sustainability compliance, buyer-supplier friction as a waste generator, or broad conceptual frameworks rather than actionable collaborative mitigation mechanisms.",
+    "The notes lack sufficient empirical evidence regarding direct retail interventions involving formal supplier agreements dedicated specifically to waste reduction.",
+    "There is limited direct evidence concerning the integration of consumer-facing retail innovations other than packaging (such as in-store digital display systems or specific consumer education setups) in minimizing food waste."
+  ],
+  "limitations": [
+    "The run was given the constraint 'empirical studies only, not reviews'. It was written into the planning and query-rewriting prompts; it was not applied as a filter to the papers found.",
+    "Queries were reformulated once after a threshold miss for sub-question(s) 2, 3; no further automatic retries were made.",
+    "Sub-question(s) 2 (4 papers) ended with fewer than 5 approved papers; conclusions there rest on thin evidence.",
+    "Relevance was judged from title and abstract only; 72 of 104 retrieved papers were excluded (score below 3/5 or removed at review 2). Reasons are listed above.",
+    "Summaries, themes and gaps were generated by gemini-3.5-flash-lite from abstracts only and should be checked against the full texts before being relied on.",
+    "Sources searched for every sub-question (20 results per query per source): openalex: 6 of 6 searches answered, 120 records; semanticscholar: 0 of 6 searches answered, 0 records. No full-text access; no citation-chasing or date filtering.",
+    "Automatic failover was used: semanticscholar failed for 6 search(es) and those searches relied on the remaining source(s). Coverage for the affected sub-questions may be narrower."
+  ]
+}

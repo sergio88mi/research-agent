@@ -13,7 +13,8 @@ and reason under each kept paper and lists the dropped ones with their reasons.
 with the query, not papers that answer the question. Deciding whether an
 abstract addresses a question is a reading judgement with no exact answer -
 the proposal's criterion for using the model. Applying the cut-off is exact,
-so that stays deterministic in the orchestrator.
+so that is a plain comparison in code (in the agent's module): the model gives
+the score, never the decision to keep a paper.
 
 **Why the model only sees title + abstract:** the score has to be grounded in
 the record we hold, not in what the model remembers about a paper. The prompt

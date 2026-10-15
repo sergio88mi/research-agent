@@ -6,7 +6,7 @@ records, caches responses to disk) and `agents/retrieval_agent.py` (the
 Retrieval Agent: given a SubQuestion, runs the search and logs how many usable
 records came back). `main.py` now runs one hard-coded query and prints results.
 
-**Why OpenAlex:** no API key needed, good abstract coverage, and the proposal's
+**Why OpenAlex:** no API key needed (at the time; see remediation #10), good abstract coverage, and the proposal's
 named fallback. Because results are normalised into our own `Paper` model,
 swapping to Semantic Scholar later would change one function only.
 

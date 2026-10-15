@@ -2,12 +2,15 @@
 Data classes passed between the agents.
 
 These four classes are the ones drawn in Diagram 1 (SubQuestion, Paper,
-Assessment, Brief) plus the Decision enum from the researcher boundary.
+Assessment, Brief) plus the Decision enum from the researcher boundary. They
+are the typed messages of the design: the records one agent produces reach
+the next as these objects, and always by way of the orchestrator.
 
 Why Pydantic rather than plain dataclasses: the LLM returns JSON, and Pydantic
 gives us validation for free - a malformed model response fails loudly at the
 boundary instead of propagating a half-formed object through the pipeline.
-That is the "schema validation with repair retry" mitigation from the proposal.
+The proposal names Pydantic for exactly this ("validates LLM output", section
+3); the single repair retry around it was added in the build (llm_client.py).
 """
 from __future__ import annotations
 
@@ -26,15 +29,21 @@ class Decision(str, Enum):
 
 
 class SubQuestion(BaseModel):
+    """One part of the research question, with the query used to search for it."""
     id: int
     text: str
     search_query: str
     approved: bool = False
-    retried_once: bool = False           # enforces the one-reformulation cap
+    retried_once: bool = False           # set when the query has been reformulated (the cap itself is counted by the orchestrator)
     previous_query: Optional[str] = None  # kept when reformulated, so the brief can show both
 
 
 class Paper(BaseModel):
+    """One retrieved record, normalised so that every source looks the same to the agents.
+
+    A paper is identified by its DOI, or by its title when it has none; that
+    key is what joins a paper to its assessment and removes duplicates.
+    """
     doi: Optional[str] = None
     title: str
     authors: List[str] = Field(default_factory=list)
@@ -46,6 +55,7 @@ class Paper(BaseModel):
 
 
 class Assessment(BaseModel):
+    """The relevance judgement for one paper: score, the reason given, and whether it was kept."""
     paper_doi: Optional[str]
     paper_title: str
     subquestion_id: int
@@ -55,6 +65,7 @@ class Assessment(BaseModel):
 
 
 class Brief(BaseModel):
+    """Everything the run produced, in the form that is saved as Markdown and JSON."""
     research_question: str
     interpretation: str = ""
     subquestions: List[SubQuestion] = Field(default_factory=list)

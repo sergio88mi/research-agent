@@ -26,6 +26,27 @@ def test_titles_match_ignores_case_and_punctuation():
     assert not validation.titles_match("Completely different title", "a survey on llm based agents")
 
 
+def test_titles_in_other_scripts_are_compared_not_emptied():
+    # Why: remediation #14. With letters outside a-z stripped, two different Chinese titles both
+    # became "" and "matched", so a wrong DOI would have been reported as verified.
+    assert not validation.titles_match("大型语言模型智能体综述", "图像描述评价指标研究")
+    assert validation.titles_match("大型语言模型智能体综述", "大型语言模型智能体综述")
+    assert validation.titles_match("Обзор агентов на основе LLM", "обзор агентов на основе llm!")
+
+
+def test_a_missing_title_never_matches():
+    assert not validation.titles_match("", "")
+    assert not validation.titles_match(None, "a survey on llm based agents")
+    assert not validation.titles_match("!!!", "???")
+
+
+def test_flagged_when_a_non_latin_title_differs_from_the_registry(monkeypatch):
+    p = _paper("10.1/zh", "大型语言模型智能体综述")
+    with patch("agents.crossref_client.lookup", return_value={"title": ["图像描述评价指标研究"]}):
+        validation.validate_dois_and_metadata([p])
+    assert p.doi_verified is False
+
+
 def test_verified_when_crossref_title_matches():
     record = json.load(open(FIX, encoding="utf-8"))
     with patch("agents.crossref_client.lookup", return_value=record):

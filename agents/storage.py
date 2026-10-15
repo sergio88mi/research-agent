@@ -4,9 +4,9 @@ Persist the brief as Markdown (for people) and JSON (for machines).
 Why both: Markdown is what a researcher reads a week later; JSON is what the
 tests compare and what any later tool can ingest. Recording what the search
 could NOT cover (limitations) is what makes the output traceable rather than
-merely plausible (proposal, section 5 of the blueprint).
+merely plausible - the proposal's brief carries "the search's stated
+limitations" for that reason (proposal, section 1).
 """
-import json
 import os
 import re
 from datetime import datetime
@@ -17,6 +17,7 @@ from agents.models import Brief, Paper
 
 
 def _slug(text: str, n: int = 40) -> str:
+    """The research question as a short file-name-safe string."""
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")[:n]
 
 
@@ -25,7 +26,8 @@ def _reference(p: Paper) -> str:
 
     Deliberately deterministic: the reference list is the one part of a
     research brief that must never be model-generated (fabricated citations
-    are the failure this whole system exists to avoid).
+    are the failure this whole system exists to avoid - Walters and Wilder,
+    2023).
     """
     if not p.authors:
         who = "Unknown author(s)"
@@ -39,6 +41,12 @@ def _reference(p: Paper) -> str:
 
 
 def save_brief(brief: Brief) -> Tuple[str, str]:
+    """Write the brief as JSON and as Markdown; return (markdown path, json path).
+
+    The Markdown is assembled here from the Brief's fields in a fixed order;
+    the model's words appear only where they are labelled as its own (reasons,
+    notes, themes, gaps).
+    """
     os.makedirs(config.OUTPUT_DIR, exist_ok=True)
     stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
     base = os.path.join(config.OUTPUT_DIR, f"brief-{stamp}-{_slug(brief.research_question)}")
@@ -47,7 +55,7 @@ def save_brief(brief: Brief) -> Tuple[str, str]:
     with open(json_path, "w", encoding="utf-8") as fh:
         fh.write(brief.model_dump_json(indent=2))
 
-    lines = [f"# Research brief", "", f"**Question:** {brief.research_question}", ""]
+    lines = ["# Research brief", "", f"**Question:** {brief.research_question}", ""]
     if brief.interpretation:
         lines += [f"**Interpretation:** {brief.interpretation}", ""]
     if brief.subquestions:
@@ -68,7 +76,7 @@ def save_brief(brief: Brief) -> Tuple[str, str]:
         flag = {True: "verified", False: "UNVERIFIED", None: "unchecked"}[p.doi_verified]
         authors = ", ".join(p.authors[:3]) + (" et al." if len(p.authors) > 3 else "")
         doi = f"https://doi.org/{p.doi}" if p.doi else "no DOI"
-        line = f"{k}. **{p.title}** ({p.year}) — {authors}. {doi} — DOI {flag}"
+        line = f"{k}. **{p.title}** ({p.year or 'n.d.'}) — {authors}. {doi} — DOI {flag}"
         a = by_key.get((p.doi or p.title).strip().lower())
         if a:
             line += f"  \n   *sub-question {a.subquestion_id}, relevance {a.relevance_score}/5:* {a.reason}"

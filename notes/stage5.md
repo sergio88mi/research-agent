@@ -4,7 +4,8 @@
 the second human review point.
 
 1. **Threshold check** (`RetrievalAgent.assess_threshold`): after a search the
-   Retrieval Agent counts records that have an abstract. Fewer than
+   Retrieval Agent counts records that have an abstract (since remediation
+   #15, each paper once however many sources returned it). Fewer than
    `RETRIEVAL_THRESHOLD` (5) means its goal was not met, and it asks for a
    better query. This is the agent's own judgement of success - a count, no
    LLM - which is what makes it an agent rather than a function.
@@ -17,8 +18,10 @@ the second human review point.
 3. **One reformulation per sub-question** (`PlanningAgent.reformulate_query`):
    the Planning Agent writes one improved query; the old one is kept in
    `SubQuestion.previous_query` and `retried_once` is set. The orchestrator
-   checks that flag before either trigger, so a sub-question can never be
-   reformulated twice, whichever trigger fired first.
+   checks before either trigger whether the one reformulation has been used
+   (at this stage by that flag; since remediation #16 by a count against
+   `MAX_REFORMULATIONS`), so a sub-question can never be reformulated twice,
+   whichever trigger fired first.
 4. **Human Review 2** (`ResearcherInterface.review_evidence`): the researcher
    sees every selected paper, numbered, with its score and one-line reason,
    grouped by sub-question, and can `approve`, `drop 3, 7` (refine - remove
@@ -44,7 +47,8 @@ fired exactly where Stage 4 predicted - sub-question 4, 1 relevant of 12 -
 and the Planning Agent rewrote the query from
 `benchmarking detecting hallucination evaluation metrics autonomous language model agents`
 to `hallucination benchmark evaluation long horizon autonomous agent trajectory detection`;
-OpenAlex returned 20 new records (9 DOIs verified). Scoring them then hit
+OpenAlex returned 20 records, 13 of them new (9 DOIs verified, 4 flagged).
+Scoring them then hit
 HTTP 429. Three lessons went into `llm_client.py`: the retry budget was
 raised to 5 (2/4/8/16/32 s) after four 503s in a row; Google's error message
 and quota id are now logged (the message text alone does not say which

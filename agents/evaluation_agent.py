@@ -8,16 +8,22 @@ check. Keyword search returns papers that share words with the query, not
 papers that answer it, so scoring is the step that turns "results" into
 "evidence"; synthesis is the step that turns evidence into an answer.
 
-Why synthesis is grounded paper-by-paper first: a summary written from one
-abstract can be checked against that abstract. Themes and gaps are then
-written from those summaries only, and every theme must cite paper numbers
-that exist - the schema rejects a theme that points at a paper not in the set.
-That is the "traceable rather than plausible" requirement from the proposal.
+Why synthesis is grounded paper-by-paper first: abstractive summaries are
+often unfaithful to their source (Maynez et al., 2020), and a summary written
+from one abstract can at least be checked against that abstract. Themes and
+gaps are then written from those summaries only, and every theme must cite
+paper numbers that exist - the schema rejects a theme that points at a paper
+not in the set. Grounding generation in retrieved text is what Klesel and
+Wittmann (2025) report as reducing hallucination and giving source references;
+it is what the proposal calls content grounding - "summarising only approved
+abstracts and linking summaries to sources" (section 5).
 
 Why the LLM does this and not a formula: judging whether an abstract addresses
 a question is a reading task with no exact answer, which is the proposal's
-criterion for using the model. Everything with an exact answer (de-duplication,
-DOI checks, applying the cut-off) stays deterministic in the orchestrator.
+criterion for using the model. Everything with an exact answer stays ordinary
+code: de-duplication and DOI checks in the orchestrator, and the cut-off as a
+plain comparison in this module - the model gives the score, never the
+decision to keep a paper.
 
 Why the model sees only title + abstract: scoring must be grounded in the
 record we hold, not in whatever the model remembers about a paper. The prompt
@@ -43,12 +49,14 @@ log = logging.getLogger("research_agent.evaluation")
 
 
 class _Score(BaseModel):
+    """One paper's score as the model returns it; `index` is its position in the prompt."""
     index: int
     relevance_score: int = Field(ge=1, le=5)
     reason: str = ""
 
 
 class ScoreResponse(BaseModel):
+    """JSON shape of a scoring reply."""
     scores: List[_Score]
 
 
@@ -70,24 +78,29 @@ def _exact_index_model(base: Type[BaseModel], field: str, n: int) -> Type[BaseMo
 
 
 def _response_model_for(n: int) -> Type[ScoreResponse]:
+    """The scoring schema for a batch of `n` papers: exactly one score for each."""
     return _exact_index_model(ScoreResponse, "scores", n)
 
 
 class _Summary(BaseModel):
+    """One evidence note as the model returns it."""
     index: int
     summary: str
 
 
 class SummaryResponse(BaseModel):
+    """JSON shape of a summarising reply."""
     summaries: List[_Summary]
 
 
 class _Theme(BaseModel):
+    """One theme and the numbers of the papers it rests on."""
     statement: str
     paper_numbers: List[int]
 
 
 class SynthesisResponse(BaseModel):
+    """JSON shape of the synthesis reply."""
     themes: List[_Theme]
     gaps: List[str]
 
@@ -183,7 +196,10 @@ def _key(paper: Paper) -> str:
 
 
 class EvaluationSynthesisAgent:
+    """Scores retrieved papers for relevance, then writes notes, themes and gaps from the approved ones."""
+
     def _format_papers(self, papers: Sequence[Paper]) -> str:
+        """Papers as the numbered title/year/abstract blocks used in every prompt."""
         blocks = []
         for i, p in enumerate(papers, start=1):
             abstract = (p.abstract or "").strip()
@@ -194,6 +210,7 @@ class EvaluationSynthesisAgent:
         return "\n\n".join(blocks)
 
     def _score_batch(self, question: str, sq: SubQuestion, papers: Sequence[Paper]) -> List[Assessment]:
+        """Score one batch in one model call and map the scores back onto the papers by index."""
         prompt = _SCORE_PROMPT.format(question=question, subquestion=sq.text,
                                       papers=self._format_papers(papers), n=len(papers))
         parsed = llm_client.generate_json(prompt, _response_model_for(len(papers)))

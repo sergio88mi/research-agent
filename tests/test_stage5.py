@@ -1,4 +1,7 @@
-"""Stage 5 tests: retrieval threshold, one-reformulation cap, review 2 (approve / refine / reject scope) - no network."""
+"""Stage 5 tests: retrieval threshold, one-reformulation cap, review 2 (approve / refine / reject scope) - no network.
+
+The tests from "the same paper from two sources" down were added after the
+pre-submission read-through (remediations #15 and #16)."""
 import json
 import os
 from unittest.mock import patch
@@ -6,6 +9,7 @@ from unittest.mock import patch
 import config
 from agents.models import Decision, Paper, SubQuestion
 from agents.orchestrator import Orchestrator
+from agents.planning_agent import ResearchPlan
 from agents.researcher_interface import ResearcherInterface
 from agents.retrieval_agent import RetrievalAgent
 
@@ -106,7 +110,7 @@ def test_review2_refine_removes_numbered_papers():
     assert len(removed) == 2 and not any(a.selected for a in removed)
 
 
-def test_review2_reject_scope_replans_once_then_option_disappears():
+def test_review2_reject_scope_replans_once_then_option_disappears(capsys):
     # Script: approve plan -> reject evidence (+feedback) -> approve revised plan -> approve evidence.
     ui = ResearcherInterface(scripted=["approve", "reject", "focus on healthcare", "approve", "approve"])
     plans = []
@@ -123,7 +127,10 @@ def test_review2_reject_scope_replans_once_then_option_disappears():
         brief = orch.run("q")
     assert orch.scope_revision_count == 1
     assert len(plans) == 2 and "focus on healthcare" in plans[1]      # feedback reached the planner
+    assert "The plan the researcher reviewed:\n1. " in plans[1]       # together with the plan it rejects
     assert any("revised the scope once" in l for l in brief.limitations)
+    out = capsys.readouterr().out
+    assert out.count("=== Review 2") == 2 and out.count("'reject' to revise the scope") == 1   # offered once only
 
 
 def test_review2_reject_refused_when_budget_used(capsys):
@@ -133,12 +140,13 @@ def test_review2_reject_refused_when_budget_used(capsys):
     assert "has been used" in capsys.readouterr().out
 
 
-def test_review2_numbering_matches_display_order():
+def test_review2_numbering_matches_display_order(capsys):
     # Why: 'drop 2' must remove the paper printed as "2." - the orchestrator relies on the same order.
-    ui = ResearcherInterface(scripted=["drop 2"])
     papers = [Paper(doi=f"10.1/p{i}", title=f"P{i}", subquestion_id=1) for i in range(3)]
-    decision, fb = ui.review_evidence([SQ], papers, [], can_reject_scope=True)
-    assert decision is Decision.REFINE and Orchestrator._parse_numbers(fb) == [2]
+    orch = Orchestrator(interface=ResearcherInterface(scripted=["drop 2", "approve"]))
+    decision, kept, _ = orch._review_evidence(ResearchPlan(interpretation="i", subquestions=[SQ]), papers, [])
+    assert " 2. [?] P1 (n.d.)" in capsys.readouterr().out
+    assert decision is Decision.APPROVE and [p.title for p in kept] == ["P0", "P2"]
 
 
 def test_review1_typo_is_reasked_not_sent_as_feedback(capsys):
@@ -149,3 +157,79 @@ def test_review1_typo_is_reasked_not_sent_as_feedback(capsys):
     ui = ResearcherInterface(scripted=["focus on healthcare applications only"])
     decision, fb = ui.review_subquestions("i", [])
     assert decision is Decision.REVISE and fb.startswith("focus on")
+
+
+def test_the_same_paper_from_two_sources_counts_once_towards_the_threshold():
+    # Why: with two sources a paper often comes back twice; five copies of one paper are not five papers.
+    agent = RetrievalAgent()
+    four = _papers(config.RETRIEVAL_THRESHOLD - 1, "x")
+    assert agent.usable_count(four + four) == 2 * len(four)          # what the log line reports
+    assert agent.assess_threshold(four + four) is False              # what the goal check uses
+    assert agent.assess_threshold(four + _papers(1, "y")) is True
+    assert f"returned {2 * len(four)} records but only {len(four)} different papers with an abstract" \
+        in agent.reformulation_reason(four + four)
+
+
+def test_no_reformulation_at_all_when_the_cap_is_zero(monkeypatch):
+    # Why: config.MAX_REFORMULATIONS has to be the number the orchestrator obeys, not just the one it prints.
+    monkeypatch.setattr(config, "MAX_REFORMULATIONS", 0)
+    reformulations = []
+    def fake(prompt, **kw):
+        if "refining one scholarly search query" in prompt:
+            reformulations.append(prompt)
+        return _llm(lambda p: 1)(prompt)
+    with patch("agents.llm_client.generate", side_effect=fake), \
+         patch("agents.search_client.search", side_effect=lambda q, per_page=None: _papers(2, q[:3])), \
+         patch("agents.crossref_client.lookup", return_value=None), \
+         patch("agents.orchestrator.save_brief", return_value=("m", "j")):
+        orch = Orchestrator(interface=ResearcherInterface(scripted=["approve", "approve"]))
+        brief = orch.run("q")
+    assert reformulations == [] and sum(orch.retry_counts.values()) == 0
+    assert not any(sq.previous_query for sq in brief.subquestions)
+
+
+def test_after_a_scope_revision_the_brief_counts_the_second_pass_only():
+    # Why: the limitations line says what each source answered. After a rejected first pass it used to
+    # report both passes together (6 searches, 36 records) beside an evidence set built from one.
+    ui = ResearcherInterface(scripted=["approve", "reject", "focus on healthcare", "approve", "approve"])
+    with patch("agents.llm_client.generate", side_effect=_llm(lambda p: 4)), \
+         patch("agents.search_client.search", side_effect=lambda q, per_page=None: _papers(6, q[:3])), \
+         patch("agents.crossref_client.lookup", return_value=None), \
+         patch("agents.orchestrator.save_brief", return_value=("m", "j")):
+        brief = Orchestrator(interface=ui).run("q")
+    joined = " ".join(brief.limitations)
+    assert "openalex: 3 of 3 searches answered, 18 records" in joined
+    assert "revised the scope once" in joined
+
+
+def test_a_new_plan_after_a_scope_revision_gets_its_own_reformulation_budget():
+    # Why: the revised plan's sub-questions are numbered 1..n again. A retry spent on the old
+    # sub-question 1 must not use up the budget of the new one.
+    ui = ResearcherInterface(scripted=["approve", "reject", "focus on healthcare", "approve", "approve"])
+    reformulations = []
+    def fake(prompt, **kw):
+        if "refining one scholarly search query" in prompt:
+            reformulations.append(prompt)
+        return _llm(lambda p: 1)(prompt)
+    with patch("agents.llm_client.generate", side_effect=fake), \
+         patch("agents.search_client.search", side_effect=lambda q, per_page=None: _papers(20, q[:3])), \
+         patch("agents.crossref_client.lookup", return_value=None), \
+         patch("agents.orchestrator.save_brief", return_value=("m", "j")):
+        orch = Orchestrator(interface=ui)
+        orch.run("q")
+    assert len(reformulations) == 6                         # three sub-questions, once each, in both passes
+    assert sum(orch.retry_counts.values()) == 6
+
+
+def test_reject_without_saying_what_to_change_does_not_spend_the_scope_revision(capsys):
+    ui = ResearcherInterface(scripted=["reject", "   ", "approve"])
+    decision, feedback = ui.review_evidence([SQ], [], [], can_reject_scope=True)
+    assert decision is Decision.APPROVE and feedback == ""
+    assert "Nothing to change was given" in capsys.readouterr().out
+
+
+def test_review2_shows_an_undated_paper_as_undated(capsys):
+    ui = ResearcherInterface(scripted=["approve"])
+    ui.review_evidence([SQ], [Paper(doi="10.1/u", title="Undated", year=None, subquestion_id=1)], [], True)
+    out = capsys.readouterr().out
+    assert "Undated (n.d.)" in out and "(None)" not in out

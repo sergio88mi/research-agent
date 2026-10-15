@@ -14,8 +14,6 @@ class _Resp:
         self.status_code, self.text, self.headers = status, body, headers or {}
     def json(self):
         return json.loads(self.text)
-    def raise_for_status(self):
-        raise requests.HTTPError(f"{self.status_code}")
 
 
 def test_429_then_200_is_retried_with_backoff(monkeypatch):
@@ -56,3 +54,39 @@ def test_crossref_404_is_still_a_miss_not_a_retry():
          patch("agents.http.requests.get", return_value=_Resp(404)) as get, patch("agents.http.time.sleep") as sleep:
         assert crossref_client.lookup("10.1/none") is None
     assert get.call_count == 1 and not sleep.called and put.called
+
+
+def test_crossref_record_is_fetched_once_then_served_from_the_cache():
+    # Why: a DOI is looked up on every run that finds the paper; only the first lookup may cost a request.
+    with patch("agents.http.requests.get", return_value=_Resp(200, json.dumps({"message": {"title": ["A title"]}}))) as get:
+        first = crossref_client.lookup("10.1/cached")
+        second = crossref_client.lookup("10.1/cached")
+    assert get.call_count == 1 and first == second == {"title": ["A title"]}
+
+
+def test_crossref_miss_is_remembered_as_a_miss():
+    with patch("agents.http.requests.get", return_value=_Resp(404)) as get:
+        assert crossref_client.lookup("10.1/unregistered") is None
+        assert crossref_client.lookup("10.1/unregistered") is None
+    assert get.call_count == 1
+
+
+def test_an_error_message_never_carries_the_query_string():
+    # Why: the OpenAlex key and the contact email travel in the query string, and the message is
+    # written to output/run.log, which is kept in the repository (remediation #19).
+    secret = {"api_key": "SECRET-KEY", "mailto": "someone@example.org", "search": "agents"}
+    with patch("agents.http.requests.get", return_value=_Resp(403)):
+        with pytest.raises(requests.HTTPError) as caught:
+            http.get_with_retry("https://api.openalex.org/works", params=secret, name="openalex")
+    text = str(caught.value)
+    assert text == "openalex returned HTTP 403 for https://api.openalex.org/works"
+    assert "SECRET-KEY" not in text and "someone@example.org" not in text
+
+
+def test_a_doi_with_url_characters_stays_in_the_path():
+    # Why: '#' or '?' inside a DOI would otherwise cut the address short and the wrong record would be looked up.
+    doi = "10.1002/(SICI)1097-4571(199806)49:8<693::AID-ASI4>3.0.CO;2-N#x?y"
+    with patch("agents.http.requests.get", return_value=_Resp(404)) as get:
+        crossref_client.lookup(doi)
+    url = get.call_args.args[0]
+    assert url == config.CROSSREF_ENDPOINT + "/10.1002/(SICI)1097-4571(199806)49:8%3C693::AID-ASI4%3E3.0.CO;2-N%23x%3Fy"

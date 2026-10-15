@@ -1,0 +1,330 @@
+2026-10-02 09:02:37,544 | INFO | research_agent.orchestrator | run | question='How effective is telemedicine for managing type 2 diabetes in adults?'
+2026-10-02 09:02:37,545 | INFO | research_agent.planning | planning | question='How effective is telemedicine for managing type 2 diabetes in adults?' | feedback=''
+2026-10-02 09:02:41,428 | INFO | research_agent.llm | llm | prompt_chars=612 | response_chars=1310
+2026-10-02 09:02:41,431 | INFO | research_agent.planning | planned | 1 | What is the impact of telemedicine interventions on glycemic control measured by HbA1c levels in adults with type 2 diabetes? | query='telemedicine telehealth type 2 diabetes adults glycemic control HbA1c outcomes'
+2026-10-02 09:02:41,432 | INFO | research_agent.planning | planned | 2 | How do remote patient monitoring and digital consultations affect medication adherence and self-management behaviors in this population? | query='remote patient monitoring type 2 diabetes medication adherence self management adults'
+2026-10-02 09:02:41,432 | INFO | research_agent.planning | planned | 3 | What are the patient and provider barriers, facilitators, and overall acceptance regarding the use of telemedicine for diabetes care? | query='telehealth telemedicine type 2 diabetes patient acceptance barriers facilitators adults'
+2026-10-02 09:02:41,432 | INFO | research_agent.planning | planned | 4 | How cost-effective are telemedicine programs compared to traditional in-person clinical care for managing type 2 diabetes? | query='telemedicine telehealth cost effectiveness economic evaluation type 2 diabetes adults'
+
+=== Review 1: proposed research plan ===
+Interpretation: This research evaluates the clinical and practical efficacy of remote digital healthcare interventions in treating and monitoring adult patients diagnosed with type 2 diabetes mellitus.
+
+  1. What is the impact of telemedicine interventions on glycemic control measured by HbA1c levels in adults with type 2 diabetes?
+     query: telemedicine telehealth type 2 diabetes adults glycemic control HbA1c outcomes
+  2. How do remote patient monitoring and digital consultations affect medication adherence and self-management behaviors in this population?
+     query: remote patient monitoring type 2 diabetes medication adherence self management adults
+  3. What are the patient and provider barriers, facilitators, and overall acceptance regarding the use of telemedicine for diabetes care?
+     query: telehealth telemedicine type 2 diabetes patient acceptance barriers facilitators adults
+  4. How cost-effective are telemedicine programs compared to traditional in-person clinical care for managing type 2 diabetes?
+     query: telemedicine telehealth cost effectiveness economic evaluation type 2 diabetes adults
+
+Type 'approve' to search, or describe what to change (e.g. 'focus on healthcare, drop #3').
+> 2026-10-02 09:02:41,432 | INFO | research_agent.orchestrator | review1 | decision=approve | feedback=''
+2026-10-02 09:02:41,432 | INFO | research_agent.retrieval | retrieving | subquestion=1 | query='telemedicine telehealth type 2 diabetes adults glycemic control HbA1c outcomes' | sources=openalex,semanticscholar
+2026-10-02 09:02:42,443 | INFO | research_agent.retrieval | retrieved | subquestion=1 | source=openalex | records=20 | with_abstract=19
+2026-10-02 09:02:42,953 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 1/4 in 3s
+2026-10-02 09:02:46,485 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 2/4 in 6s
+2026-10-02 09:02:53,088 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 3/4 in 12s
+2026-10-02 09:03:05,631 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 4/4 in 24s
+2026-10-02 09:03:30,166 | WARNING | research_agent.retrieval | retrieval | subquestion=1 | source=semanticscholar failed (semanticscholar unavailable after 4 retries (last problem: HTTP 429)) - continuing with remaining sources
+2026-10-02 09:03:30,168 | INFO | research_agent.retrieval | retrieved | subquestion=1 | sources_answered=openalex | records=20 | with_abstract=19
+2026-10-02 09:03:30,168 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-10-02 09:03:30,738 | INFO | research_agent.validation | verify | match | 10.2337/dci19-0014
+2026-10-02 09:03:31,281 | INFO | research_agent.validation | verify | match | 10.2337/dc13-2042
+2026-10-02 09:03:31,677 | INFO | research_agent.validation | verify | match | 10.2337/dc16-0346
+2026-10-02 09:03:32,206 | INFO | research_agent.validation | verify | match | 10.2337/dci21-0043
+2026-10-02 09:03:32,708 | INFO | research_agent.validation | verify | match | 10.1002/14651858.cd008776.pub2
+2026-10-02 09:03:33,115 | INFO | research_agent.validation | verify | match | 10.1186/s12913-018-3274-8
+2026-10-02 09:03:33,516 | INFO | research_agent.validation | verify | match | 10.2196/jmir.6688
+2026-10-02 09:03:33,918 | INFO | research_agent.validation | verify | match | 10.2196/jmir.2058
+2026-10-02 09:03:34,381 | INFO | research_agent.validation | verify | match | 10.1503/cmaj.150885
+2026-10-02 09:03:34,785 | INFO | research_agent.validation | verify | match | 10.1038/s41598-017-12987-z
+2026-10-02 09:03:35,183 | INFO | research_agent.validation | verify | match | 10.3389/fphar.2017.00330
+2026-10-02 09:03:35,592 | INFO | research_agent.validation | verify | match | 10.2196/mhealth.6522
+2026-10-02 09:03:35,993 | INFO | research_agent.validation | verify | match | 10.1371/journal.pone.0079246
+2026-10-02 09:03:36,568 | INFO | research_agent.validation | verify | match | 10.1007/s00125-021-05568-3
+2026-10-02 09:03:36,975 | INFO | research_agent.validation | verify | match | 10.7759/cureus.63881
+2026-10-02 09:03:37,383 | INFO | research_agent.validation | verify | match | 10.1371/journal.pmed.1002098
+2026-10-02 09:03:37,796 | INFO | research_agent.validation | verify | match | 10.1007/s13300-021-01035-9
+2026-10-02 09:03:38,202 | INFO | research_agent.validation | verify | match | 10.2196/jmir.6556
+2026-10-02 09:03:38,612 | INFO | research_agent.validation | verify | match | 10.2196/10321
+2026-10-02 09:03:39,013 | INFO | research_agent.validation | verify | match | 10.2196/mhealth.3882
+2026-10-02 09:03:39,014 | INFO | research_agent.validation | verify summary | {'verified': 20, 'flagged': 0, 'unchecked': 0}
+2026-10-02 09:03:39,014 | INFO | research_agent.evaluation | evaluating | subquestion=1 | batch=1/2 | papers=10
+2026-10-02 09:04:07,686 | INFO | research_agent.llm | llm | prompt_chars=14273 | response_chars=2427
+2026-10-02 09:04:07,690 | INFO | research_agent.evaluation | score | 1 | drop | 10.2337/dci19-0014 | The abstract discusses nutrition therapy for diabetes and prediabetes but does not cover telemedicin
+2026-10-02 09:04:07,691 | INFO | research_agent.evaluation | score | 1 | drop | 10.2337/dc13-2042 | The abstract focuses on individualized nutrition therapy recommendations and meal planning without m
+2026-10-02 09:04:07,691 | INFO | research_agent.evaluation | score | 4 | keep | 10.2337/dc16-0346 | The abstract investigates the impact of mobile phone applications on glycemic control (HbA1c) in dia
+2026-10-02 09:04:07,691 | INFO | research_agent.evaluation | score | 1 | drop | 10.2337/dci21-0043 | The abstract outlines consensus guidelines for the management of type 1 diabetes in adults and does 
+2026-10-02 09:04:07,691 | INFO | research_agent.evaluation | score | 3 | keep | 10.1002/14651858.cd008776.pub2 | The abstract outlines a systematic review protocol assessing computer-based self-management interven
+2026-10-02 09:04:07,691 | INFO | research_agent.evaluation | score | 5 | keep | 10.1186/s12913-018-3274-8 | The abstract directly evaluates the effectiveness of telehealth remote patient monitoring on HbA1c l
+2026-10-02 09:04:07,691 | INFO | research_agent.evaluation | score | 3 | keep | 10.2196/jmir.6688 | The abstract discusses a metareview of telehealth interventions supporting self-management across se
+2026-10-02 09:04:07,691 | INFO | research_agent.evaluation | score | 2 | drop | 10.2196/jmir.2058 | The abstract focuses on the design of an mHealth app for adolescents with type 1 diabetes, which is 
+2026-10-02 09:04:07,691 | INFO | research_agent.evaluation | score | 4 | keep | 10.1503/cmaj.150885 | The abstract evaluates telemedicine effectiveness on HbA1c in adults with diabetes, strongly support
+2026-10-02 09:04:07,692 | INFO | research_agent.evaluation | score | 5 | keep | 10.1038/s41598-017-12987-z | The abstract directly examines the impact of different telemedicine strategies on glycemic control (
+2026-10-02 09:04:07,692 | INFO | research_agent.evaluation | evaluating | subquestion=1 | batch=2/2 | papers=10
+2026-10-02 09:04:10,367 | INFO | research_agent.llm | llm | prompt_chars=13666 | response_chars=2170
+2026-10-02 09:04:10,371 | INFO | research_agent.evaluation | score | 3 | keep | 10.3389/fphar.2017.00330 | The abstract examines the impact of telemedicine on glycemic control, but focuses specifically on ty
+2026-10-02 09:04:10,371 | INFO | research_agent.evaluation | score | 4 | keep | 10.2196/mhealth.6522 | The abstract investigates the glycemic efficacy of mobile app-based interventions among adults with 
+2026-10-02 09:04:10,371 | INFO | research_agent.evaluation | score | 4 | keep | 10.1371/journal.pone.0079246 | The abstract evaluates the impact of telemedicine interventions on HbA1c levels in general diabetes 
+2026-10-02 09:04:10,371 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s00125-021-05568-3 | The paper has no abstract available and focuses on type 1 diabetes in its title, making it not relev
+2026-10-02 09:04:10,371 | INFO | research_agent.evaluation | score | 3 | keep | 10.7759/cureus.63881 | The abstract discusses telemedicine in chronic disease management and mentions improvements in HbA1c
+2026-10-02 09:04:10,371 | INFO | research_agent.evaluation | score | 5 | keep | 10.1371/journal.pmed.1002098 | The abstract directly investigates whether telemonitoring improves glycemic control measured by HbA1
+2026-10-02 09:04:10,371 | INFO | research_agent.evaluation | score | 2 | drop | 10.1007/s13300-021-01035-9 | The abstract discusses the management of older adults with type 2 diabetes and frailty, but does not
+2026-10-02 09:04:10,371 | INFO | research_agent.evaluation | score | 2 | drop | 10.2196/jmir.6556 | The abstract focuses on telemedicine technologies for diabetes in pregnancy rather than type 2 diabe
+2026-10-02 09:04:10,371 | INFO | research_agent.evaluation | score | 5 | keep | 10.2196/10321 | The abstract evaluates a mobile app intervention to determine its impact on HbA1c levels among adult
+2026-10-02 09:04:10,372 | INFO | research_agent.evaluation | score | 5 | keep | 10.2196/mhealth.3882 | The abstract tests whether a mobile health intervention improves HbA1c levels in adults with type 2 
+2026-10-02 09:04:10,372 | INFO | research_agent.evaluation | evaluate summary | scored=20 | selected=13 | dropped=7 | cutoff=3
+2026-10-02 09:04:10,372 | INFO | research_agent.retrieval | retrieving | subquestion=2 | query='remote patient monitoring type 2 diabetes medication adherence self management adults' | sources=openalex,semanticscholar
+2026-10-02 09:04:11,697 | INFO | research_agent.retrieval | retrieved | subquestion=2 | source=openalex | records=20 | with_abstract=16
+2026-10-02 09:04:12,245 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 1/4 in 3s
+2026-10-02 09:04:15,771 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 2/4 in 6s
+2026-10-02 09:04:22,331 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 3/4 in 12s
+2026-10-02 09:04:34,878 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 4/4 in 24s
+2026-10-02 09:04:59,411 | WARNING | research_agent.retrieval | retrieval | subquestion=2 | source=semanticscholar failed (semanticscholar unavailable after 4 retries (last problem: HTTP 429)) - continuing with remaining sources
+2026-10-02 09:04:59,413 | INFO | research_agent.retrieval | retrieved | subquestion=2 | sources_answered=openalex | records=20 | with_abstract=16
+2026-10-02 09:04:59,413 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-10-02 09:04:59,983 | INFO | research_agent.validation | verify | match | 10.2337/dci22-0034
+2026-10-02 09:04:59,986 | INFO | research_agent.validation | verify | match | 10.1016/j.jacc.2013.05.019
+2026-10-02 09:05:00,535 | INFO | research_agent.validation | verify | match | 10.2337/dc13-s011
+2026-10-02 09:05:01,079 | INFO | research_agent.validation | verify | match | 10.2337/dc11-s011
+2026-10-02 09:05:01,585 | INFO | research_agent.validation | verify | match | 10.1016/j.pec.2015.11.003
+2026-10-02 09:05:01,986 | INFO | research_agent.validation | verify | match | 10.2196/jmir.3951
+2026-10-02 09:05:02,555 | INFO | research_agent.validation | verify | match | 10.1007/s00125-022-05787-2
+2026-10-02 09:05:03,001 | INFO | research_agent.validation | verify | match | 10.1016/j.diabres.2012.10.001
+2026-10-02 09:05:03,906 | INFO | research_agent.validation | verify | match | 10.1093/eurheartj/ehaa612
+2026-10-02 09:05:04,599 | INFO | research_agent.validation | verify | match | 10.1093/eurheartj/ehw210
+2026-10-02 09:05:05,133 | INFO | research_agent.validation | verify | match | 10.1093/europace/euw295
+2026-10-02 09:05:05,534 | INFO | research_agent.validation | verify | match | 10.1001/jamainternmed.2015.7712
+2026-10-02 09:05:06,072 | INFO | research_agent.validation | verify | match | 10.1038/s41574-020-00435-4
+2026-10-02 09:05:06,611 | INFO | research_agent.validation | verify | match | 10.2337/dc12-s011
+2026-10-02 09:05:07,015 | INFO | research_agent.validation | verify | match | 10.2337/diacare.22.4.623
+2026-10-02 09:05:07,425 | INFO | research_agent.validation | verify | match | 10.1183/09031936.00138707
+2026-10-02 09:05:08,283 | INFO | research_agent.validation | verify | match | 10.1097/hjh.0000000000003480
+2026-10-02 09:05:08,820 | INFO | research_agent.validation | verify | match | 10.1016/j.jacc.2008.10.001
+2026-10-02 09:05:08,820 | INFO | research_agent.validation | verify summary | {'verified': 18, 'flagged': 0, 'unchecked': 0}
+2026-10-02 09:05:08,820 | INFO | research_agent.evaluation | evaluating | subquestion=2 | batch=1/2 | papers=10
+2026-10-02 09:05:10,862 | INFO | research_agent.llm | llm | prompt_chars=10651 | response_chars=2257
+2026-10-02 09:05:10,865 | INFO | research_agent.evaluation | score | 3 | keep | 10.2337/dci22-0034 | The abstract discusses general management guidelines for type 2 diabetes but does not specifically f
+2026-10-02 09:05:10,865 | INFO | research_agent.evaluation | score | 1 | drop | 10.1016/j.jacc.2013.05.019 | The abstract focuses on heart failure guidelines rather than type 2 diabetes or telemedicine.
+2026-10-02 09:05:10,865 | INFO | research_agent.evaluation | score | 2 | drop | 10.2337/dc13-s011 | The abstract mentions medication adherence and glucose monitoring within standard clinical evaluatio
+2026-10-02 09:05:10,865 | INFO | research_agent.evaluation | score | 2 | drop | 10.2337/dc11-s011 | The abstract outlines general care and self-management education guidelines for diabetes without spe
+2026-10-02 09:05:10,865 | INFO | research_agent.evaluation | score | 3 | keep | 10.1016/j.pec.2015.11.003 | The abstract evaluates diabetes self-management education and its impact on glycemic control, but do
+2026-10-02 09:05:10,865 | INFO | research_agent.evaluation | score | 4 | keep | 10.2196/jmir.3951 | The abstract evaluates the effectiveness of mHealth technologies for chronic disease management, inc
+2026-10-02 09:05:10,865 | INFO | research_agent.evaluation | score | 3 | keep | 10.1007/s00125-022-05787-2 | There is no abstract available, but the title indicates it covers general management of hyperglycemi
+2026-10-02 09:05:10,865 | INFO | research_agent.evaluation | score | 3 | keep | 10.1016/j.diabres.2012.10.001 | There is no abstract available, but the title indicates global guidelines for type 2 diabetes manage
+2026-10-02 09:05:10,865 | INFO | research_agent.evaluation | score | 1 | drop | 10.1093/eurheartj/ehaa612 | The abstract is an international audience note for atrial fibrillation guidelines, which is unrelate
+2026-10-02 09:05:10,865 | INFO | research_agent.evaluation | score | 1 | drop | 10.1093/eurheartj/ehw210 | The abstract discusses guidelines for the management of atrial fibrillation, which is not relevant t
+2026-10-02 09:05:10,865 | INFO | research_agent.evaluation | evaluating | subquestion=2 | batch=2/2 | papers=8
+2026-10-02 09:05:12,540 | INFO | research_agent.llm | llm | prompt_chars=7688 | response_chars=1529
+2026-10-02 09:05:12,542 | WARNING | research_agent.llm | llm | invalid JSON for ScoreResponse (attempt 1): 1 validation error for _Exact
+  Input should be an object [type=model_type, input_value=[{'index': 1, 'relevance_...iabetes telemedicine.'}], input_type=list]
+    For further information visit https:/
+2026-10-02 09:05:14,352 | INFO | research_agent.llm | llm | prompt_chars=8059 | response_chars=1844
+2026-10-02 09:05:14,355 | INFO | research_agent.evaluation | score | 1 | drop | 10.1093/europace/euw295 | The abstract discusses atrial fibrillation management guidelines and does not mention type 2 diabete
+2026-10-02 09:05:14,355 | INFO | research_agent.evaluation | score | 2 | drop | 10.1001/jamainternmed.2015.7712 | The abstract evaluates remote patient monitoring, but focuses on hospitalized patients with heart fa
+2026-10-02 09:05:14,355 | INFO | research_agent.evaluation | score | 1 | drop | 10.1038/s41574-020-00435-4 | Rated from the title alone as no abstract is available, and it broadly covers COVID-19 and diabetes 
+2026-10-02 09:05:14,355 | INFO | research_agent.evaluation | score | 2 | drop | 10.2337/dc12-s011 | The abstract provides diagnostic criteria for increased risk of diabetes but contains no data on tel
+2026-10-02 09:05:14,355 | INFO | research_agent.evaluation | score | 2 | drop | 10.2337/diacare.22.4.623 | The abstract outlines a clinical trial for preventing type 2 diabetes using lifestyle interventions 
+2026-10-02 09:05:14,355 | INFO | research_agent.evaluation | score | 1 | drop | 10.1183/09031936.00138707 | The abstract focuses entirely on the global strategy for asthma management and prevention, lacking a
+2026-10-02 09:05:14,355 | INFO | research_agent.evaluation | score | 1 | drop | 10.1097/hjh.0000000000003480 | The abstract lists reviewers for arterial hypertension guidelines and contains no information regard
+2026-10-02 09:05:14,356 | INFO | research_agent.evaluation | score | 1 | drop | 10.1016/j.jacc.2008.10.001 | Rated from the title alone as no abstract is available, and the paper addresses congenital heart dis
+2026-10-02 09:05:14,356 | INFO | research_agent.evaluation | evaluate summary | scored=18 | selected=5 | dropped=13 | cutoff=3
+2026-10-02 09:05:14,356 | INFO | research_agent.retrieval | retrieving | subquestion=3 | query='telehealth telemedicine type 2 diabetes patient acceptance barriers facilitators adults' | sources=openalex,semanticscholar
+2026-10-02 09:05:15,287 | INFO | research_agent.retrieval | retrieved | subquestion=3 | source=openalex | records=20 | with_abstract=16
+2026-10-02 09:05:15,809 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 1/4 in 3s
+2026-10-02 09:05:19,358 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 2/4 in 6s
+2026-10-02 09:05:25,920 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 3/4 in 12s
+2026-10-02 09:05:38,444 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 4/4 in 24s
+2026-10-02 09:06:02,989 | WARNING | research_agent.retrieval | retrieval | subquestion=3 | source=semanticscholar failed (semanticscholar unavailable after 4 retries (last problem: HTTP 429)) - continuing with remaining sources
+2026-10-02 09:06:02,991 | INFO | research_agent.retrieval | retrieved | subquestion=3 | sources_answered=openalex | records=20 | with_abstract=16
+2026-10-02 09:06:02,991 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-10-02 09:06:03,419 | INFO | research_agent.validation | verify | match | 10.1016/j.nurpra.2020.09.013
+2026-10-02 09:06:03,835 | INFO | research_agent.validation | verify | match | 10.1136/bmjopen-2017-016242
+2026-10-02 09:06:04,247 | INFO | research_agent.validation | verify | match | 10.2196/16407
+2026-10-02 09:06:04,663 | INFO | research_agent.validation | verify | match | 10.1016/j.ijmedinf.2016.03.002
+2026-10-02 09:06:05,081 | INFO | research_agent.validation | verify | match | 10.2196/24387
+2026-10-02 09:06:05,598 | INFO | research_agent.validation | verify | match | 10.1186/s12889-024-18036-5
+2026-10-02 09:06:06,007 | INFO | research_agent.validation | verify | match | 10.2196/20359
+2026-10-02 09:06:06,564 | INFO | research_agent.validation | verify | match | 10.3390/ijerph20043407
+2026-10-02 09:06:06,995 | INFO | research_agent.validation | verify | match | 10.1007/s11882-020-00969-7
+2026-10-02 09:06:07,400 | INFO | research_agent.validation | verify | match | 10.2196/13117
+2026-10-02 09:06:07,828 | INFO | research_agent.validation | verify | match | 10.2196/19264
+2026-10-02 09:06:08,238 | INFO | research_agent.validation | verify | match | 10.1197/jamia.m1917
+2026-10-02 09:06:08,654 | INFO | research_agent.validation | verify | match | 10.1089/tmj.2016.0045
+2026-10-02 09:06:09,071 | INFO | research_agent.validation | verify | match | 10.1371/journal.pone.0237585
+2026-10-02 09:06:09,494 | INFO | research_agent.validation | verify | match | 10.2196/14197
+2026-10-02 09:06:09,908 | INFO | research_agent.validation | verify | match | 10.20517/ch.2021.03
+2026-10-02 09:06:10,329 | INFO | research_agent.validation | verify | match | 10.1371/journal.pone.0173160
+2026-10-02 09:06:10,739 | INFO | research_agent.validation | verify | match | 10.2196/jmir.5257
+2026-10-02 09:06:10,739 | INFO | research_agent.validation | verify summary | {'verified': 18, 'flagged': 0, 'unchecked': 0}
+2026-10-02 09:06:10,739 | INFO | research_agent.evaluation | evaluating | subquestion=3 | batch=1/2 | papers=10
+2026-10-02 09:06:30,433 | INFO | research_agent.llm | llm | prompt_chars=10878 | response_chars=2135
+2026-10-02 09:06:30,435 | WARNING | research_agent.llm | llm | invalid JSON for ScoreResponse (attempt 1): 1 validation error for _Exact
+  Input should be an object [type=model_type, input_value=[{'index': 1, 'relevance_...s on type 2 diabetes.'}], input_type=list]
+    For further information visit https:/
+2026-10-02 09:06:32,481 | INFO | research_agent.llm | llm | prompt_chars=11249 | response_chars=2327
+2026-10-02 09:06:32,484 | INFO | research_agent.evaluation | score | 3 | keep | 10.1016/j.nurpra.2020.09.013 | Since the abstract is missing, the paper is rated as background based solely on the title regarding 
+2026-10-02 09:06:32,485 | INFO | research_agent.evaluation | score | 3 | keep | 10.1136/bmjopen-2017-016242 | The abstract examines general patient satisfaction and factors associated with telehealth modalities
+2026-10-02 09:06:32,485 | INFO | research_agent.evaluation | score | 3 | keep | 10.2196/16407 | The abstract investigates general barriers and facilitators influencing telemedicine-based home cons
+2026-10-02 09:06:32,485 | INFO | research_agent.evaluation | score | 2 | drop | 10.1016/j.ijmedinf.2016.03.002 | Since the abstract is missing, the paper is judged from the title alone as tangential because it add
+2026-10-02 09:06:32,485 | INFO | research_agent.evaluation | score | 2 | drop | 10.2196/24387 | The abstract focuses on barriers and facilitators of user engagement with digital mental health inte
+2026-10-02 09:06:32,485 | INFO | research_agent.evaluation | score | 3 | keep | 10.1186/s12889-024-18036-5 | The abstract discusses barriers and facilitators to health technology adoption by older adults with 
+2026-10-02 09:06:32,485 | INFO | research_agent.evaluation | score | 3 | keep | 10.2196/20359 | The abstract explores utilization barriers and medical outcomes of telehealth among older adults wit
+2026-10-02 09:06:32,485 | INFO | research_agent.evaluation | score | 2 | drop | 10.3390/ijerph20043407 | The abstract discusses general digital transformation and technology acceptance in healthcare withou
+2026-10-02 09:06:32,485 | INFO | research_agent.evaluation | score | 3 | keep | 10.1007/s11882-020-00969-7 | Since the abstract is missing, the paper is rated from the title alone as providing relevant backgro
+2026-10-02 09:06:32,485 | INFO | research_agent.evaluation | score | 3 | keep | 10.2196/13117 | The abstract reviews theoretical predictors influencing general end-user acceptance of telemedicine,
+2026-10-02 09:06:32,485 | INFO | research_agent.evaluation | evaluating | subquestion=3 | batch=2/2 | papers=8
+2026-10-02 09:06:50,663 | INFO | research_agent.llm | llm | prompt_chars=11831 | response_chars=1964
+2026-10-02 09:06:50,666 | INFO | research_agent.evaluation | score | 1 | drop | 10.2196/19264 | This paper focuses on telehealth policies during the COVID-19 pandemic for older people rather than 
+2026-10-02 09:06:50,666 | INFO | research_agent.evaluation | score | 3 | keep | 10.1197/jamia.m1917 | This study evaluates telemedicine case management for patients with diabetes, primarily measuring cl
+2026-10-02 09:06:50,666 | INFO | research_agent.evaluation | score | 3 | keep | 10.1089/tmj.2016.0045 | This article examines telemedicine interventions in primary care and discusses feasibility and accep
+2026-10-02 09:06:50,666 | INFO | research_agent.evaluation | score | 2 | drop | 10.1371/journal.pone.0237585 | This umbrella review covers clinical effectiveness, patient experience, and implementation of teleme
+2026-10-02 09:06:50,667 | INFO | research_agent.evaluation | score | 3 | keep | 10.2196/14197 | This paper investigates barriers and facilitators to implementing eHealth services generally, but la
+2026-10-02 09:06:50,667 | INFO | research_agent.evaluation | score | 3 | keep | 10.20517/ch.2021.03 | This article discusses the worldwide impact and barriers to telemedicine during COVID-19 for chronic
+2026-10-02 09:06:50,667 | INFO | research_agent.evaluation | score | 3 | keep | 10.1371/journal.pone.0173160 | This overview of systematic reviews evaluates the effectiveness of mHealth interventions for patient
+2026-10-02 09:06:50,667 | INFO | research_agent.evaluation | score | 2 | drop | 10.2196/jmir.5257 | This paper outlines a global research agenda for personalized telehealth within chronic disease mana
+2026-10-02 09:06:50,667 | INFO | research_agent.evaluation | evaluate summary | scored=18 | selected=12 | dropped=6 | cutoff=3
+2026-10-02 09:06:50,667 | INFO | research_agent.retrieval | retrieving | subquestion=4 | query='telemedicine telehealth cost effectiveness economic evaluation type 2 diabetes adults' | sources=openalex,semanticscholar
+2026-10-02 09:06:51,578 | INFO | research_agent.retrieval | retrieved | subquestion=4 | source=openalex | records=20 | with_abstract=19
+2026-10-02 09:06:52,122 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 1/4 in 3s
+2026-10-02 09:06:55,666 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 2/4 in 6s
+2026-10-02 09:07:02,280 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 3/4 in 12s
+2026-10-02 09:07:14,824 | WARNING | research_agent.http | semanticscholar | HTTP 429 (transient) - retry 4/4 in 24s
+2026-10-02 09:07:39,385 | WARNING | research_agent.retrieval | retrieval | subquestion=4 | source=semanticscholar failed (semanticscholar unavailable after 4 retries (last problem: HTTP 429)) - continuing with remaining sources
+2026-10-02 09:07:39,387 | INFO | research_agent.retrieval | retrieved | subquestion=4 | sources_answered=openalex | records=20 | with_abstract=19
+2026-10-02 09:07:39,387 | INFO | research_agent.validation | deduplicate | in=20 | out=20
+2026-10-02 09:07:39,828 | INFO | research_agent.validation | verify | match | 10.1136/bmj.f1035
+2026-10-02 09:07:40,243 | INFO | research_agent.validation | verify | match | 10.1136/fmch-2020-000530
+2026-10-02 09:07:40,663 | INFO | research_agent.validation | verify | match | 10.2196/jmir.8775
+2026-10-02 09:07:41,076 | INFO | research_agent.validation | verify | match | 10.2196/17298
+2026-10-02 09:07:41,516 | INFO | research_agent.validation | verify | match | 10.3389/fpubh.2022.787135
+2026-10-02 09:07:41,922 | INFO | research_agent.validation | verify | match | 10.1186/s12962-020-00211-1
+2026-10-02 09:07:42,333 | INFO | research_agent.validation | verify | match | 10.1007/s11892-018-1015-3
+2026-10-02 09:07:42,748 | INFO | research_agent.validation | verify | match | 10.2196/jmir.2790
+2026-10-02 09:07:43,166 | INFO | research_agent.validation | verify | match | 10.2196/23244
+2026-10-02 09:07:43,166 | INFO | research_agent.validation | verify summary | {'verified': 9, 'flagged': 0, 'unchecked': 0}
+2026-10-02 09:07:43,166 | INFO | research_agent.evaluation | evaluating | subquestion=4 | batch=1/1 | papers=9
+2026-10-02 09:07:45,389 | INFO | research_agent.llm | llm | prompt_chars=12129 | response_chars=2341
+2026-10-02 09:07:45,394 | INFO | research_agent.evaluation | score | 3 | keep | 10.1136/bmj.f1035 | The abstract examines the cost-effectiveness of telehealth for long-term conditions including diabet
+2026-10-02 09:07:45,394 | INFO | research_agent.evaluation | score | 2 | drop | 10.1136/fmch-2020-000530 | The abstract provides a general narrative review of telemedicine during COVID-19 mentioning cost-eff
+2026-10-02 09:07:45,394 | INFO | research_agent.evaluation | score | 2 | drop | 10.2196/jmir.8775 | The abstract describes a framework for evaluating health technology implementation and mentions remo
+2026-10-02 09:07:45,394 | INFO | research_agent.evaluation | score | 3 | keep | 10.2196/17298 | The abstract investigates whether telehealth reduces health system costs compared to traditional car
+2026-10-02 09:07:45,394 | INFO | research_agent.evaluation | score | 3 | keep | 10.3389/fpubh.2022.787135 | The abstract reviews the cost-effectiveness of digital health interventions generally, serving as us
+2026-10-02 09:07:45,394 | INFO | research_agent.evaluation | score | 4 | keep | 10.1186/s12962-020-00211-1 | The abstract directly evaluates the cost-effectiveness of telemedicine for diabetic retinopathy scre
+2026-10-02 09:07:45,394 | INFO | research_agent.evaluation | score | 1 | drop | 10.1007/s11892-018-1015-3 | The paper lacks an abstract, and the title alone only indicates complex diabetes management via tele
+2026-10-02 09:07:45,394 | INFO | research_agent.evaluation | score | 3 | keep | 10.2196/jmir.2790 | The abstract summarizes the effectiveness and cost-effectiveness of eHealth interventions across som
+2026-10-02 09:07:45,394 | INFO | research_agent.evaluation | score | 3 | keep | 10.2196/23244 | The abstract examines telemedical interventions managing type 1 and type 2 diabetes and mentions cos
+2026-10-02 09:07:45,394 | INFO | research_agent.evaluation | evaluate summary | scored=9 | selected=6 | dropped=3 | cutoff=3
+
+=== Review 2: selected evidence ===
+
+Sub-question 1: What is the impact of telemedicine interventions on glycemic control measured by HbA1c levels in adults with type 2 diabetes?
+   1. [4/5] Do Mobile Phone Applications Improve Glycemic Control (HbA1c) in the Self-management of Diabetes? A Systematic Review, Meta-analysis, and GRADE of 14 Randomized Trials (2016) - DOI verified
+      The abstract investigates the impact of mobile phone applications on glycemic control (HbA1c) in diabetes self-management, strongly relating
+   2. [3/5] Computer-based diabetes self-management interventions for adults with type 2 diabetes mellitus (2013) - DOI verified
+      The abstract outlines a systematic review protocol assessing computer-based self-management interventions for adults with type 2 diabetes, b
+   3. [5/5] The impact of telehealth remote patient monitoring on glycemic control in type 2 diabetes: a systematic review and meta-analysis of systematic reviews of randomised controlled trials (2018) - DOI verified
+      The abstract directly evaluates the effectiveness of telehealth remote patient monitoring on HbA1c levels in adults with type 2 diabetes.
+   4. [3/5] Telehealth Interventions to Support Self-Management of Long-Term Conditions: A Systematic Metareview of Diabetes, Heart Failure, Asthma, Chronic Obstructive Pulmonary Disease, and Cancer (2017) - DOI verified
+      The abstract discusses a metareview of telehealth interventions supporting self-management across several long-term conditions including dia
+   5. [4/5] Effect of telemedicine on glycated hemoglobin in diabetes: a systematic review and meta-analysis of randomized trials (2016) - DOI verified
+      The abstract evaluates telemedicine effectiveness on HbA1c in adults with diabetes, strongly supporting the sub-question though it includes 
+   6. [5/5] Comparative effectiveness of telemedicine strategies on type 2 diabetes management: A systematic review and network meta-analysis (2017) - DOI verified
+      The abstract directly examines the impact of different telemedicine strategies on glycemic control (HbA1c) specifically in adults with type 
+   7. [3/5] Telemedicine for the Management of Glycemic Control and Clinical Outcomes of Type 1 Diabetes Mellitus: A Systematic Review and Meta-Analysis of Randomized Controlled Studies (2017) - DOI verified
+      The abstract examines the impact of telemedicine on glycemic control, but focuses specifically on type 1 diabetes rather than type 2 diabete
+   8. [4/5] Mobile App-Based Interventions to Support Diabetes Self-Management: A Systematic Review of Randomized Controlled Trials to Identify Functions Associated with Glycemic Efficacy (2017) - DOI verified
+      The abstract investigates the glycemic efficacy of mobile app-based interventions among adults with diabetes, though it is not restricted so
+   9. [4/5] Telemedicine Application in the Care of Diabetes Patients: Systematic Review and Meta-Analysis (2013) - DOI verified
+      The abstract evaluates the impact of telemedicine interventions on HbA1c levels in general diabetes patients, providing strong related evide
+  10. [3/5] Revolutionizing Healthcare: How Telemedicine Is Improving Patient Outcomes and Expanding Access to Care (2024) - DOI verified
+      The abstract discusses telemedicine in chronic disease management and mentions improvements in HbA1c levels for diabetes, but lacks specific
+  11. [5/5] Supported Telemonitoring and Glycemic Control in People with Type 2 Diabetes: The Telescot Diabetes Pragmatic Multicenter Randomized Controlled Trial (2016) - DOI verified
+      The abstract directly investigates whether telemonitoring improves glycemic control measured by HbA1c in adults with type 2 diabetes.
+  12. [5/5] Mobile App for Improved Self-Management of Type 2 Diabetes: Multicenter Pragmatic Randomized Controlled Trial (2018) - DOI verified
+      The abstract evaluates a mobile app intervention to determine its impact on HbA1c levels among adults with type 2 diabetes.
+  13. [5/5] A Mobile Health Intervention for Self-Management and Lifestyle Change for Persons With Type 2 Diabetes, Part 2: One-Year Results From the Norwegian Randomized Controlled Trial RENEWING HEALTH (2014) - DOI verified
+      The abstract tests whether a mobile health intervention improves HbA1c levels in adults with type 2 diabetes.
+
+Sub-question 2: How do remote patient monitoring and digital consultations affect medication adherence and self-management behaviors in this population?
+  14. [3/5] Management of Hyperglycemia in Type 2 Diabetes, 2022. A Consensus Report by the American Diabetes Association (ADA) and the European Association for the Study of Diabetes (EASD) (2022) - DOI verified
+      The abstract discusses general management guidelines for type 2 diabetes but does not specifically focus on remote patient monitoring or dig
+  15. [3/5] Diabetes self-management education for adults with type 2 diabetes mellitus: A systematic review of the effect on glycemic control (2015) - DOI verified
+      The abstract evaluates diabetes self-management education and its impact on glycemic control, but does not explicitly address remote monitor
+  16. [4/5] Impact of mHealth Chronic Disease Management on Treatment Adherence and Patient Outcomes: A Systematic Review (2015) - DOI verified
+      The abstract evaluates the effectiveness of mHealth technologies for chronic disease management, including diabetes, focusing on treatment a
+  17. [3/5] Management of hyperglycaemia in type 2 diabetes, 2022. A consensus report by the American Diabetes Association (ADA) and the European Association for the Study of Diabetes (EASD) (2022) - DOI verified
+      There is no abstract available, but the title indicates it covers general management of hyperglycemia in type 2 diabetes rather than telemed
+  18. [3/5] Global Guideline for Type 2 Diabetes (2014) - DOI verified
+      There is no abstract available, but the title indicates global guidelines for type 2 diabetes management broadly.
+
+Sub-question 3: What are the patient and provider barriers, facilitators, and overall acceptance regarding the use of telemedicine for diabetes care?
+  19. [3/5] Telehealth Benefits and Barriers (2020) - DOI verified
+      Since the abstract is missing, the paper is rated as background based solely on the title regarding telehealth benefits and barriers.
+  20. [3/5] Telehealth and patient satisfaction: a systematic review and narrative analysis (2017) - DOI verified
+      The abstract examines general patient satisfaction and factors associated with telehealth modalities, but lacks a specific focus on type 2 d
+  21. [3/5] Barriers and Facilitators That Influence Telemedicine-Based, Real-Time, Online Consultation at Patients’ Homes: Systematic Literature Review (2019) - DOI verified
+      The abstract investigates general barriers and facilitators influencing telemedicine-based home consultations, but does not focus on type 2 
+  22. [3/5] Barriers and facilitators to health technology adoption by older adults with chronic diseases: an integrative systematic review (2024) - DOI verified
+      The abstract discusses barriers and facilitators to health technology adoption by older adults with chronic diseases, but does not specifica
+  23. [3/5] Utilization Barriers and Medical Outcomes Commensurate With the Use of Telehealth Among Older Adults: Systematic Review (2020) - DOI verified
+      The abstract explores utilization barriers and medical outcomes of telehealth among older adults with chronic conditions, though it does not
+  24. [3/5] A Review of Patient and Provider Satisfaction with Telemedicine (2020) - DOI verified
+      Since the abstract is missing, the paper is rated from the title alone as providing relevant background on patient and provider satisfaction
+  25. [3/5] Theories Predicting End-User Acceptance of Telemedicine Use: Systematic Review (2019) - DOI verified
+      The abstract reviews theoretical predictors influencing general end-user acceptance of telemedicine, but does not specify diabetes managemen
+  26. [3/5] A Randomized Trial Comparing Telemedicine Case Management with Usual Care in Older, Ethnically Diverse, Medically Underserved Patients with Diabetes Mellitus (2005) - DOI verified
+      This study evaluates telemedicine case management for patients with diabetes, primarily measuring clinical outcomes rather than patient or p
+  27. [3/5] The Empirical Foundations of Telemedicine Interventions in Primary Care (2016) - DOI verified
+      This article examines telemedicine interventions in primary care and discusses feasibility and acceptance, but is not specifically focused o
+  28. [3/5] Barriers and Facilitators to the Implementation of eHealth Services: Systematic Literature Analysis (2019) - DOI verified
+      This paper investigates barriers and facilitators to implementing eHealth services generally, but lacks a specific focus on diabetes care.
+  29. [3/5] The worldwide impact of telemedicine during COVID-19: current evidence and recommendations for the future (2022) - DOI verified
+      This article discusses the worldwide impact and barriers to telemedicine during COVID-19 for chronic diseases, touching on patient and profe
+  30. [3/5] Effectiveness of mHealth interventions for patients with diabetes: An overview of systematic reviews (2017) - DOI verified
+      This overview of systematic reviews evaluates the effectiveness of mHealth interventions for patients with diabetes, but does not primarily 
+
+Sub-question 4: How cost-effective are telemedicine programs compared to traditional in-person clinical care for managing type 2 diabetes?
+  31. [3/5] Cost effectiveness of telehealth for patients with long term conditions (Whole Systems Demonstrator telehealth questionnaire study): nested economic evaluation in a pragmatic, cluster randomised controlled trial (2013) - DOI verified
+      The abstract examines the cost-effectiveness of telehealth for long-term conditions including diabetes, but groups it with other chronic ill
+  32. [3/5] Determining if Telehealth Can Reduce Health System Costs: Scoping Review (2020) - DOI verified
+      The abstract investigates whether telehealth reduces health system costs compared to traditional care models, but discusses this broadly rat
+  33. [3/5] The cost-effectiveness of digital health interventions: A systematic review of the literature (2022) - DOI verified
+      The abstract reviews the cost-effectiveness of digital health interventions generally, serving as useful background rather than specific evi
+  34. [4/5] Cost-effectiveness of diabetic retinopathy screening programs using telemedicine: a systematic review (2020) - DOI verified
+      The abstract directly evaluates the cost-effectiveness of telemedicine for diabetic retinopathy screening in patients with type 1 and type 2
+  35. [3/5] Effectiveness and Cost-Effectiveness of eHealth Interventions in Somatic Diseases: A Systematic Review of Systematic Reviews and Meta-Analyses (2014) - DOI verified
+      The abstract summarizes the effectiveness and cost-effectiveness of eHealth interventions across somatic diseases as a broad review, offerin
+  36. [3/5] Clinical Improvements by Telemedicine Interventions Managing Type 1 and Type 2 Diabetes: Systematic Meta-review (2020) - DOI verified
+      The abstract examines telemedical interventions managing type 1 and type 2 diabetes and mentions cost and time saving as secondary outcomes,
+
+36 papers selected; 29 screened out (reasons are recorded in the brief).
+
+Type 'approve' to write the brief, or 'drop 3, 7' to remove papers by number, or 'reject' to revise the scope of the plan (one scope revision per run).
+> 2026-10-02 09:07:45,395 | INFO | research_agent.orchestrator | review2 | decision=approve | feedback=''
+2026-10-02 09:07:45,395 | INFO | research_agent.evaluation | summarising | subquestion=1 | batch=1/2 | papers=10
+2026-10-02 09:07:59,041 | INFO | research_agent.llm | llm | prompt_chars=14881 | response_chars=5209
+2026-10-02 09:07:59,043 | WARNING | research_agent.llm | llm | invalid JSON for SummaryResponse (attempt 1): 1 validation error for _Exact
+  Input should be an object [type=model_type, input_value=[{'index': 1, 'summary': ...rol in diabetes care."}], input_type=list]
+    For further information visit https:/
+2026-10-02 09:08:02,705 | INFO | research_agent.llm | llm | prompt_chars=15252 | response_chars=5107
+2026-10-02 09:08:02,709 | INFO | research_agent.evaluation | summarising | subquestion=1 | batch=2/2 | papers=3
+2026-10-02 09:08:04,293 | INFO | research_agent.llm | llm | prompt_chars=5164 | response_chars=1785
+2026-10-02 09:08:04,296 | INFO | research_agent.evaluation | summarising | subquestion=2 | batch=1/1 | papers=5
+2026-10-02 09:08:16,008 | INFO | research_agent.llm | llm | prompt_chars=5410 | response_chars=2050
+2026-10-02 09:08:16,012 | INFO | research_agent.evaluation | summarising | subquestion=3 | batch=1/2 | papers=10
+2026-10-02 09:08:18,960 | INFO | research_agent.llm | llm | prompt_chars=12069 | response_chars=4400
+2026-10-02 09:08:18,963 | INFO | research_agent.evaluation | summarising | subquestion=3 | batch=2/2 | papers=2
+2026-10-02 09:08:27,987 | INFO | research_agent.llm | llm | prompt_chars=3681 | response_chars=1365
+2026-10-02 09:08:27,990 | INFO | research_agent.evaluation | summarising | subquestion=4 | batch=1/1 | papers=6
+2026-10-02 09:08:30,975 | INFO | research_agent.llm | llm | prompt_chars=9190 | response_chars=4129
+2026-10-02 09:08:30,980 | INFO | research_agent.evaluation | summarised | papers=36
+2026-10-02 09:08:32,869 | INFO | research_agent.llm | llm | prompt_chars=23510 | response_chars=1705
+2026-10-02 09:08:32,872 | INFO | research_agent.evaluation | synthesised | themes=3 | gaps=2
+2026-10-02 09:08:32,877 | INFO | research_agent.orchestrator | saved | output/brief-20261002-090832-how-effective-is-telemedicine-for-managi.md | output/brief-20261002-090832-how-effective-is-telemedicine-for-managi.json
+
+65 unique papers across 4 sub-questions | 65 DOIs verified | 36 approved, 29 excluded | 3 themes, 2 gaps | reformulations: 0, scope revisions: 0
+Saved: output/brief-20261002-090832-how-effective-is-telemedicine-for-managi.md
+
+Run complete - brief written.

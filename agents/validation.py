@@ -5,20 +5,24 @@ de-duplication by DOI and DOI/metadata verification against Crossref.
 Why these are plain functions and not an agent: each has an exactly right
 answer. Routing a registry lookup through an LLM would add cost and introduce
 error without adding capability (proposal, section 4).
+
+Why the check is independent of the search: language models are known to
+fabricate references and to garble real ones (Walters and Wilder, 2023). The
+records here come from a scholarly index rather than from the model, but the
+brief still only calls a citation "verified" when the DOI registry itself
+holds a record under that DOI with a matching title.
 """
 import logging
-import re
 from difflib import SequenceMatcher
 from typing import List, Optional
 
 import requests
 
+import config
 from agents import crossref_client
 from agents.models import Paper
 
 log = logging.getLogger("research_agent.validation")
-
-TITLE_MATCH_THRESHOLD = 0.6   # fuzzy ratio; titles differ in casing, punctuation, subtitles
 
 
 def deduplicate_by_doi(papers: List[Paper]) -> List[Paper]:
@@ -37,11 +41,25 @@ def deduplicate_by_doi(papers: List[Paper]) -> List[Paper]:
 
 
 def _clean(text: Optional[str]) -> str:
-    return re.sub(r"[^a-z0-9 ]", "", (text or "").lower()).strip()
+    """Lower-case and keep only letters, digits and spaces - in any script.
+
+    The first version kept a-z and 0-9 only, which reduced a title written in
+    Chinese, Cyrillic or Arabic to an empty string; two empty strings compare
+    as identical, so any such title "matched" whatever Crossref held
+    (remediation #14).
+    """
+    return "".join(ch for ch in (text or "").lower() if ch.isalnum() or ch == " ").strip()
 
 
 def titles_match(a: Optional[str], b: Optional[str]) -> bool:
-    return SequenceMatcher(None, _clean(a), _clean(b)).ratio() >= TITLE_MATCH_THRESHOLD
+    """True when two titles are close enough to be the same paper (config.TITLE_MATCH_THRESHOLD).
+
+    A missing title never matches: with nothing to compare there is no evidence either way.
+    """
+    left, right = _clean(a), _clean(b)
+    if not left or not right:
+        return False
+    return SequenceMatcher(None, left, right).ratio() >= config.TITLE_MATCH_THRESHOLD
 
 
 def validate_dois_and_metadata(papers: List[Paper]) -> List[Paper]:
@@ -50,8 +68,9 @@ def validate_dois_and_metadata(papers: List[Paper]) -> List[Paper]:
       True  - DOI is registered and the title matches
       False - no DOI, DOI not registered, or title does not match (flagged, kept)
       None  - could not check (network error) - kept, still distinguishable
-    Records are flagged, never silently dropped: the design promised
-    "unverified rather than invalid", because registry coverage is incomplete.
+    Records are flagged, never silently dropped: the proposal's mitigation is
+    "flagging unmatched records" (section 5), and a missing Crossref record
+    is not proof that a paper is invalid - registry coverage is incomplete.
     """
     for p in papers:
         if not p.doi:

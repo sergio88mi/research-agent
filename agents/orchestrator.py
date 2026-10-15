@@ -3,20 +3,30 @@ Orchestrator - deterministic coordinator. Not an agent.
 
 Why fixed sequencing rather than agents negotiating: academic research needs
 controllable, auditable results, and errors early in an unconstrained agent
-chain compound downstream (proposal, section 4). The orchestrator calls each
-agent in turn, enforces the review points and retry limits, and does the
-exact-answer work itself (de-duplication, verification, storage).
+chain compound downstream (proposal, section 4). Kim et al. (2026) report
+that the gain from adding agents depends on the task and the architecture,
+and that architectures without centralised verification pass errors on more
+strongly; so there are three agents, no more, and every hand-off goes through
+this one place. The orchestrator calls each agent in turn, enforces the
+review points and retry limits, and does the exact-answer work itself
+(de-duplication, verification, storage).
 
-Full wiring (Stage 6):
+Why the researcher is asked twice and the agent may retry only once: the
+person keeps the judgement about scope and evidence, the system does the
+legwork - the split between human evaluative and machine operative agency in
+Zhu et al. (2026), and the position semi-automated review tools take, where
+the final decision stays with the user (Bolaños et al., 2024).
+
+Full wiring (as built by the end of Stage 7):
   plan -> review 1 (loop until approved)
   -> for each sub-question: retrieve (every source, failover on error) -> [threshold miss? one reformulation]
        -> dedupe -> verify -> score -> [too few relevant? one reformulation]
   -> review 2: approve | refine (drop papers, re-show) | reject scope (once: back to planning)
   -> summarise each approved paper -> themes and gaps -> limitations (computed) -> save.
 
-The two bounded-autonomy limits from the design live here and nowhere else:
-one query reformulation per sub-question (SubQuestion.retried_once) and one
-scope revision per run (self.scope_revision_count).
+The two bounded-autonomy limits from the design are enforced here and nowhere
+else: config.MAX_REFORMULATIONS query reformulations per sub-question (one)
+and config.MAX_SCOPE_REVISIONS scope revisions per run (one).
 """
 import logging
 import re
@@ -35,21 +45,31 @@ log = logging.getLogger("research_agent.orchestrator")
 
 
 def _key(p: Paper) -> str:
+    """Identity of a paper across the pipeline: its DOI, or its title when it has none."""
     return (p.doi or p.title).strip().lower()
 
 
 class Orchestrator:
+    """Runs one research question from plan to saved brief, in a fixed order."""
+
     def __init__(self, interface: Optional[ResearcherInterface] = None, constraints: Optional[str] = None):
         self.ui = interface or ResearcherInterface()
         self.planner = PlanningAgent(constraints)
         self.retriever = RetrievalAgent()
         self.evaluator = EvaluationSynthesisAgent()
         self.scope_revision_count = 0
-        self.retry_counts: Dict[int, int] = {}      # sub-question id -> reformulations used
+        self.retry_counts: Dict[int, int] = {}      # sub-question id -> reformulations used over the whole run (reported at the end)
+        self._pass_retries: Dict[int, int] = {}     # the same count for the current evidence pass only (what the cap is checked against)
 
     # ------------------------------------------------------------------ review 1
-    def _approved_plan(self, question: str, feedback: str = "") -> ResearchPlan:
-        plan = self.planner.revise_plan(question, feedback) if feedback else self.planner.plan_research(question)
+    def _approved_plan(self, question: str, feedback: str = "",
+                       previous: Optional[ResearchPlan] = None) -> ResearchPlan:
+        """Plan, show the plan, and keep revising until the researcher approves it.
+
+        `feedback` and `previous` are given when the scope was rejected at
+        review 2: the new plan is then a revision of the rejected one.
+        """
+        plan = self.planner.revise_plan(question, feedback, previous) if feedback else self.planner.plan_research(question)
         while True:
             decision, fb = self.ui.review_subquestions(plan.interpretation, plan.subquestions)
             log.info("review1 | decision=%s | feedback=%r", decision.value, fb)
@@ -57,14 +77,23 @@ class Orchestrator:
                 for sq in plan.subquestions:
                     sq.approved = True
                 return plan
-            plan = self.planner.revise_plan(question, fb)   # unlimited: no quota spent yet
+            plan = self.planner.revise_plan(question, fb, plan)   # review 1 has no cap; each revision is one model request
 
     # ---------------------------------------------------------------- retrieval
+    def _may_reformulate(self, sq: SubQuestion) -> bool:
+        """Has this sub-question any of its reformulation budget left in the current pass?
+
+        The count is kept per pass because a scope revision produces a new plan
+        whose sub-questions reuse the ids 1..n and start with a fresh budget.
+        """
+        return self._pass_retries.get(sq.id, 0) < config.MAX_REFORMULATIONS
+
     def _reformulate(self, plan: ResearchPlan, idx: int, reason: str, question: str) -> SubQuestion:
-        """Spend the sub-question's single reformulation. Caller must check retried_once first."""
+        """Spend one reformulation for this sub-question. Caller must check _may_reformulate first."""
         sq = plan.subquestions[idx]
-        log.info("threshold | subquestion=%d | %s | reformulating (1 of %d allowed)",
-                 sq.id, reason, config.MAX_REFORMULATIONS)
+        self._pass_retries[sq.id] = self._pass_retries.get(sq.id, 0) + 1
+        log.info("threshold | subquestion=%d | %s | reformulating (%d of %d allowed)",
+                 sq.id, reason, self._pass_retries[sq.id], config.MAX_REFORMULATIONS)
         new_sq = self.planner.reformulate_query(sq, reason, question)
         plan.subquestions[idx] = new_sq
         self.retry_counts[sq.id] = self.retry_counts.get(sq.id, 0) + 1
@@ -86,16 +115,23 @@ class Orchestrator:
         return out
 
     def _gather_evidence(self, question: str, plan: ResearchPlan) -> Tuple[List[Paper], List[Assessment]]:
+        """One pass over the plan: search, de-duplicate, verify and score every sub-question.
+
+        Returns every distinct paper found and one assessment per paper. Runs
+        once per run, or twice when the researcher rejects the scope.
+        """
         seen: Set[str] = set()
         papers: List[Paper] = []
         assessments: List[Assessment] = []
+        self._pass_retries = {}
+        self.retriever.reset_stats()    # the brief reports the searches behind this pass's evidence only
 
         for idx in range(len(plan.subquestions)):
             sq = plan.subquestions[idx]
             found = self.retriever.retrieve_evidence(sq)
 
             # Trigger 1 - the Retrieval Agent's own goal check: enough usable records?
-            if not self.retriever.assess_threshold(found) and not sq.retried_once:
+            if not self.retriever.assess_threshold(found) and self._may_reformulate(sq):
                 sq = self._reformulate(plan, idx, self.retriever.reformulation_reason(found), question)
                 found += self.retriever.retrieve_evidence(sq)
 
@@ -103,10 +139,10 @@ class Orchestrator:
             assessed = self.evaluator.evaluate_evidence(question, [sq], new)
 
             # Trigger 2 - the orchestrator's check after screening: enough *relevant* records?
-            # Stage 4's live run showed why this matters: a query can return 20 abstracts of
-            # which only one answers the sub-question. Same single-retry budget.
+            # Stage 4's live run showed why this matters: sub-question 4's search returned 20
+            # abstracts, 12 of them new, and only one answered it. Same single-retry budget.
             relevant = sum(1 for a in assessed if a.selected)
-            if relevant < config.RETRIEVAL_THRESHOLD and not sq.retried_once:
+            if relevant < config.RETRIEVAL_THRESHOLD and self._may_reformulate(sq):
                 rejections = " | ".join([a.reason[:90] for a in assessed if not a.selected][:3])
                 reason = (f"the query returned {len(new)} records but only {relevant} were relevant "
                           f"(minimum {config.RETRIEVAL_THRESHOLD}); typical rejections: {rejections}")
@@ -125,6 +161,7 @@ class Orchestrator:
     # ------------------------------------------------------------------ review 2
     @staticmethod
     def _parse_numbers(text: str) -> List[int]:
+        """The paper numbers in a review-2 answer such as 'drop 3, 7'."""
         return [int(n) for n in re.findall(r"\d+", text)]
 
     def _review_evidence(self, plan: ResearchPlan, selected: List[Paper],
@@ -151,9 +188,14 @@ class Orchestrator:
 
     # ---------------------------------------------------------------------- run
     def run(self, question: str) -> Brief:
+        """Take one research question through the whole pipeline and return the saved brief."""
         log.info("run | question=%r", question)
         plan = self._approved_plan(question)
         limitations: List[str] = []
+        if self.planner.constraints:
+            # The brief has to show the scope it was produced under, and how far that scope was enforced.
+            limitations.append(f"The run was given the constraint {self.planner.constraints!r}. It was written into the "
+                               "planning and query-rewriting prompts; it was not applied as a filter to the papers found.")
 
         while True:
             papers, assessments = self._gather_evidence(question, plan)
@@ -165,7 +207,7 @@ class Orchestrator:
             self.scope_revision_count += 1
             log.info("scope revision %d/%d | feedback=%r", self.scope_revision_count, config.MAX_SCOPE_REVISIONS, feedback)
             limitations.append(f"The researcher rejected the first evidence set and revised the scope once: {feedback!r}.")
-            plan = self._approved_plan(question, feedback=feedback)
+            plan = self._approved_plan(question, feedback=feedback, previous=plan)
 
         # Synthesis happens only on approved evidence - the agent never writes
         # about a paper the researcher has not seen and accepted.
@@ -198,9 +240,9 @@ class Orchestrator:
                      assessments: List[Assessment]) -> List[str]:
         """What this search could NOT establish - computed from the run, not written by the model.
 
-        The proposal's traceability requirement: a brief that says what it does
-        not cover is one a researcher can trust more than one that only says
-        what it found.
+        The proposal lists "the search's stated limitations" among the brief's
+        contents (section 1): a brief that says what it does not cover is one a
+        researcher can trust more than one that only says what it found.
         """
         out = []
         reformulated = [sq for sq in plan.subquestions if sq.previous_query]
@@ -218,8 +260,10 @@ class Orchestrator:
             out.append(f"{removed} paper(s) were removed by the researcher at review 2.")
         unverified = sum(1 for p in selected if p.doi_verified is False)
         if unverified:
-            out.append(f"{unverified} of {len(selected)} approved papers have DOIs not registered with Crossref "
-                       "(typically arXiv preprints registered with DataCite); they are flagged, not excluded.")
+            # "Unverified" covers three cases (validation.py); the sentence has to be true of all of them.
+            out.append(f"{unverified} of {len(selected)} approved papers could not be verified with Crossref: no record "
+                       "under the DOI (typically arXiv preprints registered with DataCite), a title that does not "
+                       "match, or no DOI at all. They are flagged, not excluded.")
         n_dropped = sum(1 for a in assessments if not a.selected)
         out += [
             f"Relevance was judged from title and abstract only; {n_dropped} of {len(papers)} retrieved papers "

@@ -106,9 +106,8 @@ def test_full_run_produces_summaries_themes_gaps_and_computed_limitations():
             n = prompt.count("] Title:")
             return json.dumps({"summaries": [{"index": i + 1, "summary": f"s{i+1}"} for i in range(n)]})
         if "synthesising the evidence" in prompt:
-            return json.dumps({"themes": [{"statement": "t", "paper_numbers": [1, 2]}], "gaps": ["g"]}) \
-                if config.MIN_THEMES <= 1 else \
-                json.dumps({"themes": [{"statement": "t1", "paper_numbers": [1]}, {"statement": "t2", "paper_numbers": [2]}], "gaps": ["g"]})
+            return json.dumps({"themes": [{"statement": "t1", "paper_numbers": [1]},
+                                          {"statement": "t2", "paper_numbers": [2]}], "gaps": ["g"]})
         n = prompt.count("] Title:")
         return json.dumps({"scores": [{"index": i + 1, "relevance_score": 4, "reason": "r"} for i in range(n)]})
 
@@ -126,4 +125,5 @@ def test_full_run_produces_summaries_themes_gaps_and_computed_limitations():
     assert "abstract" in joined and "checked against the full texts" in joined
     assert "openalex: 3 of 3 searches answered, 18 records" in joined       # Stage 7: sources tally, no failover line
     assert "failover" not in joined
-    assert "18 of 18 approved papers have DOIs not registered" in joined     # all mocked as not-in-Crossref
+    assert "18 of 18 approved papers could not be verified with Crossref" in joined   # all mocked as not-in-Crossref
+    assert "constraint" not in joined                                        # none was given, so none is reported

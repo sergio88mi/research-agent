@@ -16,7 +16,8 @@ API notes (api.semanticscholar.org, Graph API v1, checked 30 Sept 2026):
 paper/search returns {"total", "offset", "next", "data": [...]}; the DOI sits
 in externalIds; abstracts are plain text (unlike OpenAlex's inverted index).
 Unauthenticated callers share one public rate pool; a free key (S2_API_KEY)
-gives a dedicated 1 request/second. 429/5xx are retried by agents/http.py.
+gives a dedicated 1 request/second. 429, 502, 503 and 504 are retried by
+agents/http.py.
 """
 from typing import Any, Dict, List, Optional
 
@@ -62,7 +63,7 @@ def search(query: str, per_page: int = config.RESULTS_PER_QUERY) -> List[Paper]:
     data = cache.get("semanticscholar", cache_key)
     if data is None:
         response = http.get_with_retry(config.S2_ENDPOINT, params=params, headers=headers,
-                                       timeout=30, name="semanticscholar")
+                                       name="semanticscholar")
         data = response.json()
         cache.put("semanticscholar", cache_key, data)
 

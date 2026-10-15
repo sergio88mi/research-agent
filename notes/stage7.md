@@ -1,7 +1,7 @@
 # Stage 7 - A second source and automatic failover (after tutor feedback)
 
 **Why this stage exists:** the tutor's feedback on the team design proposal
-(mark released 29 Sept) made three points. One of them was about retrieval:
+(64%, Merit; read on 29 Sept) made three points. One of them was about retrieval:
 the design leaned on one API for the main search and kept the other only as
 a fallback, which limits coverage and makes every run hostage to that API's
 downtime and rate limits. The advice was to use several sources as part of
@@ -24,7 +24,7 @@ changes the retrieval design rather than adding a feature.
    the orchestrator or the other agents knows how many sources there are.
 3. **Retrieval Agent** - for every sub-question it now runs every configured
    source and merges the records. If a source raises after the retry policy
-   has given up (HTTP 429/5xx exhausted, timeout, connection error, or a
+   has given up (HTTP 429/502/503/504 exhausted, timeout, connection error, or a
    non-transient HTTP error), it logs
    `source=<name> failed (...) - continuing with remaining sources`, counts
    the failure, and carries on. The failed source is tried again on the next
@@ -47,8 +47,8 @@ the feedback was after; the one-reformulation cap is unchanged.
 
 **Why the source list is configuration:** it makes the failover demonstrable
 without touching code - `S2_ENDPOINT` can be pointed at a non-existent path
-for one run so that Semantic Scholar fails at once (HTTP 404, not retried)
-and the log and brief show the run continuing on OpenAlex. That is
+for one run so that Semantic Scholar fails on a non-transient answer (HTTP
+404, not retried) and the log and brief show the run continuing on OpenAlex. That is
 functional test FT-11.
 
 **Tests:** `pytest` -> 68 passed (12 new). Semantic Scholar parsing from a

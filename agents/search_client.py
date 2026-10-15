@@ -1,16 +1,16 @@
 """
 OpenAlex search client - the Retrieval Agent's connection to the outside world.
 
-Why OpenAlex: it needs no API key (a contact email gets you the faster "polite
-pool"), has strong abstract coverage, and is the proposal's named fallback
-source. This module returns normalised Paper records, so adding a source
-changes one function, not any agent - exactly the decoupling the design
-promised. Stage 7 used that: Semantic Scholar (s2_client.py) now runs
+Why OpenAlex: it could be used without an API key when the build began (it
+still can, on a small daily budget; a free key raises it tenfold - remediation
+#10), it has strong abstract coverage, and it is the proposal's named fallback
+source (section 3). This module returns normalised Paper records, so adding a
+source means one more client module, not a change to any agent. Stage 7 used
+that: Semantic Scholar (s2_client.py) now runs
 alongside this client for every search, and the Retrieval Agent fails over
 between them.
 """
 from typing import Any, Dict, List, Optional
-
 
 import config
 from agents import cache, http
@@ -68,7 +68,7 @@ def search(query: str, per_page: int = config.RESULTS_PER_QUERY) -> List[Paper]:
     cache_key = f"{query}|{per_page}"
     data = cache.get("openalex", cache_key)
     if data is None:
-        response = http.get_with_retry(config.OPENALEX_ENDPOINT, params=params, timeout=30, name="openalex")
+        response = http.get_with_retry(config.OPENALEX_ENDPOINT, params=params, name="openalex")
         data = response.json()
         cache.put("openalex", cache_key, data)     # replayable later, and quota-safe
 

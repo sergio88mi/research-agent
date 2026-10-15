@@ -1,18 +1,20 @@
 """
 Retrieval Agent.
 
-Its local goal (from the proposal): obtain enough usable scholarly records for
-each sub-question. It can search (Stage 1), it can judge whether a search
+Its local goal (proposal, section 2: it "judges whether it met a predefined
+record threshold"): obtain enough usable scholarly records for each
+sub-question. It can search (Stage 1), it can judge whether a search
 met its goal (Stage 5), and since Stage 7 it searches several sources for
 every sub-question and carries on when one of them fails.
 
 Why this agent has no LLM: deciding whether a search returned enough usable
 records is a count, not a judgement. Agency here comes from having a goal and
-acting on its own assessment of success - not from a language model.
+acting on its own assessment of success - the autonomy and pro-activeness in
+Wooldridge and Jennings' (1995) account of an agent - not from a language model.
 
 Why it does not reformulate the query itself: writing a better query is a
 language task, so the request goes to the Planning Agent (via the
-orchestrator, which also enforces the one-retry cap on SubQuestion.retried_once).
+orchestrator, which also enforces the one-retry cap).
 
 Why several sources, and why failover lives here (Stage 7): the design had
 one primary API with a second held back as a fallback. The tutor's feedback
@@ -48,15 +50,28 @@ SOURCE_CLIENTS = {
 
 
 class RetrievalAgent:
+    """Searches every configured source for a sub-question and judges whether it found enough."""
+
     def __init__(self) -> None:
         unknown = [s for s in config.SOURCES if s not in SOURCE_CLIENTS]
         if unknown or not config.SOURCES:
-            raise ValueError(f"config.SOURCES must name one or more of {sorted(SOURCE_CLIENTS)}; got {config.SOURCES}")
-        # Per-source tallies for the run, read by the orchestrator when it writes
-        # the brief's limitations: how many searches each source answered or failed.
-        self.source_stats: Dict[str, Dict[str, int]] = {
-            name: {"searches": 0, "failed": 0, "records": 0} for name in config.SOURCES}
+            # RuntimeError like every other "this run cannot go ahead" condition, so main() reports it in one line
+            raise RuntimeError(f"config.SOURCES must name one or more of {sorted(SOURCE_CLIENTS)}; got {config.SOURCES}")
+        self.source_stats: Dict[str, Dict[str, int]] = {}
         self.last_errors: Dict[str, str] = {}
+        self.reset_stats()
+
+    def reset_stats(self) -> None:
+        """Start the per-source tallies again.
+
+        The orchestrator reads them when it writes the brief's limitations: how
+        many searches each source answered or failed. It calls this at the
+        start of every evidence-gathering pass, so that after a scope revision
+        the brief counts the searches behind the evidence it actually reports,
+        not those of the rejected first pass as well (remediation #15).
+        """
+        self.source_stats = {name: {"searches": 0, "failed": 0, "records": 0} for name in config.SOURCES}
+        self.last_errors = {}
 
     def retrieve_evidence(self, subquestion: SubQuestion) -> List[Paper]:
         """Search every configured source for one sub-question; tag every result with its origin.
@@ -101,6 +116,7 @@ class RetrievalAgent:
             for name, s in self.source_stats.items())
 
     def failed_sources(self) -> Dict[str, int]:
+        """Sources that failed at least one search in this pass, with the number of failures."""
         return {name: s["failed"] for name, s in self.source_stats.items() if s["failed"]}
 
     @staticmethod
@@ -108,11 +124,25 @@ class RetrievalAgent:
         """A record without an abstract cannot be screened for relevance, so it is not usable."""
         return sum(1 for p in papers if p.abstract)
 
+    @staticmethod
+    def distinct_usable_count(papers: List[Paper]) -> int:
+        """Usable records, counting a paper once however many sources returned it.
+
+        With two sources the same paper often comes back twice. The goal is
+        "enough different papers to screen", so the threshold must not be met
+        by one paper counted twice (remediation #15).
+        """
+        seen = set()
+        for p in papers:
+            if p.abstract:
+                seen.add((p.doi or p.title).strip().lower())
+        return len(seen)
+
     def assess_threshold(self, papers: List[Paper]) -> bool:
-        """Did the search meet the agent's goal? (config.RETRIEVAL_THRESHOLD usable records)"""
-        return self.usable_count(papers) >= config.RETRIEVAL_THRESHOLD
+        """Did the search meet the agent's goal? (config.RETRIEVAL_THRESHOLD distinct usable records)"""
+        return self.distinct_usable_count(papers) >= config.RETRIEVAL_THRESHOLD
 
     def reformulation_reason(self, papers: List[Paper]) -> str:
         """The message the agent sends when requesting a new query."""
-        return (f"the search returned {len(papers)} records but only {self.usable_count(papers)} "
-                f"had abstracts (minimum {config.RETRIEVAL_THRESHOLD})")
+        return (f"the search returned {len(papers)} records but only {self.distinct_usable_count(papers)} "
+                f"different papers with an abstract (minimum {config.RETRIEVAL_THRESHOLD})")

@@ -1,0 +1,14 @@
+
+=================== FT-16a no API key (.env set aside for this one command) | 2026-10-02 09:19:51 ===================
+2026-10-02 09:19:51,294 | INFO | research_agent.orchestrator | run | question='test'
+2026-10-02 09:19:51,294 | INFO | research_agent.planning | planning | question='test' | feedback=''
+2026-10-02 09:19:51,294 | ERROR | research_agent.main | run | stopped | GEMINI_API_KEY is not set - copy .env.example to .env and add your key.
+
+Run stopped: GEMINI_API_KEY is not set - copy .env.example to .env and add your key.
+exit status: 1
+
+=================== FT-16b input ends at the question prompt (as with Ctrl-D) | 2026-10-02 09:19:51 ===================
+Research question: 2026-10-02 09:19:51,437 | INFO | research_agent.main | run | interrupted by the researcher
+
+Stopped - no brief written for this run.
+exit status: 130

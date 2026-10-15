@@ -101,7 +101,6 @@ def test_429_uses_retry_after_header_and_logs_quota_message(monkeypatch, caplog)
 def test_transient_503_is_retried_then_succeeds(monkeypatch):
     # Why: the live Stage 4 run died on a 503 "high demand" (remediation log). Two 503s then a 200 must succeed.
     monkeypatch.setattr(config, "GEMINI_API_KEY", "test-key")
-    monkeypatch.setattr(config, "CACHE_DIR", "/nonexistent-cache-dir-for-test")
     waits = []
     with patch("agents.llm_client.requests.post", side_effect=[_Resp(503), _Resp(503), _Resp(200)]) as post, \
          patch("agents.llm_client.time.sleep", side_effect=waits.append), \

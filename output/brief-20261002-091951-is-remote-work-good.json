@@ -1,0 +1,1268 @@
+{
+  "research_question": "is remote work good",
+  "interpretation": "I interpret the question as an inquiry into the overall impacts of remote work on employee productivity, organizational outcomes, and individual well-being.",
+  "subquestions": [
+    {
+      "id": 1,
+      "text": "How does remote work affect employee productivity and performance?",
+      "search_query": "remote work employee productivity performance output efficiency",
+      "approved": true,
+      "retried_once": false,
+      "previous_query": null
+    },
+    {
+      "id": 2,
+      "text": "What are the psychological and well-being impacts of working remotely?",
+      "search_query": "remote work mental health stress isolation well-being burnout",
+      "approved": true,
+      "retried_once": false,
+      "previous_query": null
+    },
+    {
+      "id": 3,
+      "text": "How does remote work influence work-life balance and personal relationships?",
+      "search_query": "telecommuting work-life balance personal life family dynamics boundary",
+      "approved": true,
+      "retried_once": false,
+      "previous_query": null
+    },
+    {
+      "id": 4,
+      "text": "What is the impact of remote work on organizational culture and collaboration?",
+      "search_query": "virtual teams organizational culture collaboration communication cohesion management",
+      "approved": true,
+      "retried_once": false,
+      "previous_query": null
+    }
+  ],
+  "selected_papers": [
+    {
+      "doi": "10.1111/apps.12290",
+      "title": "Achieving Effective Remote Working During the COVID‐19 Pandemic: A Work Design Perspective",
+      "authors": [
+        "Bin Wang",
+        "Yukun Liu",
+        "Jing Qian",
+        "Sharon K. Parker"
+      ],
+      "year": 2020,
+      "abstract": "Existing knowledge on remote working can be questioned in an extraordinary pandemic context. We conducted a mixed-methods investigation to explore the challenges experienced by remote workers at this time, as well as what virtual work characteristics and individual differences affect these challenges. In Study 1, from semi-structured interviews with Chinese employees working from home in the early days of the pandemic, we identified four key remote work challenges (work-home interference, ineffective communication, procrastination, and loneliness), as well as four virtual work characteristics that affected the experience of these challenges (social support, job autonomy, monitoring, and workload) and one key individual difference factor (workers' self-discipline). In Study 2, using survey data from 522 employees working at home during the pandemic, we found that virtual work characteristics linked to worker's performance and well-being via the experienced challenges. Specifically, social support was positively correlated with lower levels of all remote working challenges; job autonomy negatively related to loneliness; workload and monitoring both linked to higher work-home interference; and workload additionally linked to lower procrastination. Self-discipline was a significant moderator of several of these relationships. We discuss the implications of our research for the pandemic and beyond.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.3390/su15054529",
+      "title": "The Impact of Work-from-Home on Employee Performance and Productivity: A Systematic Review",
+      "authors": [
+        "Godfred Anakpo",
+        "Zanele Nqwayibana",
+        "Syden Mishi"
+      ],
+      "year": 2023,
+      "abstract": "During the COVID-19 pandemic, working from home has unquestionably become one of the most extensively employed techniques to minimize unemployment, keep society operating, and shield the public from the virus. However, the impacts of work-from-home (WFH) on employee productivity and performance is not fully known; studies on the subject are fragmented and in different contexts. The purpose of this study is therefore to provide systematic review on the impact of WFH on employee productivity and performance. A sample of 26 studies out of 112 potential studies (from various databases, including Scopus, Google Scholar, and the Web of Science database from 2020 to 2022) were used after a comprehensive literature search and thorough assessment based on PRISMA-P guidelines. Findings reveal that the impact of the WFH model on employee productivity and performance depend on a host of factors, such as the nature of the work, employer and industry characteristics, and home settings, with a majority reporting a positive impact and few documenting no difference or a negative impact. This study recommends that an improvement in technology and information technology (IT) training and capacity-building would yield more significant results to those who are willing to adopt the WFH model even after the pandemic.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.1080/09585192.2023.2221385",
+      "title": "Post-COVID remote working and its impact on people, productivity, and the planet: an exploratory scoping review",
+      "authors": [
+        "Ruth McPhail",
+        "Xi Wen Chan",
+        "Robyn May",
+        "Adrian John Wilkinson"
+      ],
+      "year": 2023,
+      "abstract": "Since the COVID-19 pandemic outbreak, there has been a wealth of studies and reports published on the impacts of remote working (or work-from-home) due to pandemic lockdown measures. The primary aim of this article is to synthesise this work and conduct an exploratory scoping review of both scholarly and grey literature on the impacts of the pandemic on people, productivity, and the planet, with a focus on remote working (or work-from-home) and the post-pandemic workplace. Further, in light of the wide range of terms such as work-from-home, remote working, hybrid working, teleworking, telecommuting, and work-from-anywhere, a secondary but necessary aim of this scoping review is to clarify these terms before reviewing the extant literature on the multi-level impacts of the COVID-19 pandemic. A review of this literature revealed that most of the scholarly research and industry reports published since the pandemic outbreak are data-driven and some anecdotal rather than theory-driven. The common themes and findings backed by evidence include the gendered division of labour, organisational trust and managerial trust in employees, changes in workforce management, virtual communication and collaboration, reduced carbon emissions, and increased plastic consumption. The scoping review concludes by discussing the post-pandemic workplace and a brief research agenda.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.3390/su14010294",
+      "title": "Post-Pandemic Office Work: Perceived Challenges and Opportunities for a Sustainable Work Environment",
+      "authors": [
+        "Maral Babapour Chafi",
+        "Annemarie Hultberg",
+        "Nina Bozic Yams"
+      ],
+      "year": 2021,
+      "abstract": "The widespread adoption of remote and hybrid work due to COVID-19 calls for studies that explore the ramifications of these scenarios for office workers from an occupational health and wellbeing perspective. This paper aims to identify the needs and challenges in remote and hybrid work and the potential for a sustainable future work environment. Data collection involved two qualitative studies with a total of 53 participants, who represented employees, staff managers, and service/facility providers at three Swedish public service organisations (primarily healthcare and infrastructure administration). The results describe opportunities and challenges with the adoption of remote and hybrid work from individual, group, and leadership perspectives. The main benefits of remote work were increased flexibility, autonomy, work-life balance and individual performance, while major challenges were social aspects such as lost comradery and isolation. Hybrid work was perceived to provide the best of both worlds of remote and office work, given that employees and managers develop new skills and competencies to adjust to new ways of working. To achieve the expected individual and organisational benefits of hybrid work, employers are expected to provide support and flexibility and re-design the physical and digital workplaces to fit the new and diverse needs of employees.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.3390/su12135332",
+      "title": "Working from Home—Who Is Happy? A Survey of Lithuania’s Employees during the COVID-19 Quarantine Period",
+      "authors": [
+        "Agota Giedre Raišienė",
+        "Violeta Rapuano",
+        "Kristina Varkulevičiūtė",
+        "Katarína Stachová"
+      ],
+      "year": 2020,
+      "abstract": "The virtual way of working is becoming increasingly popular due to its potential for cost savings; it is also a way for an organization to be more agile and adapt to crises such as global pandemics. This innovative way of working brings new challenges to organizations that suddenly have to switch to telework. In fact, telework raises quite a few issues for employees, related to communication, collaboration, and the application of ICT (Information and Communication Technologies). This study examined the evaluation of telework through a questionnaire by different conditional groups of 436 teleworkers in Lithuania. Through a correlation analysis between the study variables, the findings suggest that there are differences in the evaluation of factors affecting telework efficiency and qualities required from a remote worker, depending on gender, age, education, work experience, and experience of telework. The results are discussed in terms of the characteristics of the most satisfied and the most dissatisfied teleworkers.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.3389/fpsyg.2021.730969",
+      "title": "Remote Work Decreases Psychological and Physical Stress Responses, but Full-Remote Work Increases Presenteeism",
+      "authors": [
+        "Akiyoshi Shimura",
+        "Katsunori Yokoi",
+        "Yoshiki Ishibashi",
+        "Yusaku Akatsuka",
+        "Takeshi Inoue"
+      ],
+      "year": 2021,
+      "abstract": "Introduction: Remote work was widely promoted in 2020, as a result of the COVID-19 pandemic. However, the effects of remote work on psychological and physical stress responses and presenteeism of workers remain unclear. This research aims to provide empirical evidence of the implications for people and organizations of this new scenario of working from home. Methods: A two-wave panel survey of before and after the pandemic was performed to investigate the effects of remote work on these aspects among office workers. A total of 3,123 office workers from 23 tertiary industries responded to a questionnaire. Participants were surveyed about their job stress conditions and sleep practices in both 2019 and 2020, who had not done remote work as of 2019 were included in the study. The effects of remote work on psychological and physical stress responses and presenteeism were analyzed by multivariate analysis, with the adjustment of age, gender, overtime, job stressors, social support, and sleep status. Results: The multivariate logistic regression analysis demonstrated that remote work was associated with the reduction of psychological and physical stress responses independently of changes of job stressors, social support, sleep disturbance, and total sleep time on workdays. On the other hand, remote work of 5 days a week (full-remote) was associated with the reduction of work productivity. Conclusion: Promoting remote work can reduce psychological and physical stress responses, however, full-remote work has the risk of worsening presenteeism. From the viewpoint of mental health, the review of working styles is expected to have positive effects, even after the end of the COVID-19 pandemic.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.1038/s41586-024-07500-2",
+      "title": "Hybrid working from home improves retention without damaging performance",
+      "authors": [
+        "Nicholas Bloom",
+        "Ruobing Han",
+        "James Liang"
+      ],
+      "year": 2024,
+      "abstract": "Abstract Working from home has become standard for employees with a university degree. The most common scheme, which has been adopted by around 100 million employees in Europe and North America, is a hybrid schedule, in which individuals spend a mix of days at home and at work each week 1,2 . However, the effects of hybrid working on employees and firms have been debated, and some executives argue that it damages productivity, innovation and career development 3–5 . Here we ran a six-month randomized control trial investigating the effects of hybrid working from home on 1,612 employees in a Chinese technology company in 2021–2022. We found that hybrid working improved job satisfaction and reduced quit rates by one-third. The reduction in quit rates was significant for non-managers, female employees and those with long commutes. Null equivalence tests showed that hybrid working did not affect performance grades over the next two years of reviews. We found no evidence for a difference in promotions over the next two years overall, or for any major employee subgroup. Finally, null equivalence tests showed that hybrid working had no effect on the lines of code written by computer-engineer employees. We also found that the 395 managers in the experiment revised their surveyed views about the effect of hybrid working on productivity, from a perceived negative effect (−2.6% on average) before the experiment to a perceived positive one (+1.0%) after the experiment. These results indicate that a hybrid schedule with two days a week working from home does not damage performance.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.1257/jep.37.4.23",
+      "title": "The Evolution of Work from Home",
+      "authors": [
+        "Jose Maria Barrero",
+        "Nicholas Bloom",
+        "Steven J. Davis"
+      ],
+      "year": 2023,
+      "abstract": "Full days worked at home account for 28 percent of paid workdays among Americans 20–64 years old, as of mid-2023. That’s about four times the 2019 rate and ten times the rate in the mid-1990s. We first explain why the big shift to work from home has endured rather than reverting to prepandemic levels. We then consider how work-from-home rates vary by worker age, sex, education, parental status, industry and local population density, and why it is higher in the United States than other countries. We also discuss some implications for pay, productivity, and the pace of innovation. Over the next five years, US business executives anticipate modest increases in work-from-home rates at their own companies. Other factors that portend an enduring shift to work from home include the ongoing adaptation of managerial practices and further advances in technologies, products, and tools that support remote work.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.3390/su14074220",
+      "title": "Remote Work Efficiency from the Employers’ Perspective—What’s Next?",
+      "authors": [
+        "Zenon Pokojski",
+        "Agnieszka Kister",
+        "Marcin Lipowski"
+      ],
+      "year": 2022,
+      "abstract": "Remote work has been of interest to managers since the implementation of new information and communication technologies (ICTs). During the initial period, it was treated as an employee’s privilege or even a luxury and as such it was not a popular practice. The COVID-19 pandemic and the intervening period have changed attitudes toward remote work, as it became a necessity for many organisations. However, in connection with its use, many new, previously unknown problems have arisen, such as: the organisation of remote work, the supervision and monitoring of work performance, and employee support. The present research was conducted using a standardised questionnaire computer-assisted telephone interview (CATI) method in May–June 2021 on a population of 248 enterprises, divided into micro, small, medium-sized and large entities. The research data were collected during the COVID-19 pandemic which, on the one hand, provided an exceptional opportunity to fill in the theoretical gaps that were existing in this field; however, on the other hand, it could be burdened with certain flaws due to the context of the pandemic. An enterprise’s attitude to remote work has a positive influence on the efficiency of the remote work, the control of the remote work and the remote work support, with the strongest impact exerted on the last of the factors mentioned. A better attitude to remote work influences, to the largest degree, an enterprise’s support for performing work from remote locations outside of corporate offices. Among the enterprises that were surveyed, the following were most frequently indicated as elements of such support: additional office equipment provided to an employee, remote work training, and the installation of additional computer programs. Financial support was declared by about 11% of the enterprises and it usually took the form of a remote work allowance or funds to cover the costs of purchasing equipment or paying for the Internet.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.1080/1359432x.2018.1541886",
+      "title": "Systematically reviewing remote e-workers’ well-being at work: a multidimensional approach",
+      "authors": [
+        "Maria Charalampous",
+        "Christine Anne Grant",
+        "Carlo Tramontano",
+        "Evie Michailidis"
+      ],
+      "year": 2018,
+      "abstract": "The practice of remote e-working, which involves work conducted at anyplace, anytime, using technology, is on the increase. The aim of this systematic literature review is to gain a deeper understanding of the association between remote e-working, within knowledge workers, and the five dimensions of well-being at work: affective, cognitive, social, professional, and psychosomatic. Sixty-three studies employing quantitative, qualitative and mixed-method designs have been included in the review. Findings indicate that we know more about remote e-workers’ affective state and their social and professional life than we know about their cognitive functioning and psychosomatic conditions. Whilst the research indicates a positive focus there are some negative aspects of this way of working which are highlighted within this review; such as social and professional isolation, and perceived threats in professional advancement. This review may be of great importance for academics, to continue the theoretical advancement of research into remote e-working, and practitioners, to implement and manage remote e-working attitudes and policies more effectively.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.1108/er-08-2012-0059",
+      "title": "An exploration of the psychological factors affecting remote e‐worker's job effectiveness, well‐being and work‐life balance",
+      "authors": [
+        "Christine Anne Grant",
+        "Louise M. Wallace",
+        "Peter C. Spurgeon"
+      ],
+      "year": 2013,
+      "abstract": "Purpose The purpose of this paper is to explore the impact of remote e‐working on the key research areas of work‐life balance, job effectiveness and well‐being. The study provides a set of generalisable themes drawn from the key research areas, including building trust, management style and the quality of work and non‐working life. Design/methodology/approach The paper is an exploratory study into the psychological factors affecting remote e‐workers using qualitative thematic analysis of eleven in‐depth interviews with e‐workers, across five organisations and three sectors. All participants worked remotely using technology independent of time and location for several years and considered themselves to be experts. Findings The paper provides insights into the diverse factors affecting remote e‐workers and produces ten emerging themes. Differentiating factors between e‐workers included access to technology, ability to work flexibly and individual competencies. Adverse impacts were found on well‐being, due to over‐working and a lack of time for recuperation. Trust and management style were found to be key influences on e‐worker effectiveness. Research limitations/implications Because of the exploratory nature of the research and approach the research requires further testing for generalisability. The emerging themes could be used to develop a wide‐scale survey of e‐workers, whereby the themes would be further validated. Practical implications Practical working examples are provided by the e‐workers and those who also manage e‐workers based on the ten emerging themes. Originality/value This paper identifies a number of generalisable themes that can be used to inform the psychological factors affecting remote e‐worker effectiveness.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.3390/su12239804",
+      "title": "Social Isolation and Stress as Predictors of Productivity Perception and Remote Work Satisfaction during the COVID-19 Pandemic: The Role of Concern about the Virus in a Moderated Double Mediation",
+      "authors": [
+        "Ferdinando Toscano",
+        "Salvatore Zappalà"
+      ],
+      "year": 2020,
+      "abstract": "From mid-March to the end of May 2020, millions of Italians were forced to work from home because of the lockdown provisions imposed by the Italian government to contain the COVID-19 epidemic. As a result, many employees had to suddenly switch to remote work, experiencing both troubles and opportunities. Social isolation from colleagues and the workplace represents a typical aspect of remote work which increased significantly during the social confinement imposed by the government. This study investigates the correlates of social isolation in terms of stress, perceived remote work productivity and remote work satisfaction, proposing the sequential mediation of stress and perceived remote work productivity, and the moderating role of concern about the new coronavirus. An online survey was conducted, and the responses of 265 employees showed the deleterious role of social isolation in stress, which leads to decreased perceived remote work productivity that, in turn, is related to remote work satisfaction. Furthermore, the results suggest that concern about the virus moderates the relationships between social isolation and remote work satisfaction, from one side, and remote work perceived productivity and remote work satisfaction from the other. This latter result suggests that the indirect sequential effect of social isolation on remote work satisfaction is conditional on concern about the virus. Some conclusions are drawn to support managers and HR officers in the choices to better manage employees’ work during the health emergency.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.1007/s11218-022-09686-7",
+      "title": "Teacher stress and burnout in Australia: examining the role of intrapersonal and environmental factors",
+      "authors": [
+        "Annemaree Carroll",
+        "Kylee Forrest",
+        "Emma Sanders O’Connor",
+        "Libby Maree Flynn",
+        "Julie Bower",
+        "Samuel Fynes‐Clinton",
+        "Ashley York",
+        "Maryam Ziaei"
+      ],
+      "year": 2022,
+      "abstract": "Concerns regarding high rates of teacher stress and burnout are present globally. Yet there is limited current data regarding the severity of stress, or the role of intrapersonal and environmental factors in relation to teacher stress and burnout within the Australian context. The present study, conducted over an 18-month period, prior to the COVID pandemic, surveyed 749 Australian teachers to explore their experience of work-related stress and burnout; differences in stress and burnout across different demographic groups within the profession; as well as the contributing role of intrapersonal and environmental factors, particularly, emotion regulation, subjective well-being, and workload. Results showed over half of the sample reported being very or extremely stressed and were considering leaving the profession, with early career teachers, primary teachers, and teachers working in rural and remote areas reporting the highest stress and burnout levels. Conditional process analyses highlighted the importance of emotion regulation, workload and subjective well-being in the development of teacher stress and some forms of burnout. Implications for educational practice are discussed.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.3390/ijerph19073879",
+      "title": "Telework and Worker Health and Well-Being: A Review and Recommendations for Research and Practice",
+      "authors": [
+        "Julia L. O. Beckel",
+        "Gwenith G. Fisher"
+      ],
+      "year": 2022,
+      "abstract": "Telework (also referred to as telecommuting or remote work), is defined as working outside of the conventional office setting, such as within one's home or in a remote office location, often using a form of information communication technology to communicate with others (supervisors, coworkers, subordinates, customers, etc.) and to perform work tasks. Remote work increased over the last decade and tremendously in response to the COVID-19 pandemic. The purpose of this article is to review and critically evaluate the existing research about telework and worker health and well-being. In addition, we review and evaluate how engaging in this flexible form of work impacts worker health and well-being. Specifically, we performed a literature search on the empirical literature related to teleworking and worker health and well-being, and reviewed articles published after the year 2000 based on the extent to which they had been discussed in prior reviews. Next, we developed a conceptual framework based on our review of the empirical literature. Our model explains the process by which telework may affect worker health and well-being in reference to individual, work/life/family, organizational, and macro level factors. These components are explained in depth, followed by methodological and fundamental recommendations intended to guide future research, policies, and practices to maximize the benefits and minimize the harms associated with telework, and offer recommendations for future research.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.1080/1359432x.2021.2002299",
+      "title": "The impact of remote work and mediated communication frequency on isolation and psychological distress",
+      "authors": [
+        "Ward van Zoonen",
+        "Anu E. Sivunen"
+      ],
+      "year": 2021,
+      "abstract": "A massive shift towards remote work practices has presented many organizations and employees with acute challenges associated with multi-locational work. This shift underscores the need to reconsider isolation as one of the focal challenges of organizations in an era of increasingly dispersed and mediated work practices. This study relies on a three-wave survey among Finnish workers to investigate how remote work practices and the use of information and communication technology (ICT) have impacted perceptions of isolation during the global health pandemic, and whether these relationships have an effect on psychological distress. The findings indicate that facilitating the use of ICTs may help organizations and employees combat isolation, while simultaneous increases in remote work practices lead employees to feel more isolated. In addition, the findings highlight a reciprocal effect between psychological distress and isolation, suggesting that strain may both increase perceptions of isolation and be a result of being isolated.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.1002/hrm.22102",
+      "title": "Surviving remotely: How job control and loneliness during a forced shift to remote work impacted employee work behaviors and well‐being",
+      "authors": [
+        "William J. Becker",
+        "Liuba Y. Belkin",
+        "Sarah Tuskey",
+        "Samantha A. Conroy"
+      ],
+      "year": 2022,
+      "abstract": "Abstract This paper investigates the impact of job control and work‐related loneliness on employee work behaviors and well‐being during the massive and abrupt move to remote work amid the COVID‐19 pandemic. We draw on job‐demands control and social baseline theory to link employee perceived job control and work‐related loneliness to emotional exhaustion and work‐life balance and posit direct and indirect effects on employee minor counterproductive work behaviors, depression, and insomnia. Using a two‐wave data collection with a sample of U.S. working adults to test our predictions, we find that high job control was beneficially related to emotional exhaustion and work‐life balance, while high work‐related loneliness showed detrimental relationships with our variables of interest. Moreover, we find that the beneficial impact of high perceived job control was conditional on individual segmentation preferences such that the effects were stronger when segmentation preference was low. Our research extends the literature on remote work, job control, and workplace loneliness. It also provides insights for human resource professionals to manage widespread remote work that is likely to persist long after the COVID‐19 pandemic.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.1146/annurev-orgpsych-031413-091330",
+      "title": "Work–Family Boundary Dynamics",
+      "authors": [
+        "Tammy D. Allen",
+        "Eunae Cho",
+        "Laurenz Linus Meier"
+      ],
+      "year": 2014,
+      "abstract": "Theory, constructs, and research with regard to individual work–family boundary management dynamics are reviewed with the goal of promoting a greater understanding and integration of the existing literature. The article begins by noting trends that have contributed to interest in the topic, and then outlines major theoretical perspectives on boundary management and boundary characteristics, integration/segmentation, and associated constructs. It next notes limitations of existing research and concludes with recommendations for future research.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1177/0003122414531435",
+      "title": "Changing Work and Work-Family Conflict",
+      "authors": [
+        "Erin L. Kelly",
+        "Phyllis Moen",
+        "J. Michael Oakes",
+        "Wen Fan",
+        "Cassandra A. Okechukwu",
+        "Kelly D. Davis",
+        "Leslie B. Hammer",
+        "Ellen Ernst Kossek",
+        "Rosalind Berkowitz King",
+        "Ginger C. Hanson",
+        "Frank J. Mierzwa",
+        "Lynne M. Casper"
+      ],
+      "year": 2014,
+      "abstract": "Schedule control and supervisor support for family and personal life are work resources that may help employees manage the work-family interface. However, existing data and designs have made it difficult to conclusively identify the effects of these work resources. This analysis utilizes a group-randomized trial in which some units in an information technology workplace were randomly assigned to participate in an initiative, called STAR, that targeted work practices, interactions, and expectations by (a) training supervisors on the value of demonstrating support for employees' personal lives and (b) prompting employees to reconsider when and where they work. We find statistically significant, though modest, improvements in employees' work-family conflict and family time adequacy and larger changes in schedule control and supervisor support for family and personal life. We find no evidence that this intervention increased work hours or perceived job demands, as might have happened with increased permeability of work across time and space. Subgroup analyses suggest the intervention brings greater benefits to employees more vulnerable to work-family conflict. This study advances our understanding of the impact of social structures on individual lives by investigating deliberate organizational changes and their effects on work resources and the work-family interface with a rigorous design.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1111/soc4.12881",
+      "title": "The gendered pandemic: The implications of COVID‐19 for work and family",
+      "authors": [
+        "Jill E. Yavorsky",
+        "Yue Qian",
+        "Amanda C. Sargent"
+      ],
+      "year": 2021,
+      "abstract": "The COVID-19 pandemic has affected nearly all the aspects of society since it's onset in early 2020. In addition to infecting and taking the lives of millions of global citizens, the pandemic has fundamentally changed family and work patterns. The pandemic and associated mitigation measures have increased the unemployment rates, amplified health risks for essential workers required to work on-site, and led to unprecedented rates of telecommuting. Additionally, due to school/daycare closures and social distancing, many parents have lost access to institutional and informal childcare support during the COVID-19 crisis. Such losses in childcare support have significantly impacted the paid and unpaid labor of parents, particularly of mothers. In this article, we synthesize recent research on pandemic-related changes to work and family in the United States. Applying an intersectionality lens, we discuss the gendered implications of these changes. Because gender inequality in family and work are connected, COVID-19 has, in many cases, deepened the pre-existing gender inequalities in both realms.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.3390/ijerph18137069",
+      "title": "Remote Work, Work Stress, and Work–Life during Pandemic Times: A Latin America Situation",
+      "authors": [
+        "Juan Guillermo Sandoval-Reyes",
+        "Sandra Idrovo Carlier",
+        "Edison Jair Duque Oliva"
+      ],
+      "year": 2021,
+      "abstract": "The COVID-19 pandemic affected the relationship between work and life almost everywhere on the planet. Suddenly, remote work became the mainstream way of working for millions of workers. In this context, we explore how the relationship between remote work, work stress, and work–life developed during pandemic times in a Latin America context. In a sample of 1285 responses collected between April and May 2020, through a PLS-SEM model, we found that remote work in pandemic times increased perceived stress (β = 0.269; p < 0.01), reduced work–life balance (β = −0.225; p < 0.01) and work satisfaction (β = −0.190; p < 0.01), and increased productivity (β = 0.120; p < 0.01) and engagement (β = 0.120; p < 0.01). We also found a partial moderating effect, competitive and complementary, of perceived stress, and one significant gender difference: when working remotely, perceived stress affects men’s productivity more acutely than women’s productivity.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1080/23311975.2023.2242160",
+      "title": "Revolutionizing work-life balance: Unleashing the power of telecommuting on work engagement and exhaustion levels",
+      "authors": [
+        "Zahid Hussain Bhat",
+        "Uqba Yousuf",
+        "Nuzhat Saba"
+      ],
+      "year": 2023,
+      "abstract": "The COVID-19 pandemic has forced employees to telecommute.Telecommuting has resulted in a work overload in secret places.This has eroded the line between personal and professional life, increasing the risk of conflict.This article reviews the existing research on work-life balance and examines the impact of telecommuting on work-life balance.The study found that work-life interaction and workplace factors influence employee engagement and exhaustion.Workrelated expectations, such as emotional and time demands, must be addressed to decrease work-family conflict and create a good work-life balance.This review adds to the body of knowledge by establishing the importance of work-life balance for telecommuting.This review produced two scholarly contributions to work-life balance.Beginning with an overview of existing research topics and organized work-life balance concepts, second, it identified crucial study areas to understand distant work-life balance better.Implications for practice and future research directions are discussed as well.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1371/journal.pcbi.1009124",
+      "title": "Ten simple rules to improve academic work–life balance",
+      "authors": [
+        "Michael Bartlett",
+        "Feyza Nur Arslan",
+        "Adriana Bankston",
+        "Sarvenaz Sarabipour"
+      ],
+      "year": 2021,
+      "abstract": "The ability to strike a perceived sense of balance between work and life represents a challenge for many in academic and research sectors around the world.Before major shifts in the nature of academic work occurred, academia was historically seen as a rewarding and comparatively low-stress working environment [1].Academics today need to manage many tasks during a workweek.The current academic working environment often prioritizes productivity over well-being, with researchers working long days, on weekends, on and off campus, and largely alone, potentially on tasks that may not be impactful.Academics report less time for research due to increasing administrative burden and teaching loads [1][2][3].This is further strained by competition for job and funding opportunities [4,5], leading to many researchers spending significant time on applications, which takes away time from other duties such as performing research and mentorship [1,2].The current hypercompetitive culture is particularly impactful on early career researchers (ECRs) employed on short-term contracts and is a major driver behind the unsustainable working hours reported in research labs around the world, increases in burnout, and decline in satisfaction with work-life balance [6][7][8][9][10].ECRs may also find themselves constrained by the culture and management style of their laboratory and principal investigator (PI) [11][12].Work-life balance can be defined as an individual's appraisal of how well they manage work-and nonwork-related obligations in ways that the individual is satisfied with both, while simultaneously maintaining their health and well-being [13].Increasing hours at work can conflict with obligations outside of work, including but not limited to family care commitments, time with friends, time for self-care, and volunteering and community work.The increasing prevalence of technology that allows work to be out of the office can also exacerbate this conflict [14,15].The academic system's focus on publications and securing grant funding and academic positions instead of training, mentoring, and mental health has skewed the system negatively against prioritizing \"The whole scientist\" [5,16].Research focused on the higher education sector has revealed that poor work-life balance can result in lower productivity and impact, stifled academic entrepreneurship, lower career satisfaction and success, lower organizational commitment, intention to leave academia, greater levels of burnout, fatigue and decreased social interactions, and poor physical and mental health, which has become increasingly prevalent among graduate students [1,[17][18][19][20][21][22].For instance, a recent international survey of over 2,000 university staff views on work-life balance found that many academics feel stressed and underpaid and struggle to fit in time for personal relationships and family around their ever-growing",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1111/jomf.12810",
+      "title": "Telecommuting and gender inequalities in parents' paid and unpaid work before and during the COVID ‐19 pandemic",
+      "authors": [
+        "Thomas Lyttelton",
+        "Emma X. Zang",
+        "Kelly Musick"
+      ],
+      "year": 2021,
+      "abstract": "Objective: This study examines the relationship between telecommuting and gender inequalities in parents' time use at home and on the job before and during the COVID-19 pandemic. Background: Telecommuting is a potential strategy for addressing the competing demands of work and home and the gendered ways in which they play out. Limited evidence is mixed, however, on the implications of telecommuting for mothers' and fathers' time in paid and unpaid work. The massive increase in telecommuting due to COVID-19 underscores the critical need to address this gap in the literature. Method: = 83,676) were used to estimate the relationship between telecommuting and gender gaps in parents' time in paid and unpaid work before and during the pandemic. Matching and quasi-experimental methods better approximate causal relationships than prior studies. Results: Before the pandemic, telecommuting was associated with larger gender gaps in housework and work disruptions but smaller gender gaps in childcare, particularly among couples with two full-time earners. During the pandemic, telecommuting mothers maintained paid work to a greater extent than mothers working on-site, whereas fathers' work hours did not differ by work location. Conclusion: In the context of weak institutional support for parenting, telecommuting may offer mothers a mechanism for maintaining work hours and reducing gender gaps in childcare, while exacerbating inequalities in housework and disruptions to paid work.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.3390/su12093567",
+      "title": "Work–Life Balance, Organizations and Social Sustainability: Analyzing Female Telework in Spain",
+      "authors": [
+        "Ana Gálvez",
+        "Francisco Tirado",
+        "M. Jesús Martínez"
+      ],
+      "year": 2020,
+      "abstract": "The concept of work–life balance has recently established itself as a key component on route maps drawn up in the pursuit of social sustainability, both on a local scale, represented by individual organizations, and on a more general one, represented by global institutions such as the United Nations. Our article analyzes telework’s use as a political tool within organizations that either boost or hinder the development of social sustainability. Additionally, we propose the notion of “life sustainability” to analyze how female teleworkers describe the link between specific work cultures and the possibility of fulfilling social sustainability goals in local work environments through the achievement of a good work–life balance. Our research was performed following a qualitative approach, drawing from a sample of 24 individual interviews and 10 focus groups with a total of 48 participants, all of which are female teleworkers with family responsibilities. Our main findings allow us to summarize the interviewees’ social perceptions into two categories, which we have dubbed ‘life sustainability ecologies’ and ‘presence-based ecologies’. We conclude by discussing female teleworkers’ claim that work–life balance is directly linked to social sustainability and that the latter goal will remain out of reach as long as the issue of balance goes unresolved.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.17705/1thci.00059",
+      "title": "Boundaryless Technology: Understanding the Effects of Technology-Mediated Interruptions across the Boundaries between Work and Personal Life",
+      "authors": [
+        "Adela Chen",
+        "Elena Karahanna"
+      ],
+      "year": 2014,
+      "abstract": "This study examines how technology-mediated cross-domain interruptions affect people’s work and personal life on two aspects: level of conflict between work and personal life and people’s ability to fulfill their responsibilities in each of the two domains. Based on the direction of an interruption, we differentiate between two types of cross-domain interruptions: work-to-nonwork (WTN) and nonwork-to-work (NTW). Drawing on interruption research and work-life interaction literature, we conceptualize distinct effects of the two interruption types on outcome variables. Data were collected through surveys from 137 knowledge workers. Results reveal asymmetric effects of WTN and NTW interruptions on work and personal life. The frequency of WTN interruptions is found to be positively associated with work-life conflict and negatively associated with fulfillment of personal life responsibilities, whereas the frequency of NTW interruptions significantly affects fulfillment of work responsibilities but not work-life conflict. Thus, results point to asymmetrically permeable boundaries between work and personal life. Results also suggest that the effects of WTN interruptions on fulfillment of personal life responsibilities are partially mediated by WTN conflict. The study concludes with implications for research and practice.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.9790/487x-1901032023",
+      "title": "Telecommuting – A Key Driver to Work-Life Balance and Productivity",
+      "authors": [
+        "Prof. Vasantha Lakshmi",
+        "Rachna Nigam",
+        "Snigdha Prava Mishra"
+      ],
+      "year": 2017,
+      "abstract": "The Global Workforce characteristics are changing worldwide.It is showing the growing diversity across sectors with heightened multicultural environment.The last decade had seen a remarkable change in the trend of approach of the organizations through various innovative practices.One of the growing practice is Employee-friendly policy, Work-from-Home (Telecommuting).Telecommuting has evolved and grown rapidly between 2000 and 2008.In the post-industrial economy, a growing number of jobs can be performed with few tools, basically a telephone and a computer with internet access.The popularity of Work-from-home (Telecommuting) has gained attention in the last decade with more and more employers and employees willingness to telecommute.Workfrom-Home (Telecommuting) owes much of ongoing rise in popularity to the continuing improvements in Technology.Increasingly mobile and capable technology keeps at home workers connected with the main office, colleagues, customers, and the world.A 2008 IDC survey showed that 81percent of Asia Pacific executives believe that telecommuting improves productivity, up from 61 percent in 2005.The US and UK aren't the only countries that have jumped into telework.China, India, France, Brazil and Germany have all joined the global trend.The increase in a positive attitude towards telecommuting was also evident in Hong Kong, Australia and India.In this article, the effort is to understand the telecommuting with a special emphasis on productivity and work-life balance of employees and its implications on the organizations.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1177/0018726718823071",
+      "title": "Boundary role transitions: A day-to-day approach to explain the effects of home-based telework on work-to-home conflict and home-to-work conflict",
+      "authors": [
+        "Joni Delanoeije",
+        "Marijke Verbruggen",
+        "Lynn Germeys"
+      ],
+      "year": 2019,
+      "abstract": "Does working from home on a given day complicate or rather facilitate combining work and home roles that day, why and for whom? To answer these questions, we examined how a teleworking day affects daily work-to-home conflict and daily home-to-work conflict. Based on boundary theory, we expected these relationships to be mediated by daily role transitions and moderated by employees’ preferences to protect their home(/work) domain from work(/home) interruptions. Hypotheses were tested through multilevel moderated mediation modeling using diary data collected during 14 consecutive workdays with 81 employees ( N = 678 data points). In line with our expectations, employees were found to make more work-to-home transitions (i.e. interruptions of work activities to deal with home demands during work hours) on teleworking days, which was related to lower work-to-home conflict but higher home-to-work conflict on these days. They also made more home-to-work transitions (i.e. interruptions of home activities to deal with work demands after hours) on teleworking days, which was related to more work-to-home conflict on these days. The latter effect was stronger for employees with a home protection preference. There was no moderating impact of work protection preference. Overall, employees experienced less work-to-home conflict but more home-to-work conflict on teleworking days compared to non-teleworking days.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.3390/bs13110916",
+      "title": "Job Satisfaction in Remote Work: The Role of Positive Spillover from Work to Family and Work–Life Balance",
+      "authors": [
+        "Elizabeth Emperatriz García-Salirrosas",
+        "Rafael Fernando Rondon-Eusebio",
+        "Luis Alberto Geraldo Campos",
+        "Ángel Acevedo-Duque"
+      ],
+      "year": 2023,
+      "abstract": "The objective of this research is to propose and validate a theoretical model that explains job satisfaction in remote work influenced by family-supportive supervisory behaviors (FSSBs) and, in addition, to evaluate the mediating role of work-to-family positive spillover (WFPS) and work-life balance (WLB) in this influence. A non-experimental cross-sectional study was conducted using a self-administered survey to a sample of 396 teleworkers in Lima, Peru. The hypothesized model was analyzed using PLS-SEM based structural equation modeling. The results show that FSSB has a direct effect on both job satisfaction in remote work and WFPS and WLB. In addition, it shows that WFPS and WLB have positive effects on job satisfaction in remote work. Also, the results show that WFPS and WLB have a mediating role in the influence of FSSB on job satisfaction in remote work. In conclusion, this study highlights the importance of supervisor behavior, positive work-to-family spillover, and work-life balance in remote workers' job satisfaction. It is suggested that companies adopt policies and practices that encourage work-life balance as well as a favorable supervisory environment.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1177/0149206314527128",
+      "title": "Innovation and Creativity in Organizations",
+      "authors": [
+        "Neil R. Anderson",
+        "Kristina Potočnik",
+        "Jing Zhou"
+      ],
+      "year": 2014,
+      "abstract": "Creativity and innovation in any organization are vital to its successful performance. The authors review the rapidly growing body of research in this area with particular attention to the period 2002 to 2013, inclusive. Conceiving of both creativity and innovation as being integral parts of essentially the same process, we propose a new, integrative definition. We note that research into creativity has typically examined the stage of idea generation, whereas innovation studies have commonly also included the latter phase of idea implementation. The authors discuss several seminal theories of creativity and innovation and then apply a comprehensive levels-of-analysis framework to review extant research into individual, team, organizational, and multilevel innovation. Key measurement characteristics of the reviewed studies are then noted. In conclusion, we propose a guiding framework for future research comprising 11 major themes and 60 specific questions for future studies.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.1007/s42452-020-2801-5",
+      "title": "Challenges and barriers in virtual teams: a literature review",
+      "authors": [
+        "Sarah Morrison-Smith",
+        "Jaime Ruiz"
+      ],
+      "year": 2020,
+      "abstract": null,
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.1016/j.apmrv.2022.07.003",
+      "title": "The mediating role of organizational culture: Transformational leadership and change management in virtual teams",
+      "authors": [
+        "Simranjeet Kaur Bagga",
+        "Shikha Gera",
+        "Syed Nadimul Haque"
+      ],
+      "year": 2022,
+      "abstract": "Today, organizations are deeply concerned with developing leadership that can lead from a distance. Given the pace of change in the work environment and organizational culture, leaders need to be very proactive in their approaches as all the organizations are working in virtual teams connected through Information and Communication Technologies. Organizations nowadays heavily rely on such teams to accomplish their work and goals. These novel teams require a good leadership style to bind virtual team employees' together and imbibe an appropriate culture to meet the demands of the changing environments. Therefore, the current study explored the relationship between transformational leadership, organizational culture, and change management among employees' of virtual teams. Also, the aim extended to examine the mediating role of organizational culture on the relationship between transformational leadership and change management among virtual team employees', for which partial least squares-structural equation modeling was applied. In order to meet the objectives, the study utilized a survey method on employees of IT organizations. The non-probability sampling technique used was purposive and convenience. Data was gathered from 118 respondents who worked in virtual team employees' of the IT sector from the Delhi-NCR The results revealed that transformational leadership and organizational culture were positively and significantly related to change management. Organizational culture partially mediated the relationship between transformational leadership and change management among virtual team employees'. The current study contributes to the additional literature among employees' of virtual teams, transformational leadership, and organizational culture that continues to grow.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.1111/j.1365-2575.2005.00200.x",
+      "title": "How virtual are we? Measuring virtuality and understanding its impact in a global organization",
+      "authors": [
+        "Katherine M. Chudoba",
+        "Eleanor Wynn",
+        "Mei Lu",
+        "Mary Beth Watson‐Manheim"
+      ],
+      "year": 2005,
+      "abstract": "Abstract. Employees in global corporations are increasingly involved in ‘virtual teams’ on a regular basis. Conflicting definitions of virtuality make it hard to measure such things as how much virtual teaming occurs and how virtual teaming affects performance. As a consequence, it is hard to allocate funding and to design infrastructures and software to support this specific mode of working. Using the concept of discontinuities, or changes in expected conditions, we propose a virtuality index to assess how ‘virtual’ a given setting is. The discontinuities used include geography, time zone, organization, national culture, work practices, and technology. The index separately measures these aspects of virtuality and their effect on perceived team performance. Data collected at a large multinational corporation clustered into three overarching discontinuities: team distribution, workplace mobility, and variety of work practices. The study revealed that being distributed in and of itself had no impact on self‐assessed team performance. Work practice predictability and sociability mitigated effects of working in discontinuous environments, while variety of practices (cultural and work process diversity) and employee mobility negatively impacted performance.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.2753/mis0742-1222260210",
+      "title": "Individual Swift Trust and Knowledge-Based Trust in Face-to-Face and Virtual Team Members",
+      "authors": [
+        "Lionel Robert",
+        "Alan R. Denis",
+        "Yu‐Ting Caisy Hung"
+      ],
+      "year": 2009,
+      "abstract": "Traditionally, trust has been seen as a result of personal knowledge of an individual's past behavior. In this view, trust develops gradually over time based on an individual's cognitive assessment of the other person's behavior. However, high levels of trust have been observed among members of virtual teams, who often have little prior history of working together and may never meet each other in person. To integrate these two seemingly contradictory views of trust, this study manipulated team member characteristics and team member behavior to empirically test a two-stage theoretical model of trust formation and the influence of information and communication technologies (ICT) on trust formation. The results indicate that category-based processing of team member characteristics and an individual's own disposition to trust dominated the initial formation of swift trust. Once individuals accumulated sufficient information to assess a team member's trustworthiness, the effects of swift trust declined and knowledge-based trust formed using team members' behaviors (perceived ability, integrity, and benevolence) became dominant. The use of ICT increased perceived risk of team failure, which reduced the likelihood that team members would engage in future trusting behaviors.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.17705/1jais.00183",
+      "title": "Avatars, People, and Virtual Worlds: Foundations for Research in Metaverses",
+      "authors": [
+        "Alanah J. Davis",
+        "John Murphy",
+        "Dawn M. Owens",
+        "Deepak Khazanchi",
+        "Ilze Zigurs"
+      ],
+      "year": 2009,
+      "abstract": "Metaverses are immersive three-dimensional virtual worlds in which people interact as avatars with each other and with software agents, using the metaphor of the real world but without its physical limitations. The ubiquitous availability of high speed Internet access has spurred enormous interest in virtual worlds like Second Life and World of Warcraft, both in terms of user gaming and as a new technological platform for global virtual collaboration. These environments have potential for richer, more engaging collaboration, but their capabilities have yet to be examined in depth. Of particular interest in this paper is the use of metaverses for virtual team collaboration. We develop a conceptual model for research in metaverses that is based on five key constructs: (1) the metaverse itself, (2) people/avatars, (3) metaverse technology capabilities, (4) behaviors, and (5) outcomes. We present an in-depth characterization of metaverse technology capabilities from a socio-technical view that recognizes the potential for variation in emergent interaction and in outcomes. Example propositions and a discussion of key issues and challenges show how the model can be used to further research and practice in virtual teams in the context of these new environments.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.5281/zenodo.10632",
+      "title": "Virtual Teams: A Literature Review",
+      "authors": [
+        "Nader Ale Ebrahim",
+        "Shamsuddin Ahmed",
+        "Zahari Taha"
+      ],
+      "year": 2009,
+      "abstract": "In the competitive market , virtual teams represent a growing response to the need for fasting time-to- market, low-cost and rapid solutions to complex organizational problems. Virtual teams enable organizations to pool the talents and expertise of employees and non-employees by eliminating time and space barriers . Nowadays, companies are heavily investing in virtual team to enhance their performance and competitiveness. Despite virtual teams growing prevalence, relatively little is known about this new form of team. Hence the study offers an extensive literature review with definitions o f virtual teams and a structured analysis of the present body of knowledge of virtual teams. First, we distinguish virtual teams from conventional teams , different types of virtual teams to identify where current knowledge applies. Second, we distinguish what is needed for effective virtual team considering the people, process and technology point of view and underlying characteristics of virtual teams and challenges they entail. Finally, we have identified an d extended 12 key factors that need to be considered, and describes a methodology focused on supporting virtual team working, with a new approach that has not been specifically addressed in the existing literature and some guide line for future research extracted. This record was migrated from the OpenDepot repository service in June, 2017 before shutting down.",
+      "source": "openalex",
+      "doi_verified": false,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.1108/ijmpb-06-2017-0068",
+      "title": "Linking trust and collaboration in project teams to project management success",
+      "authors": [
+        "Taryn Jane Bond-Barnard",
+        "Lizelle Fletcher",
+        "Herman Steyn"
+      ],
+      "year": 2018,
+      "abstract": "Purpose The purpose of this paper is to emphasise the importance of high levels of trust and collaboration for increasing the likelihood of project management (PM) success. However, the link between these three constructs remains unclear. Design/methodology/approach In this study, the authors use structural equation modelling (SEM) based on the findings from an international survey of 151 project practitioners to demonstrate the significance of project team trust and collaboration for increasing the likelihood of PM success. Findings The results indicate that PM success becomes more likely as the degree of collaboration improves which, in turn, is influenced by an increase in the level of trust between team members. The two factors of PM success are project performance and knowledge integration and innovation. The six factors of the degree of collaboration that were studied are physical proximity, commitment, conflict, coordination, relationships and incentives. The three factors of the level of trust investigated are expectations, knowledge exchange and imported trust. Practical implications The results of the study are expected to provide insight for project practitioners to increase the likelihood of PM success by taking cognisance of the factors that influence collaboration and trust. The results of the study may also provide insight into teaching and learning in tertiary education, in terms of professionalism and integrity issues. Originality/value This paper presents a new perspective for investigating PM success. SEM techniques are used to determine the likelihood of PM success by promoting trust and collaboration in the project team. This unique approach highlights the “human factors” that influence perceived PM success which should benefit both researchers and practitioners.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.3389/fpsyg.2021.624637",
+      "title": "Virtual Teams in Times of Pandemic: Factors That Influence Performance",
+      "authors": [
+        "Victor Garro-Abarca",
+        "Pedro R. Palos‐Sánchez",
+        "Mariano Aguayo-Camacho"
+      ],
+      "year": 2021,
+      "abstract": "In the digital age, the global software development sector has been a forerunner in implementing new ways and configurations for remote teamwork using information and communication technologies on a widespread basis. Crises and technological advances have influenced each other to bring about changes in the ways of working. In the 70's of the last century, in the middle of the so-called oil crisis, the concept of teleworking was defined using remote computer equipment to access office equipment and thus avoid moving around using traditional vehicles. Then from the 90s, with the advent of communications and the widespread use of the Internet, the first virtual work teams were implemented in software development companies that already had some of the important characteristics needed to work in this way, such as, cultural diversity, characterized tasks, geographical distribution of members, communication, interdependence of tasks, leadership, cohesion, empowerment, confidence, virtuality. This manuscript groups the main factors into different models proposed by the literature and also analyzes the results of a study conducted in the midst of the Covid-19 crisis on 317 software development teams that had to work in virtual teams (VT). The results of the quantitative methodology with structural equation modeling based on variance using the partial least squares route method are analyzed. The results of the research focus on some determinants that can directly affect the performance of the virtual team. A first determinant is communication in relation to the tasks. The second is trust in relation to leadership, empowerment and cohesion. The results of virtual teams provide information that can serve as a basis for future research lines for the implementation of virtual work strategies in post-pandemic work.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.17705/1jais.00028",
+      "title": "Understanding Virtual Team Development: An Interpretive Study",
+      "authors": [
+        "Suprateek Sarker",
+        "Sundeep Sahay"
+      ],
+      "year": 2003,
+      "abstract": "In this paper, we develop an understanding of how virtual teams develop over time by inductively studying communication transactions of 12 United States-Canadian student virtual teams involved in ISD. Our analysis is based upon two influential streams of social science research: (1) interaction analysis, which aided in the examination of the micro-processes of communication among members of a virtual team, and (2) structuration theory, which provided a meta-framework to help link the microlevel communication patterns with the more macro-structures representing the environmental context as well as the characteristics of teams over time. Based on our interpretation of the communication patterns in the virtual teams, we propose a theoretical model to describe how virtual teams develop over the life of a project, and also attempt to clarify how the concepts of communication, virtual team development, and collaboration are related.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    }
+  ],
+  "assessments": [
+    {
+      "paper_doi": "10.1111/apps.12290",
+      "paper_title": "Achieving Effective Remote Working During the COVID‐19 Pandemic: A Work Design Perspective",
+      "subquestion_id": 1,
+      "relevance_score": 4,
+      "reason": "The abstract examines the challenges of remote working during the pandemic and how virtual work characteristics link to worker performance.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.2139/ssrn.1714428",
+      "paper_title": "On the Report by the Commission on the Measurement of Economic Performance and Social Progress (2009)",
+      "subquestion_id": 1,
+      "relevance_score": 1,
+      "reason": "The paper has no abstract available and its title indicates it is about economic performance and social progress rather than remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3386/w31161",
+      "paper_title": "Generative AI at Work",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract investigates the impact of generative AI on customer support agent productivity rather than remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/su15054529",
+      "paper_title": "The Impact of Work-from-Home on Employee Performance and Productivity: A Systematic Review",
+      "subquestion_id": 1,
+      "relevance_score": 5,
+      "reason": "The abstract explicitly reviews the impact of work-from-home on employee productivity and performance.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1016/j.buildenv.2016.06.001",
+      "paper_title": "Occupant productivity and office indoor environment quality: A review of the literature",
+      "subquestion_id": 1,
+      "relevance_score": 1,
+      "reason": "The paper has no abstract available and its title focuses on office indoor environment quality rather than remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.5281/zenodo.3464807",
+      "paper_title": "The Impact of Training and Development on Employees Performance and Productivity",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract investigates the relationship between training and development and employee performance in Jordanian companies without addressing remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1146/annurev-orgpsych-041015-062352",
+      "paper_title": "How Technology Is Changing Work and Organizations",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract reviews the effects of technology on work and organizations but does not specifically focus on remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1111/apps.12241",
+      "paper_title": "Automation, Algorithms, and Beyond: Why Work Design Matters More Than Ever in a Digital World",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract discusses how digital technologies affect job resources and performance, but is not specifically focused on remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1080/09585192.2023.2221385",
+      "paper_title": "Post-COVID remote working and its impact on people, productivity, and the planet: an exploratory scoping review",
+      "subquestion_id": 1,
+      "relevance_score": 4,
+      "reason": "The abstract outlines a scoping review on the impacts of post-COVID remote working on people and productivity.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3389/fpls.2017.01111",
+      "paper_title": "Unmanned Aerial Vehicle Remote Sensing for Field-Based Crop Phenotyping: Current Status and Perspectives",
+      "subquestion_id": 1,
+      "relevance_score": 1,
+      "reason": "The abstract is about unmanned aerial vehicle remote sensing for crop phenotyping, sharing the word 'remote' but not addressing remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/su14010294",
+      "paper_title": "Post-Pandemic Office Work: Perceived Challenges and Opportunities for a Sustainable Work Environment",
+      "subquestion_id": 1,
+      "relevance_score": 4,
+      "reason": "The abstract discusses remote and hybrid work benefits, specifically mentioning individual performance alongside flexibility and work-life balance.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/su12135332",
+      "paper_title": "Working from Home—Who Is Happy? A Survey of Lithuania’s Employees during the COVID-19 Quarantine Period",
+      "subquestion_id": 1,
+      "relevance_score": 3,
+      "reason": "The abstract examines factors affecting telework efficiency and qualities required from remote workers, which relates broadly to performance.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3389/fpsyg.2021.730969",
+      "paper_title": "Remote Work Decreases Psychological and Physical Stress Responses, but Full-Remote Work Increases Presenteeism",
+      "subquestion_id": 1,
+      "relevance_score": 3,
+      "reason": "The abstract investigates the effects of remote work on psychological and physical stress responses and presenteeism among office workers.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1257/jep.24.1.203",
+      "paper_title": "Why Do Management Practices Differ across Firms and Countries?",
+      "subquestion_id": 1,
+      "relevance_score": 1,
+      "reason": "The abstract focuses on general management practices and productivity differences across firms rather than remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1038/s41586-024-07500-2",
+      "paper_title": "Hybrid working from home improves retention without damaging performance",
+      "subquestion_id": 1,
+      "relevance_score": 5,
+      "reason": "The abstract directly addresses how hybrid working from home affects employee performance grades, promotions, and output.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1257/jep.37.4.23",
+      "paper_title": "The Evolution of Work from Home",
+      "subquestion_id": 1,
+      "relevance_score": 3,
+      "reason": "The abstract discusses the evolution of work from home and briefly mentions implications for pay, productivity, and innovation.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/su14074220",
+      "paper_title": "Remote Work Efficiency from the Employers’ Perspective—What’s Next?",
+      "subquestion_id": 1,
+      "relevance_score": 4,
+      "reason": "The abstract explores remote work efficiency and the supervision of work performance from the employers' perspective.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1145/3454122.3454124",
+      "paper_title": "The SPACE of Developer Productivity",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract outlines a framework for developer productivity but does not specifically address remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.jbusres.2021.08.007",
+      "paper_title": "Employee perceptions of information and communication technologies in work life, perceived burnout, job satisfaction and the role of work-family balance",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract examines employee perceptions of ICTs, burnout, and job satisfaction without focusing on remote work or productivity.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1038/s44159-022-00056-w",
+      "paper_title": "Understanding and shaping the future of work with self-determination theory",
+      "subquestion_id": 1,
+      "relevance_score": 1,
+      "reason": "The paper has no abstract available and its title does not mention remote work or productivity.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3389/fpubh.2021.679397",
+      "paper_title": "Prioritizing the Mental Health and Well-Being of Healthcare Workers: An Urgent Global Public Health Priority",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract discusses the mental health of frontline healthcare workers during the pandemic rather than remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1080/1359432x.2018.1541886",
+      "paper_title": "Systematically reviewing remote e-workers’ well-being at work: a multidimensional approach",
+      "subquestion_id": 2,
+      "relevance_score": 5,
+      "reason": "The abstract directly reviews remote e-workers' well-being across multiple dimensions, including affective, cognitive, social, professional, and psychosomatic.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/ijerph19031780",
+      "paper_title": "Burnout: A Review of Theory and Measurement",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract focuses generally on occupational burnout and stress theory without addressing remote work specifically.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1108/er-08-2012-0059",
+      "paper_title": "An exploration of the psychological factors affecting remote e‐worker's job effectiveness, well‐being and work‐life balance",
+      "subquestion_id": 2,
+      "relevance_score": 5,
+      "reason": "The abstract explicitly explores the impact of remote e-working on well-being and work-life balance.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/jcm12134425",
+      "paper_title": "Understanding and Fostering Mental Health and Well-Being among University Faculty: A Narrative Review",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract reviews the mental health and well-being of university faculty in demanding campus environments rather than remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/healthcare4030037",
+      "paper_title": "Burnout and Doctors: Prevalence, Prevention and Intervention",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract covers burnout and stress specifically among doctors in medical practice settings without mentioning remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1111/jocn.15307",
+      "paper_title": "Covid‐19: Supporting nurses' psychological and mental health",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract is incomplete and only provides a title fragment regarding nurses' psychological health.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1590/0102-311x00063520",
+      "paper_title": "The impact of the COVID-19 pandemic on the mental health of healthcare professionals",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract focuses on the mental health impact of COVID-19 on frontline healthcare professionals rather than remote working conditions.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.euroneuro.2021.10.864",
+      "paper_title": "The impact of the prolonged COVID-19 pandemic on stress resilience and mental health: A critical review across waves",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract broadly reviews how the pandemic has impacted the mental health of various vulnerable population groups without focusing on remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/su12239804",
+      "paper_title": "Social Isolation and Stress as Predictors of Productivity Perception and Remote Work Satisfaction during the COVID-19 Pandemic: The Role of Concern about the Virus in a Moderated Double Mediation",
+      "subquestion_id": 2,
+      "relevance_score": 5,
+      "reason": "The abstract investigates social isolation and stress as predictors of remote work satisfaction and productivity during pandemic lockdowns.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1007/s11218-022-09686-7",
+      "paper_title": "Teacher stress and burnout in Australia: examining the role of intrapersonal and environmental factors",
+      "subquestion_id": 2,
+      "relevance_score": 3,
+      "reason": "The abstract examines teacher stress and burnout in Australia and briefly mentions teachers working in rural and remote areas, but does not focus on work-from-home remote work.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1213/ane.0000000000004866",
+      "paper_title": "Provider Burnout and Fatigue During the COVID-19 Pandemic: Lessons Learned From a High-Volume Intensive Care Unit",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract discusses provider burnout and fatigue during the COVID-19 pandemic in an intensive care unit setting rather than remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/ijerph19073879",
+      "paper_title": "Telework and Worker Health and Well-Being: A Review and Recommendations for Research and Practice",
+      "subquestion_id": 2,
+      "relevance_score": 5,
+      "reason": "The abstract directly evaluates existing research about telework and its impacts on worker health and well-being.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/ijerph18094486",
+      "paper_title": "Climate Change and Mental Health: A Scoping Review",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract is about the impacts of climate change on population mental health and has no relation to remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1080/1359432x.2021.2002299",
+      "paper_title": "The impact of remote work and mediated communication frequency on isolation and psychological distress",
+      "subquestion_id": 2,
+      "relevance_score": 5,
+      "reason": "The abstract directly investigates how remote work practices impact perceptions of isolation and psychological distress.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1007/s10578-020-01037-x",
+      "paper_title": "Initial Challenges of Caregiving During COVID-19: Caregiver Burden, Mental Health, and the Parent–Child Relationship",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "There is no abstract available for this paper, and the title refers to caregiving and the parent-child relationship during COVID-19 rather than remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/ijerph17228297",
+      "paper_title": "Stress, Resilience, and Well-Being in Italian Children and Their Parents during the COVID-19 Pandemic",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract focuses on family stress, quarantine, and well-being in Italian children and parents without addressing remote work specifically.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1002/hrm.22102",
+      "paper_title": "Surviving remotely: How job control and loneliness during a forced shift to remote work impacted employee work behaviors and well‐being",
+      "subquestion_id": 2,
+      "relevance_score": 5,
+      "reason": "The abstract directly investigates how a forced shift to remote work impacted employee well-being, emotional exhaustion, depression, and work-life balance.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1017/s1049023x19004874",
+      "paper_title": "A Systematic Review of the Impact of Disaster on the Mental Health of Medical Responders",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract reviews the mental health impacts of disasters on medical responders and does not discuss remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1146/annurev-orgpsych-031413-091330",
+      "paper_title": "Work–Family Boundary Dynamics",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract reviews work-family boundary dynamics and management strategies, providing useful background context for the sub-question.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1016/j.hrmr.2008.09.001",
+      "paper_title": "Making the link between work-life balance practices and organizational performance",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "There is no abstract available, and the title alone is too broad to confirm relevance to remote work and work-life balance.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.ijinfomgt.2020.102211",
+      "paper_title": "Impact of COVID-19 pandemic on information management research and practice: Transforming education, work and life",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "There is no abstract available, and the title is too general regarding education, work, and life during COVID-19.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1177/0003122414531435",
+      "paper_title": "Changing Work and Work-Family Conflict",
+      "subquestion_id": 3,
+      "relevance_score": 4,
+      "reason": "The abstract discusses how schedule control and workplace interventions targeting when and where people work affect work-family conflict and family time.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1146/annurev-psych-122414-033710",
+      "paper_title": "Beyond Work-Life “Integration”",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract focuses on work-family research history and workplace norms regarding class and gender rather than remote work specifically.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1007/978-3-031-17299-1",
+      "paper_title": "Encyclopedia of Quality of Life and Well-Being Research",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "There is no abstract available, and the title refers to a general encyclopedia on quality of life.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.iimb.2010.10.010",
+      "paper_title": "Work–family balance of Indian women software professionals: A qualitative study",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract examines work-family balance among Indian women IT professionals but does not focus on remote work arrangements.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1111/soc4.12881",
+      "paper_title": "The gendered pandemic: The implications of COVID‐19 for work and family",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract discusses pandemic-related telecommuting and its gendered implications for work and family patterns.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/ijerph18137069",
+      "paper_title": "Remote Work, Work Stress, and Work–Life during Pandemic Times: A Latin America Situation",
+      "subquestion_id": 3,
+      "relevance_score": 5,
+      "reason": "The abstract directly explores how remote work during the pandemic affected work-life balance, perceived stress, and work satisfaction.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1080/23311975.2023.2242160",
+      "paper_title": "Revolutionizing work-life balance: Unleashing the power of telecommuting on work engagement and exhaustion levels",
+      "subquestion_id": 3,
+      "relevance_score": 5,
+      "reason": "The abstract directly examines the impact of telecommuting on work-life balance, work-family conflict, and the boundaries between personal and professional life.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1371/journal.pcbi.1009124",
+      "paper_title": "Ten simple rules to improve academic work–life balance",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract discusses academic work-life balance and working environments, but does not specifically focus on remote work.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1111/jomf.12810",
+      "paper_title": "Telecommuting and gender inequalities in parents' paid and unpaid work before and during the COVID ‐19 pandemic",
+      "subquestion_id": 3,
+      "relevance_score": 5,
+      "reason": "The abstract examines how telecommuting influences gender inequalities in parents' time use and work-family demands.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/su12093567",
+      "paper_title": "Work–Life Balance, Organizations and Social Sustainability: Analyzing Female Telework in Spain",
+      "subquestion_id": 3,
+      "relevance_score": 5,
+      "reason": "The abstract investigates female telework and its relationship with work-life balance and social sustainability.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.5465/annals.2017.0020",
+      "paper_title": "Virtual Work: Bridging Research Clusters",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract reviews the literature and research clusters on virtual work and telecommuting without directly examining work-life balance outcomes.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.17705/1thci.00059",
+      "paper_title": "Boundaryless Technology: Understanding the Effects of Technology-Mediated Interruptions across the Boundaries between Work and Personal Life",
+      "subquestion_id": 3,
+      "relevance_score": 4,
+      "reason": "The abstract analyzes how technology-mediated interruptions affect the conflict between work and personal life.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.9790/487x-1901032023",
+      "paper_title": "Telecommuting – A Key Driver to Work-Life Balance and Productivity",
+      "subquestion_id": 3,
+      "relevance_score": 4,
+      "reason": "The abstract explores telecommuting as a key driver of work-life balance and productivity.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1177/0018726718823071",
+      "paper_title": "Boundary role transitions: A day-to-day approach to explain the effects of home-based telework on work-to-home conflict and home-to-work conflict",
+      "subquestion_id": 3,
+      "relevance_score": 5,
+      "reason": "The abstract specifically examines how home-based telework affects daily work-to-home and home-to-work conflicts.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1002/hrm.21875",
+      "paper_title": "Gender and leadership aspiration: The impact of work–life initiatives",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract focuses on work-life initiatives and gender differences in leadership aspirations rather than remote work itself.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/bs13110916",
+      "paper_title": "Job Satisfaction in Remote Work: The Role of Positive Spillover from Work to Family and Work–Life Balance",
+      "subquestion_id": 3,
+      "relevance_score": 5,
+      "reason": "The abstract evaluates work-life balance, positive spillover, and job satisfaction specifically among remote workers.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1177/0149206314527128",
+      "paper_title": "Innovation and Creativity in Organizations",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract reviews organizational innovation and creativity generally without addressing remote work or its specific impact.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1007/s42452-020-2801-5",
+      "paper_title": "Challenges and barriers in virtual teams: a literature review",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "No abstract is available, but the title suggests a focus on virtual teams which partially relates to remote work collaboration.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1111/j.1468-2370.2006.00121.x",
+      "paper_title": "Proximity and inter‐organizational collaboration: A literature review",
+      "subquestion_id": 4,
+      "relevance_score": 2,
+      "reason": "The abstract discusses inter-organizational collaboration and proximity dimensions rather than remote work practices.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.apmrv.2022.07.003",
+      "paper_title": "The mediating role of organizational culture: Transformational leadership and change management in virtual teams",
+      "subquestion_id": 4,
+      "relevance_score": 5,
+      "reason": "The abstract directly explores organizational culture and leadership in virtual team environments.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1016/j.im.2019.103174",
+      "paper_title": "Machines as teammates: A research agenda on AI in team collaboration",
+      "subquestion_id": 4,
+      "relevance_score": 2,
+      "reason": "The abstract focuses on artificial intelligence as teammates rather than human remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3389/frobt.2016.00074",
+      "paper_title": "Enhancing Our Lives with Immersive Virtual Reality",
+      "subquestion_id": 4,
+      "relevance_score": 1,
+      "reason": "The abstract surveys immersive virtual reality applications across various fields rather than remote work dynamics.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1111/j.1365-2575.2005.00200.x",
+      "paper_title": "How virtual are we? Measuring virtuality and understanding its impact in a global organization",
+      "subquestion_id": 4,
+      "relevance_score": 4,
+      "reason": "The abstract examines virtual teams and performance, touching on distribution and work practices.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1111/j.1467-8691.2010.00574.x",
+      "paper_title": "Antecedents of Team Creativity: An Examination of Team Emotional Intelligence, Team Trust and Collaborative Culture",
+      "subquestion_id": 4,
+      "relevance_score": 2,
+      "reason": "The abstract investigates team creativity, trust, and collaborative culture without mentioning remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.3390/jintelligence11030054",
+      "paper_title": "Creativity, Critical Thinking, Communication, and Collaboration: Assessment, Certification, and Promotion of 21st Century Skills for the Future of Work and Education",
+      "subquestion_id": 4,
+      "relevance_score": 1,
+      "reason": "The abstract discusses educational 21st-century skills and soft competencies rather than remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.amepre.2008.05.003",
+      "paper_title": "The Ecology of Team Science",
+      "subquestion_id": 4,
+      "relevance_score": 1,
+      "reason": "No abstract is available and the title is too vague to determine relevance to remote work.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.2753/mis0742-1222260210",
+      "paper_title": "Individual Swift Trust and Knowledge-Based Trust in Face-to-Face and Virtual Team Members",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract discusses trust formation in virtual teams but does not directly examine broader organizational culture or collaboration impacts.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.17705/1jais.00183",
+      "paper_title": "Avatars, People, and Virtual Worlds: Foundations for Research in Metaverses",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract outlines a conceptual model for using virtual worlds for global virtual team collaboration.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.5281/zenodo.10632",
+      "paper_title": "Virtual Teams: A Literature Review",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract provides a literature review on virtual teams, identifying characteristics and challenges, but focuses broadly rather than deeply on culture and collaboration.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1016/j.im.2012.10.002",
+      "paper_title": "Trust and knowledge sharing in diverse global virtual teams",
+      "subquestion_id": 4,
+      "relevance_score": 1,
+      "reason": "No abstract is available to determine relevance, so it is rated based on the title alone.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1108/ijmpb-06-2017-0068",
+      "paper_title": "Linking trust and collaboration in project teams to project management success",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract examines trust and collaboration in project teams and their impact on success, but does not focus specifically on remote work environments.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3389/fpsyg.2021.624637",
+      "paper_title": "Virtual Teams in Times of Pandemic: Factors That Influence Performance",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract discusses factors influencing performance in virtual teams during the pandemic, touching on remote teamwork factors.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.17705/1jais.00028",
+      "paper_title": "Understanding Virtual Team Development: An Interpretive Study",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract explores how virtual teams develop over time and how communication, team development, and collaboration relate.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1002/job.2735",
+      "paper_title": "A multilevel review of artificial intelligence in organizations: Implications for organizational behavior research and practice",
+      "subquestion_id": 4,
+      "relevance_score": 2,
+      "reason": "The abstract focuses on artificial intelligence in organizations rather than remote work and its impact on culture.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.riob.2016.11.004",
+      "paper_title": "Paradigm lost: Reinvigorating the study of organizational culture",
+      "subquestion_id": 4,
+      "relevance_score": 1,
+      "reason": "No abstract is available, and the title refers to organizational culture broadly without mentioning remote work.",
+      "selected": false
+    }
+  ],
+  "summaries": [
+    "[1] Achieving Effective Remote Working During the COVID‐19 Pandemic: A Work Design Perspective (2020) - This paper uses a mixed-methods investigation involving semi-structured interviews and a survey of employees working from home during the COVID-19 pandemic to explore remote work challenges and the virtual work characteristics affecting them. It reports that virtual work characteristics link to workers' performance and well-being through experienced challenges like work-home interference, ineffective communication, procrastination, and loneliness. This bears on the sub-question by showing how specific characteristics such as workload, monitoring, social support, and job autonomy relate to worker performance via these challenges.",
+    "[2] The Impact of Work-from-Home on Employee Performance and Productivity: A Systematic Review (2023) - This paper conducts a systematic review of 26 studies to examine the impact of work-from-home on employee productivity and performance. It reports that the impact depends on factors such as the nature of work, industry characteristics, and home settings, with a majority of studies reporting a positive impact and a few documenting no difference or a negative impact. This directly bears on the sub-question by synthesizing existing evidence on how remote work affects productivity and performance across various contexts.",
+    "[3] Post-COVID remote working and its impact on people, productivity, and the planet: an exploratory scoping review (2023) - This paper conducts an exploratory scoping review of scholarly and grey literature to synthesize the multi-level impacts of the COVID-19 pandemic and remote working. It reveals that much of the published research is data-driven or anecdotal, covering common themes such as organizational trust, managerial trust, virtual communication, and workforce management. This bears on the sub-question by identifying broader themes related to remote work environments and management practices that influence work contexts.",
+    "[4] Post-Pandemic Office Work: Perceived Challenges and Opportunities for a Sustainable Work Environment (2021) - This paper uses qualitative studies with employees, staff managers, and service providers to identify needs, challenges, and opportunities in remote and hybrid work environments. It reports that the main benefits of remote work included increased flexibility, autonomy, work-life balance, and individual performance, while major challenges involved social aspects like lost comradery and isolation. This bears on the sub-question by highlighting individual performance as a perceived benefit of remote work alongside associated operational challenges.",
+    "[5] Working from Home—Who Is Happy? A Survey of Lithuania’s Employees during the COVID-19 Quarantine Period (2020) - This study examines the evaluation of telework through a questionnaire administered to teleworkers in Lithuania during the quarantine period. It reports that evaluations of factors affecting telework efficiency and required qualities differ based on demographic and professional variables such as gender, age, education, work experience, and telework experience. This bears on the sub-question by highlighting how employee characteristics influence the perceived efficiency of remote work.",
+    "[6] Remote Work Decreases Psychological and Physical Stress Responses, but Full-Remote Work Increases Presenteeism (2021) - This research performs a two-wave panel survey of office workers before and after the pandemic to analyze the effects of remote work on psychological and physical stress responses and presenteeism. The multivariate logistic regression analysis demonstrated that remote work was associated with a reduction in psychological and physical stress responses independently of changes. This bears on the sub-question by providing empirical evidence regarding worker well-being factors that may influence overall work experiences during remote arrangements.",
+    "[7] Hybrid working from home improves retention without damaging performance (2024) - This paper reports on a six-month randomized control trial investigating the effects of hybrid working from home on employees in a Chinese technology company. It found that hybrid working improved job satisfaction and reduced quit rates while having no effect on performance grades, promotions, or the lines of code written by computer engineers over a two-year period. This bears directly on the sub-question by demonstrating through null equivalence tests that hybrid remote work does not damage employee performance.",
+    "[8] The Evolution of Work from Home (2023) - This paper discusses the evolution and persistence of work-from-home trends among American workers, explaining why the shift has endured and how rates vary across demographics. It also discusses implications for pay, productivity, and the pace of innovation alongside managerial adaptations and technological tools. This bears on the sub-question by touching on productivity as one of the key implications evaluated in the context of enduring remote work trends.",
+    "[9] Remote Work Efficiency from the Employers’ Perspective—What’s Next? (2022) - This research uses a standardized questionnaire CATI method to examine remote work efficiency and related problems from the employers' perspective across a population of enterprises during the pandemic. It reports that an enterprise's attitude toward remote work has a positive influence on its outcomes. This bears on the sub-question by addressing remote work efficiency and managerial perspectives on performance from the viewpoint of organizations.",
+    "[10] Systematically reviewing remote e-workers’ well-being at work: a multidimensional approach (2018) - This paper presents a systematic literature review analyzing how remote e-working relates to five dimensions of worker well-being across sixty-three studies. It reports that while research leans toward positive aspects, negative impacts include social and professional isolation and perceived threats to professional advancement. This bears on the sub-question by highlighting specific affective, social, and professional well-being challenges associated with remote work.",
+    "[11] An exploration of the psychological factors affecting remote e‐worker's job effectiveness, well‐being and work‐life balance (2013) - This paper explores the psychological factors affecting remote e-workers using qualitative thematic analysis of eleven in-depth interviews across five organizations. It reports ten emerging themes and notes adverse impacts on well-being driven by over-working and a lack of time for recuperation. This bears on the sub-question by identifying specific psychological and well-being drawbacks linked to remote working conditions.",
+    "[12] Social Isolation and Stress as Predictors of Productivity Perception and Remote Work Satisfaction during the COVID-19 Pandemic: The Role of Concern about the Virus in a Moderated Double Mediation (2020) - This paper investigates the correlates of social isolation in terms of stress, perceived productivity, and remote work satisfaction during the COVID-19 pandemic using an online survey of 265 employees. The results show the deleterious role of social isolation in increasing stress, which subsequently decreases perceived productivity and relates to remote work satisfaction. This bears on the sub-question by demonstrating how isolation-induced stress negatively impacts psychological well-being and satisfaction during remote work.",
+    "[13] Teacher stress and burnout in Australia: examining the role of intrapersonal and environmental factors (2022) - This paper surveys 749 Australian teachers to explore the severity of work-related stress and burnout, examining intrapersonal and environmental factors prior to the COVID pandemic. It reports that over half of the sample were very or extremely stressed, with those working in rural and remote areas among the groups reporting the highest levels. This bears on the sub-question by illustrating stress and burnout levels experienced by workers specifically in remote geographic areas.",
+    "[14] Telework and Worker Health and Well-Being: A Review and Recommendations for Research and Practice (2022) - This article reviews and critically evaluates existing empirical research concerning telework and worker health and well-being, developing a conceptual framework based on these findings. It covers the process by which telework affects worker health and well-being in reference to individual, work/life/family, and organizational domains. This bears on the sub-question by providing a synthesized overview of how remote work formats impact overall worker well-being.",
+    "[15] The impact of remote work and mediated communication frequency on isolation and psychological distress (2021) - This study uses a three-wave survey among Finnish workers to investigate how remote work practices and ICT use impact isolation and psychological distress during the global health pandemic. The findings indicate that simultaneous increases in remote work practices lead employees to feel more isolated, and highlight a reciprocal effect where psychological distress and isolation exacerbate one another. This bears on the sub-question by establishing a direct connection between remote work practices, increased isolation, and psychological distress.",
+    "[16] Surviving remotely: How job control and loneliness during a forced shift to remote work impacted employee work behaviors and well‐being (2022) - This paper investigates how job control and work-related loneliness impacted employee work behaviors and well-being during the forced shift to remote work using a two-wave survey of U.S. adults. It reports that high job control was beneficially related to emotional exhaustion and work-life balance, whereas high work-related loneliness showed detrimental relationships with the variables of interest. This bears on the sub-question by identifying specific factors that either protect or harm employee well-being during remote work.",
+    "[17] Work–Family Boundary Dynamics (2014) - This article reviews theory, constructs, and research concerning individual work–family boundary management dynamics with the goal of promoting a greater understanding and integration of the literature. It outlines major theoretical perspectives on boundary management, characteristics, integration, and segmentation. This bears on the sub-question by framing how individuals manage boundaries between work and personal life.",
+    "[18] Changing Work and Work-Family Conflict (2014) - This study utilizes a group-randomized trial in an IT workplace to evaluate the STAR initiative, which targeted work practices and supervisor support for personal lives. The analysis reports statistically significant, modest improvements in employees' work-family conflict and family time adequacy, alongside larger changes in schedule control and supervisor support. This directly bears on the sub-question by showing how workplace interventions targeting schedule control and support can positively influence work-life balance.",
+    "[19] The gendered pandemic: The implications of COVID‐19 for work and family (2021) - This article synthesizes recent research on pandemic-related changes to work and family in the United States, discussing the gendered implications of unprecedented rates of telecommuting and childcare losses using an intersectionality lens. It reports that COVID-19 has, in many cases, deepened pre-existing gender inequalities in both family and work realms. This bears on the sub-question by highlighting how shifted work patterns, such as telecommuting during the pandemic, intersected with family labor and exacerbated gender inequalities.",
+    "[20] Remote Work, Work Stress, and Work–Life during Pandemic Times: A Latin America Situation (2021) - This study explores the relationship between remote work, work stress, and work-life during pandemic times in Latin America using a survey of 1285 responses. The authors found that remote work increased perceived stress, reduced work-life balance and work satisfaction, and increased productivity and engagement. Regarding the sub-question, the paper directly reports that remote work reduced work-life balance during pandemic times.",
+    "[21] Revolutionizing work-life balance: Unleashing the power of telecommuting on work engagement and exhaustion levels (2023) - This article reviews existing research on work-life balance and examines the impact of telecommuting on work-life balance during the COVID-19 pandemic. The study found that telecommuting has resulted in work overload and eroded the line between personal and professional life, thereby increasing the risk of conflict. This bears directly on the sub-question by demonstrating how telecommuting can negatively influence work-life balance and increase work-family conflict.",
+    "[22] Ten simple rules to improve academic work–life balance (2021) - No abstract available; the title suggests: Ten simple rules to improve academic work–life balance",
+    "[23] Telecommuting and gender inequalities in parents' paid and unpaid work before and during the COVID ‐19 pandemic (2021) - This study examines the relationship between telecommuting and gender inequalities in parents' time use at home and on the job before and during the COVID-19 pandemic using matching and quasi-experimental methods. It reports mixed findings, noting that before the pandemic telecommuting was associated with larger gender gaps in housework and work disruptions but smaller gender gaps in childcare, while during the pandemic telecommuting mothers maintained paid work to a greater extent than on-site mothers. This bears on the sub-question by illustrating how telecommuting relates to the division of domestic and professional responsibilities between parents.",
+    "[24] Work–Life Balance, Organizations and Social Sustainability: Analyzing Female Telework in Spain (2020) - This research analyzes female telework in Spain using a qualitative approach with individual interviews and focus groups of female teleworkers with family responsibilities to explore the link between work cultures and social sustainability goals. The main findings summarize interviewees' social perceptions into 'life sustainability ecologies' and 'presence-based ecologies'. This bears on the sub-question by providing insight into how female teleworkers perceive the connection between telework and achieving a good work–life balance.",
+    "[25] Boundaryless Technology: Understanding the Effects of Technology-Mediated Interruptions across the Boundaries between Work and Personal Life (2014) - This study examines how technology-mediated cross-domain interruptions affect work and personal life regarding conflict and the ability to fulfill responsibilities using survey data from 137 knowledge workers. It reveals that the frequency of work-to-nonwork interruptions is positively associated with work-life conflict and negatively associated with the fulfillment of personal life responsibilities. This bears on the sub-question by demonstrating how technology-driven boundaries affect work-life balance and personal domains.",
+    "[26] Telecommuting – A Key Driver to Work-Life Balance and Productivity (2017) - No abstract available; the title suggests: Telecommuting – A Key Driver to Work-Life Balance and Productivity",
+    "[27] Boundary role transitions: A day-to-day approach to explain the effects of home-based telework on work-to-home conflict and home-to-work conflict (2019) - This paper uses a diary-data approach with 81 employees over 14 consecutive workdays to examine how home-based telework affects daily work-to-home and home-to-work conflicts via role transitions and boundary preferences. The study reports that teleworking days involve more work-to-home transitions (leading to lower work-to-home conflict but higher home-to-work conflict) and more home-to-work transitions (leading to higher work-to-home conflict, especially for those with a home-protection preference). These findings bear on the sub-question by demonstrating how specific daily interruptions and boundary crossings during remote work directly influence work-life conflict.",
+    "[28] Job Satisfaction in Remote Work: The Role of Positive Spillover from Work to Family and Work–Life Balance (2023) - This paper proposes and validates a theoretical model using a cross-sectional survey of 396 teleworkers in Lima, Peru, to evaluate how family-supportive supervisory behaviors (FSSBs) influence job satisfaction in remote work through work-to-family positive spillover (WFPS) and work-life balance (WLB). The results show that FSSB directly affects job satisfaction, WFPS, and WLB, while both WFPS and WLB also have positive effects and mediating roles on job satisfaction in remote work. This bears on the sub-question by highlighting work-life balance as a key mediating factor that, alongside positive family spillover and supervisory support, influences outcomes for remote workers.",
+    "[29] Innovation and Creativity in Organizations (2014) - This paper reviews research on creativity and innovation in organizations from 2002 to 2013, proposing an integrative definition and a guiding framework for future studies. It discusses seminal theories and applies a multilevel framework to examine individual, team, and organizational innovation. It bears on the sub-question by addressing organizational context and innovation processes, though it does not focus specifically on remote work.",
+    "[30] Challenges and barriers in virtual teams: a literature review (2020) - No abstract available; the title suggests: Challenges and barriers in virtual teams: a literature review",
+    "[31] The mediating role of organizational culture: Transformational leadership and change management in virtual teams (2022) - This study explored the relationship between transformational leadership, organizational culture, and change management among IT employees working in virtual teams, applying partial least squares-structural equation modeling. It reports that organizations heavily rely on virtual teams connected through Information and Communication Technologies, which require appropriate culture and leadership to meet changing environments. It directly bears on the sub-question by examining how organizational culture functions within virtual teams.",
+    "[32] How virtual are we? Measuring virtuality and understanding its impact in a global organization (2005) - This paper proposes a virtuality index based on discontinuities such as geography, time zone, organization, national culture, work practices, and technology to assess how virtual a given setting is and its effect on perceived team performance. It reports that being distributed in and of itself had no impact on self-assessed team performance, while work practice predictability, sociability, and the variety of practices mitigated effects in discontinuous environments. This bears on the sub-question by investigating the impact of distribution and virtuality aspects on team performance and working practices.",
+    "[33] Individual Swift Trust and Knowledge-Based Trust in Face-to-Face and Virtual Team Members (2009) - This study manipulated team member characteristics and behavior to test a two-stage theoretical model of trust formation and the influence of information and communication technologies (ICT) in face-to-face and virtual team members. It reports that swift trust dominated initially based on category-based processing, while knowledge-based trust formed later once sufficient behavior information accumulated, and ICT use increased the perceived risk of team failure. It bears on the sub-question by highlighting how ICT and virtual settings influence trust dynamics among team members.",
+    "[34] Avatars, People, and Virtual Worlds: Foundations for Research in Metaverses (2009) - This paper examines immersive three-dimensional virtual worlds (metaverses) as a technological platform for global virtual collaboration and develops a conceptual model based on five key constructs including technology capabilities, behaviors, and outcomes. It reports that these environments have the potential for richer, more engaging collaboration, though their capabilities require deeper examination. It bears on the sub-question by exploring advanced technological platforms that support collaboration in virtual teams.",
+    "[35] Virtual Teams: A Literature Review (2009) - This paper offers an extensive literature review to define virtual teams, analyze the present body of knowledge, and identify what is needed for effective virtual teamwork from people, process, and technology perspectives. It reports that virtual teams eliminate time and space barriers to pool employee talents and are increasingly invested in by companies to enhance performance and competitiveness. It bears on the sub-question by outlining the underlying characteristics, challenges, and requirements for effective virtual collaboration.",
+    "[36] Linking trust and collaboration in project teams to project management success (2018) - This study uses structural equation modeling on an international survey of project practitioners to demonstrate the significance of project team trust and collaboration for increasing project management success. It reports that project management success becomes more likely as the degree of collaboration improves, which is influenced by increased trust, and identifies physical proximity among six studied collaboration factors. It bears on the sub-question by linking collaboration and trust factors to project outcomes, highlighting physical proximity.",
+    "[37] Virtual Teams in Times of Pandemic: Factors That Influence Performance (2021) - This manuscript groups main factors influencing performance into models from literature and analyzes a study conducted during the Covid-19 crisis on software development teams regarding remote teamwork configurations using information and communication technologies. It discusses the history of teleworking and virtual teams, noting characteristics such as cultural diversity, geographical distribution, communication, interdependence, leadership, cohesion, empowerment, and confidence. It bears on the sub-question by evaluating factors that influence performance and collaboration in virtual teams during crises.",
+    "[38] Understanding Virtual Team Development: An Interpretive Study (2003) - This paper develops an understanding of how virtual teams develop over time by inductively studying communication transactions of student virtual teams using interaction analysis and structuration theory. It proposes a theoretical model describing how virtual teams develop over a project's life and attempts to clarify the relationship between communication, virtual team development, and collaboration. It bears on the sub-question by analyzing micro-level communication patterns and collaboration processes in virtual teams over time."
+  ],
+  "themes": [
+    "Remote work presents a complex impact on employee productivity and performance, with systematic reviews showing generally positive effects depending on context, while controlled trials indicate hybrid models can maintain performance without causing damage. [1, 2, 4, 7, 8]",
+    "While remote work can reduce psychological and physical stress responses and benefit job control, it frequently introduces well-being challenges such as isolation, loneliness, and psychological distress. [1, 4, 6, 10, 11, 12, 15, 16]",
+    "Telecommuting and remote work heavily influence work-life balance and family boundaries, often causing work overload and work-family conflict due to boundary-crossing interruptions, though supportive supervision and schedule control can help mitigate these issues. [1, 4, 11, 17, 18, 20, 21, 23, 24, 25, 27, 28]",
+    "Organizational culture, trust, and communication dynamics play critical roles in virtual teams, where information and communication technologies influence collaboration outcomes, team development, and perceived risk. [3, 9, 31, 32, 33, 34, 35, 36, 37, 38]"
+  ],
+  "gaps": [
+    "Sub-question 1 lacks long-term longitudinal studies across diverse non-tech industries tracking the permanent impact of fully remote work versus hybrid arrangements on employee performance and innovation.",
+    "Sub-question 3 and general well-being impacts lack deep exploration into how intersecting demographic variables (such as age, specific socioeconomic statuses, and varying household structures) uniquely moderate the psychological toll and work-life balance of remote workers over extended periods.",
+    "Sub-question 4 lacks direct causal studies on how organizational culture is organically built and sustained over multi-year periods in fully remote companies compared to traditional office environments."
+  ],
+  "limitations": [
+    "1 of 38 approved papers could not be verified with Crossref: no record under the DOI (typically arXiv preprints registered with DataCite), a title that does not match, or no DOI at all. They are flagged, not excluded.",
+    "Relevance was judged from title and abstract only; 39 of 77 retrieved papers were excluded (score below 3/5 or removed at review 2). Reasons are listed above.",
+    "Summaries, themes and gaps were generated by gemini-3.5-flash-lite from abstracts only and should be checked against the full texts before being relied on.",
+    "Sources searched for every sub-question (20 results per query per source): openalex: 4 of 4 searches answered, 80 records; semanticscholar: 0 of 4 searches answered, 0 records. No full-text access; no citation-chasing or date filtering.",
+    "Automatic failover was used: semanticscholar failed for 4 search(es) and those searches relied on the remaining source(s). Coverage for the affected sub-questions may be narrower."
+  ]
+}

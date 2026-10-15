@@ -16,7 +16,10 @@ the 3-5 sub-question rule and rejects malformed JSON; the model gets exactly
 one chance to repair, then the run stops loudly.
 
 **Why constraints travel with every prompt:** they are stored outside the
-model's context and re-applied each call, so they cannot be "forgotten".
+model's context and written into each planning and query-rewriting prompt
+rather than left to the model's memory. (They could not actually be given
+until remediation #17 added the `--constraints` option, and they steer the
+prompts only - nothing checks that the model kept to them.)
 
 **Evidence:** `python main.py "question"` shows the plan, waits for approval,
 then searches every sub-question; `pytest` -> 21 passed (6 new).

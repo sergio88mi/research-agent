@@ -2,21 +2,33 @@
 Gemini client: the only place the system talks to a language model.
 
 Why plain HTTP rather than a vendor SDK: the proposal lists `requests` and
-`pydantic` as the stack and keeps the provider in configuration. A ~40-line
+Pydantic as the stack and names the model only as an example of a free-tier
+hosted API (section 3), so the provider is kept in configuration. A small
 client makes every call inspectable - the prompt goes in, text comes out - and
 swapping providers means changing an endpoint and a payload shape, not a
 dependency tree.
 
 Why `generate_json` validates and retries once: the LLM is the least
-predictable component. Every model response is parsed into a Pydantic model;
-if that fails, the error is sent back to the model for ONE repair attempt
+predictable component, and a language model can return output that nothing
+supports (Klesel and Wittmann, 2025), so no reply is used until it has been
+checked. Every model response is parsed into a Pydantic model; if that fails,
+the error is sent back to the model for ONE repair attempt
 (config.LLM_REPAIR_RETRIES). Repeated failure raises, so the pipeline stops
 loudly instead of continuing on a broken object.
+
+Why only a reply that passed validation is cached: a rejected reply kept on
+disk would be handed back on every later run of the same prompt. At best that
+repeats the repair each time (the 30 Sept re-run logged the same seven
+warnings without making a single request); at worst, when the repair fails
+too, the run can never get past that prompt until the cache is cleared by
+hand. So `generate_json` keeps only text that passed validation, and keeps it
+under the original prompt - also when it was the repair that produced it
+(remediation #13).
 """
 import json
 import logging
 import time
-from typing import Type, TypeVar
+from typing import Optional, Type, TypeVar
 
 import requests
 from pydantic import BaseModel, ValidationError
@@ -29,7 +41,12 @@ T = TypeVar("T", bound=BaseModel)
 
 
 class LLMError(RuntimeError):
-    pass
+    """The model could not be used or did not give a usable answer.
+
+    One exception type for "no key", "quota exhausted", "service down" and
+    "reply never matched the schema", so the entry point can stop the run with
+    the message instead of a traceback.
+    """
 
 
 # Failures that mean "the service is busy", not "the request is wrong".
@@ -103,12 +120,31 @@ def _retry_after(response: requests.Response) -> int:
         return 0
 
 
-def generate(prompt: str, json_mode: bool = True, temperature: float = 0.2) -> str:
-    """Send one prompt to Gemini and return the text of the first candidate."""
+def _cache_key(prompt: str, json_mode: bool, temperature: float) -> str:
+    """Model, mode and temperature are part of the key: change any of them and the reply is asked for again."""
+    return f"{config.GEMINI_MODEL}|{json_mode}|{temperature}|{prompt}"
+
+
+def _remember(prompt: str, text: str, json_mode: bool = True, temperature: Optional[float] = None) -> None:
+    """Keep `text` as the cached reply to `prompt` (no write if that is already what is stored)."""
+    temperature = config.LLM_TEMPERATURE if temperature is None else temperature
+    key = _cache_key(prompt, json_mode, temperature)
+    if cache.get("gemini", key) != {"text": text}:
+        cache.put("gemini", key, {"text": text})
+
+
+def generate(prompt: str, json_mode: bool = True, temperature: Optional[float] = None, store: bool = True) -> str:
+    """Send one prompt to Gemini and return the text of the first candidate.
+
+    A cached reply is returned without a request. `store=False` leaves a fresh
+    reply out of the cache - `generate_json` uses it so that it can check the
+    reply first and keep it only if it is valid.
+    """
     if not config.GEMINI_API_KEY:
         raise LLMError("GEMINI_API_KEY is not set - copy .env.example to .env and add your key.")
+    temperature = config.LLM_TEMPERATURE if temperature is None else temperature
 
-    cache_key = f"{config.GEMINI_MODEL}|{json_mode}|{temperature}|{prompt}"
+    cache_key = _cache_key(prompt, json_mode, temperature)
     cached = cache.get("gemini", cache_key)
     if cached is not None:
         return cached["text"]
@@ -128,18 +164,24 @@ def generate(prompt: str, json_mode: bool = True, temperature: float = 0.2) -> s
     except (KeyError, IndexError) as exc:
         raise LLMError(f"Unexpected Gemini response shape: {json.dumps(data)[:300]}") from exc
 
-    cache.put("gemini", cache_key, {"text": text})
+    if store:
+        cache.put("gemini", cache_key, {"text": text})
     log.info("llm | prompt_chars=%d | response_chars=%d", len(prompt), len(text))
     return text
 
 
 def generate_json(prompt: str, model: Type[T]) -> T:
-    """Generate, validate against `model`, and repair once if invalid."""
-    text = generate(prompt)
+    """Generate, validate against `model`, and repair once if invalid.
+
+    The reply that finally validates - the first one, or the repaired one - is
+    cached under the original prompt, so a re-run of the same prompt gets the
+    good answer at once. A reply that fails validation is never written.
+    """
+    text = generate(prompt, store=False)
     attempts = 0
     while True:
         try:
-            return model.model_validate_json(text)
+            parsed = model.model_validate_json(text)
         except (ValidationError, ValueError) as exc:
             attempts += 1
             log.warning("llm | invalid JSON for %s (attempt %d): %s", model.__name__, attempts, str(exc)[:200])
@@ -149,4 +191,7 @@ def generate_json(prompt: str, model: Type[T]) -> T:
                 f"{prompt}\n\nYour previous reply was rejected because it did not match the required "
                 f"JSON schema. Error: {str(exc)[:400]}\nReturn ONLY valid JSON that fixes this."
             )
-            text = generate(repair_prompt)
+            text = generate(repair_prompt, store=False)
+        else:
+            _remember(prompt, text)
+            return parsed

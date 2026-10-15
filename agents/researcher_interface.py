@@ -14,15 +14,19 @@ _APPROVE_WORDS = ("approve", "a", "yes", "y", "")
 
 
 class ResearcherInterface:
+    """The two review points and the question prompt, on the terminal or from a script."""
+
     def __init__(self, scripted: Optional[List[str]] = None):
         self._script = list(scripted) if scripted is not None else None
 
     def _ask(self, prompt: str) -> str:
+        """One answer from the researcher - or the next scripted answer ('approve' once the script runs out)."""
         if self._script is not None:
             return self._script.pop(0) if self._script else "approve"
         return input(prompt).strip()
 
     def submit_question(self) -> str:
+        """Ask for the research question when none was given on the command line."""
         return self._ask("Research question: ")
 
     def review_subquestions(self, interpretation: str, subqs: List[SubQuestion]) -> Tuple[Decision, str]:
@@ -70,7 +74,7 @@ class ResearcherInterface:
                 a = by_key.get((p.doi or p.title).strip().lower())
                 score = f"{a.relevance_score}/5" if a else "?"
                 flag = {True: "verified", False: "UNVERIFIED", None: "unchecked"}[p.doi_verified]
-                print(f"  {n:2d}. [{score}] {p.title} ({p.year}) - DOI {flag}")
+                print(f"  {n:2d}. [{score}] {p.title} ({p.year or 'n.d.'}) - DOI {flag}")
                 if a and a.reason:
                     print(f"      {a.reason[:140]}")
         print(f"\n{n} papers selected; {dropped} screened out (reasons are recorded in the brief).")
@@ -89,5 +93,10 @@ class ResearcherInterface:
                     print("The one scope revision for this run has been used - approve or drop instead.")
                     continue
                 feedback = self._ask("What should change about the scope? > ")
+                if not feedback.strip():
+                    # The run has one scope revision. An empty answer would spend it on a
+                    # re-plan with nothing to go on, so it is not accepted (remediation #16).
+                    print("Nothing to change was given, so the scope stays as it is - approve, drop or reject again.")
+                    continue
                 return Decision.REJECT_SCOPE, feedback
             print("Not understood.")

@@ -1,0 +1,1267 @@
+{
+  "research_question": "How effective is telemedicine for managing type 2 diabetes in adults?",
+  "interpretation": "This research evaluates the clinical and practical efficacy of remote digital healthcare interventions in treating and monitoring adult patients diagnosed with type 2 diabetes mellitus.",
+  "subquestions": [
+    {
+      "id": 1,
+      "text": "What is the impact of telemedicine interventions on glycemic control measured by HbA1c levels in adults with type 2 diabetes?",
+      "search_query": "telemedicine telehealth type 2 diabetes adults glycemic control HbA1c outcomes",
+      "approved": true,
+      "retried_once": false,
+      "previous_query": null
+    },
+    {
+      "id": 2,
+      "text": "How do remote patient monitoring and digital consultations affect medication adherence and self-management behaviors in this population?",
+      "search_query": "remote patient monitoring type 2 diabetes medication adherence self management adults",
+      "approved": true,
+      "retried_once": false,
+      "previous_query": null
+    },
+    {
+      "id": 3,
+      "text": "What are the patient and provider barriers, facilitators, and overall acceptance regarding the use of telemedicine for diabetes care?",
+      "search_query": "telehealth telemedicine type 2 diabetes patient acceptance barriers facilitators adults",
+      "approved": true,
+      "retried_once": false,
+      "previous_query": null
+    },
+    {
+      "id": 4,
+      "text": "How cost-effective are telemedicine programs compared to traditional in-person clinical care for managing type 2 diabetes?",
+      "search_query": "telemedicine telehealth cost effectiveness economic evaluation type 2 diabetes adults",
+      "approved": true,
+      "retried_once": false,
+      "previous_query": null
+    }
+  ],
+  "selected_papers": [
+    {
+      "doi": "10.2337/dc16-0346",
+      "title": "Do Mobile Phone Applications Improve Glycemic Control (HbA1c) in the Self-management of Diabetes? A Systematic Review, Meta-analysis, and GRADE of 14 Randomized Trials",
+      "authors": [
+        "Can Hou",
+        "Ben Carter",
+        "Jonathan Hewitt",
+        "Trevor Francisa",
+        "Sharon Mayor"
+      ],
+      "year": 2016,
+      "abstract": "OBJECTIVE To investigate the effect of mobile phone applications (apps) on glycemic control (HbA1c) in the self-management of diabetes. RESEARCH DESIGN AND METHODS Relevant studies that were published between 1 January 1996 and 1 June 2015 were searched from five databases: Medline, CINAHL, Cochrane Library, Web of Science, and Embase. Randomized controlled trials that evaluated diabetes apps were included. We conducted a systematic review with meta-analysis and GRADE (Grading of Recommendations Assessment, Development and Evaluation) of the evidence. RESULTS Participants from 14 studies (n = 1,360) were included and quality assessed. Although there may have been clinical diversity, all type 2 diabetes studies reported a reduction in HbA1c. The mean reduction in participants using an app compared with control was 0.49% (95% Cl 0.30, 0.68; I2 = 10%), with a moderate GRADE of evidence. Subgroup analyses indicated that younger patients were more likely to benefit from the use of diabetes apps, and the effect size was enhanced with health care professional feedback. There was inadequate data to describe the effectiveness of apps for type 1 diabetes. CONCLUSIONS Apps may be an effective component to help control HbA1c and could be considered as an adjuvant intervention to the standard self-management for patients with type 2 diabetes. Given the reported clinical effect, access, and nominal cost of this technology, it is likely to be effective at the population level. The functionality and use of this technology need to be standardized, but policy and guidance are anticipated to improve diabetes self-management care.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.1002/14651858.cd008776.pub2",
+      "title": "Computer-based diabetes self-management interventions for adults with type 2 diabetes mellitus",
+      "authors": [
+        "Kingshuk Pal",
+        "Sophie V. Eastwood",
+        "Susan G. Michie",
+        "Andrew A. Farmer",
+        "Maria Barnard",
+        "Richard Peacock",
+        "Bindie Wood",
+        "Joni D Inniss",
+        "Elizabeth M. Murray"
+      ],
+      "year": 2013,
+      "abstract": "BACKGROUND: Diabetes is one of the commonest chronic medical conditions, affecting around 347 million adults worldwide. Structured patient education programmes reduce the risk of diabetes-related complications four-fold. Internet-based self-management programmes have been shown to be effective for a number of long-term conditions, but it is unclear what are the essential or effective components of such programmes. If computer-based self-management interventions improve outcomes in type 2 diabetes, they could potentially provide a cost-effective option for reducing the burdens placed on patients and healthcare systems by this long-term condition. OBJECTIVES: To assess the effects on health status and health-related quality of life of computer-based diabetes self-management interventions for adults with type 2 diabetes mellitus. SEARCH METHODS: We searched six electronic bibliographic databases for published articles and conference proceedings and three online databases for theses (all up to November 2011). Reference lists of relevant reports and reviews were also screened. SELECTION CRITERIA: Randomised controlled trials of computer-based self-management interventions for adults with type 2 diabetes, i.e. computer-based software applications that respond to user input and aim to generate tailored content to improve one or more self-management domains through feedback, tailored advice, reinforcement and rewards, patient decision support, goal setting or reminders. DATA COLLECTION AND ANALYSIS: Two review authors independently screened the abstracts and extracted data. A taxonomy for behaviour change techniques was used to describe the active ingredients of the intervention. MAIN RESULTS: We identified 16 randomised controlled trials with 3578 participants that fitted our inclusion criteria. These studies included a wide spectrum of interventions covering clinic-based brief interventions, Internet-based interventions that could be used from home and mobile phone-based interventions. The mean age of participants was between 46 to 67 years old and mean time since diagnosis was 6 to 13 years. The duration of the interventions varied between 1 to 12 months. There were three reported deaths out of 3578 participants.Computer-based diabetes self-management interventions currently have limited effectiveness. They appear to have small benefits on glycaemic control (pooled effect on glycosylated haemoglobin A1c (HbA1c): -2.3 mmol/mol or -0.2% (95% confidence interval (CI) -0.4 to -0.1; P = 0.009; 2637 participants; 11 trials). The effect size on HbA1c was larger in the mobile phone subgroup (subgroup analysis: mean difference in HbA1c -5.5 mmol/mol or -0.5% (95% CI -0.7 to -0.3); P < 0.00001; 280 participants; three trials). Current interventions do not show adequate evidence for improving depression, health-related quality of life or weight. Four (out of 10) interventions showed beneficial effects on lipid profile.One participant withdrew because of anxiety but there were no other documented adverse effects. Two studies provided limited cost-effectiveness data - with one study suggesting costs per patient of less than $140 (in 1997) or 105 EURO and another study showed no change in health behaviour and resource utilisation. AUTHORS' CONCLUSIONS: Computer-based diabetes self-management interventions to manage type 2 diabetes appear to have a small beneficial effect on blood glucose control and the effect was larger in the mobile phone subgroup. There is no evidence to show benefits in other biological outcomes or any cognitive, behavioural or emotional outcomes.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.1186/s12913-018-3274-8",
+      "title": "The impact of telehealth remote patient monitoring on glycemic control in type 2 diabetes: a systematic review and meta-analysis of systematic reviews of randomised controlled trials",
+      "authors": [
+        "Puikwan A. Lee",
+        "Geva Greenfield",
+        "Yannis Pappas"
+      ],
+      "year": 2018,
+      "abstract": "BACKGROUND: There is a growing body of evidence to support the use of telehealth in monitoring HbA1c levels in people living with type 2 diabetes. However, the overall magnitude of effect is yet unclear due to variable results reported in existing systematic reviews. The objective of this study is to conduct a systematic review and meta-analysis of systematic reviews of randomised controlled trials to create an evidence-base for the effectiveness of telehealth interventions on glycemic control in adults with type 2 diabetes. METHODS: Electronic databases including The Cochrane Library, MEDLINE, EMBASE, HMIC, and PsychINFO were searched to identify relevant systematic reviews published between 1990 and April 2016, supplemented by references search from the relevant reviews. Two independent reviewers selected and reviewed the eligible studies. Of the 3279 references retrieved, 4 systematic reviews reporting in total 29 unique studies relevant to our review were included. Both conventional pairwise meta-analyses and network meta-analyses were performed. RESULTS: Evidence from pooling four systematic reviews found that telehealth interventions produced a small but significant improvement in HbA1c levels compared with usual care (MD: -0.55, 95% CI: -0.73 to - 0.36). The greatest effect was seen in telephone-delivered interventions, followed by Internet blood glucose monitoring system interventions and lastly interventions involving automatic transmission of SMBG using a mobile phone or a telehealth unit. CONCLUSION: Current evidence suggests that telehealth is effective in controlling HbA1c levels in people living with type 2 diabetes. However there is need for better quality primary studies as well as systematic reviews of RCTs in order to confidently conclude on the impact of telehealth on glycemic control in type 2 diabetes.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.2196/jmir.6688",
+      "title": "Telehealth Interventions to Support Self-Management of Long-Term Conditions: A Systematic Metareview of Diabetes, Heart Failure, Asthma, Chronic Obstructive Pulmonary Disease, and Cancer",
+      "authors": [
+        "Peter Hanlon",
+        "Luke Daines",
+        "Christine E Campbell",
+        "Brian McKinstry",
+        "David Weller",
+        "Hilary Pinnock"
+      ],
+      "year": 2017,
+      "abstract": "BACKGROUND: Self-management support is one mechanism by which telehealth interventions have been proposed to facilitate management of long-term conditions. OBJECTIVE: The objectives of this metareview were to (1) assess the impact of telehealth interventions to support self-management on disease control and health care utilization, and (2) identify components of telehealth support and their impact on disease control and the process of self-management. Our goal was to synthesise evidence for telehealth-supported self-management of diabetes (types 1 and 2), heart failure, asthma, chronic obstructive pulmonary disease (COPD) and cancer to identify components of effective self-management support. METHODS: We performed a metareview (a systematic review of systematic reviews) of randomized controlled trials (RCTs) of telehealth interventions to support self-management in 6 exemplar long-term conditions. We searched 7 databases for reviews published from January 2000 to May 2016 and screened identified studies against eligibility criteria. We weighted reviews by quality (revised A Measurement Tool to Assess Systematic Reviews), size, and relevance. We then combined our results in a narrative synthesis and using harvest plots. RESULTS: We included 53 systematic reviews, comprising 232 unique RCTs. Reviews concerned diabetes (type 1: n=6; type 2, n=11; mixed, n=19), heart failure (n=9), asthma (n=8), COPD (n=8), and cancer (n=3). Findings varied between and within disease areas. The highest-weighted reviews showed that blood glucose telemonitoring with feedback and some educational and lifestyle interventions improved glycemic control in type 2, but not type 1, diabetes, and that telemonitoring and telephone interventions reduced mortality and hospital admissions in heart failure, but these findings were not consistent in all reviews. Results for the other conditions were mixed, although no reviews showed evidence of harm. Analysis of the mediating role of self-management, and of components of successful interventions, was limited and inconclusive. More intensive and multifaceted interventions were associated with greater improvements in diabetes, heart failure, and asthma. CONCLUSIONS: While telehealth-mediated self-management was not consistently superior to usual care, none of the reviews reported any negative effects, suggesting that telehealth is a safe option for delivery of self-management support, particularly in conditions such as heart failure and type 2 diabetes, where the evidence base is more developed. Larger-scale trials of telehealth-supported self-management, based on explicit self-management theory, are needed before the extent to which telehealth technologies may be harnessed to support self-management can be established.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.1503/cmaj.150885",
+      "title": "Effect of telemedicine on glycated hemoglobin in diabetes: a systematic review and meta-analysis of randomized trials",
+      "authors": [
+        "Labib Imran Faruque",
+        "Natasha Wiebe",
+        "Arash Ehteshami-Afshar",
+        "Yuanchen Liu",
+        "Neda Dianati‐Maleki",
+        "Brenda R. Hemmelgarn",
+        "Braden Manns",
+        "Marcello A. Tonelli"
+      ],
+      "year": 2016,
+      "abstract": "BACKGROUND: Telemedicine, the use of telecommunications to deliver health services, expertise and information, is a promising but unproven tool for improving the quality of diabetes care. We summarized the effectiveness of different methods of telemedicine for the management of diabetes compared with usual care. METHODS: We searched MEDLINE, Embase and the Cochrane Central Register of Controlled Trials databases (to November 2015) and reference lists of existing systematic reviews for randomized controlled trials (RCTs) comparing telemedicine with usual care for adults with diabetes. Two independent reviewers selected the studies and assessed risk of bias in the studies. The primary outcome was glycated hemoglobin (HbA1C) reported at 3 time points (≤ 3 mo, 4–12 mo and > 12 mo). Other outcomes were quality of life, mortality and episodes of hypoglycemia. Trials were pooled using randomeffects meta-analysis, and heterogeneity was quantified using the I2 statistic. RESULTS: From 3688 citations, we identified 111 eligible RCTs (n = 23 648). Telemedicine achieved significant but modest reductions in HbA1C in all 3 follow-up periods (difference in mean at ≤ 3 mo: −0.57%, 95% confidence interval [CI] −0.74% to −0.40% [39 trials]; at 4–12 mo: −0.28%, 95% CI −0.37% to −0.20% [87 trials]; and at > 12 mo: −0.26%, 95% CI −0.46% to −0.06% [5 trials]). Quantified heterogeneity (I2 statistic) was 75%, 69% and 58%, respectively. In meta-regression analyses, the effect of telemedicine on HbA1C appeared greatest in trials with higher HbA1C concentrations at baseline, in trials where providers used Web portals or text messaging to communicate with patients and in trials where telemedicine facilitated medication adjustment. Telemedicine had no convincing effect on quality of life, mortality or hypoglycemia. INTERPRETATION: Compared with usual care, the addition of telemedicine, especially systems that allowed medication adjustments with or without text messaging or a Web portal, improved HbA1C but not other clinically relevant outcomes among patients with diabetes.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.1038/s41598-017-12987-z",
+      "title": "Comparative effectiveness of telemedicine strategies on type 2 diabetes management: A systematic review and network meta-analysis",
+      "authors": [
+        "Shaun Wen Huey Lee",
+        "Carina K. Y. Chan",
+        "Siew Siang Chua",
+        "Nathorn Chaiyakunapruk"
+      ],
+      "year": 2017,
+      "abstract": "The effects of telemedicine strategies on the management of diabetes is not clear. This study aimed to investigate the impact of different telemedicine strategies on glycaemic control management of type 2 diabetes patients. A search was performed in 6 databases from inception until September 2016 for randomized controlled studies that examined the use of telemedicine in adults with type 2 diabetes. Studies were independently extracted and classified according to the following telemedicine strategies: teleeducation, telemonitoring, telecase-management, telementoring and teleconsultation. Traditional and network meta-analysis were performed to estimate the relative treatment effects. A total of 107 studies involving 20,501 participants were included. Over a median of 6 months follow-up, telemedicine reduced haemoglobin A1c (HbA1c) by a mean of 0.43% (95% CI: -0.64% to -0.21%). Network meta-analysis showed that all telemedicine strategies were effective in reducing HbA1c significantly compared to usual care except for telecase-management and telementoring, with mean difference ranging from 0.37% and 0.71%. Ranking indicated that teleconsultation was the most effective telemedicine strategy, followed by telecase-management plus telemonitoring, and finally teleeducation plus telecase-management. The review indicates that most telemedicine strategies can be useful, either as an adjunct or to replace usual care, leading to clinically meaningful reduction in HbA1c.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.3389/fphar.2017.00330",
+      "title": "Telemedicine for the Management of Glycemic Control and Clinical Outcomes of Type 1 Diabetes Mellitus: A Systematic Review and Meta-Analysis of Randomized Controlled Studies",
+      "authors": [
+        "Shaun Wen Huey Lee",
+        "Leanne Ooi",
+        "Yin Key Lai"
+      ],
+      "year": 2017,
+      "abstract": "Importance: Telemedicine has been shown to be an efficient and effective means of providing care to patients with chronic disease especially in remote and undeserved regions, by improving access to care and reduce healthcare cost. However, the evidence surrounding its applicability in type 1 diabetes remains scarce and conflicting. Objective: To synthesize evidence and quantify the effectiveness of telemedicine interventions for the management of glycemic and clinical outcomes in type 1 diabetes patients, relative to comparator conditions Data Sources: MEDLINE, EMBASE, Cochrane Library, Web of Science, PsycINFO and CINAHL were searched for published articles since inception until December 2016. Study Selection: Original articles reporting the results of randomised controlled studies on the effectiveness of telemedicine in people with type 1 diabetes were included. Data Extraction and Synthesis: Two reviewers independently extracted data, assessed quality and strength of evidence. Interventions were categorized based upon the telemedicine focus (monitoring, education, consultation, case-management and peer mentoring). Main Outcome and Measure: Absolute change in glycosylated hemoglobin (HbA1c) from baseline to follow-up assessment. Results: A total of 38 studies described in 41 articles were identified. Positive effects on glycemic control were noted with studies examining telemedicine, with a mean reduction of 0.18% at the end of intervention. Studies with longer duration (>6 months) who had recruited patients with a higher baseline HbA1c (>9%) were associated with larger effects. Telemedicine interventions that involve individualised assessments, audit with feedback and skill building were also more effective in improving glycemic control. However, no benefits were observed on blood pressure, lipids, weight, quality of life and adverse events. Conclusions and Relevance: There is insufficient evidence to support telemedicine use for glycemic control and other clinically relevant outcome among patients with type 1 diabetes.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.2196/mhealth.6522",
+      "title": "Mobile App-Based Interventions to Support Diabetes Self-Management: A Systematic Review of Randomized Controlled Trials to Identify Functions Associated with Glycemic Efficacy",
+      "authors": [
+        "Yuan Wu",
+        "Xun Yao",
+        "Giacomo Vespasiani",
+        "Antonio Nicolucci",
+        "Yajie Dong",
+        "Joey S.W. Kwong",
+        "Ling Li",
+        "Xin Sun",
+        "Haoming Tian",
+        "Sheyu Li"
+      ],
+      "year": 2017,
+      "abstract": "Background: Mobile health apps for diabetes self-management have different functions. However, the efficacy and safety of each function are not well studied, and no classification is available for these functions. Objective: The aims of this study were to (1) develop and validate a taxonomy of apps for diabetes self-management, (2) investigate the glycemic efficacy of mobile app-based interventions among adults with diabetes in a systematic review of randomized controlled trials (RCTs), and (3) explore the contribution of different function to the effectiveness of entire app-based interventions using the taxonomy. Methods: We developed a 3-axis taxonomy with columns of clinical modules, rows of functional modules and cells of functions with risk assessments. This taxonomy was validated by reviewing and classifying commercially available diabetes apps. We searched MEDLINE, EMBASE, the Cochrane Central Register of Controlled Trials, the Chinese Biomedical Literature Database, and ClinicalTrials.gov from January 2007 to May 2016. We included RCTs of adult outpatients with diabetes that compared using mobile app-based interventions with usual care alone. The mean differences (MDs) in hemoglobin A1c (HbA1c) concentrations and risk ratios of adverse events were pooled using a random-effects meta-analysis. After taxonomic classification, we performed exploratory subgroup analyses of the presence or absence of each module across the included app-based interventions. Results: Across 12 included trials involving 974 participants, using app-based interventions was associated with a clinically significant reduction of HbA1c (MD 0.48%, 95% CI 0.19%-0.78%) without excess adverse events. Larger HbA1c reductions were noted among patients with type 2 diabetes than those with type 1 diabetes (MD 0.67%, 95% CI 0.30%-1.03% vs MD 0.37%, 95% CI –0.12%-0.86%). Having a complication prevention module in app-based interventions was associated with a greater HbA1c reduction (with complication prevention: MD 1.31%, 95% CI 0.66%-1.96% vs without: MD 0.38%, 95% CI 0.09%-0.67%; intersubgroup P=.01), as was having a structured display (with structured display: MD 0.69%, 95% CI 0.32%-1.06% vs without: MD 0.69%, 95% CI –0.18%-0.53%; intersubgroup P=.03). However, having a clinical decision-making function was not associated with a larger HbA1c reduction (with clinical decision making: MD 0.19%, 95% CI –0.24%-0.63% vs without: MD 0.61%, 95% CI 0.27%-0.95%; intersubgroup P=.14). Conclusions: The use of mobile app-based interventions yields a clinically significant HbA1c reduction among adult outpatients with diabetes, especially among those with type 2 diabetes. Our study suggests that the clinical decision-making function needs further improvement and evaluation before being added to apps.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.1371/journal.pone.0079246",
+      "title": "Telemedicine Application in the Care of Diabetes Patients: Systematic Review and Meta-Analysis",
+      "authors": [
+        "Milena Soriano Marcolino",
+        "Júnia Xavier Maia",
+        "Maria Beatriz Moreira Alkmim",
+        "Eric H. Boersma",
+        "Antônio Luiz Pinho Ribeiro"
+      ],
+      "year": 2013,
+      "abstract": "BACKGROUND: The impact of telemedicine application on the management of diabetes patients is unclear, as the results are not consistent among different studies. The objective of this study is to conduct a systematic review and meta-analysis of randomized controlled trials (RCTs) assessing the impact of telemedicine interventions on change in hemoglobin A1c (HbA1c), blood pressure, LDL cholesterol (LDL-c) and body mass index (BMI) in diabetes patients. METHODS: Electronic databases MEDLINE, Cochrane Central Register of Controlled Trials and LILACS were searched to identify relevant studies published until April 2012, supplemented by references from the selected articles. Study search and selection were performed by independent reviewers. Of the 6.258 articles retrieved, 13 RCTs (4207 patients) were included. Random effects model was applied to estimate the pooled results. RESULTS: Telemedicine was associated with a statistically significant and clinically relevant absolute decline in HbA1c level compared to control (mean difference -0.44% [-4.8 mmol/mol] and 95% confidence interval [CI] -0.61 to -0.26% [-6.7 to -2.8 mmol/mol]; p<0.001). LDL-c was reduced in 6.6 mg/dL (95% CI -8.3 to -4.9; p<0.001), but the clinical relevance of this effect can be questioned. No effects of telemedicine strategies were seen on systolic (-1.6 mmHg and 95% CI -7.2 to 4.1) and diastolic blood pressure (-1.1 mmHg and 95% CI -3.0 to 0.8). The 2 studies that assessed the effect on BMI demonstrated a tendency of BMI reduction in favor of telemedicine. CONCLUSIONS: Telemedicine strategies combined to the usual care were associated with improved glycemic control in diabetic patients. No clinical relevant impact was observed on LDL-c and blood pressure, and there was a tendency of BMI reduction in diabetes patients who used telemedicine, but these outcomes should be further explored in future trials.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.7759/cureus.63881",
+      "title": "Revolutionizing Healthcare: How Telemedicine Is Improving Patient Outcomes and Expanding Access to Care",
+      "authors": [
+        "Victor C Ezeamii",
+        "Okelue Edwards Okobi",
+        "Hassana Wambai-Sani",
+        "Gamamedaliyanage S Perera",
+        "Shakhnoza Zaynieva",
+        "Chinwe C Okonkwo",
+        "Mohamed M. Ohaiba",
+        "Pamela C William-Enemali",
+        "Okiemute Rita Obodo",
+        "Ngozika Grace Obiefuna"
+      ],
+      "year": 2024,
+      "abstract": "Telemedicine uses digital technologies to provide healthcare services remotely, greatly improving patient access, especially during crises like the COVID-19 pandemic. This systematic review investigates telemedicine's effects on patient outcomes, access to care, and its role in the evolving healthcare landscape. Relevant studies were identified using MeSH terms and keywords through electronic databases and manual reference list screenings. The selected empirical studies, both quantitative and qualitative, examined telemedicine across various patient populations. The review categorized findings into themes related to patient outcomes and access to care. Telemedicine was found to be a transformative tool in chronic disease management, particularly in diabetes care. Significant improvements in patient health outcomes and cost savings were reported with telemedicine interventions. For example, telehealth platforms enhance diabetes management by increasing patient engagement and improving clinical metrics such as HbA1c levels. Additionally, telehealth services for diabetes-related foot disease (DFD) overcome geographical barriers, providing specialized care and improving patient access and satisfaction. In conclusion, telemedicine significantly improves patient outcomes, access, and satisfaction in chronic disease management, especially diabetes care. By overcoming geographical barriers and enhancing patient engagement, telehealth platforms have the potential to transform global healthcare delivery. Implementing these insights into practice can improve the accessibility and effectiveness of diabetes care worldwide, ensuring equitable and patient-centered healthcare solutions.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.1371/journal.pmed.1002098",
+      "title": "Supported Telemonitoring and Glycemic Control in People with Type 2 Diabetes: The Telescot Diabetes Pragmatic Multicenter Randomized Controlled Trial",
+      "authors": [
+        "Sarah H. Wild",
+        "Janet M. Hanley",
+        "Stephanie C. Lewis",
+        "John A. McKnight",
+        "Lucy B. McCloughan",
+        "Paul L. Padfield",
+        "Richard Anthony Parker",
+        "Mary Paterson",
+        "Hilary Pinnock",
+        "Aziz Sheikh",
+        "Brian McKinstry"
+      ],
+      "year": 2016,
+      "abstract": "BACKGROUND: Self-monitoring of blood glucose among people with type 2 diabetes not treated with insulin does not appear to be effective in improving glycemic control. We investigated whether health professional review of telemetrically transmitted self-monitored glucose results in improved glycemic control in people with poorly controlled type 2 diabetes. METHODS AND FINDINGS: We performed a randomized, parallel, investigator-blind controlled trial with centralized randomization in family practices in four regions of the United Kingdom among 321 people with type 2 diabetes and glycated hemoglobin (HbA1c) >58 mmol/mol. The supported telemonitoring intervention involved self-measurement and transmission to a secure website of twice-weekly morning and evening glucose for review by family practice clinicians who were not blinded to allocation group. The control group received usual care, with at least annual review and more frequent reviews for people with poor glycemic or blood pressure control. HbA1c assessed at 9 mo was the primary outcome. Intention-to-treat analyses were performed. 160 people were randomized to the intervention group and 161 to the usual care group between June 6, 2011, and July 19, 2013. HbA1c data at follow-up were available for 146 people in the intervention group and 139 people in the control group. The mean (SD) HbA1c at follow-up was 63.0 (15.5) mmol/mol in the intervention group and 67.8 (14.7) mmol/mol in the usual care group. For primary analysis, adjusted mean HbA1c was 5.60 mmol/mol / 0.51% lower (95% CI 2.38 to 8.81 mmol/mol/ 95% CI 0.22% to 0.81%, p = 0·0007). For secondary analyses, adjusted mean ambulatory systolic blood pressure was 3.06 mmHg lower (95% CI 0.56-5.56 mmHg, p = 0.017) and mean ambulatory diastolic blood pressure was 2.17 mmHg lower (95% CI 0.62-3.72, p = 0.006) among people in the intervention group when compared with usual care after adjustment for baseline differences and minimization strata. No significant differences were identified between groups in weight, treatment pattern, adherence to medication, or quality of life in secondary analyses. There were few adverse events and these were equally distributed between the intervention and control groups. In secondary analysis, there was a greater number of telephone calls between practice nurses and patients in the intervention compared with control group (rate ratio 7.50 (95% CI 4.45-12.65, p < 0.0001) but no other significant differences between groups in use of health services were identified between groups. Key limitations include potential lack of representativeness of trial participants, inability to blind participants and health professionals, and uncertainty about the mechanism, the duration of the effect, and the optimal length of the intervention. CONCLUSIONS: Supported telemonitoring resulted in clinically important improvements in control of glycaemia in patients with type 2 diabetes in family practice. Current Controlled Trials, registration number ISRCTN71674628. TRIAL REGISTRATION: Current Controlled Trials ISRCTN 71674628.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.2196/10321",
+      "title": "Mobile App for Improved Self-Management of Type 2 Diabetes: Multicenter Pragmatic Randomized Controlled Trial",
+      "authors": [
+        "Payal Agarwal",
+        "Geetha Mukerji",
+        "Laura Desveaux",
+        "Noah Michael Ivers",
+        "Onil K. Bhattacharyya",
+        "Jennifer M. Hensel",
+        "James Shaw",
+        "Zachary Bouck",
+        "Trevor Jamieson",
+        "Nike Onabajo",
+        "Madeline Cooper",
+        "Husayn Marani",
+        "Lianne P. Jeffs",
+        "R. Sacha Bhatia"
+      ],
+      "year": 2018,
+      "abstract": "Background: As the increasing prevalence of type 2 diabetes mellitus has put pressure on health systems to appropriately manage these patients, there have been a growing number of mobile apps designed to improve the self-management of diabetes. One such app, BlueStar, has been shown to significantly reduce hemoglobin A1c (HbA1c) levels in small studies and is the first app in the United States to receive Food and Drug Administration approval as a mobile prescription therapy. However, the impact of the app across real-world population among different clinical sites and health systems remains unclear. Objective: The primary objective of this study was to conduct a pragmatic randomized controlled trial of the BlueStar mobile app to determine if app usage leads to improved HbA1c levels among diverse participants in real-life clinical contexts. We hypothesized that this mobile app would improve self-management and HbA1c levels compared with controls. Methods: The study consisted of a multicenter pragmatic randomized controlled trial. Overall, 110 participants randomized to the immediate treatment group (ITG) received the intervention for 6 months, and 113 participants randomized to the wait-list control (WLC) group received usual care for the first 3 months and then received the intervention for 3 months. The primary outcome was glucose control measured by HbA1c levels at 3 months. Secondary outcomes assessed intervention impact on patient self-management, experience of care, and self-reported health utilization using validated scales, including the Problem Areas in Diabetes, the Summary of Diabetes Self-Care Activities, and the EuroQol-5D. Intervention usage data were collected directly from the app. Results: The results of an analysis of covariance controlling for baseline HbA1c levels did not show evidence of intervention impact on HbA1c levels at 3 months (mean difference [ITG−WLC] −0.42, 95% CI −1.05 to 0.21; P=.19). Similarly, there was no intervention effect on secondary outcomes measuring diabetes self-efficacy, quality of life, and health care utilization behaviors. An exploratory analysis of 57 ITG participants investigating the impact of app usage on HbA1c levels showed that each additional day of app use corresponded with a 0.016-point decrease in participants’ 3-month HbA1c levels (95% CI −0.03 to −0.003). App usage varied significantly by site, as participants from 1 site logged in to the app a median of 36 days over 14 weeks (interquartile range [IQR] 10.5-124); those at another site used the app significantly less (median 9; IQR 6-51). Conclusions: The results showed no difference between intervention and control arms for the primary clinical outcome of glycemic control measured by HbA1c levels. Although there was low usage of the app among participants, results indicate contextual factors, particularly site, had a significant impact on overall usage. Future research into the patient and site-specific factors that increase app utilization are needed. Trial Registration: Clinicaltrials.gov NCT02813343; https://clinicaltrials.gov/ct2/show/NCT02813343 (Archived by WebCite at https://clinicaltrials.gov/ct2/show/NCT02813343)",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.2196/mhealth.3882",
+      "title": "A Mobile Health Intervention for Self-Management and Lifestyle Change for Persons With Type 2 Diabetes, Part 2: One-Year Results From the Norwegian Randomized Controlled Trial RENEWING HEALTH",
+      "authors": [
+        "Heidi Holmen",
+        "Astrid Torbjørnsen",
+        "Astrid Klopstad Wahl",
+        "Anne Karen Jenum",
+        "Milada Cvancarova Småstuen",
+        "Eirik Årsand",
+        "Lis Ribu"
+      ],
+      "year": 2014,
+      "abstract": "BACKGROUND: Self-management is crucial in the daily management of type 2 diabetes. It has been suggested that mHealth may be an important method for enhancing self-management when delivered in combination with health counseling. OBJECTIVE: The objective of this study was to test whether the use of a mobile phone-based self-management system used for 1 year, with or without telephone health counseling by a diabetes specialist nurse for the first 4 months, could improve glycated hemoglobin A1c (HbA1c) level, self-management, and health-related quality of life compared with usual care. METHODS: We conducted a 3-arm prospective randomized controlled trial involving 2 intervention groups and 1 control group. Eligible participants were persons with type 2 diabetes with an HbA1c level ≥7.1% (≥54.1 mmol/mol) and aged ≥18 years. Both intervention groups received the mobile phone-based self-management system Few Touch Application (FTA). The FTA consisted of a blood glucose-measuring system with automatic wireless data transfer, diet manual, physical activity registration, and management of personal goals, all recorded and operated using a diabetes diary app on the mobile phone. In addition, one intervention group received health counseling based on behavior change theory and delivered by a diabetes specialist nurse for the first 4 months after randomization. All groups received usual care by their general practitioner. The primary outcome was HbA1c level. Secondary outcomes were self-management (heiQ), health-related quality of life (SF-36), depressive symptoms (CES-D), and lifestyle changes (dietary habits and physical activity). Data were analyzed using univariate methods (t test, ANOVA) and multivariate linear and logistic regression. RESULTS: A total of 151 participants were randomized: 51 to the FTA group, 50 to the FTA-health counseling (FTA-HC) group, and 50 to the control group. Follow-up data after 1 year were available for 120 participants (79%). HbA1c level decreased in all groups, but did not differ between groups after 1 year. The mean change in the heiQ domain skills and technique acquisition was significantly greater in the FTA-HC group after adjusting for age, gender, and education (P=.04). Other secondary outcomes did not differ between groups after 1 year. In the FTA group, 39% were substantial users of the app; 34% of the FTA-HC group were substantial users. Those aged ≥63 years used the app more than their younger counterparts did (OR 2.7; 95% CI 1.02-7.12; P=.045). CONCLUSIONS: The change in HbA1c level did not differ between groups after the 1-year intervention. Secondary outcomes did not differ between groups except for an increase in the self-management domain of skill and technique acquisition in the FTA-HC group. Older participants used the app more than the younger participants did.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 1
+    },
+    {
+      "doi": "10.2337/dci22-0034",
+      "title": "Management of Hyperglycemia in Type 2 Diabetes, 2022. A Consensus Report by the American Diabetes Association (ADA) and the European Association for the Study of Diabetes (EASD)",
+      "authors": [
+        "Melanie Jane Davies",
+        "Vanita R. Aroda",
+        "Billy S. Collins",
+        "Robert A. Gabbay",
+        "Jennifer Green",
+        "Nisa M. Maruthur",
+        "Sylvia E. Rosas",
+        "Stefano Del Prato",
+        "Chantal Mathieu",
+        "Geltrude Mingrone",
+        "Peter R Rossing",
+        "Tsvetalina I. Tankova",
+        "Απόστολος Τσάπας",
+        "John B. Buse"
+      ],
+      "year": 2022,
+      "abstract": "The American Diabetes Association and the European Association for the Study of Diabetes convened a panel to update the previous consensus statements on the management of hyperglycemia in type 2 diabetes in adults, published since 2006 and last updated in 2019. The target audience is the full spectrum of the professional health care team providing diabetes care in the U.S. and Europe. A systematic examination of publications since 2018 informed new recommendations. These include additional focus on social determinants of health, the health care system, and physical activity behaviors, including sleep. There is a greater emphasis on weight management as part of the holistic approach to diabetes management. The results of cardiovascular and kidney outcomes trials involving sodium-glucose cotransporter 2 inhibitors and glucagon-like peptide 1 receptor agonists, including assessment of subgroups, inform broader recommendations for cardiorenal protection in people with diabetes at high risk of cardiorenal disease. After a summary listing of consensus recommendations, practical tips for implementation are provided.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.1016/j.pec.2015.11.003",
+      "title": "Diabetes self-management education for adults with type 2 diabetes mellitus: A systematic review of the effect on glycemic control",
+      "authors": [
+        "Carole Alison Chrvala",
+        "Dawn Sherr",
+        "Ruth D. Lipman"
+      ],
+      "year": 2015,
+      "abstract": "OBJECTIVE: Assess effect of diabetes self-management education and support methods, providers, duration, and contact time on glycemic control in adults with type 2 diabetes. METHOD: We searched MEDLINE, CINAHL, EMBASE, ERIC, and PsycINFO to December 2013 for interventions which included elements to improve participants' knowledge, skills, and ability to perform self-management activities as well as informed decision-making around goal setting. RESULTS: This review included 118 unique interventions, with 61.9% reporting significant changes in A1C. Overall mean reduction in A1C was 0.74 and 0.17 for intervention and control groups; an average absolute reduction in A1C of 0.57. A combination of group and individual engagement results in the largest decreases in A1C (0.88). Contact hours ≥10 were associated with a greater proportion of interventions with significant reduction in A1C (70.3%). In patients with persistently elevated glycemic values (A1C>9), a greater proportion of studies reported statistically significant reduction in A1C (83.9%). CONCLUSIONS: This systematic review found robust data demonstrating that engagement in diabetes self-management education results in a statistically significant decrease in A1C levels. PRACTICE IMPLICATIONS: The data suggest mode of delivery, hours of engagement, and baseline A1C can affect the likelihood of achieving statistically significant and clinically meaningful improvement in A1C.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.2196/jmir.3951",
+      "title": "Impact of mHealth Chronic Disease Management on Treatment Adherence and Patient Outcomes: A Systematic Review",
+      "authors": [
+        "Saee Hamine",
+        "Emily Gerth‐Guyette",
+        "Dunia Faulx",
+        "Beverly B. Green",
+        "Amy Sarah Ginsburg"
+      ],
+      "year": 2015,
+      "abstract": "BACKGROUND: Adherence to chronic disease management is critical to achieving improved health outcomes, quality of life, and cost-effective health care. As the burden of chronic diseases continues to grow globally, so does the impact of non-adherence. Mobile technologies are increasingly being used in health care and public health practice (mHealth) for patient communication, monitoring, and education, and to facilitate adherence to chronic diseases management. OBJECTIVE: We conducted a systematic review of the literature to evaluate the effectiveness of mHealth in supporting the adherence of patients to chronic diseases management (\"mAdherence\"), and the usability, feasibility, and acceptability of mAdherence tools and platforms in chronic disease management among patients and health care providers. METHODS: We searched PubMed, Embase, and EBSCO databases for studies that assessed the role of mAdherence in chronic disease management of diabetes mellitus, cardiovascular disease, and chronic lung diseases from 1980 through May 2014. Outcomes of interest included effect of mHealth on patient adherence to chronic diseases management, disease-specific clinical outcomes after intervention, and the usability, feasibility, and acceptability of mAdherence tools and platforms in chronic disease management among target end-users. RESULTS: In all, 107 articles met all inclusion criteria. Short message service was the most commonly used mAdherence tool in 40.2% (43/107) of studies. Usability, feasibility, and acceptability or patient preferences for mAdherence interventions were assessed in 57.9% (62/107) of studies and found to be generally high. A total of 27 studies employed randomized controlled trial (RCT) methods to assess impact on adherence behaviors, and significant improvements were observed in 15 of those studies (56%). Of the 41 RCTs that measured effects on disease-specific clinical outcomes, significant improvements between groups were reported in 16 studies (39%). CONCLUSIONS: There is potential for mHealth tools to better facilitate adherence to chronic disease management, but the evidence supporting its current effectiveness is mixed. Further research should focus on understanding and improving how mHealth tools can overcome specific barriers to adherence.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.1007/s00125-022-05787-2",
+      "title": "Management of hyperglycaemia in type 2 diabetes, 2022. A consensus report by the American Diabetes Association (ADA) and the European Association for the Study of Diabetes (EASD)",
+      "authors": [
+        "Melanie Jane Davies",
+        "Vanita R. Aroda",
+        "Billy S. Collins",
+        "Robert A. Gabbay",
+        "Jennifer Green",
+        "Nisa M. Maruthur",
+        "Sylvia E. Rosas",
+        "Stefano Del Prato",
+        "Chantal Mathieu",
+        "Geltrude Mingrone",
+        "Peter R Rossing",
+        "Tsvetalina I. Tankova",
+        "Απόστολος Τσάπας",
+        "John B. Buse"
+      ],
+      "year": 2022,
+      "abstract": null,
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.1016/j.diabres.2012.10.001",
+      "title": "Global Guideline for Type 2 Diabetes",
+      "authors": [],
+      "year": 2014,
+      "abstract": null,
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 2
+    },
+    {
+      "doi": "10.1016/j.nurpra.2020.09.013",
+      "title": "Telehealth Benefits and Barriers",
+      "authors": [
+        "Shilpa N. Gajarawala",
+        "Jessica N. Pelkowski"
+      ],
+      "year": 2020,
+      "abstract": null,
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1136/bmjopen-2017-016242",
+      "title": "Telehealth and patient satisfaction: a systematic review and narrative analysis",
+      "authors": [
+        "Clemens Scott Kruse",
+        "Nicole Krowski",
+        "Blanca Rodríguez",
+        "Lan Tran",
+        "Jackeline Vela",
+        "Matthew Brooks"
+      ],
+      "year": 2017,
+      "abstract": "BACKGROUND: The use of telehealth steadily increases as it has become a viable modality to patient care. Early adopters attempt to use telehealth to deliver high-quality care. Patient satisfaction is a key indicator of how well the telemedicine modality met patient expectations. OBJECTIVE: The objective of this systematic review and narrative analysis is to explore the association of telehealth and patient satisfaction in regards to effectiveness and efficiency. METHODS: Boolean expressions between keywords created a complex search string. Variations of this string were used in Cumulative Index of Nursing and Allied Health Literature and MEDLINE. RESULTS: 2193 articles were filtered and assessed for suitability (n=44). Factors relating to effectiveness and efficiency were identified using consensus. The factors listed most often were improved outcomes (20%), preferred modality (10%), ease of use (9%), low cost 8%), improved communication (8%) and decreased travel time (7%), which in total accounted for 61% of occurrences. CONCLUSION: This review identified a variety of factors of association between telehealth and patient satisfaction. Knowledge of these factors could help implementers to match interventions as solutions to specific problems.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.2196/16407",
+      "title": "Barriers and Facilitators That Influence Telemedicine-Based, Real-Time, Online Consultation at Patients’ Homes: Systematic Literature Review",
+      "authors": [
+        "Hassan Khader Y. Almathami",
+        "Khin Than Win",
+        "Elena Vlahu‐Gjorgievska"
+      ],
+      "year": 2019,
+      "abstract": "BACKGROUND: Health care providers are adopting information and communication technologies (ICTs) to enhance their services. Telemedicine is one of the services that rely heavily on ICTs to enable remote patients to communicate with health care professionals; in this case, the patient communicates with the health care professional for a follow-up or for a consultation about his or her health condition. This communication process is referred to as an e-consultation. In this paper, telemedicine services refer to health care services that use ICTs, which enable patients to share, transfer, and communicate data or information in real time (ie, synchronous) from their home with a care provider-normally a physician-at a clinical site. However, the use of e-consultation services can be positively or negatively influenced by external or internal factors. External factors refer to the environment surrounding the system as well as the system itself, while internal factors refer to user behavior and motivation. OBJECTIVE: This review aims to investigate the barriers and the facilitators that influence the use of home consultation systems in the health care context. This review also aims to identify the effectiveness of Home Online Health Consultation (HOHC) systems in improving patients' health as well as their satisfaction with the systems. METHODS: We conducted a systematic literature review to search for articles-empirical studies-about online health consultation in four digital libraries: Scopus, Association for Computing Machinery, PubMed, and Web of Science. The database search yielded 2518 articles; after applying the inclusion and exclusion criteria, the number of included articles for the final review was 45. A qualitative content analysis was performed to identify barriers and facilitators to HOHC systems, their effectiveness, and patients' satisfaction with them. RESULTS: The systematic literature review identified several external and internal facilitators and barriers to HOHC systems that were used in the creation of a HOHC framework. The framework consists of four requirements; the framework also consists of 17 facilitators and eight barriers, which were further categorized as internal and external influencers on HOHC. CONCLUSIONS: Patients from different age groups and with different health conditions benefited from remote health services. HOHC via video conferencing was effective in delivering online treatment and was well-accepted by patients, as it simulated in-person, face-to-face consultation. Acceptance by patients increased as a result of online consultation facilitators that promoted effective and convenient remote treatment. However, some patients preferred face-to-face consultation and showed resistance to online consultation. Resistance to online consultation was influenced by some of the identified barriers. Overall, the framework identified the facilitators and barriers that positively and negatively influenced the uptake of HOHC systems, respectively.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1186/s12889-024-18036-5",
+      "title": "Barriers and facilitators to health technology adoption by older adults with chronic diseases: an integrative systematic review",
+      "authors": [
+        "Alessia Bertolazzi",
+        "Valeria Quaglia",
+        "Ramona Bongelli"
+      ],
+      "year": 2024,
+      "abstract": "BACKGROUND: In recent years, healthcare systems have progressively adopted several technologies enhancing access to healthcare for older adults and support the delivery of efficient and effective care for this specific population. These technologies include both assistive technologies designed to maintain or improve the independence, social participation and functionality of older people at home, as well as health information technology developed to manage long-term conditions. Examples of such technologies include telehealth, wearable devices and mobile health. However, despite the great promise that health technology holds for promoting independent living among older people, its actual implementation remains challenging. METHODS: This study aimed to conduct an integrative systematic review of the research evidence on the factors that facilitate or hinder the adoption of different types of technology by older individuals with chronic diseases. For this purpose, four electronic databases (PsycArticles, Scopus, Web of Science and PubMed) were queried to search for indexed published studies. The methodological quality of the selected papers has been assessed using the Mixed Methods Appraisal Tool (MMAT). RESULTS: Twenty-nine articles were selected, including 6.213 adults aged 60 or older. The studies have been synthesised considering the types of technological interventions and chronic diseases, as well as the main barriers and facilitators in technology acceptance. The results revealed that the majority of the selected articles focused on comorbid conditions and the utilisation of telemedicine tools. With regard to hindering and facilitating factors, five main domains were identified: demographic and socioeconomic, health-related, dispositional, technology-related and social factors. CONCLUSION: The study results have practical implications not only for technology developers but also for all the social actors involved in the design and implementation of healthcare technologies, including formal and informal caregivers and policy stakeholders. These actors could use this work to enhance their understanding of the utilisation of technology by the ageing population. This review emphasises the factors that facilitate technology adoption and identifies barriers that impede it, with the ultimate goal of promoting health and independent living.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.2196/20359",
+      "title": "Utilization Barriers and Medical Outcomes Commensurate With the Use of Telehealth Among Older Adults: Systematic Review",
+      "authors": [
+        "Clemens Scott Kruse",
+        "Joanna Fohn",
+        "Nakia Wilson",
+        "Evangelina Núñez Patlán",
+        "Stephanie Zipp",
+        "Michael Mileski"
+      ],
+      "year": 2020,
+      "abstract": "BACKGROUND: Rising telehealth capabilities and improving access to older adults can aid in improving health outcomes and quality of life indicators. Telehealth is not being used ubiquitously at present. OBJECTIVE: This review aimed to identify the barriers that prevent ubiquitous use of telehealth and the ways in which telehealth improves health outcomes and quality of life indicators for older adults. METHODS: This systematic review was conducted and reported in accordance with the Kruse protocol and the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines. Reviewers queried the following four research databases: Cumulative Index of Nursing and Allied Health Literature (CINAHL), PubMed (MEDLINE), Web of Science, and Embase (Science Direct). Reviewers analyzed 57 articles, performed a narrative analysis to identify themes, and identified barriers and reports of health outcomes and quality of life indicators found in the literature. RESULTS: Reviewers analyzed 57 studies across the following five interventions of telehealth: eHealth, mobile health (mHealth), telemonitoring, telecare (phone), and telehealth video calls, with a Cohen κ of 0.75. Reviewers identified 14 themes for barriers. The most common of which were technical literacy (25/144 occurrences, 17%), lack of desire (19/144 occurrences, 13%), and cost (11/144 occurrences, 8%). Reviewers identified 13 medical outcomes associated with telehealth interventions. The most common of which were decrease in psychological stress (21/118 occurrences, 18%), increase in autonomy (18/118 occurrences, 15%), and increase in cognitive ability (11/118 occurrences, 9%). Some articles did not report medical outcomes (18/57, 32%) and some did not report barriers (19/57, 33%). CONCLUSIONS: The literature suggests that the elimination of barriers could increase the prevalence of telehealth use by older adults. By increasing use of telehealth, proximity to care is no longer an issue for access, and thereby care can reach populations with chronic conditions and mobility restrictions. Future research should be conducted on methods for personalizing telehealth in older adults before implementation. TRIAL REGISTRATION: PROSPERO CRD42020182162; https://www.crd.york.ac.uk/prospero/display_record.php?ID=CRD42020182162. INTERNATIONAL REGISTERED REPORT IDENTIFIER (IRRID): RR2-10.2196/15490.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1007/s11882-020-00969-7",
+      "title": "A Review of Patient and Provider Satisfaction with Telemedicine",
+      "authors": [
+        "Mary Nguyen",
+        "Morgan Waller",
+        "Aarti Pandya",
+        "Jay M. Portnoy"
+      ],
+      "year": 2020,
+      "abstract": null,
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.2196/13117",
+      "title": "Theories Predicting End-User Acceptance of Telemedicine Use: Systematic Review",
+      "authors": [
+        "Lorenz Harst",
+        "Hendrikje Lantzsch",
+        "Madlen Scheibe"
+      ],
+      "year": 2019,
+      "abstract": "BACKGROUND: Only a few telemedicine applications have made their way into regular care. One reason is the lack of acceptance of telemedicine by potential end users. OBJECTIVE: The aim of this systematic review was to identify theoretical predictors that influence the acceptance of telemedicine. METHODS: An electronic search was conducted in PubMed and PsycINFO in June 2018 and supplemented by a hand search. Articles were identified using predefined inclusion and exclusion criteria. In total, two reviewers independently assessed the title, abstract, and full-text screening and then individually performed a quality assessment of all included studies. RESULTS: Out of 5917 potentially relevant titles (duplicates excluded), 24 studies were included. The Axis Tool for quality assessment of cross-sectional studies revealed a high risk of bias for all studies except for one study. The most commonly used models were the Technology Acceptance Model (n=11) and the Unified Theory of Acceptance and Use of Technology (n=9). The main significant predictors of acceptance were perceived usefulness (n=11), social influences (n=6), and attitude (n=6). The results show a superiority of technology acceptance versus original behavioral models. CONCLUSIONS: The main finding of this review is the applicability of technology acceptance models and theories on telemedicine adoption. Characteristics of the technology, such as its usefulness, as well as attributes of the individual, such as his or her need for social support, inform end-user acceptance. Therefore, in the future, requirements of the target group and the group's social environment should already be taken into account when planning telemedicine applications. The results support the importance of theory-guided user-centered design approaches to telemedicine development.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1197/jamia.m1917",
+      "title": "A Randomized Trial Comparing Telemedicine Case Management with Usual Care in Older, Ethnically Diverse, Medically Underserved Patients with Diabetes Mellitus",
+      "authors": [
+        "Steven A. Shea",
+        "R.S. Weinstock",
+        "Justin B. Starren",
+        "Jeanne A. Teresi",
+        "Walter Palmas",
+        "Lesley Field",
+        "Philip C. Morin",
+        "Robin Goland",
+        "Roberto E. Izquierdo",
+        "L. T. Wolff",
+        "Mohammed Ashraf",
+        "Charlyn A. Hilliman",
+        "S. Silver",
+        "Suzanne Meyer",
+        "D. Holmes",
+        "Eva Petkova",
+        "Linnea Capps",
+        "Rafael Lantigua"
+      ],
+      "year": 2005,
+      "abstract": "BACKGROUND: Telemedicine is a promising but largely unproven technology for providing case management services to patients with chronic conditions who experience barriers to access to care or a high burden of illness. METHODS: The authors conducted a randomized, controlled trial comparing telemedicine case management to usual care, with blinding of those obtaining outcome data, in 1,665 Medicare recipients with diabetes, aged 55 years or greater, and living in federally designated medically underserved areas of New York State. The primary endpoints were HgbA1c, blood pressure, and low-density lipoprotein (LDL) cholesterol levels. RESULTS: In the intervention group (n = 844), mean HgbA1c improved over one year from 7.35% to 6.97% and from 8.35% to 7.42% in the subgroup with baseline HgbA1c > or =7% (n = 353). In the usual care group (n = 821) mean HgbA1c improved over one year from 7.42% to 7.17%. Adjusted net reductions (one-year minus baseline mean values in each group, compared between groups) favoring the intervention were as follows: HgbA1c, 0.18% (p = 0.006), systolic and diastolic blood pressure, 3.4 (p = 0.001) and 1.9 mm Hg (p < 0.001), and LDL cholesterol, 9.5 mg/dL (p < 0.001). In the subgroup with baseline HgbA1c > or =7%, net adjusted reduction in HgbA1c favoring the intervention group was 0.32% (p = 0.002). Mean LDL cholesterol level in the intervention group at one year was 95.7 mg/dL. The intervention effects were similar in magnitude in the subgroups living in New York City and upstate New York. CONCLUSION: Telemedicine case management improved glycemic control, blood pressure levels, and total and LDL cholesterol levels at one year of follow-up.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1089/tmj.2016.0045",
+      "title": "The Empirical Foundations of Telemedicine Interventions in Primary Care",
+      "authors": [
+        "Rashid L. Bashshur",
+        "Joel D. Howell",
+        "Elizabeth Anne Krupinski",
+        "Kathryn M. Harms",
+        "Noura Bashshur",
+        "Charles R. Doarn"
+      ],
+      "year": 2016,
+      "abstract": "INTRODUCTION: This article presents the scientific evidence for the merits of telemedicine interventions in primary care. Although there is no uniform and consistent definition of primary care, most agree that it occupies a central role in the healthcare system as first contact for patients seeking care, as well as gatekeeper and coordinator of care. It enables and supports patient-centered care, the medical home, managed care, accountable care, and population health. Increasing concerns about sustainability and the anticipated shortages of primary care physicians have sparked interest in exploring the potential of telemedicine in addressing many of the challenges facing primary care in the United States and the world. MATERIALS AND METHODS: The findings are based on a systematic review of scientific studies published from 2005 through 2015. The initial search yielded 2,308 articles, with 86 meeting the inclusion criteria. Evidence is organized and evaluated according to feasibility/acceptance, intermediate outcomes, health outcomes, and cost. RESULTS: The majority of studies support the feasibility/acceptance of telemedicine for use in primary care, although it varies significantly by demographic variables, such as gender, age, and socioeconomic status, and telemedicine has often been found more acceptable by patients than healthcare providers. Outcomes data are limited but overall suggest that telemedicine interventions are generally at least as effective as traditional care. Cost analyses vary, but telemedicine in primary care is increasingly demonstrated to be cost-effective. CONCLUSIONS: Telemedicine has significant potential to address many of the challenges facing primary care in today's healthcare environment. Challenges still remain in validating its impact on clinical outcomes with scientific rigor, as well as in standardizing methods to assess cost, but patient and provider acceptance is increasingly making telemedicine a viable and integral component of primary care around the world.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.2196/14197",
+      "title": "Barriers and Facilitators to the Implementation of eHealth Services: Systematic Literature Analysis",
+      "authors": [
+        "Björn Schreiweis",
+        "Monika Pobiruchin",
+        "Veronika Strotbaum",
+        "Julian Suleder",
+        "Martin Wiesner",
+        "Björn Bergh"
+      ],
+      "year": 2019,
+      "abstract": "BACKGROUND: The field of eHealth has a history of more than 20 years. During that time, many different eHealth services were developed. However, factors influencing the adoption of such services were seldom the main focus of analyses. For this reason, organizations adopting and implementing eHealth services seem not to be fully aware of the barriers and facilitators influencing the integration of eHealth services into routine care. OBJECTIVE: The objective of this work is to provide (1) a comprehensive list of relevant barriers to be considered and (2) a list of facilitators or success factors to help in planning and implementing successful eHealth services. METHODS: For this study, a twofold approach was applied. First, we gathered experts' current opinions on facilitators and barriers in implementing eHealth services via expert discussions at two health informatics conferences held in Europe. Second, we conducted a systematic literature analysis concerning the barriers and facilitators for the implementation of eHealth services. Finally, we merged the results of the expert discussions with those of the systematic literature analysis. RESULTS: Both expert discussions (23 and 10 experts, respectively) identified 15 barriers and 31 facilitators, whereas 76 barriers and 268 facilitators were found in 38 of the initial 56 articles published from 12 different countries. For the analyzed publications, the count of distinct barriers reported ranged from 0 to 40 (mean 10.24, SD 8.87, median 8). Likewise, between 0 and 48 facilitators were mentioned in the literature (mean 9.18, SD 9.33, median 6). The combination of both sources resulted in 77 barriers and 292 facilitators for the adoption and implementation of eHealth services. CONCLUSIONS: This work contributes a comprehensive list of barriers and facilitators for the implementation and adoption of eHealth services. Addressing barriers early, and leveraging facilitators during the implementation, can help create eHealth services that better meet the needs of users and provide higher benefits for patients and caregivers.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.20517/ch.2021.03",
+      "title": "The worldwide impact of telemedicine during COVID-19: current evidence and recommendations for the future",
+      "authors": [
+        "Stefano Omboni",
+        "Raj S. Padwal",
+        "Tourkiah Alessa",
+        "Béla Benczúr",
+        "Beverly B. Green",
+        "Ilona Hubbard",
+        "Kazuomi Kario",
+        "Nadia A. Khan",
+        "А. О. Конради",
+        "Alexander Gordon Logan",
+        "Yuan Lü",
+        "Maurice Mars",
+        "Richard J. McManus",
+        "Sarah Melville",
+        "Claas L. Neumann",
+        "Gianfranco Parati",
+        "Nicolas Federico Renna",
+        "Philippe Ryvlin",
+        "Hugo E. Saner",
+        "Aletta Elisabeth Schutte",
+        "Ji‐Guang Wang"
+      ],
+      "year": 2022,
+      "abstract": "During the COVID-19 pandemic, telemedicine has emerged worldwide as an indispensable resource to improve the surveillance of patients, curb the spread of disease, facilitate timely identification and management of ill people, but, most importantly, guarantee the continuity of care of frail patients with multiple chronic diseases. Although during COVID-19 telemedicine has thrived, and its adoption has moved forward in many countries, important gaps still remain. Major issues to be addressed to enable large scale implementation of telemedicine include: (1) establishing adequate policies to legislate telemedicine, license healthcare operators, protect patients' privacy, and implement reimbursement plans; (2) creating and disseminating practical guidelines for the routine clinical use of telemedicine in different contexts; (3) increasing in the level of integration of telemedicine with traditional healthcare services; (4) improving healthcare professionals' and patients' awareness of and willingness to use telemedicine; and (5) overcoming inequalities among countries and population subgroups due to technological, infrastructural, and economic barriers. If all these requirements are met in the near future, remote management of patients will become an indispensable resource for the healthcare systems worldwide and will ultimately improve the management of patients and the quality of care.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1371/journal.pone.0173160",
+      "title": "Effectiveness of mHealth interventions for patients with diabetes: An overview of systematic reviews",
+      "authors": [
+        "Spyros Kitsiou",
+        "Guy Paré",
+        "Mirou Jaana",
+        "Ben S. Gerber"
+      ],
+      "year": 2017,
+      "abstract": "BACKGROUND: Diabetes is a common chronic disease that places an unprecedented strain on health care systems worldwide. Mobile health technologies such as smartphones, mobile applications, and wearable devices, known as mHealth, offer significant and innovative opportunities for improving patient to provider communication and self-management of diabetes. OBJECTIVE: The purpose of this overview is to critically appraise and consolidate evidence from multiple systematic reviews on the effectiveness of mHealth interventions for patients with diabetes to inform policy makers, practitioners, and researchers. METHODS: A comprehensive search on multiple databases was performed to identify relevant systematic reviews published between January 1996 and December 2015. Two authors independently selected reviews, extracted data, and assessed the methodological quality of included reviews using AMSTAR. RESULTS: Fifteen systematic reviews published between 2008 and 2014 were eligible for inclusion. The quality of the reviews varied considerably and most of them had important methodological limitations. Focusing on systematic reviews that offered the most direct evidence, this overview demonstrates that on average, mHealth interventions improve glycemic control (HbA1c) compared to standard care or other non-mHealth approaches by as much as 0.8% for patients with type 2 diabetes and 0.3% for patients with type 1 diabetes, at least in the short-term (≤12 months). However, limitations in the overall quality of evidence suggest that further research will likely have an important impact in these estimates of effect. CONCLUSIONS: Findings are consistent with clinically relevant improvements, particularly with respect to patients with type 2 diabetes. Similar to home telemonitoring, mHealth interventions represent a promising approach for self-management of diabetes.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 3
+    },
+    {
+      "doi": "10.1136/bmj.f1035",
+      "title": "Cost effectiveness of telehealth for patients with long term conditions (Whole Systems Demonstrator telehealth questionnaire study): nested economic evaluation in a pragmatic, cluster randomised controlled trial",
+      "authors": [
+        "Catherine Henderson",
+        "Martin Richard John Knapp",
+        "José‐Luis Fernández",
+        "Jennifer K. Beecham",
+        "Shashivadan P. Hirani",
+        "Martin Cartwright",
+        "Lorna Rixon",
+        "Michelle Beynon",
+        "Anne E. Rogers",
+        "Peter Bower",
+        "Helen Doll",
+        "Ray Fitzpatrick",
+        "Adam Steventon",
+        "Martin Bardsley",
+        "Jane Hendy",
+        "Stanton Peter Newman",
+        "for the Whole System Demonstrator evaluation team"
+      ],
+      "year": 2013,
+      "abstract": "OBJECTIVE: To examine the costs and cost effectiveness of telehealth in addition to standard support and treatment, compared with standard support and treatment. DESIGN: Economic evaluation nested in a pragmatic, cluster randomised controlled trial. SETTING: Community based telehealth intervention in three local authority areas in England. PARTICIPANTS: 3230 people with a long term condition (heart failure, chronic obstructive pulmonary disease, or diabetes) were recruited into the Whole Systems Demonstrator telehealth trial between May 2008 and December 2009. Of participants taking part in the Whole Systems Demonstrator telehealth questionnaire study examining acceptability, effectiveness, and cost effectiveness, 845 were randomised to telehealth and 728 to usual care. INTERVENTIONS: Intervention participants received a package of telehealth equipment and monitoring services for 12 months, in addition to the standard health and social care services available in their area. Controls received usual health and social care. MAIN OUTCOME MEASURE: Primary outcome for the cost effectiveness analysis was incremental cost per quality adjusted life year (QALY) gained. RESULTS: We undertook net benefit analyses of costs and outcomes for 965 patients (534 receiving telehealth; 431 usual care). The adjusted mean difference in QALY gain between groups at 12 months was 0.012. Total health and social care costs (including direct costs of the intervention) for the three months before 12 month interview were £1390 (€1610; $2150) and £1596 for the usual care and telehealth groups, respectively. Cost effectiveness acceptability curves were generated to examine decision uncertainty in the analysis surrounding the value of the cost effectiveness threshold. The incremental cost per QALY of telehealth when added to usual care was £92 000. With this amount, the probability of cost effectiveness was low (11% at willingness to pay threshold of £30 000; >50% only if the threshold exceeded about £90 000). In sensitivity analyses, telehealth costs remained slightly (non-significantly) higher than usual care costs, even after assuming that equipment prices fell by 80% or telehealth services operated at maximum capacity. However, the most optimistic scenario (combining reduced equipment prices with maximum operating capacity) eliminated this group difference (cost effectiveness ratio £12 000 per QALY). CONCLUSIONS: The QALY gain by patients using telehealth in addition to usual care was similar to that by patients receiving usual care only, and total costs associated with the telehealth intervention were higher. Telehealth does not seem to be a cost effective addition to standard support and treatment. TRIAL REGISTRATION: ISRCTN43002091.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.2196/17298",
+      "title": "Determining if Telehealth Can Reduce Health System Costs: Scoping Review",
+      "authors": [
+        "Centaine L. Snoswell",
+        "Monica L. Taylor",
+        "Tracy Anne Comans",
+        "Anthony Carl Smith",
+        "Len Gray",
+        "Liam J Caffery"
+      ],
+      "year": 2020,
+      "abstract": "BACKGROUND: Telehealth represents an opportunity for Australia to harness the power of technology to redesign the way health care is delivered. The potential benefits of telehealth include increased accessibility to care, productivity gains for health providers and patients through reduced travel, potential for cost savings, and an opportunity to develop culturally appropriate services that are more sensitive to the needs of special populations. The uptake of telehealth has been hindered at times by clinician reluctance and policies that preclude metropolitan populations from accessing telehealth services. OBJECTIVE: This study aims to investigate if telehealth reduces health system costs compared with traditional service models and to identify the scenarios in which cost savings can be realized. METHODS: A scoping review was undertaken to meet the study aims. Initially, literature searches were conducted using broad terms for telehealth and economics to identify economic evaluation literature in telehealth. The investigators then conducted an expert focus group to identify domains where telehealth could reduce health system costs, followed by targeted literature searches for corresponding evidence. RESULTS: The cost analyses reviewed provided evidence that telehealth reduced costs when health system-funded travel was prevented and when telehealth mitigated the need for expensive procedural or specialist follow-up by providing competent care in a more efficient way. The expert focus group identified 4 areas of potential savings from telehealth: productivity gains, reductions in secondary care, alternate funding models, and telementoring. Telehealth demonstrated great potential for productivity gains arising from health system redesign; however, under the Australian activity-based funding, it is unlikely that these gains will result in cost savings. Secondary care use mitigation is an area of promise for telehealth; however, many studies have not demonstrated overall cost savings due to the cost of administering and monitoring telehealth systems. Alternate funding models from telehealth systems have the potential to save the health system money in situations where the consumers pay out of pocket to receive services. Telementoring has had minimal economic evaluation; however, in the long term it is likely to result in inadvertent cost savings through the upskilling of generalist and allied health clinicians. CONCLUSIONS: Health services considering implementing telehealth should be motivated by benefits other than cost reduction. The available evidence has indicated that although telehealth provides overwhelmingly positive patient benefits and increases productivity for many services, current evidence suggests that it does not routinely reduce the cost of care delivery for the health system.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.3389/fpubh.2022.787135",
+      "title": "The cost-effectiveness of digital health interventions: A systematic review of the literature",
+      "authors": [
+        "Andrea Gentili",
+        "Giovanna Failla",
+        "Andriy Melnyk",
+        "Valeria Puleo",
+        "Gian Luca Di Tanna",
+        "Walter Ricciardi",
+        "Fidelia Cascini"
+      ],
+      "year": 2022,
+      "abstract": "Background: Digital health interventions have significant potential to improve safety, efficacy, and quality of care, reducing waste in healthcare costs. Despite these premises, the evidence regarding cost and effectiveness of digital tools in health is scarce and limited. Objectives: The aim of this systematic review is to summarize the evidence on the cost-effectiveness of digital health interventions and to assess whether the studies meet the established quality criteria. Methods: We queried PubMed, Scopus and Web of Science databases for articles in English published from January 1, 2016 to December 31, 2020 that performed economic evaluations of digital health technologies. The methodological rigorousness of studies was assessed with the Consolidated Health Economic Evaluation Reporting Standards (CHEERS). The review was conducted according to the Preferred Reporting Items for Systematic Reviews and Meta-Analysis (PRISMA) 2009 checklist. Results: Search identified 1,476 results, 552 of which were selected for abstract and 35 were included in this review. The studies were heterogeneous by country (mostly conducted in upper and upper-middle income countries), type of eHealth intervention, method of implementation, and reporting perspectives. The qualitative analysis identified the economic and effectiveness evaluation of six different types of interventions: (1) seventeen studies on new video-monitoring service systems; (2) five studies on text messaging interventions; (3) five studies on web platforms and digital health portals; (4) two studies on telephone support; (5) three studies on new mobile phone-based systems and applications; and (6) three studies on digital technologies and innovations. Conclusion: Findings on cost-effectiveness of digital interventions showed a growing body of evidence and suggested a generally favorable effect in terms of costs and health outcomes. However, due to the heterogeneity across study methods, the comparison between interventions still remains difficult. Further research based on a standardized approach is needed in order to methodically analyze incremental cost-effectiveness ratios, costs, and health benefits.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.1186/s12962-020-00211-1",
+      "title": "Cost-effectiveness of diabetic retinopathy screening programs using telemedicine: a systematic review",
+      "authors": [
+        "Daniel Avidor",
+        "Anat Loewenstein",
+        "Michael Waisbourd",
+        "Amir Nutman"
+      ],
+      "year": 2020,
+      "abstract": "BACKGROUND: Diabetic retinopathy (DR) is a significant global public health and economic burden. DR accounts for approximately 15-17% of all cases of total blindness in the USA and Europe. Telemedicine is a new intervention for DR screening, however, there is not enough evidence to support its cost-effectiveness. The aim of this study is to review the most recent published literature on economic evaluations of telemedicine in DR screening and summarize the evidence on the cost-effectiveness of this technology. METHODS: A systematic search of PubMed, Embase and Google Scholar for relevant articles published between January 2010 and January 2020. Studies were included if they met the following criteria: (1) recruited subjects with either type 1, type 2 diabetes (2) evaluated telemedicine technology (3) patients underwent primary screening for DR (4) compared a telemedicine-based intervention with standard care (5) performed an economic evaluation or provided sufficient data for evaluating the cost-effectiveness of the technology used. RESULTS: Of 2238 articles screened, seven studies were included. Four of the studies were conducted in developed countries: The United States, Singapore and two studies in Canada. Three studies were conducted in developing countries: India, Brazil and South Africa. The patient populations in all studies were diabetic patients over the age of 18, previously not screened for DR. All seven studies used a telemedicine program which included capturing a retinal image and subsequently transmitting it to an ocular imaging center to assess the severity of DR. All studies compared telemedicine to a standard screening method for DR, including the option of no screening as standard of care. Although telemedicine requires initial and maintenance costs, it has the potential to provide significant cost savings by increasing patients' working ability, increasing independent living ability, increasing quality of life and reducing travel costs. CONCLUSIONS: Diabetic retinopathy telemedicine technology has the potential to provide significant cost savings, especially in low-income populations and rural patients with high transportation costs.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.2196/jmir.2790",
+      "title": "Effectiveness and Cost-Effectiveness of eHealth Interventions in Somatic Diseases: A Systematic Review of Systematic Reviews and Meta-Analyses",
+      "authors": [
+        "Niels J. Elbert",
+        "Harmieke van Os‐Medendorp",
+        "Wilco van Renselaar",
+        "Anne Granstrøm Ekeland",
+        "Leona Hakkaart‐van Roijen",
+        "Hein Raat",
+        "Tamar E. C. Nijsten",
+        "Suzanne G.M.A. Pasmans"
+      ],
+      "year": 2014,
+      "abstract": "BACKGROUND: eHealth potentially enhances quality of care and may reduce health care costs. However, a review of systematic reviews published in 2010 concluded that high-quality evidence on the benefits of eHealth interventions was still lacking. OBJECTIVE: We conducted a systematic review of systematic reviews and meta-analyses on the effectiveness/cost-effectiveness of eHealth interventions in patients with somatic diseases to analyze whether, and to what possible extent, the outcome of recent research supports or differs from previous conclusions. METHODS: Literature searches were performed in PubMed, EMBASE, The Cochrane Library, and Scopus for systematic reviews and meta-analyses on eHealth interventions published between August 2009 and December 2012. Articles were screened for relevance based on preset inclusion and exclusion criteria. Citations of residual articles were screened for additional literature. Included papers were critically appraised using the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) Statement before data were extracted. Based on conclusions drawn by the authors of the included articles, reviews and meta-analyses were divided into 1 of 3 groups: suitable, promising, or limited evidence on effectiveness/cost-effectiveness. Cases of uncertainty were resolved by consensus discussion. Effect sizes were extracted from papers that included a meta-analysis. To compare our results with previous findings, a trend analysis was performed. RESULTS: Our literature searches yielded 31 eligible reviews, of which 20 (65%) reported on costs. Seven papers (23%) concluded that eHealth is effective/cost-effective, 13 (42%) underlined that evidence is promising, and others found limited or inconsistent proof. Methodological quality of the included reviews and meta-analyses was generally considered high. Trend analysis showed a considerable accumulation of literature on eHealth. However, a similar percentage of papers concluded that eHealth is effective/cost-effective or evidence is at least promising (65% vs 62%). Reviews focusing primarily on children or family caregivers still remained scarce. Although a pooled (subgroup) analysis of aggregate data from randomized studies was performed in a higher percentage of more recently published reviews (45% vs 27%), data on economic outcome measures were less frequently reported (65% vs 85%). CONCLUSIONS: The number of reviews and meta-analyses on eHealth interventions in patients with somatic diseases has increased considerably in recent years. Most articles show eHealth is effective/cost-effective or at least suggest evidence is promising, which is consistent with previous findings. Although many researchers advocate larger, well-designed, controlled studies, we believe attention should be given to the development and evaluation of strategies to implement effective/cost-effective eHealth initiatives in daily practice, rather than to further strengthen current evidence.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    },
+    {
+      "doi": "10.2196/23244",
+      "title": "Clinical Improvements by Telemedicine Interventions Managing Type 1 and Type 2 Diabetes: Systematic Meta-review",
+      "authors": [
+        "Claudia Eberle",
+        "Stefanie Stichling"
+      ],
+      "year": 2020,
+      "abstract": "Background Diabetes mellitus (DM) is one of the world’s greatest health threats with rising prevalence. Global digitalization leads to new digital approaches in diabetes management, such as telemedical interventions. Telemedicine, which is the use of information and communication technologies, may provide medical services over spatial distances to improve clinical patient outcomes by increasing access to diabetes care and medical information. Objective This study aims to examine whether telemedical interventions effectively improve diabetes control using studies that pooled patients with type 1 diabetes mellitus (T1DM) and type 2 diabetes mellitus (T2DM), and whether the benefits are greater in patients diagnosed with T2DM than in those diagnosed with T1DM. We analyzed the primary outcome glycated hemoglobin A1c (HbA1c) and the secondary outcomes fasting blood glucose (FBG), blood pressure (BP), body weight, BMI, quality of life (QoL), cost, and time saving. Methods Publications were systematically identified by searching Cochrane Library, MEDLINE via PubMed, Web of Science Core Collection, Embase, and CINAHL databases for studies published between January 2008 and April 2020, considering systematic reviews (SRs), meta-analyses (MAs), randomized controlled trials (RCTs), and clinical trials (CTs). Study quality was assessed using the A Measurement Tool to Assess Systematic Reviews, Effective Public Health Practice Project, and National Institute for Health and Care Excellence qualitative checklist. We organized the trials by communication technologies in real-time video or audio interventions, asynchronous interventions, and combined interventions (synchronous and asynchronous communication). Results From 1116 unique citations, we identified 31 eligible studies (n=15 high, n=14 moderate, n=1 weak, and n=1 critically low quality). We selected 21 SRs and MAs, 8 RCTs, 1 non-RCT, and 1 qualitative study. Of the 10 trials, 3 were categorized as real-time video, 1 as real-time video and audio, 4 as asynchronous, and 2 as combined intervention. Significant decline in HbA1c levels based on pooled T1DM and T2DM patients data ranged from −0.22% weighted mean difference (WMD; 95% CI −0.28 to −0.15; P<.001) to −0.64% mean difference (95% CI −1.01 to −0.26; P<.001). The intervention effect on lowering HbA1c values might be significantly smaller for patients with T1DM than for patients with T2DM. Evidence on the impact on BP, body weight, FBG, cost effectiveness, and time saving was smaller compared with HbA1c but indicated potential in some publications. Conclusions Telemedical interventions might be clinically effective in improving diabetes control overall, and they might significantly improve HbA1c concentrations. Patients with T2DM could benefit more than patients with T1DM regarding lowering HbA1c levels. Further studies with longer duration and larger cohorts are necessary.",
+      "source": "openalex",
+      "doi_verified": true,
+      "subquestion_id": 4
+    }
+  ],
+  "assessments": [
+    {
+      "paper_doi": "10.2337/dci19-0014",
+      "paper_title": "Nutrition Therapy for Adults With Diabetes or Prediabetes: A Consensus Report",
+      "subquestion_id": 1,
+      "relevance_score": 1,
+      "reason": "The abstract discusses nutrition therapy for diabetes and prediabetes but does not cover telemedicine interventions or their impact on HbA1c levels.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.2337/dc13-2042",
+      "paper_title": "Nutrition Therapy Recommendations for the Management of Adults With Diabetes",
+      "subquestion_id": 1,
+      "relevance_score": 1,
+      "reason": "The abstract focuses on individualized nutrition therapy recommendations and meal planning without mentioning telemedicine or glycemic control.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.2337/dc16-0346",
+      "paper_title": "Do Mobile Phone Applications Improve Glycemic Control (HbA1c) in the Self-management of Diabetes? A Systematic Review, Meta-analysis, and GRADE of 14 Randomized Trials",
+      "subquestion_id": 1,
+      "relevance_score": 4,
+      "reason": "The abstract investigates the impact of mobile phone applications on glycemic control (HbA1c) in diabetes self-management, strongly relating to the sub-question despite not exclusively covering type 2 adults.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.2337/dci21-0043",
+      "paper_title": "The Management of Type 1 Diabetes in Adults. A Consensus Report by the American Diabetes Association (ADA) and the European Association for the Study of Diabetes (EASD)",
+      "subquestion_id": 1,
+      "relevance_score": 1,
+      "reason": "The abstract outlines consensus guidelines for the management of type 1 diabetes in adults and does not address telemedicine or type 2 diabetes.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1002/14651858.cd008776.pub2",
+      "paper_title": "Computer-based diabetes self-management interventions for adults with type 2 diabetes mellitus",
+      "subquestion_id": 1,
+      "relevance_score": 3,
+      "reason": "The abstract outlines a systematic review protocol assessing computer-based self-management interventions for adults with type 2 diabetes, but does not report specific HbA1c outcomes.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1186/s12913-018-3274-8",
+      "paper_title": "The impact of telehealth remote patient monitoring on glycemic control in type 2 diabetes: a systematic review and meta-analysis of systematic reviews of randomised controlled trials",
+      "subquestion_id": 1,
+      "relevance_score": 5,
+      "reason": "The abstract directly evaluates the effectiveness of telehealth remote patient monitoring on HbA1c levels in adults with type 2 diabetes.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.2196/jmir.6688",
+      "paper_title": "Telehealth Interventions to Support Self-Management of Long-Term Conditions: A Systematic Metareview of Diabetes, Heart Failure, Asthma, Chronic Obstructive Pulmonary Disease, and Cancer",
+      "subquestion_id": 1,
+      "relevance_score": 3,
+      "reason": "The abstract discusses a metareview of telehealth interventions supporting self-management across several long-term conditions including diabetes, providing useful background context.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.2196/jmir.2058",
+      "paper_title": "Design of an mHealth App for the Self-management of Adolescent Type 1 Diabetes: A Pilot Study",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract focuses on the design of an mHealth app for adolescents with type 1 diabetes, which is tangential to adults with type 2 diabetes.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1503/cmaj.150885",
+      "paper_title": "Effect of telemedicine on glycated hemoglobin in diabetes: a systematic review and meta-analysis of randomized trials",
+      "subquestion_id": 1,
+      "relevance_score": 4,
+      "reason": "The abstract evaluates telemedicine effectiveness on HbA1c in adults with diabetes, strongly supporting the sub-question though it includes all diabetes types rather than strictly type 2.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1038/s41598-017-12987-z",
+      "paper_title": "Comparative effectiveness of telemedicine strategies on type 2 diabetes management: A systematic review and network meta-analysis",
+      "subquestion_id": 1,
+      "relevance_score": 5,
+      "reason": "The abstract directly examines the impact of different telemedicine strategies on glycemic control (HbA1c) specifically in adults with type 2 diabetes.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3389/fphar.2017.00330",
+      "paper_title": "Telemedicine for the Management of Glycemic Control and Clinical Outcomes of Type 1 Diabetes Mellitus: A Systematic Review and Meta-Analysis of Randomized Controlled Studies",
+      "subquestion_id": 1,
+      "relevance_score": 3,
+      "reason": "The abstract examines the impact of telemedicine on glycemic control, but focuses specifically on type 1 diabetes rather than type 2 diabetes.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.2196/mhealth.6522",
+      "paper_title": "Mobile App-Based Interventions to Support Diabetes Self-Management: A Systematic Review of Randomized Controlled Trials to Identify Functions Associated with Glycemic Efficacy",
+      "subquestion_id": 1,
+      "relevance_score": 4,
+      "reason": "The abstract investigates the glycemic efficacy of mobile app-based interventions among adults with diabetes, though it is not restricted solely to type 2 diabetes.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1371/journal.pone.0079246",
+      "paper_title": "Telemedicine Application in the Care of Diabetes Patients: Systematic Review and Meta-Analysis",
+      "subquestion_id": 1,
+      "relevance_score": 4,
+      "reason": "The abstract evaluates the impact of telemedicine interventions on HbA1c levels in general diabetes patients, providing strong related evidence.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1007/s00125-021-05568-3",
+      "paper_title": "The management of type 1 diabetes in adults. A consensus report by the American Diabetes Association (ADA) and the European Association for the Study of Diabetes (EASD)",
+      "subquestion_id": 1,
+      "relevance_score": 1,
+      "reason": "The paper has no abstract available and focuses on type 1 diabetes in its title, making it not relevant to type 2 diabetes.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.7759/cureus.63881",
+      "paper_title": "Revolutionizing Healthcare: How Telemedicine Is Improving Patient Outcomes and Expanding Access to Care",
+      "subquestion_id": 1,
+      "relevance_score": 3,
+      "reason": "The abstract discusses telemedicine in chronic disease management and mentions improvements in HbA1c levels for diabetes, but lacks specific focus on type 2 diabetes adults.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1371/journal.pmed.1002098",
+      "paper_title": "Supported Telemonitoring and Glycemic Control in People with Type 2 Diabetes: The Telescot Diabetes Pragmatic Multicenter Randomized Controlled Trial",
+      "subquestion_id": 1,
+      "relevance_score": 5,
+      "reason": "The abstract directly investigates whether telemonitoring improves glycemic control measured by HbA1c in adults with type 2 diabetes.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1007/s13300-021-01035-9",
+      "paper_title": "Diabetes and Frailty: An Expert Consensus Statement on the Management of Older Adults with Type 2 Diabetes",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract discusses the management of older adults with type 2 diabetes and frailty, but does not address telemedicine interventions.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.2196/jmir.6556",
+      "paper_title": "Telemedicine Technologies for Diabetes in Pregnancy: A Systematic Review and Meta-Analysis",
+      "subquestion_id": 1,
+      "relevance_score": 2,
+      "reason": "The abstract focuses on telemedicine technologies for diabetes in pregnancy rather than type 2 diabetes in general adults.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.2196/10321",
+      "paper_title": "Mobile App for Improved Self-Management of Type 2 Diabetes: Multicenter Pragmatic Randomized Controlled Trial",
+      "subquestion_id": 1,
+      "relevance_score": 5,
+      "reason": "The abstract evaluates a mobile app intervention to determine its impact on HbA1c levels among adults with type 2 diabetes.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.2196/mhealth.3882",
+      "paper_title": "A Mobile Health Intervention for Self-Management and Lifestyle Change for Persons With Type 2 Diabetes, Part 2: One-Year Results From the Norwegian Randomized Controlled Trial RENEWING HEALTH",
+      "subquestion_id": 1,
+      "relevance_score": 5,
+      "reason": "The abstract tests whether a mobile health intervention improves HbA1c levels in adults with type 2 diabetes.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.2337/dci22-0034",
+      "paper_title": "Management of Hyperglycemia in Type 2 Diabetes, 2022. A Consensus Report by the American Diabetes Association (ADA) and the European Association for the Study of Diabetes (EASD)",
+      "subquestion_id": 2,
+      "relevance_score": 3,
+      "reason": "The abstract discusses general management guidelines for type 2 diabetes but does not specifically focus on remote patient monitoring or digital consultations.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1016/j.jacc.2013.05.019",
+      "paper_title": "2013 ACCF/AHA Guideline for the Management of Heart Failure",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract focuses on heart failure guidelines rather than type 2 diabetes or telemedicine.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.2337/dc13-s011",
+      "paper_title": "Standards of Medical Care in Diabetes—2013",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract mentions medication adherence and glucose monitoring within standard clinical evaluations but does not address telemedicine or digital consultations.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.2337/dc11-s011",
+      "paper_title": "Standards of Medical Care in Diabetes—2011",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract outlines general care and self-management education guidelines for diabetes without specific emphasis on remote patient monitoring or telemedicine.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.pec.2015.11.003",
+      "paper_title": "Diabetes self-management education for adults with type 2 diabetes mellitus: A systematic review of the effect on glycemic control",
+      "subquestion_id": 2,
+      "relevance_score": 3,
+      "reason": "The abstract evaluates diabetes self-management education and its impact on glycemic control, but does not explicitly address remote monitoring or digital consultations.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.2196/jmir.3951",
+      "paper_title": "Impact of mHealth Chronic Disease Management on Treatment Adherence and Patient Outcomes: A Systematic Review",
+      "subquestion_id": 2,
+      "relevance_score": 4,
+      "reason": "The abstract evaluates the effectiveness of mHealth technologies for chronic disease management, including diabetes, focusing on treatment adherence and patient outcomes.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1007/s00125-022-05787-2",
+      "paper_title": "Management of hyperglycaemia in type 2 diabetes, 2022. A consensus report by the American Diabetes Association (ADA) and the European Association for the Study of Diabetes (EASD)",
+      "subquestion_id": 2,
+      "relevance_score": 3,
+      "reason": "There is no abstract available, but the title indicates it covers general management of hyperglycemia in type 2 diabetes rather than telemedicine specifically.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1016/j.diabres.2012.10.001",
+      "paper_title": "Global Guideline for Type 2 Diabetes",
+      "subquestion_id": 2,
+      "relevance_score": 3,
+      "reason": "There is no abstract available, but the title indicates global guidelines for type 2 diabetes management broadly.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1093/eurheartj/ehaa612",
+      "paper_title": "2020 ESC Guidelines for the diagnosis and management of atrial fibrillation developed in collaboration with the European Association for Cardio-Thoracic Surgery (EACTS)",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract is an international audience note for atrial fibrillation guidelines, which is unrelated to type 2 diabetes or telemedicine.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1093/eurheartj/ehw210",
+      "paper_title": "2016 ESC Guidelines for the management of atrial fibrillation developed in collaboration with EACTS",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract discusses guidelines for the management of atrial fibrillation, which is not relevant to type 2 diabetes or telemedicine.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1093/europace/euw295",
+      "paper_title": "2016 ESC Guidelines for the management of atrial fibrillation developed in collaboration with EACTS",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract discusses atrial fibrillation management guidelines and does not mention type 2 diabetes or telemedicine.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1001/jamainternmed.2015.7712",
+      "paper_title": "Effectiveness of Remote Patient Monitoring After Discharge of Hospitalized Patients With Heart Failure",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract evaluates remote patient monitoring, but focuses on hospitalized patients with heart failure rather than type 2 diabetes or medication adherence.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1038/s41574-020-00435-4",
+      "paper_title": "COVID-19 and diabetes mellitus: from pathophysiology to clinical management",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "Rated from the title alone as no abstract is available, and it broadly covers COVID-19 and diabetes without addressing telemedicine or self-management behaviors.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.2337/dc12-s011",
+      "paper_title": "Standards of Medical Care in Diabetes—2012",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract provides diagnostic criteria for increased risk of diabetes but contains no data on telemedicine, remote monitoring, or medication adherence.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.2337/diacare.22.4.623",
+      "paper_title": "The Diabetes Prevention Program. Design and methods for a clinical trial in the prevention of type 2 diabetes.",
+      "subquestion_id": 2,
+      "relevance_score": 2,
+      "reason": "The abstract outlines a clinical trial for preventing type 2 diabetes using lifestyle interventions and medication, but does not involve telemedicine or remote consultations.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1183/09031936.00138707",
+      "paper_title": "Global strategy for asthma management and prevention: GINA executive summary",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract focuses entirely on the global strategy for asthma management and prevention, lacking any relation to diabetes or telemedicine.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1097/hjh.0000000000003480",
+      "paper_title": "2023 ESH Guidelines for the management of arterial hypertension The Task Force for the management of arterial hypertension of the European Society of Hypertension",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "The abstract lists reviewers for arterial hypertension guidelines and contains no information regarding type 2 diabetes or remote patient monitoring.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.jacc.2008.10.001",
+      "paper_title": "ACC/AHA 2008 Guidelines for the Management of Adults With Congenital Heart Disease",
+      "subquestion_id": 2,
+      "relevance_score": 1,
+      "reason": "Rated from the title alone as no abstract is available, and the paper addresses congenital heart disease rather than type 2 diabetes telemedicine.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1016/j.nurpra.2020.09.013",
+      "paper_title": "Telehealth Benefits and Barriers",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "Since the abstract is missing, the paper is rated as background based solely on the title regarding telehealth benefits and barriers.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1136/bmjopen-2017-016242",
+      "paper_title": "Telehealth and patient satisfaction: a systematic review and narrative analysis",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract examines general patient satisfaction and factors associated with telehealth modalities, but lacks a specific focus on type 2 diabetes.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.2196/16407",
+      "paper_title": "Barriers and Facilitators That Influence Telemedicine-Based, Real-Time, Online Consultation at Patients’ Homes: Systematic Literature Review",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract investigates general barriers and facilitators influencing telemedicine-based home consultations, but does not focus on type 2 diabetes.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1016/j.ijmedinf.2016.03.002",
+      "paper_title": "Analyzing older users’ home telehealth services acceptance behavior—applying an Extended UTAUT model",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "Since the abstract is missing, the paper is judged from the title alone as tangential because it addresses older users' home telehealth acceptance without mentioning diabetes.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.2196/24387",
+      "paper_title": "Barriers to and Facilitators of User Engagement With Digital Mental Health Interventions: Systematic Review",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract focuses on barriers and facilitators of user engagement with digital mental health interventions rather than diabetes care.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1186/s12889-024-18036-5",
+      "paper_title": "Barriers and facilitators to health technology adoption by older adults with chronic diseases: an integrative systematic review",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract discusses barriers and facilitators to health technology adoption by older adults with chronic diseases, but does not specifically target type 2 diabetes.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.2196/20359",
+      "paper_title": "Utilization Barriers and Medical Outcomes Commensurate With the Use of Telehealth Among Older Adults: Systematic Review",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract explores utilization barriers and medical outcomes of telehealth among older adults with chronic conditions, though it does not specifically target type 2 diabetes.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3390/ijerph20043407",
+      "paper_title": "Digital Transformation in Healthcare: Technology Acceptance and Its Applications",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "The abstract discusses general digital transformation and technology acceptance in healthcare without focusing on telemedicine for diabetes.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1007/s11882-020-00969-7",
+      "paper_title": "A Review of Patient and Provider Satisfaction with Telemedicine",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "Since the abstract is missing, the paper is rated from the title alone as providing relevant background on patient and provider satisfaction with telemedicine.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.2196/13117",
+      "paper_title": "Theories Predicting End-User Acceptance of Telemedicine Use: Systematic Review",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "The abstract reviews theoretical predictors influencing general end-user acceptance of telemedicine, but does not specify diabetes management.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.2196/19264",
+      "paper_title": "Telehealth in the Context of COVID-19: Changing Perspectives in Australia, the United Kingdom, and the United States",
+      "subquestion_id": 3,
+      "relevance_score": 1,
+      "reason": "This paper focuses on telehealth policies during the COVID-19 pandemic for older people rather than diabetes management or barriers and acceptance.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1197/jamia.m1917",
+      "paper_title": "A Randomized Trial Comparing Telemedicine Case Management with Usual Care in Older, Ethnically Diverse, Medically Underserved Patients with Diabetes Mellitus",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "This study evaluates telemedicine case management for patients with diabetes, primarily measuring clinical outcomes rather than patient or provider barriers and acceptance.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1089/tmj.2016.0045",
+      "paper_title": "The Empirical Foundations of Telemedicine Interventions in Primary Care",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "This article examines telemedicine interventions in primary care and discusses feasibility and acceptance, but is not specifically focused on diabetes care.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1371/journal.pone.0237585",
+      "paper_title": "Telemedicine in the OECD: An umbrella review of clinical and cost-effectiveness, patient experience and implementation",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "This umbrella review covers clinical effectiveness, patient experience, and implementation of telemedicine broadly across OECD countries without focusing on diabetes.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.2196/14197",
+      "paper_title": "Barriers and Facilitators to the Implementation of eHealth Services: Systematic Literature Analysis",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "This paper investigates barriers and facilitators to implementing eHealth services generally, but lacks a specific focus on diabetes care.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.20517/ch.2021.03",
+      "paper_title": "The worldwide impact of telemedicine during COVID-19: current evidence and recommendations for the future",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "This article discusses the worldwide impact and barriers to telemedicine during COVID-19 for chronic diseases, touching on patient and professional awareness and willingness.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1371/journal.pone.0173160",
+      "paper_title": "Effectiveness of mHealth interventions for patients with diabetes: An overview of systematic reviews",
+      "subquestion_id": 3,
+      "relevance_score": 3,
+      "reason": "This overview of systematic reviews evaluates the effectiveness of mHealth interventions for patients with diabetes, but does not primarily focus on barriers, facilitators, or acceptance.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.2196/jmir.5257",
+      "paper_title": "Personalized Telehealth in the Future: A Global Research Agenda",
+      "subquestion_id": 3,
+      "relevance_score": 2,
+      "reason": "This paper outlines a global research agenda for personalized telehealth within chronic disease management and discusses implementation challenges, but is not specific to diabetes.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.1136/bmj.f1035",
+      "paper_title": "Cost effectiveness of telehealth for patients with long term conditions (Whole Systems Demonstrator telehealth questionnaire study): nested economic evaluation in a pragmatic, cluster randomised controlled trial",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract examines the cost-effectiveness of telehealth for long-term conditions including diabetes, but groups it with other chronic illnesses rather than focusing solely on type 2 diabetes.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1136/fmch-2020-000530",
+      "paper_title": "Telemedicine, the current COVID-19 pandemic and the future: a narrative review and perspectives moving forward in the USA",
+      "subquestion_id": 4,
+      "relevance_score": 2,
+      "reason": "The abstract provides a general narrative review of telemedicine during COVID-19 mentioning cost-effectiveness broadly without focusing on type 2 diabetes management.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.2196/jmir.8775",
+      "paper_title": "Beyond Adoption: A New Framework for Theorizing and Evaluating Nonadoption, Abandonment, and Challenges to the Scale-Up, Spread, and Sustainability of Health and Care Technologies",
+      "subquestion_id": 4,
+      "relevance_score": 2,
+      "reason": "The abstract describes a framework for evaluating health technology implementation and mentions remote monitoring for heart failure, but does not address the cost-effectiveness of telemedicine for type 2 diabetes.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.2196/17298",
+      "paper_title": "Determining if Telehealth Can Reduce Health System Costs: Scoping Review",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract investigates whether telehealth reduces health system costs compared to traditional care models, but discusses this broadly rather than specifically focusing on type 2 diabetes.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.3389/fpubh.2022.787135",
+      "paper_title": "The cost-effectiveness of digital health interventions: A systematic review of the literature",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract reviews the cost-effectiveness of digital health interventions generally, serving as useful background rather than specific evidence for type 2 diabetes.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1186/s12962-020-00211-1",
+      "paper_title": "Cost-effectiveness of diabetic retinopathy screening programs using telemedicine: a systematic review",
+      "subquestion_id": 4,
+      "relevance_score": 4,
+      "reason": "The abstract directly evaluates the cost-effectiveness of telemedicine for diabetic retinopathy screening in patients with type 1 and type 2 diabetes compared to standard care.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.1007/s11892-018-1015-3",
+      "paper_title": "Telemedicine in Complex Diabetes Management",
+      "subquestion_id": 4,
+      "relevance_score": 1,
+      "reason": "The paper lacks an abstract, and the title alone only indicates complex diabetes management via telemedicine without mentioning cost-effectiveness.",
+      "selected": false
+    },
+    {
+      "paper_doi": "10.2196/jmir.2790",
+      "paper_title": "Effectiveness and Cost-Effectiveness of eHealth Interventions in Somatic Diseases: A Systematic Review of Systematic Reviews and Meta-Analyses",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract summarizes the effectiveness and cost-effectiveness of eHealth interventions across somatic diseases as a broad review, offering useful background context.",
+      "selected": true
+    },
+    {
+      "paper_doi": "10.2196/23244",
+      "paper_title": "Clinical Improvements by Telemedicine Interventions Managing Type 1 and Type 2 Diabetes: Systematic Meta-review",
+      "subquestion_id": 4,
+      "relevance_score": 3,
+      "reason": "The abstract examines telemedical interventions managing type 1 and type 2 diabetes and mentions cost and time saving as secondary outcomes, but focuses primarily on clinical improvements like HbA1c.",
+      "selected": true
+    }
+  ],
+  "summaries": [
+    "[1] Do Mobile Phone Applications Improve Glycemic Control (HbA1c) in the Self-management of Diabetes? A Systematic Review, Meta-analysis, and GRADE of 14 Randomized Trials (2016) - This systematic review and meta-analysis of 14 randomized trials investigated the effect of mobile phone applications on glycemic control in diabetes self-management. It reports that all type 2 diabetes studies showed a reduction in HbA1c, with a mean reduction of 0.49% for participants using an app compared to controls. This bears on the sub-question by demonstrating that mobile-app interventions can effectively lower HbA1c levels in adults with type 2 diabetes.",
+    "[2] Computer-based diabetes self-management interventions for adults with type 2 diabetes mellitus (2013) - This paper is a systematic review protocol and overview aimed at assessing the effects of computer-based diabetes self-management interventions on health status and quality of life for adults with type 2 diabetes mellitus. The abstract describes the background, objectives, and search methods without reporting final results. Consequently, it bears on the sub-question only by outlining the framework to evaluate such computer-based programs.",
+    "[3] The impact of telehealth remote patient monitoring on glycemic control in type 2 diabetes: a systematic review and meta-analysis of systematic reviews of randomised controlled trials (2018) - This study conducted a systematic review and meta-analysis of systematic reviews of randomized controlled trials to evaluate the effectiveness of telehealth on glycemic control in adults with type 2 diabetes. Pooling four systematic reviews, the authors report that telehealth interventions produced a small but significant improvement in monitoring HbA1c levels. This directly addresses the sub-question by confirming that telehealth positively impacts glycemic control.",
+    "[4] Telehealth Interventions to Support Self-Management of Long-Term Conditions: A Systematic Metareview of Diabetes, Heart Failure, Asthma, Chronic Obstructive Pulmonary Disease, and Cancer (2017) - This paper performed a systematic metareview of randomized controlled trials examining telehealth interventions to support self-management across six long-term conditions, including diabetes types 1 and 2. The objective was to assess the impact of telehealth on disease control and healthcare utilization and to identify effective components of support. Because the abstract details only the methods and objectives without stating specific findings, its bearing on the sub-question is limited to its evaluative framework.",
+    "[5] Effect of telemedicine on glycated hemoglobin in diabetes: a systematic review and meta-analysis of randomized trials (2016) - This systematic review and meta-analysis of randomized trials summarized the effectiveness of various telemedicine methods compared with usual care for managing diabetes in adults. The authors report that telemedicine achieved significant but modest reductions in HbA1c across all three assessed follow-up periods, with a mean difference of -0.57% at 3 months or less. This directly supports the sub-question by showing that telemedicine improves glycemic control in diabetes patients.",
+    "[6] Comparative effectiveness of telemedicine strategies on type 2 diabetes management: A systematic review and network meta-analysis (2017) - This systematic review and network meta-analysis investigated the impact of different telemedicine strategies on glycemic control in type 2 diabetes patients based on randomized controlled studies. Over a median 6-month follow-up, telemedicine reduced HbA1c by a mean of 0.43%, and network analysis showed that most strategies (except telecase-management and telementoring) significantly reduced HbA1c compared to usual care. This bears on the sub-question by demonstrating the specific HbA1c-lowering efficacy of various telemedicine approaches.",
+    "[7] Telemedicine for the Management of Glycemic Control and Clinical Outcomes of Type 1 Diabetes Mellitus: A Systematic Review and Meta-Analysis of Randomized Controlled Studies (2017) - This systematic review and meta-analysis synthesized evidence on the effectiveness of telemedicine interventions for managing glycemic and clinical outcomes in type 1 diabetes patients. The abstract notes that evidence in type 1 diabetes remains scarce and conflicting regarding its applicability. Therefore, it bears on the sub-question only by highlighting the distinct context of type 1 diabetes rather than providing findings for type 2 diabetes.",
+    "[8] Mobile App-Based Interventions to Support Diabetes Self-Management: A Systematic Review of Randomized Controlled Trials to Identify Functions Associated with Glycemic Efficacy (2017) - This study developed a taxonomy of mobile health apps and conducted a systematic review of randomized controlled trials to investigate the glycemic efficacy of app-based interventions among adult outpatients with diabetes compared to usual care. The abstract describes the methodology, taxonomy creation, and search strategies without reporting final numerical results on HbA1c. Thus, its direct bearing on the sub-question is restricted to establishing a framework for app evaluation.",
+    "[9] Telemedicine Application in the Care of Diabetes Patients: Systematic Review and Meta-Analysis (2013) - This systematic review and meta-analysis of randomized controlled trials assessed the impact of telemedicine interventions on HbA1c and other health metrics in diabetes patients. The results show that telemedicine was associated with a statistically significant and clinically relevant absolute decline in HbA1c levels compared to controls, with a mean difference of -0.44%. This directly bears on the sub-question by evidencing the positive impact of telemedicine on glycemic control.",
+    "[10] Revolutionizing Healthcare: How Telemedicine Is Improving Patient Outcomes and Expanding Access to Care (2024) - This systematic review investigates the effects of telemedicine on patient outcomes, access to care, and chronic disease management. The review reports that telemedicine acts as a transformative tool in diabetes care by increasing patient engagement and improving clinical metrics such as HbA1c levels. This bears on the sub-question by providing general support for the effectiveness of telehealth platforms in managing glycemic levels in diabetes.",
+    "[11] Supported Telemonitoring and Glycemic Control in People with Type 2 Diabetes: The Telescot Diabetes Pragmatic Multicenter Randomized Controlled Trial (2016) - The paper describes a pragmatic multicenter randomized controlled trial investigating whether health professional review of telemetrically transmitted self-monitored glucose results in improved glycemic control in people with poorly controlled type 2 diabetes. The study assessed HbA1c at 9 months as the primary outcome for 321 participants randomized to either a supported telemonitoring intervention or usual care. This bears directly on the sub-question by evaluating whether a specific telemedicine intervention impacts glycemic control measured by HbA1c levels.",
+    "[12] Mobile App for Improved Self-Management of Type 2 Diabetes: Multicenter Pragmatic Randomized Controlled Trial (2018) - This paper presents a multicenter pragmatic randomized controlled trial to determine if usage of the BlueStar mobile app leads to improved HbA1c levels among diverse participants in real-life clinical contexts compared with controls. The study was conducted with 110 participants in the immediate treatment group receiving the intervention for 6 months and 113 in the control group. It addresses the sub-question by investigating the impact of a mobile app telemedicine intervention on glycemic control measured by HbA1c.",
+    "[13] A Mobile Health Intervention for Self-Management and Lifestyle Change for Persons With Type 2 Diabetes, Part 2: One-Year Results From the Norwegian Randomized Controlled Trial RENEWING HEALTH (2014) - The study reports on a 3-arm prospective randomized controlled trial involving 2 intervention groups and 1 control group to test whether a mobile phone-based self-management system used for 1 year, with or without telephone health counseling, could improve HbA1c levels compared with usual care. Eligible participants were adults with type 2 diabetes and an HbA1c level of 7.1% or greater. This bears on the sub-question by testing the long-term impact of a mobile health self-management intervention on glycemic control.",
+    "[14] Management of Hyperglycemia in Type 2 Diabetes, 2022. A Consensus Report by the American Diabetes Association (ADA) and the European Association for the Study of Diabetes (EASD) (2022) - This paper presents an updated consensus report by the ADA and EASD on managing hyperglycemia in adults with type 2 diabetes based on a systematic examination of recent publications. It highlights holistic approaches such as weight management, physical activity, and cardiorenal protection, but it does not evaluate remote patient monitoring, digital consultations, or their specific effects on medication adherence and self-management behaviors.",
+    "[15] Diabetes self-management education for adults with type 2 diabetes mellitus: A systematic review of the effect on glycemic control (2015) - This systematic review assesses the effect of diabetes self-management education and support methods on glycemic control in adults with type 2 diabetes using literature up to December 2013. It reports that self-management education resulted in significant A1C reductions, particularly with combined group and individual engagement, longer contact hours, and in patients with persistently elevated baseline A1C values. However, the abstract does not mention telemedicine, remote patient monitoring, or digital consultations as the delivery mechanism for these behaviors.",
+    "[16] Impact of mHealth Chronic Disease Management on Treatment Adherence and Patient Outcomes: A Systematic Review (2015) - This systematic review evaluates the effectiveness of mobile health (mHealth) tools in supporting chronic disease management adherence, including diabetes mellitus, patient communication, monitoring, and education. It outlines the objective to review mHealth's impact on patient adherence and clinical outcomes, but the provided abstract cuts off before reporting any specific findings or results regarding medication adherence or self-management behaviors.",
+    "[17] Management of hyperglycaemia in type 2 diabetes, 2022. A consensus report by the American Diabetes Association (ADA) and the European Association for the Study of Diabetes (EASD) (2022) - No abstract available; the title suggests: Management of hyperglycaemia in type 2 diabetes, 2022. A consensus report by the American Diabetes Association (ADA) and the European Association for the Study of Diabetes (EASD)",
+    "[18] Global Guideline for Type 2 Diabetes (2014) - No abstract available; the title suggests: Global Guideline for Type 2 Diabetes",
+    "[19] Telehealth Benefits and Barriers (2020) - No abstract available; the title suggests:",
+    "[20] Telehealth and patient satisfaction: a systematic review and narrative analysis (2017) - This paper presents a systematic review and narrative analysis exploring the association between telehealth and patient satisfaction regarding effectiveness and efficiency. It reports that key factors linked to satisfaction include improved outcomes, preferred modality, ease of use, low cost, improved communication, and decreased travel time. These findings relate to the sub-question by identifying patient acceptance factors and facilitators associated with telemedicine use.",
+    "[21] Barriers and Facilitators That Influence Telemedicine-Based, Real-Time, Online Consultation at Patients’ Homes: Systematic Literature Review (2019) - This paper is a systematic literature review investigating the barriers and facilitators that influence the use of home consultation systems (e-consultations) in the healthcare context. It discusses how external factors (environment and system) and internal factors (user behavior and motivation) can positively or negatively influence e-consultation services. This directly addresses the sub-question by outlining the specific barriers and facilitators impacting telemedicine adoption.",
+    "[22] Barriers and facilitators to health technology adoption by older adults with chronic diseases: an integrative systematic review (2024) - This paper conducts an integrative systematic review on the factors that facilitate or hinder the adoption of health technologies, including telehealth, by older adults with chronic diseases. It highlights that despite the promise of health technologies for independent living, their actual implementation remains challenging. This bears on the sub-question by identifying specific adoption barriers and facilitators experienced by an older chronic disease population.",
+    "[23] Utilization Barriers and Medical Outcomes Commensurate With the Use of Telehealth Among Older Adults: Systematic Review (2020) - This paper conducts a systematic review to identify utilization barriers and the ways telehealth improves health outcomes and quality of life indicators for older adults. It analyzes 57 studies across multiple telehealth interventions to identify these barriers and reports of health outcomes. The paper relates to the sub-question by highlighting utilization barriers faced by older adults when accessing telehealth.",
+    "[24] A Review of Patient and Provider Satisfaction with Telemedicine (2020) - No abstract available; the title suggests:",
+    "[25] Theories Predicting End-User Acceptance of Telemedicine Use: Systematic Review (2019) - This paper presents a systematic review to identify theoretical predictors influencing the end-user acceptance of telemedicine. It reports that the most common models used were the Technology Acceptance Model and the Unified Theory of Acceptance and Use of Technology, with perceived usefulness, social influences, and attitude identified as main significant predictors of acceptance. This bears on the sub-question by examining the theoretical foundations of end-user acceptance regarding telemedicine.",
+    "[26] A Randomized Trial Comparing Telemedicine Case Management with Usual Care in Older, Ethnically Diverse, Medically Underserved Patients with Diabetes Mellitus (2005) - This paper describes a randomized, controlled trial comparing telemedicine case management to usual care in older, ethnically diverse, medically underserved patients with diabetes mellitus. It reports that the intervention group showed improvements in mean HgbA1c, blood pressure, and LDL cholesterol levels compared to usual care. This bears on the sub-question by providing evidence on telemedicine efficacy for managing type 2 diabetes in vulnerable populations experiencing access barriers.",
+    "[27] The Empirical Foundations of Telemedicine Interventions in Primary Care (2016) - This article presents a systematic review of scientific literature to evaluate the empirical foundations of telemedicine interventions in primary care across feasibility/acceptance, intermediate outcomes, health outcomes, and cost. It reports that the majority of studies support the feasibility and acceptance of telemedicine in primary care, though with significant variation. This relates to the sub-question by providing insight into the overall acceptance of telemedicine services.",
+    "[28] Barriers and Facilitators to the Implementation of eHealth Services: Systematic Literature Analysis (2019) - This paper provides a systematic literature analysis and expert discussions to identify a comprehensive list of barriers and facilitators/success factors for planning and implementing eHealth services. It aims to help organizations become fully aware of the factors influencing the integration of eHealth into routine care. This directly bears on the sub-question by detailing the barriers and facilitators relevant to telemedicine implementation.",
+    "[29] The worldwide impact of telemedicine during COVID-19: current evidence and recommendations for the future (2022) - This paper discusses the worldwide impact of telemedicine during the COVID-19 pandemic as a resource for guaranteeing the continuity of care for chronic disease patients. It reports that while telemedicine has thrived, major issues remain for large-scale implementation, including improving awareness and willingness to use it among patients and healthcare professionals, as well as overcoming technological, infrastructural, and economic barriers. These findings bear on the sub-question by highlighting critical patient and provider barriers, facilitators, and acceptance factors necessary for the integration of telemedicine in care.",
+    "[30] Effectiveness of mHealth interventions for patients with diabetes: An overview of systematic reviews (2017) - This paper provides an overview of systematic reviews to critically appraise and consolidate evidence on the effectiveness of mobile health (mHealth) interventions for patients with diabetes. It notes that mHealth technologies offer opportunities for improving patient-to-provider communication and diabetes self-management, and identifies fifteen eligible systematic reviews with varying methodological quality. The paper bears on the sub-question by highlighting how mHealth tools facilitate patient-provider communication and self-management, which are key aspects of telemedicine acceptance and care.",
+    "[31] Cost effectiveness of telehealth for patients with long term conditions (Whole Systems Demonstrator telehealth questionnaire study): nested economic evaluation in a pragmatic, cluster randomised controlled trial (2013) - This paper presents a nested economic evaluation within a pragmatic, cluster randomised controlled trial to examine the costs and cost-effectiveness of telehealth added to standard support and treatment for people with long term conditions, including diabetes. The primary outcome for the cost effectiveness analysis was the incremental cost per quality adjusted life year (QALY) gained, though the provided abstract text ends before reporting the specific results. This study bears on the sub-question by investigating the economic evaluation and cost-effectiveness of telehealth alongside standard care for individuals with long-term conditions like diabetes.",
+    "[32] Determining if Telehealth Can Reduce Health System Costs: Scoping Review (2020) - This paper reports on a scoping review that aims to investigate if telehealth reduces health system costs compared with traditional service models and to identify the scenarios in which cost savings can be realized. The background notes that potential benefits of telehealth include increased accessibility, productivity gains through reduced travel, potential cost savings, and culturally appropriate services. It bears on the sub-question by examining whether telehealth reduces health system costs compared with traditional service models, though no specific results for type 2 diabetes management are provided in the abstract.",
+    "[33] The cost-effectiveness of digital health interventions: A systematic review of the literature (2022) - This paper presents a systematic review to summarize the evidence on the cost-effectiveness of digital health interventions and assess whether studies meet established quality criteria. The authors searched multiple databases for articles published between 2016 and 2020 that performed economic evaluations of digital health technologies, ultimately including 35 studies out of 1,476 results. It bears on the sub-question by evaluating the broader literature on the cost-effectiveness of digital health tools, noting that evidence regarding cost and effectiveness remains scarce and limited.",
+    "[34] Cost-effectiveness of diabetic retinopathy screening programs using telemedicine: a systematic review (2020) - This paper is a systematic review that aims to review recent literature on economic evaluations of telemedicine in diabetic retinopathy screening and summarize the evidence on its cost-effectiveness. The review included seven studies that recruited subjects with type 1 or type 2 diabetes and compared a telemedicine-based intervention with standard care. It bears on the sub-question by evaluating economic evidence comparing telemedicine-based interventions with standard care, specifically noting in the background that there is currently not enough evidence to support the cost-effectiveness of telemedicine for this screening.",
+    "[35] Effectiveness and Cost-Effectiveness of eHealth Interventions in Somatic Diseases: A Systematic Review of Systematic Reviews and Meta-Analyses (2014) - This paper conducts a systematic review of systematic reviews and meta-analyses to analyze the effectiveness and cost-effectiveness of eHealth interventions in patients with somatic diseases published between 2009 and 2012. The study aims to evaluate whether recent research supports or differs from previous conclusions regarding whether eHealth enhances care quality and reduces health care costs. It bears on the sub-question by examining the broader systematic evidence regarding whether eHealth interventions reduce health care costs for somatic diseases, though the abstract cuts off before reporting specific cost-effectiveness findings.",
+    "[36] Clinical Improvements by Telemedicine Interventions Managing Type 1 and Type 2 Diabetes: Systematic Meta-review (2020) - This paper is a systematic meta-review that aims to examine whether telemedical interventions effectively improve diabetes control using studies that pooled patients with type 1 and type 2 diabetes, and whether benefits are greater in type 2 diabetes. The authors analyzed primary and secondary outcomes including glycated hemoglobin A1c, cost, and time saving by searching multiple databases for studies published between 2008 and 2020. It bears on the sub-question by analyzing cost and time savings alongside clinical outcomes for telemedical interventions managing diabetes, though the abstract text concludes before providing the results."
+  ],
+  "themes": [
+    "Telemedicine and mobile health interventions consistently demonstrate a positive impact on glycemic control, showing significant reductions in HbA1c levels for adults with type 2 diabetes compared to usual care. [1, 3, 5, 6, 9, 10, 11, 12, 13]",
+    "Patient and provider adoption of telemedicine is influenced by various external environmental and infrastructural factors, internal user behaviors and motivations, and theoretical acceptance predictors such as perceived usefulness. [20, 21, 22, 23, 25, 27, 28, 29]",
+    "While some literature evaluates economic evaluations and potential cost savings or time savings associated with telehealth and digital health programs, direct conclusive evidence on their cost-effectiveness compared to traditional in-person care remains limited or scarce. [31, 32, 33, 34, 35, 36]"
+  ],
+  "gaps": [
+    "Sub-question 2, regarding how remote patient monitoring and digital consultations specifically affect medication adherence and self-management behaviors, lacks direct empirical findings, as the relevant notes provide only study protocols, objectives, or abstracts that cut off before reporting results.",
+    "Sub-question 4, regarding the cost-effectiveness of telemedicine programs compared to traditional in-person clinical care for managing type 2 diabetes, is insufficiently answered by direct comparative data, with current literature noting that evidence regarding cost and economic evaluation remains scarce, limited, or lacking specific trial results for type 2 diabetes."
+  ],
+  "limitations": [
+    "Relevance was judged from title and abstract only; 29 of 65 retrieved papers were excluded (score below 3/5 or removed at review 2). Reasons are listed above.",
+    "Summaries, themes and gaps were generated by gemini-3.5-flash-lite from abstracts only and should be checked against the full texts before being relied on.",
+    "Sources searched for every sub-question (20 results per query per source): openalex: 4 of 4 searches answered, 80 records; semanticscholar: 0 of 4 searches answered, 0 records. No full-text access; no citation-chasing or date filtering.",
+    "Automatic failover was used: semanticscholar failed for 4 search(es) and those searches relied on the remaining source(s). Coverage for the affected sub-questions may be narrower."
+  ]
+}
